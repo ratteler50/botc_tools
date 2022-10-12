@@ -1,0 +1,687 @@
+[
+  {
+    "role1": "acrobat",
+    "role2": "drunk",
+    "reason": "The Acrobat dies if the Drunk is an alive living neighbour."
+  },
+  {
+    "role1": "acrobat",
+    "role2": "minstrel",
+    "reason": "The Acrobat does not die on a Minstrel night."
+  },
+  {
+    "role1": "apprentice",
+    "role2": "vortox",
+    "reason": "Apprentice with a Townsfolk ability gets false information."
+  },
+  {
+    "role1": "assassin",
+    "role2": "goon",
+    "reason": "The sober Assassin will kill the Goon even if they are made drunk due to the effect of the Goon."
+  },
+  {
+    "role1": "assassin",
+    "role2": "lycanthrope",
+    "reason": "Assassin can kill a player if the Lycanthrope successfully kills a player."
+  },
+  {
+    "role1": "barber",
+    "role2": "klutz",
+    "reason": "The Barber that dies, then turned into the Klutz would still need to choose a player."
+  },
+  {
+    "role1": "barista",
+    "role2": "drunk",
+    "reason": "If the Drunk thinks they are a role that would learn information & are targeted by the Barista ability, then they get correct information."
+  },
+  {
+    "role1": "barista",
+    "role2": "fortuneteller",
+    "reason": "The Barista would cause a Fortune Teller to not register the red herring as the Demon."
+  },
+  {
+    "role1": "barista",
+    "role2": "lycanthrope",
+    "reason": "Only the first player chosen by the Lycanthrope would die."
+  },
+  {
+    "role1": "barista",
+    "role2": "pixie",
+    "reason": "The Barista on the first night can have the Pixie learn 2 roles & if they are mad about those characters can gain both abilities."
+  },
+  {
+    "role1": "barista",
+    "role2": "recluse",
+    "reason": "The Barista would cause a character to not register the Recluse as Evil, a Minion or a Demon."
+  },
+  {
+    "role1": "barista",
+    "role2": "spy",
+    "reason": "The Barista would cause a character to not register the Spy as Good, a Townsfolk or an Outsider."
+  },
+  {
+    "role1": "baron",
+    "role2": "pithag",
+    "reason": "Creating a Baron does not create 2 more Outsiders."
+  },
+  {
+    "role1": "bonecollector",
+    "role2": "juggler",
+    "reason": "Juggler targeted by the Bone-Collector does allows to get information if they Juggled during the day."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "courtier",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "innkeeper",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "minstrel",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "nodashii",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "philosopher",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "poisoner",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "sailor",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "sweetheart",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "vigormortis",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "vortox",
+    "reason": "The Bounty Hunter learns a Good player, with the 'Client' Token being placed on an Evil player. If the Evil player dies they learn another Good player."
+  },
+  {
+    "role1": "bountyhunter",
+    "role2": "widow",
+    "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "chef",
+    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "grandmother",
+    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "investigator",
+    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "librarian",
+    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "mephit",
+    "reason": "If a player turned by the Mezepheles is executed the Cannibal is drunk."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "mezepheles",
+    "reason": "If a player turned by the Mezepheles is executed the Cannibal is drunk."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "recluse",
+    "reason": "The Cannibal with the Recluse's ability does not continue working after death."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "spy",
+    "reason": "The Cannibal cannot gain any ability that the Spy registers as."
+  },
+  {
+    "role1": "cannibal",
+    "role2": "washerwoman",
+    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+  },
+  {
+    "role1": "cerenovus",
+    "role2": "undertaker",
+    "reason": "If the Cerenovus causes a second execution, then the Storyteller may show 1, or both, of the executed roles."
+  },
+  {
+    "role1": "chambermaid",
+    "role2": "drunk",
+    "reason": "Chambermaid learns of the 'Drunk' waking as the role they think they."
+  },
+  {
+    "role1": "chambermaid",
+    "role2": "lunatic",
+    "reason": "The Chambermaid learns of the Lunatic waking, even on the first night as this is due to their ability."
+  },
+  {
+    "role1": "chef",
+    "role2": "philosopher",
+    "reason": "The Philosopher turned Chef, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information, even if they would later die that night."
+  },
+  {
+    "role1": "chef",
+    "role2": "recluse",
+    "reason": "Evil / Recluse / Evil seating pattern can register as a Chef 1."
+  },
+  {
+    "role1": "clockmaker",
+    "role2": "recluse",
+    "reason": "The Recluse cannot produce a Clockmaker 0."
+  },
+  {
+    "role1": "courtier",
+    "role2": "philosopher",
+    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "courtier",
+    "role2": "pixie",
+    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "drunk",
+    "role2": "fortuneteller",
+    "reason": "A Drunk Fortune Teller does not have a red herring."
+  },
+  {
+    "role1": "drunk",
+    "role2": "goon",
+    "reason": "The Drunk who thinks they are a Townsfolk who selects the Goon with their 'ability' does trigger the Goon & becomes drunk."
+  },
+  {
+    "role1": "drunk",
+    "role2": "philosopher",
+    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "drunk",
+    "role2": "ravenkeeper",
+    "reason": "A Drunk who believes they are the Ravenkeeper is woken & given information."
+  },
+  {
+    "role1": "drunk",
+    "role2": "sage",
+    "reason": "A Drunk who believes they are the Sage is woken & given information."
+  },
+  {
+    "role1": "eviltwin",
+    "role2": "lilmonsta",
+    "reason": "The Good Twin holding Lil' Monsta that is executed & killed will cause Evil to win."
+  },
+  {
+    "role1": "eviltwin",
+    "role2": "mephit",
+    "reason": "If the Good Twin is turned Evil by the Mezepheles, then a new twin must be assigned & both players are told."
+  },
+  {
+    "role1": "eviltwin",
+    "role2": "mezepheles",
+    "reason": "If the Good Twin is turned Evil by the Mezepheles, then a new twin must be assigned & both players are told."
+  },
+  {
+    "role1": "eviltwin",
+    "role2": "vortox",
+    "reason": "A Good Evil Twin in a Vortox game is given correct information."
+  },
+  {
+    "role1": "exorcist",
+    "role2": "lilmonsta",
+    "reason": "The Lil' Monsta will still kill, but the player holding the token does not."
+  },
+  {
+    "role1": "exorcist",
+    "role2": "lunatic",
+    "reason": "The Lunatic can be told they were selected by the Exorcist."
+  },
+  {
+    "role1": "fanggu",
+    "role2": "monk",
+    "reason": "An Outsider chosen by the Monk cannot be jumped to."
+  },
+  {
+    "role1": "fanggu",
+    "role2": "pithag",
+    "reason": "The Pit-Hag's arbitrary deaths can protect & kill the same player to stop a Fang-Gu jump."
+  },
+  {
+    "role1": "fool",
+    "role2": "gossip",
+    "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Fool."
+  },
+  {
+    "role1": "fool",
+    "role2": "lycanthrope",
+    "reason": "If the Lycanthrope's target does not die the protection due to the Lycanthrope's ability does not activate."
+  },
+  {
+    "role1": "fool",
+    "role2": "mayor",
+    "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Fool."
+  },
+  {
+    "role1": "fool",
+    "role2": "pithag",
+    "reason": "The Pit-Hag's arbitrary deaths can kill the Zombuul twice in order for them to be dead."
+  },
+  {
+    "role1": "fortuneteller",
+    "role2": "mephit",
+    "reason": "If the player turned by the Mezepheles was the red herring, the token is moved to a good player."
+  },
+  {
+    "role1": "fortuneteller",
+    "role2": "mezepheles",
+    "reason": "If the player turned by the Mezepheles was the red herring, the token is moved to a good player."
+  },
+  {
+    "role1": "fortuneteller",
+    "role2": "spy",
+    "reason": "Red herring check is not ongoing & therefore can be on the Spy"
+  },
+  {
+    "role1": "fortuneteller",
+    "role2": "vortox",
+    "reason": "The red herring will give a 'no', as Register as is considered true."
+  },
+  {
+    "role1": "gambler",
+    "role2": "pithag",
+    "reason": "If the Gambler gambles incorrectly & the Pit-hag creates a new Demon, then the Gambler can be prevented from dying."
+  },
+  {
+    "role1": "goblin",
+    "role2": "lilmonsta",
+    "reason": "The Goblin holding Lil' Monsta that is executed & killed will cause Good to win."
+  },
+  {
+    "role1": "godfather",
+    "role2": "pithag",
+    "reason": "If a Godfather is created the night after an Outsider dies during the day, the Godfather can kill."
+  },
+  {
+    "role1": "goon",
+    "role2": "lunatic",
+    "reason": "The Lunatic who thinks they are a Demon who selects the Goon with their 'ability' does trigger the Goon & becomes drunk."
+  },
+  {
+    "role1": "goon",
+    "role2": "lycanthrope",
+    "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
+  },
+  {
+    "role1": "goon",
+    "role2": "mephit",
+    "reason": "The Goon can revert back to Good the same night they are turned by the Mezepheles. The Goon would not make the Mezepheles drunk."
+  },
+  {
+    "role1": "goon",
+    "role2": "mezepheles",
+    "reason": "The Goon can revert back to Good the same night they are turned by the Mezepheles. The Goon would not make the Mezepheles drunk."
+  },
+  {
+    "role1": "goon",
+    "role2": "moonchild",
+    "reason": "The Goon only changes alignment if chosen at night, so the Moonchild can kill the Goon."
+  },
+  {
+    "role1": "gossip",
+    "role2": "innkeeper",
+    "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Innkeeper."
+  },
+  {
+    "role1": "gossip",
+    "role2": "monk",
+    "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Monk."
+  },
+  {
+    "role1": "gossip",
+    "role2": "pithag",
+    "reason": "If a Gossip is created, their previous day's Gossip can kill a player."
+  },
+  {
+    "role1": "gossip",
+    "role2": "sailor",
+    "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Sailor."
+  },
+  {
+    "role1": "gossip",
+    "role2": "soldier",
+    "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Soldier."
+  },
+  {
+    "role1": "grandmother",
+    "role2": "mephit",
+    "reason": "If the grandchild is turned Evil by the Mezepheles, then they remain the grandchild."
+  },
+  {
+    "role1": "grandmother",
+    "role2": "mezepheles",
+    "reason": "If the grandchild is turned Evil by the Mezepheles, then they remain the grandchild."
+  },
+  {
+    "role1": "grandmother",
+    "role2": "philosopher",
+    "reason": "The Philosopher turned Grandmother, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information, even if they would later die that night."
+  },
+  {
+    "role1": "grandmother",
+    "role2": "vortox",
+    "reason": "The Grandmother learns an Evil player & a character they are not. A 'grandchild' token is placed next to a Good player & if they die at night, so does the Grandmother"
+  },
+  {
+    "role1": "imp",
+    "role2": "monk",
+    "reason": "A protected Imp cannot kill themself & pass on the Imp to a Minion."
+  },
+  {
+    "role1": "imp",
+    "role2": "pithag",
+    "reason": "The Pit-Hag's arbitrary death can protect & kill the same player to stop an Imp passing."
+  },
+  {
+    "role1": "innkeeper",
+    "role2": "lycanthrope",
+    "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
+  },
+  {
+    "role1": "innkeeper",
+    "role2": "mayor",
+    "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Innkeeper."
+  },
+  {
+    "role1": "innkeeper",
+    "role2": "philosopher",
+    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "innkeeper",
+    "role2": "pixie",
+    "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "investigator",
+    "role2": "philosopher",
+    "reason": "The Philosopher turned Investigator, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information even if they would later die that night"
+  },
+  {
+    "role1": "juggler",
+    "role2": "philosopher",
+    "reason": "The Philosopher with the Juggler's ability, their first day is the day after they turn thus they do not get information the night they turn, even if they juggled that day."
+  },
+  {
+    "role1": "juggler",
+    "role2": "professor",
+    "reason": "A Juggler brought back to life's first day is the next day thus they do not get information the night they are resurrected, even if they juggled that day."
+  },
+  {
+    "role1": "librarian",
+    "role2": "philosopher",
+    "reason": "The Philosopher turned Librarian, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information, even if they would later die that night"
+  },
+  {
+    "role1": "lilmonsta",
+    "role2": "saint",
+    "reason": "The Saint holding Lil' Monsta that is executed & killed will cause Good to win."
+  },
+  {
+    "role1": "lunatic",
+    "role2": "zombuul",
+    "reason": "A Lunatic who thinks they are the Zombuul is not woken up after they die, as they no longer have an ability."
+  },
+  {
+    "role1": "lycanthrope",
+    "role2": "mathematician",
+    "reason": "Any kills that are prevented due to the Lycanthrope's protection register as an abnormality to the Mathematician."
+  },
+  {
+    "role1": "lycanthrope",
+    "role2": "mayor",
+    "reason": "The Mayor can bounce the Lycanthrope kill & it still continue to prevent other players from dying."
+  },
+  {
+    "role1": "lycanthrope",
+    "role2": "recluse",
+    "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
+  },
+  {
+    "role1": "lycanthrope",
+    "role2": "sailor",
+    "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
+  },
+  {
+    "role1": "lycanthrope",
+    "role2": "tealady",
+    "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
+  },
+  {
+    "role1": "mathematician",
+    "role2": "snakecharmer",
+    "reason": "The Snake Charmer poisoning themselves does not register as abnormal to the Mathematician"
+  },
+  {
+    "role1": "mayor",
+    "role2": "monk",
+    "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Monk."
+  },
+  {
+    "role1": "mayor",
+    "role2": "soldier",
+    "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Soldier."
+  },
+  {
+    "role1": "mephit",
+    "role2": "widow",
+    "reason": "If the Good player who knows about the Widow is turned by the Mezepheles, then a new player is informed."
+  },
+  {
+    "role1": "mezepheles",
+    "role2": "widow",
+    "reason": "If the Good player who knows about the Widow is turned by the Mezepheles, then a new player is informed."
+  },
+  {
+    "role1": "minstrel",
+    "role2": "philosopher",
+    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "minstrel",
+    "role2": "pixie",
+    "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability"
+  },
+  {
+    "role1": "monk",
+    "role2": "nodashii",
+    "reason": "A player protected by the Monk is not poisoned from No Dashii."
+  },
+  {
+    "role1": "monk",
+    "role2": "pukka",
+    "reason": "A player protected by the Monk is not poisoned by the Pukka."
+  },
+  {
+    "role1": "monk",
+    "role2": "vigormortis",
+    "reason": "A player protected by the Monk is not poisoned by the Vigormortis."
+  },
+  {
+    "role1": "monk",
+    "role2": "vortox",
+    "reason": "A player protected by the Monk would get correct information in a Vortox game."
+  },
+  {
+    "role1": "mutant",
+    "role2": "undertaker",
+    "reason": "If the Mutant causes a second execution, then the Storyteller may show 1, or both, of the executed roles."
+  },
+  {
+    "role1": "nodashii",
+    "role2": "philosopher",
+    "reason": "A drunk Philosopher is not told they change & learn their ability did not trigger"
+  },
+  {
+    "role1": "nodashii",
+    "role2": "pixie",
+    "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "nodashii",
+    "role2": "soldier",
+    "reason": "The Soldier cannot poisoned from No Dashii whilst sober and healthy."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "pixie",
+    "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "poisoner",
+    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "pukka",
+    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "sailor",
+    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "sweetheart",
+    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "vigormortis",
+    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "washerwoman",
+    "reason": "The Philosopher turned Washerwoman, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information even if they would later die that night."
+  },
+  {
+    "role1": "philosopher",
+    "role2": "widow",
+    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
+  },
+  {
+    "role1": "pithag",
+    "role2": "recluse",
+    "reason": "The Recluse can stop the Pit-Hag from creating an Evil character."
+  },
+  {
+    "role1": "pithag",
+    "role2": "sage",
+    "reason": "The Pit-Hag's arbitrary deaths can protect & kill the same player to stop an a Sage, that would be killed by the Demon, from learning information."
+  },
+  {
+    "role1": "pithag",
+    "role2": "spy",
+    "reason": "The Pit-Hag can be prevented from creating a Good character due to the Spy's ability."
+  },
+  {
+    "role1": "pithag",
+    "role2": "vigormortis",
+    "reason": "The Pit-Hag's arbitrary deaths can protect & kill the same player to stop a Minion retaining their ability & poisoning a Townsfolk."
+  },
+  {
+    "role1": "pithag",
+    "role2": "zombuul",
+    "reason": "The Pit-Hag's arbitrary deaths can kill the Zombuul twice in order for them to be dead."
+  },
+  {
+    "role1": "pixie",
+    "role2": "poisoner",
+    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "pixie",
+    "role2": "pukka",
+    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "pixie",
+    "role2": "sailor",
+    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "pixie",
+    "role2": "spy",
+    "reason": "The Spy can register as any Townsfolk for the Pixie & the Pixie will gain that ability when the Spy dies"
+  },
+  {
+    "role1": "pixie",
+    "role2": "sweetheart",
+    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "pixie",
+    "role2": "vigormortis",
+    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "pixie",
+    "role2": "vortox",
+    "reason": "The Pixie is shown a not-in-play role. An arbitrary player is marked, when that player dies, they gain the shown abilities."
+  },
+  {
+    "role1": "pixie",
+    "role2": "widow",
+    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "pukka",
+    "role2": "ravenkeeper",
+    "reason": "If the Ravenkeeper dies to the Pukka, they receive poisoned information."
+  },
+  {
+    "role1": "pukka",
+    "role2": "soldier",
+    "reason": "The Soldier cannot be poisoned by the Pukka whilst sober and healthy."
+  },
+  {
+    "role1": "recluse",
+    "role2": "snakecharmer",
+    "reason": "If you have the Recluse register as a Demon, the original Snake Charmer becomes a Good Recluse."
+  },
+  {
+    "role1": "soldier",
+    "role2": "vigormortis",
+    "reason": "The Soldier cannot poisoned by the Vigormortis whilst sober and healthy."
+  }
+]

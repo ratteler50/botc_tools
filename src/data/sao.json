@@ -1,0 +1,793 @@
+[
+  {
+    "id": "acrobat",
+    "type": 2,
+    "category": 3,
+    "pixels": 1818,
+    "characters": 75
+  },
+  {
+    "id": "alhadikhia",
+    "type": 4,
+    "category": 3,
+    "pixels": 2419,
+    "characters": 118
+  },
+  {
+    "id": "alchemist",
+    "type": 1,
+    "category": 6,
+    "pixels": 1203,
+    "characters": 38
+  },
+  {
+    "id": "amnesiac",
+    "type": 1,
+    "category": 4,
+    "pixels": 2417,
+    "characters": 107
+  },
+  {
+    "id": "artist",
+    "type": 1,
+    "category": 5,
+    "pixels": 1954,
+    "characters": 81
+  },
+  {
+    "id": "assassin",
+    "type": 3,
+    "category": 5,
+    "pixels": 2152,
+    "characters": 92
+  },
+  {
+    "id": "atheist",
+    "type": 1,
+    "category": 6,
+    "pixels": 2423,
+    "characters": 109
+  },
+  {
+    "id": "balloonist",
+    "type": 1,
+    "category": 2,
+    "pixels": 2392,
+    "characters": 108
+  },
+  {
+    "id": "barber",
+    "type": 2,
+    "category": 6,
+    "pixels": 2361,
+    "characters": 100
+  },
+  {
+    "id": "baron",
+    "type": 3,
+    "category": 6,
+    "pixels": 1380,
+    "characters": 49
+  },
+  {
+    "id": "boomdandy",
+    "type": 3,
+    "category": 6,
+    "pixels": 2420,
+    "characters": 115
+  },
+  {
+    "id": "bountyhunter",
+    "type": 1,
+    "category": 1,
+    "pixels": 2422,
+    "characters": 122
+  },
+  {
+    "id": "butler",
+    "type": 2,
+    "category": 2,
+    "pixels": 2207,
+    "characters": 95
+  },
+  {
+    "id": "cannibal",
+    "type": 1,
+    "category": 6,
+    "pixels": 2425,
+    "characters": 127
+  },
+  {
+    "id": "cerenovus",
+    "type": 3,
+    "category": 2,
+    "pixels": 2421,
+    "characters": 118
+  },
+  {
+    "id": "chambermaid",
+    "type": 1,
+    "category": 2,
+    "pixels": 2357,
+    "characters": 104
+  },
+  {
+    "id": "chef",
+    "type": 1,
+    "category": 1,
+    "pixels": 1584,
+    "characters": 59
+  },
+  {
+    "id": "choirboy",
+    "type": 1,
+    "category": 6,
+    "pixels": 1921,
+    "characters": 78
+  },
+  {
+    "id": "clockmaker",
+    "type": 1,
+    "category": 1,
+    "pixels": 1843,
+    "characters": 70
+  },
+  {
+    "id": "courtier",
+    "type": 1,
+    "category": 5,
+    "pixels": 1974,
+    "characters": 82
+  },
+  {
+    "id": "cultleader",
+    "type": 1,
+    "category": 2,
+    "pixels": 2423,
+    "characters": 121
+  },
+  {
+    "id": "damsel",
+    "type": 2,
+    "category": 6,
+    "pixels": 2163,
+    "characters": 91
+  },
+  {
+    "id": "devilsadvocate",
+    "type": 3,
+    "category": 2,
+    "pixels": 2215,
+    "characters": 99
+  },
+  {
+    "id": "dreamer",
+    "type": 1,
+    "category": 2,
+    "pixels": 2418,
+    "characters": 119
+  },
+  {
+    "id": "drunk",
+    "type": 2,
+    "category": 6,
+    "pixels": 2203,
+    "characters": 92
+  },
+  {
+    "id": "empath",
+    "type": 1,
+    "category": 2,
+    "pixels": 1711,
+    "characters": 67
+  },
+  {
+    "id": "engineer",
+    "type": 1,
+    "category": 5,
+    "pixels": 1867,
+    "characters": 72
+  },
+  {
+    "id": "eviltwin",
+    "type": 3,
+    "category": 6,
+    "pixels": 2419,
+    "characters": 117
+  },
+  {
+    "id": "exorcist",
+    "type": 1,
+    "category": 3,
+    "pixels": 2423,
+    "characters": 123
+  },
+  {
+    "id": "fanggu",
+    "type": 4,
+    "category": 3,
+    "pixels": 2420,
+    "characters": 124
+  },
+  {
+    "id": "farmer",
+    "type": 1,
+    "category": 6,
+    "pixels": 1586,
+    "characters": 59
+  },
+  {
+    "id": "fearmonger",
+    "type": 3,
+    "category": 2,
+    "pixels": 2421,
+    "characters": 123
+  },
+  {
+    "id": "fisherman",
+    "type": 1,
+    "category": 5,
+    "pixels": 2047,
+    "characters": 85
+  },
+  {
+    "id": "flowergirl",
+    "type": 1,
+    "category": 3,
+    "pixels": 1370,
+    "characters": 46
+  },
+  {
+    "id": "fool",
+    "type": 1,
+    "category": 6,
+    "pixels": 1091,
+    "characters": 34
+  },
+  {
+    "id": "fortuneteller",
+    "type": 1,
+    "category": 2,
+    "pixels": 2419,
+    "characters": 118
+  },
+  {
+    "id": "gambler",
+    "type": 1,
+    "category": 3,
+    "pixels": 1988,
+    "characters": 82
+  },
+  {
+    "id": "general",
+    "type": 1,
+    "category": 2,
+    "pixels": 2227,
+    "characters": 98
+  },
+  {
+    "id": "goblin",
+    "type": 3,
+    "category": 6,
+    "pixels": 2238,
+    "characters": 94
+  },
+  {
+    "id": "godfather",
+    "type": 3,
+    "category": 1,
+    "pixels": 2419,
+    "characters": 118
+  },
+  {
+    "id": "golem",
+    "type": 2,
+    "category": 6,
+    "pixels": 2253,
+    "characters": 92
+  },
+  {
+    "id": "goon",
+    "type": 2,
+    "category": 2,
+    "pixels": 2412,
+    "characters": 108
+  },
+  {
+    "id": "gossip",
+    "type": 1,
+    "category": 4,
+    "pixels": 1985,
+    "characters": 82
+  },
+  {
+    "id": "grandmother",
+    "type": 1,
+    "category": 1,
+    "pixels": 2088,
+    "characters": 88
+  },
+  {
+    "id": "heretic",
+    "type": 2,
+    "category": 6,
+    "pixels": 1702,
+    "characters": 64
+  },
+  {
+    "id": "huntsman",
+    "type": 1,
+    "category": 5,
+    "pixels": 2421,
+    "characters": 118
+  },
+  {
+    "id": "imp",
+    "type": 4,
+    "category": 3,
+    "pixels": 2225,
+    "characters": 96
+  },
+  {
+    "id": "innkeeper",
+    "type": 1,
+    "category": 3,
+    "pixels": 1922,
+    "characters": 81
+  },
+  {
+    "id": "investigator",
+    "type": 1,
+    "category": 1,
+    "pixels": 1583,
+    "characters": 61
+  },
+  {
+    "id": "juggler",
+    "type": 1,
+    "category": 4,
+    "pixels": 2417,
+    "characters": 108
+  },
+  {
+    "id": "king",
+    "type": 1,
+    "category": 2,
+    "pixels": 2399,
+    "characters": 103
+  },
+  {
+    "id": "klutz",
+    "type": 2,
+    "category": 6,
+    "pixels": 2192,
+    "characters": 96
+  },
+  {
+    "id": "legion",
+    "type": 4,
+    "category": 3,
+    "pixels": 2426,
+    "characters": 124
+  },
+  {
+    "id": "leviathan",
+    "type": 4,
+    "category": 6,
+    "pixels": 2401,
+    "characters": 106
+  },
+  {
+    "id": "librarian",
+    "type": 1,
+    "category": 1,
+    "pixels": 2059,
+    "characters": 91
+  },
+  {
+    "id": "lilmonsta",
+    "type": 4,
+    "category": 2,
+    "pixels": 2424,
+    "characters": 116
+  },
+  {
+    "id": "lleech",
+    "type": 4,
+    "category": 2,
+    "pixels": 2424,
+    "characters": 129
+  },
+  {
+    "id": "lunatic",
+    "type": 2,
+    "category": 6,
+    "pixels": 2401,
+    "characters": 98
+  },
+  {
+    "id": "lycanthrope",
+    "type": 1,
+    "category": 3,
+    "pixels": 2370,
+    "characters": 106
+  },
+  {
+    "id": "magician",
+    "type": 1,
+    "category": 6,
+    "pixels": 1774,
+    "characters": 65
+  },
+  {
+    "id": "marionette",
+    "type": 3,
+    "category": 6,
+    "pixels": 2421,
+    "characters": 106
+  },
+  {
+    "id": "mastermind",
+    "type": 3,
+    "category": 6,
+    "pixels": 2381,
+    "characters": 118
+  },
+  {
+    "id": "mathematician",
+    "type": 1,
+    "category": 2,
+    "pixels": 2420,
+    "characters": 116
+  },
+  {
+    "id": "mayor",
+    "type": 1,
+    "category": 6,
+    "pixels": 2419,
+    "characters": 116
+  },
+  {
+    "id": "mezepheles",
+    "type": 3,
+    "category": 6,
+    "pixels": 2199,
+    "characters": 94
+  },
+  {
+    "id": "minstrel",
+    "type": 1,
+    "category": 6,
+    "pixels": 2337,
+    "characters": 101
+  },
+  {
+    "id": "monk",
+    "type": 1,
+    "category": 3,
+    "pixels": 1993,
+    "characters": 82
+  },
+  {
+    "id": "moonchild",
+    "type": 2,
+    "category": 6,
+    "pixels": 2346,
+    "characters": 105
+  },
+  {
+    "id": "mutant",
+    "type": 2,
+    "category": 6,
+    "pixels": 1694,
+    "characters": 64
+  },
+  {
+    "id": "nightwatchman",
+    "type": 1,
+    "category": 5,
+    "pixels": 1707,
+    "characters": 65
+  },
+  {
+    "id": "nodashii",
+    "type": 4,
+    "category": 3,
+    "pixels": 1980,
+    "characters": 81
+  },
+  {
+    "id": "noble",
+    "type": 1,
+    "category": 1,
+    "pixels": 1559,
+    "characters": 59
+  },
+  {
+    "id": "oracle",
+    "type": 1,
+    "category": 3,
+    "pixels": 1517,
+    "characters": 54
+  },
+  {
+    "id": "pacifist",
+    "type": 1,
+    "category": 6,
+    "pixels": 1187,
+    "characters": 36
+  },
+  {
+    "id": "philosopher",
+    "type": 1,
+    "category": 5,
+    "pixels": 2421,
+    "characters": 114
+  },
+  {
+    "id": "pithag",
+    "type": 3,
+    "category": 3,
+    "pixels": 2424,
+    "characters": 122
+  },
+  {
+    "id": "pixie",
+    "type": 1,
+    "category": 1,
+    "pixels": 2422,
+    "characters": 122
+  },
+  {
+    "id": "po",
+    "type": 4,
+    "category": 3,
+    "pixels": 2387,
+    "characters": 105
+  },
+  {
+    "id": "poisoner",
+    "type": 3,
+    "category": 2,
+    "pixels": 1831,
+    "characters": 72
+  },
+  {
+    "id": "politician",
+    "type": 2,
+    "category": 6,
+    "pixels": 2386,
+    "characters": 103
+  },
+  {
+    "id": "poppygrower",
+    "type": 1,
+    "category": 6,
+    "pixels": 2263,
+    "characters": 94
+  },
+  {
+    "id": "preacher",
+    "type": 1,
+    "category": 2,
+    "pixels": 2233,
+    "characters": 98
+  },
+  {
+    "id": "professor",
+    "type": 1,
+    "category": 5,
+    "pixels": 2183,
+    "characters": 94
+  },
+  {
+    "id": "psychopath",
+    "type": 3,
+    "category": 4,
+    "pixels": 2419,
+    "characters": 121
+  },
+  {
+    "id": "pukka",
+    "type": 4,
+    "category": 2,
+    "pixels": 2417,
+    "characters": 105
+  },
+  {
+    "id": "puzzlemaster",
+    "type": 2,
+    "category": 5,
+    "pixels": 2423,
+    "characters": 124
+  },
+  {
+    "id": "ravenkeeper",
+    "type": 1,
+    "category": 6,
+    "pixels": 1917,
+    "characters": 81
+  },
+  {
+    "id": "recluse",
+    "type": 2,
+    "category": 6,
+    "pixels": 1686,
+    "characters": 64
+  },
+  {
+    "id": "riot",
+    "type": 4,
+    "category": 6,
+    "pixels": 2420,
+    "characters": 118
+  },
+  {
+    "id": "sage",
+    "type": 1,
+    "category": 6,
+    "pixels": 1527,
+    "characters": 60
+  },
+  {
+    "id": "sailor",
+    "type": 1,
+    "category": 2,
+    "pixels": 2100,
+    "characters": 91
+  },
+  {
+    "id": "saint",
+    "type": 2,
+    "category": 6,
+    "pixels": 1245,
+    "characters": 41
+  },
+  {
+    "id": "savant",
+    "type": 1,
+    "category": 4,
+    "pixels": 2072,
+    "characters": 93
+  },
+  {
+    "id": "scarletwoman",
+    "type": 3,
+    "category": 6,
+    "pixels": 2376,
+    "characters": 101
+  },
+  {
+    "id": "seamstress",
+    "type": 1,
+    "category": 5,
+    "pixels": 2295,
+    "characters": 99
+  },
+  {
+    "id": "shabaloth",
+    "type": 4,
+    "category": 3,
+    "pixels": 2257,
+    "characters": 98
+  },
+  {
+    "id": "slayer",
+    "type": 1,
+    "category": 5,
+    "pixels": 2106,
+    "characters": 89
+  },
+  {
+    "id": "snakecharmer",
+    "type": 1,
+    "category": 2,
+    "pixels": 2422,
+    "characters": 109
+  },
+  {
+    "id": "snitch",
+    "type": 2,
+    "category": 1,
+    "pixels": 1368,
+    "characters": 47
+  },
+  {
+    "id": "soldier",
+    "type": 1,
+    "category": 6,
+    "pixels": 1061,
+    "characters": 28
+  },
+  {
+    "id": "spy",
+    "type": 3,
+    "category": 2,
+    "pixels": 2393,
+    "characters": 104
+  },
+  {
+    "id": "sweetheart",
+    "type": 2,
+    "category": 6,
+    "pixels": 1347,
+    "characters": 44
+  },
+  {
+    "id": "tealady",
+    "type": 1,
+    "category": 6,
+    "pixels": 1454,
+    "characters": 55
+  },
+  {
+    "id": "tinker",
+    "type": 2,
+    "category": 6,
+    "pixels": 995,
+    "characters": 26
+  },
+  {
+    "id": "towncrier",
+    "type": 1,
+    "category": 3,
+    "pixels": 1458,
+    "characters": 51
+  },
+  {
+    "id": "undertaker",
+    "type": 1,
+    "category": 3,
+    "pixels": 1669,
+    "characters": 63
+  },
+  {
+    "id": "vigormortis",
+    "type": 4,
+    "category": 3,
+    "pixels": 2419,
+    "characters": 121
+  },
+  {
+    "id": "virgin",
+    "type": 1,
+    "category": 6,
+    "pixels": 2239,
+    "characters": 95
+  },
+  {
+    "id": "vortox",
+    "type": 4,
+    "category": 3,
+    "pixels": 2424,
+    "characters": 121
+  },
+  {
+    "id": "washerwoman",
+    "type": 1,
+    "category": 1,
+    "pixels": 1641,
+    "characters": 64
+  },
+  {
+    "id": "widow",
+    "type": 3,
+    "category": 1,
+    "pixels": 2421,
+    "characters": 119
+  },
+  {
+    "id": "witch",
+    "type": 3,
+    "category": 2,
+    "pixels": 2341,
+    "characters": 112
+  },
+  {
+    "id": "zombuul",
+    "type": 4,
+    "category": 3,
+    "pixels": 2419,
+    "characters": 114
+  }
+]
