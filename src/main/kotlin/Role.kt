@@ -18,6 +18,7 @@ data class Role(
   val remindersGlobal: List<String>? = null,
   val setup: Boolean? = null,
   val ability: String? = null,
+  val textGameClarification: String? = null,
 ) {
   enum class Type {
     @SerializedName("townsfolk")
@@ -66,6 +67,12 @@ data class Role(
     checkNotNull(name) { "Name must be non-null" }
     checkNotNull(ability) { "Ability must be non-null" }
     return "**$name** -- ${ability.replace("*", "\\*")}"
+  }
+
+  fun asTextScriptClarificationEntry(): String? {
+    if (textGameClarification == null) return null
+    checkNotNull(name) { "Name must be non-null" }
+    return "**$name** - $textGameClarification"
   }
 }
 

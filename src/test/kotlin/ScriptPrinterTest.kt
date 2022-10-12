@@ -1,7 +1,6 @@
 import com.google.common.collect.ImmutableTable
 import com.google.common.truth.Truth.assertThat
 import java.io.ByteArrayOutputStream
-import java.io.File
 import java.io.PrintStream
 import org.junit.After
 import org.junit.Before
@@ -80,6 +79,7 @@ class ScriptPrinterTest {
     
     **__Jinxes and Clarifications__**
     
+    > **Magician** - Some special clarification for Magician specific to playing text game.
     > **Fang Gu / Scarlet Woman** - If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu.
     > **Spy / Damsel** - Only 1 jinxed character can be in play.
     > **Spy / Magician** - When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed.
@@ -156,7 +156,8 @@ class ScriptPrinterTest {
           "standardAmyOrder":52,
           "firstNight":5,
           "setup":false,
-          "ability":"The Demon thinks you are a Minion. Minions think you are a Demon."
+          "ability":"The Demon thinks you are a Minion. Minions think you are a Demon.",
+          "textGameClarification":"Some special clarification for Magician specific to playing text game."
         },
         {
           "id":"damsel",

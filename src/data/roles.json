@@ -1538,7 +1538,8 @@
       "Claimed"
     ],
     "setup": false,
-    "ability": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins."
+    "ability": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.",
+    "textGameClarification": "The public claim must occur between the nomination and the first vote. You may also preclaim in your storyteller chat."
   },
   {
     "id": "mephit",
@@ -1639,7 +1640,8 @@
       "Chose life"
     ],
     "setup": false,
-    "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die."
+    "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
+    "textGameClarification": "At night, after all check ins, if Al-Hadikhia is in play, we will lock the channel. Their first pick will be announced, we will privately message for a response, then second, then third. After all picks and responses from the necessary players, we may require another full check in depending on the script"
   },
   {
     "id": "legion",

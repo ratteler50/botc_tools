@@ -38,4 +38,27 @@ class RoleTest {
                            name = "Role Name")
     assertFailsWith(IllegalStateException::class) { exampleRole.asTextScriptEntry() }
   }
+
+
+  @Test
+  fun asTextScriptClarificationEntry() {
+    val exampleRole = Role(id = "ignoredid",
+                           name = "Role Name",
+                           textGameClarification = "Some text game specific thing players should know.")
+    val expectedText = "**Role Name** - Some text game specific thing players should know."
+    assertThat(exampleRole.asTextScriptClarificationEntry()).isEqualTo(expectedText)
+  }
+
+  @Test
+  fun asTextScriptClarificationEntry_missingName_throwsException() {
+    val exampleRole = Role(id = "ignoredid",
+                           textGameClarification = "Some text game specific thing players should know.")
+    assertFailsWith(IllegalStateException::class) { exampleRole.asTextScriptClarificationEntry() }
+  }
+
+  @Test
+  fun asTextScriptClarificationEntry_noClarification_returnsNull() {
+    val exampleRole = Role(id = "ignoredid")
+    assertThat(exampleRole.asTextScriptClarificationEntry()).isNull()
+  }
 }

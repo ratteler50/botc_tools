@@ -46,9 +46,11 @@ class ScriptPrinter(
 
   private fun printJinxes() {
     val jinxes = getJinxes().toSet()
-    if (jinxes.isEmpty()) return
+    val textClarifications = script.mapNotNull { it.asTextScriptClarificationEntry() }
+    if (jinxes.isEmpty() && textClarifications.isEmpty()) return
     println(JINXES_DIVIDER)
     println()
+    textClarifications.forEach { println("> $it") }
     jinxes.forEach { println("> ${it.asTextScriptEntry(roleMap)}") }
   }
 
