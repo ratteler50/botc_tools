@@ -1,9 +1,9 @@
 import com.google.common.collect.Table
 
 class ScriptPrinter(
-  val script: List<Role>,
-  val jinxTable: Table<String, String, Jinx>,
-  val roleMap: Map<String, Role>,
+  private val script: List<Role>,
+  private val jinxTable: Table<String, String, Jinx>,
+  private val roleMap: Map<String, Role>,
 ) {
   companion object {
     const val SCRIPT_TITLE = "**__INSERT SCRIPT TITLE HERE__**"
