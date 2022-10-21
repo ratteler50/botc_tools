@@ -17,53 +17,61 @@ class ScriptPrinter(
     const val OTHER_NIGHTS_DIVIDER = "__Other Nights__"
   }
 
+  fun textScriptString(): String {
+    return buildString {
+      appendLine(SCRIPT_TITLE)
+      appendLine()
+      append(buildScriptRoles())
+      appendLine()
+      append(buildJinxes())
+      appendLine()
+      append(buildWakeOrder())
+    }
+  }
+
   fun printScript() {
-    println(SCRIPT_TITLE)
-    println()
-    printScriptRoles()
-    println()
-    printJinxes()
-    println()
-    printWakeOrder()
-
+    print(textScriptString())
   }
 
-  private fun printScriptRoles() {
-    println(TOWNSFOLK_DIVIDER)
-    getTownsfolkRoles().forEach { println("> ${it.asTextScriptEntry()}") }
-    println()
-    println(OUTSIDER_DIVIDER)
-    getOutsiderRoles().forEach { println("> ${it.asTextScriptEntry()}") }
-    println()
-    println(MINIONS_DIVIDER)
-    getMinionRoles().forEach { println("> ${it.asTextScriptEntry()}") }
-    println()
-    println(DEMONS_DIVIDER)
-    getDemonRoles().forEach { println("> ${it.asTextScriptEntry()}") }
-    println()
-  }
+  private fun buildScriptRoles(): String =
+    buildString {
+      appendLine(TOWNSFOLK_DIVIDER)
+      getTownsfolkRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      appendLine()
+      appendLine(OUTSIDER_DIVIDER)
+      getOutsiderRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      appendLine()
+      appendLine(MINIONS_DIVIDER)
+      getMinionRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      appendLine()
+      appendLine(DEMONS_DIVIDER)
+      getDemonRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      appendLine()
+    }
 
 
-  private fun printJinxes() {
+  private fun buildJinxes(): String {
     val jinxes = getJinxes().toSet()
     val textClarifications = script.mapNotNull { it.asTextScriptClarificationEntry() }
-    if (jinxes.isEmpty() && textClarifications.isEmpty()) return
-    println(JINXES_DIVIDER)
-    println()
-    textClarifications.forEach { println("> $it") }
-    jinxes.forEach { println("> ${it.asTextScriptEntry(roleMap)}") }
+    if (jinxes.isEmpty() && textClarifications.isEmpty()) return ""
+    return buildString {
+      appendLine(JINXES_DIVIDER)
+      appendLine()
+      textClarifications.forEach { appendLine("> $it") }
+      jinxes.forEach { appendLine("> ${it.asTextScriptEntry(roleMap)}") }
+    }
   }
 
-  private fun printWakeOrder() {
-    println(WAKE_ORDER_DIVIDER)
-    println()
-    println(FIRST_NIGHT_DIVIDER)
-    println()
-    getFirstNightWakers().forEach { println("> $it") }
-    println()
-    println(OTHER_NIGHTS_DIVIDER)
-    println()
-    getOtherNightWakers().forEach { println("> $it") }
+  private fun buildWakeOrder(): String = buildString {
+    appendLine(WAKE_ORDER_DIVIDER)
+    appendLine()
+    appendLine(FIRST_NIGHT_DIVIDER)
+    appendLine()
+    getFirstNightWakers().forEach { appendLine("> $it") }
+    appendLine()
+    appendLine(OTHER_NIGHTS_DIVIDER)
+    appendLine()
+    getOtherNightWakers().forEach { appendLine("> $it") }
   }
 
   private fun getTownsfolkRoles(): List<Role> {

@@ -7,7 +7,9 @@ val gson: Gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create(
 
 fun main() {
   val roleMap = Role.toMap(Role.setFromJson(gson, File("./src/data/roles.json").readText()))
-  ScriptPrinter(getScriptRoles(roleMap), getJinxTable(), roleMap).printScript()
+  File("./src/data/output.txt").writeText(ScriptPrinter(getScriptRoles(roleMap),
+                                                        getJinxTable(),
+                                                        roleMap).textScriptString())
 }
 
 

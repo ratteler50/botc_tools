@@ -1,0 +1,85 @@
+**__INSERT SCRIPT TITLE HERE__**
+
+__Townsfolk__
+> **General** -- Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.
+> **Snake Charmer** -- Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.
+> **Cult Leader** -- Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins.
+> **Flowergirl** -- Each night\*, you learn if a Demon voted today.
+> **Town Crier** -- Each night\*, you learn if a Minion nominated today.
+> **Gossip** -- Each day, you may make a public statement. Tonight, if it was true, a player dies.
+> **Savant** -- Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.
+> **Amnesiac** -- You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.
+> **Juggler** -- On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.
+> **Slayer** -- Once per game, during the day, publicly choose a player: if they are the Demon, they die.
+> **Philosopher** -- Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.
+> **Magician** -- The Demon thinks you are a Minion. Minions think you are a Demon.
+> **Virgin** -- The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.
+
+__Outsiders__
+> **Damsel** -- All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.
+> **Golem** -- You may only nominate once per game. When you do, if the nominee is not the Demon, they die.
+> **Barber** -- If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.
+> **Lunatic** -- You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.
+
+__Minions__
+> **Devil's Advocate** -- Each night, choose a living player (different to last night): if executed tomorrow, they don't die.
+> **Witch** -- Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.
+> **Fearmonger** -- Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player.
+> **Boomdandy** -- If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.
+
+__Demons__
+> **Pukka** -- Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.
+> **Zombuul** -- Each night\*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.
+> **Fang Gu** -- Each night\*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]
+> **Vortox** -- Each night\*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.
+
+
+**__Jinxes and Clarifications__**
+
+> **Juggler / Philosopher** - The Philosopher with the Juggler's ability, their first day is the day after they turn thus they do not get information the night they turn, even if they juggled that day.
+> **Lunatic / Zombuul** - A Lunatic who thinks they are the Zombuul is not woken up after they die, as they no longer have an ability.
+> **Philosopher / Pukka** - A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger.
+
+**__WAKE ORDER__**
+
+__First Night__
+
+> Philosopher
+> Magician
+> **MINION INFO**
+> Lunatic
+> **DEMON INFO**
+> Snake Charmer
+> Devil's Advocate
+> Witch
+> Fearmonger
+> Pukka
+> Damsel
+> Amnesiac
+> Cult Leader
+> General
+> **DAWN**
+
+__Other Nights__
+
+> **DUSK**
+> Philosopher
+> Snake Charmer
+> Devil's Advocate
+> Witch
+> Fearmonger
+> Lunatic
+> Zombuul
+> Pukka
+> Fang Gu
+> Vortox
+> Gossip
+> Barber
+> Damsel
+> Amnesiac
+> Flowergirl
+> Town Crier
+> Juggler
+> Cult Leader
+> General
+> **DAWN**
