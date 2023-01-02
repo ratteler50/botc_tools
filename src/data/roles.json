@@ -1168,7 +1168,7 @@
     "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]"
   },
   {
-    "id": "`pixie`",
+    "id": "pixie",
     "name": "Pixie",
     "team": "townsfolk",
     "standardAmyOrder": 9,

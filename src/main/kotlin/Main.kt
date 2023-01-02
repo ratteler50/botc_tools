@@ -14,9 +14,9 @@ fun main() {
 
 
 fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
-  val charList =
-    Script.getRolesOnScript(gson, File("./src/data/example_script.json").readText())
-  return charList.map { checkNotNull(roleMap[it]) }.sortedBy { it.standardAmyOrder }
+  val charList = Script.getRolesOnScript(gson, File("./src/data/example_script.json").readText())
+  return charList.map { char -> checkNotNull(roleMap[char]) { "Couldn't find $char in roleMap" } }
+    .sortedBy { it.standardAmyOrder }
 }
 
 fun getJinxTable(): ImmutableTable<String, String, Jinx> {
