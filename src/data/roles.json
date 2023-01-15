@@ -1526,7 +1526,8 @@
     "team": "minion",
     "standardAmyOrder": 89,
     "setup": false,
-    "ability": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo."
+    "ability": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo.",
+    "textGameClarification": "When using their ability, The psychopath must publicly announce they are the psychopath and pick a player. The message must be pinned. before nominations open, the psychopath will be warned privately if they intend to use their ability, unless they tell us they don't intend to earlier. If the psychopath is executed, the psychopath and the nominator will send a message in you storyteller chat of your pick of rock paper or scissors. If the psychopath loses, they die. If the psychopath nominated themself a storyteller will play against them."
   },
   {
     "id": "goblin",

@@ -195,6 +195,16 @@
     "reason": "Evil / Recluse / Evil seating pattern can register as a Chef 1."
   },
   {
+    "role1": "choirboy",
+    "role2": "drunk",
+    "reason": "Chiorboy can be Drunk regardless of if King is in play or not."
+  },
+  {
+    "role1": "choirboy",
+    "role2": "marionette",
+    "reason": "Chiorboy can be Marionette regardless of if King is in play or not."
+  },
+  {
     "role1": "clockmaker",
     "role2": "recluse",
     "reason": "The Recluse cannot produce a Clockmaker 0."
@@ -218,6 +228,11 @@
     "role1": "drunk",
     "role2": "goon",
     "reason": "The Drunk who thinks they are a Townsfolk who selects the Goon with their 'ability' does trigger the Goon & becomes drunk."
+  },
+  {
+    "role1": "drunk",
+    "role2": "king",
+    "reason": "The King cannot be made the Drunk if the Choirboy is in play"
   },
   {
     "role1": "drunk",
@@ -443,6 +458,11 @@
     "role1": "juggler",
     "role2": "professor",
     "reason": "A Juggler brought back to life's first day is the next day thus they do not get information the night they are resurrected, even if they juggled that day."
+  },
+  {
+    "role1": "king",
+    "role2": "marionette",
+    "reason": "The King cannot be made the Marionette if the Choirboy is in play"
   },
   {
     "role1": "librarian",
