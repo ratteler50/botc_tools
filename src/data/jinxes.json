@@ -20,6 +20,11 @@
     "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
   },
   {
+    "role1": "butler",
+    "role2": "organgrinder",
+    "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
+  },
+  {
     "role1": "cerenovus",
     "role2": "goblin",
     "reason": "The Cerenovus may choose to make a player mad that they are the Goblin."
@@ -33,6 +38,11 @@
     "role1": "fanggu",
     "role2": "scarletwoman",
     "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."
+  },
+  {
+    "role1": "flowergirl",
+    "role2": "organgrinder",
+    "reason":  "If players' eyes were closed during the nominations, the Flowergirl learns how many times the Demon voted."
   },
   {
     "role1": "godfather",
@@ -87,7 +97,12 @@
   {
     "role1": "lilmonsta",
     "role2": "magician",
-    "reason": "Only 1 jinxed character can be in play. "
+    "reason": "Only 1 jinxed character can be in play."
+  },
+  {
+    "role1": "lilmonsta",
+    "role2": "organgrinder",
+    "reason": "Votes for the Organ Grinder count if the Organ Grinder is babysitting Lil' Monsta."
   },
   {
     "role1": "lilmonsta",
@@ -153,6 +168,16 @@
     "role1": "marionette",
     "role2": "snitch",
     "reason": "The Marionette does not learn 3 not in-play characters. The Demon learns an extra 3 instead."
+  },
+  {
+    "role1": "minstrel",
+    "role2": "organgrinder",
+    "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+  },
+  {
+    "role1": "organgrinder",
+    "role2": "preacher",
+    "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
   },
   {
     "role1": "pithag",

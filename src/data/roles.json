@@ -268,7 +268,7 @@
     "name": "Imp",
     "edition": "tb",
     "team": "demon",
-    "standardAmyOrder": 103,
+    "standardAmyOrder": 104,
     "otherNight": 24,
     "otherNightReminder": "The Imp points to a player. That player dies. If the Imp chose themselves: Replace the character of 1 alive minion with a spare Imp token. Show the 'You are' card, then the Imp token.",
     "reminders": [
@@ -632,7 +632,7 @@
     "name": "Zombuul",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 106,
+    "standardAmyOrder": 107,
     "otherNight": 25,
     "otherNightReminder": "If no-one died during the day: The Zombuul points to a player. That player dies.",
     "reminders": [
@@ -647,7 +647,7 @@
     "name": "Pukka",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 99,
+    "standardAmyOrder": 100,
     "firstNight": 28,
     "firstNightReminder": "The Pukka points to a player. That player is poisoned.",
     "otherNight": 26,
@@ -664,7 +664,7 @@
     "name": "Shabaloth",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 104,
+    "standardAmyOrder": 105,
     "otherNight": 27,
     "otherNightReminder": "One player that the Shabaloth chose the previous night might be resurrected. The Shabaloth points to two players. Those players die.",
     "reminders": [
@@ -679,7 +679,7 @@
     "name": "Po",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 105,
+    "standardAmyOrder": 106,
     "otherNight": 28,
     "otherNightReminder": "If the Po chose no-one the previous night: The Po points to three players. Otherwise: The Po either shows the 'no' head signal , or points to a player. Chosen players die",
     "reminders": [
@@ -1025,7 +1025,7 @@
     "name": "Fang Gu",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 109,
+    "standardAmyOrder": 110,
     "otherNight": 29,
     "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
     "reminders": [
@@ -1040,7 +1040,7 @@
     "name": "Vigormortis",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 108,
+    "standardAmyOrder": 109,
     "otherNight": 32,
     "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
     "reminders": [
@@ -1056,7 +1056,7 @@
     "name": "No Dashii",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 102,
+    "standardAmyOrder": 103,
     "otherNight": 30,
     "otherNightReminder": "The No Dashii points to a player. That player dies.",
     "reminders": [
@@ -1071,7 +1071,7 @@
     "name": "Vortox",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 110,
+    "standardAmyOrder": 111,
     "otherNight": 31,
     "otherNightReminder": "The Vortox points to a player. That player dies.",
     "reminders": [
@@ -1586,6 +1586,17 @@
     "ability": "You think you are a good character but you are not. The Demon knows who you are. [You neighbour the Demon]"
   },
   {
+    "id": "organgrinder",
+    "name": "Organ Grinder",
+    "team": "minion",
+    "standardAmyOrder": 100,
+    "reminders": [
+      "About to die"
+    ],
+    "setup": false,
+    "ability": "All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote."
+  },
+  {
     "id": "boomdandy",
     "name": "Boomdandy",
     "team": "minion",
@@ -1597,7 +1608,7 @@
     "id": "lilmonsta",
     "name": "Lil' Monsta",
     "team": "demon",
-    "standardAmyOrder": 100,
+    "standardAmyOrder": 101,
     "firstNight": 15,
     "firstNightReminder": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta.",
     "otherNight": 35,
@@ -1613,7 +1624,7 @@
     "id": "lleech",
     "name": "Lleech",
     "team": "demon",
-    "standardAmyOrder": 101,
+    "standardAmyOrder": 102,
     "firstNight": 16,
     "firstNightReminder": "The Lleech points to a player. Place the Poisoned reminder token.",
     "otherNight": 34,
@@ -1629,7 +1640,7 @@
     "id": "alhadikhia",
     "name": "Al-Hadikhia",
     "team": "demon",
-    "standardAmyOrder": 107,
+    "standardAmyOrder": 108,
     "otherNight": 33,
     "otherNightReminder": "The Al-Hadikhia chooses 3 players. Announce the first player, wake them to nod yes to live or shake head no to die, kill or resurrect accordingly, then put to sleep and announce the next player. If all 3 are alive after this, all 3 die.",
     "reminders": [
@@ -1647,7 +1658,7 @@
     "id": "legion",
     "name": "Legion",
     "team": "demon",
-    "standardAmyOrder": 111,
+    "standardAmyOrder": 112,
     "otherNight": 23,
     "otherNightReminder": "Choose a player, that player dies.",
     "reminders": [
@@ -1661,7 +1672,7 @@
     "id": "leviathan",
     "name": "Leviathan",
     "team": "demon",
-    "standardAmyOrder": 112,
+    "standardAmyOrder": 113,
     "firstNight": 54,
     "firstNightReminder": "Place the Leviathan 'Day 1' marker. Announce 'The Leviathan is in play; this is Day 1.'",
     "otherNight": 73,
@@ -1681,7 +1692,7 @@
     "id": "riot",
     "name": "Riot",
     "team": "demon",
-    "standardAmyOrder": 113,
+    "standardAmyOrder": 114,
     "setup": true,
     "ability": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]"
   },

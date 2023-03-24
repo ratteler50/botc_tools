@@ -511,6 +511,13 @@
     "characters": 54
   },
   {
+    "id": "organgrinder",
+    "type": 3,
+    "category": 6,
+    "pixels": 2422,
+    "characters": 112
+  },
+  {
     "id": "pacifist",
     "type": 1,
     "category": 6,

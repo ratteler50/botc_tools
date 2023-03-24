@@ -22,10 +22,10 @@ __Outsiders__
 > **Lunatic** -- You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.
 
 __Minions__
-> **Devil's Advocate** -- Each night, choose a living player (different to last night): if executed tomorrow, they don't die.
 > **Witch** -- Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.
 > **Fearmonger** -- Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player.
 > **Boomdandy** -- If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.
+> **Organ Grinder** -- All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote.
 
 __Demons__
 > **Pukka** -- Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.
@@ -36,9 +36,12 @@ __Demons__
 
 **__Jinxes and Clarifications__**
 
+> **Cult Leader / Organ Grinder** - Cults are not votes, so the Organ Grinder does not interact with calls for cults.
+> **Damsel / Organ Grinder** - Public actions can be taken while players have their eyes closed to vote.
+> **Flowergirl / Organ Grinder** - If players' eyes were closed during the nominations, the Flowergirl learns how many times the Demon voted.
 > **Juggler / Philosopher** - The Philosopher with the Juggler's ability, their first day is the day after they turn thus they do not get information the night they turn, even if they juggled that day.
 > **Lunatic / Zombuul** - A Lunatic who thinks they are the Zombuul is not woken up after they die, as they no longer have an ability.
-> **Philosopher / Pukka** - A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger.
+> **Organ Grinder / Slayer** - Public actions can be taken while players have their eyes closed to vote.
 
 **__WAKE ORDER__**
 
@@ -50,7 +53,6 @@ __First Night__
 > Lunatic
 > **DEMON INFO**
 > Snake Charmer
-> Devil's Advocate
 > Witch
 > Fearmonger
 > Pukka
@@ -65,7 +67,6 @@ __Other Nights__
 > **DUSK**
 > Philosopher
 > Snake Charmer
-> Devil's Advocate
 > Witch
 > Fearmonger
 > Lunatic

@@ -46,6 +46,11 @@
   },
   {
     "role1": "barista",
+    "role2": "organgrinder",
+    "reason": "Has no effect on Organ Grinder with Barista 2. Barista 1 just ensures they are sober and healthy and always affect voting."
+  },
+  {
+    "role1": "barista",
     "role2": "pixie",
     "reason": "The Barista on the first night can have the Pixie learn 2 roles & if they are mad about those characters can gain both abilities."
   },
@@ -63,6 +68,16 @@
     "role1": "baron",
     "role2": "pithag",
     "reason": "Creating a Baron does not create 2 more Outsiders."
+  },
+  {
+    "role1": "beggar",
+    "role2": "organgrinder",
+    "reason": "The Beggar is still bound by their voting restriction, even though their eyes are closed."
+  },
+  {
+    "role1": "bishop",
+    "role2": "organgrinder",
+    "reason": "The votes on their nominations are still affected by the Organ Grinder."
   },
   {
     "role1": "bonecollector",
@@ -123,6 +138,11 @@
     "role1": "bountyhunter",
     "role2": "widow",
     "reason": "A drunk or poisoned Bounty Hunter will learn any player & the 'Client' token will go on an Evil player & if that player dies they learn another player."
+  },
+  {
+    "role1": "butcher",
+    "role2": "organgrinder",
+    "reason": "The votes on their nominations are still affected by the Organ Grinder."
   },
   {
     "role1": "cannibal",
@@ -186,11 +206,6 @@
   },
   {
     "role1": "chef",
-    "role2": "philosopher",
-    "reason": "The Philosopher turned Chef, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information, even if they would later die that night."
-  },
-  {
-    "role1": "chef",
     "role2": "recluse",
     "reason": "Evil / Recluse / Evil seating pattern can register as a Chef 1."
   },
@@ -211,13 +226,23 @@
   },
   {
     "role1": "courtier",
-    "role2": "philosopher",
-    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "courtier",
     "role2": "pixie",
     "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+  },
+  {
+    "role1": "cultleader",
+    "role2": "organgrinder",
+    "reason": "Cults are not votes, so the Organ Grinder does not interact with calls for cults."
+  },
+  {
+    "role1": "damsel",
+    "role2": "organgrinder",
+    "reason": "Public actions can be taken while players have their eyes closed to vote."
+  },
+  {
+    "role1": "doomsayer",
+    "role2": "organgrinder",
+    "reason": "Public actions can be taken while players have their eyes closed to vote."
   },
   {
     "role1": "drunk",
@@ -233,11 +258,6 @@
     "role1": "drunk",
     "role2": "king",
     "reason": "The King cannot be made the Drunk if the Choirboy is in play"
-  },
-  {
-    "role1": "drunk",
-    "role2": "philosopher",
-    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
   },
   {
     "role1": "drunk",
@@ -406,13 +426,13 @@
   },
   {
     "role1": "grandmother",
-    "role2": "philosopher",
-    "reason": "The Philosopher turned Grandmother, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information, even if they would later die that night."
-  },
-  {
-    "role1": "grandmother",
     "role2": "vortox",
     "reason": "The Grandmother learns an Evil player & a character they are not. A 'grandchild' token is placed next to a Good player & if they die at night, so does the Grandmother"
+  },
+  {
+    "role1": "gunslinger",
+    "role2": "organgrinder",
+    "reason": "Doesn’t work with the Organ Grinder. I’d recommend Storytellers don’t use the Gunslinger with an Organ Grinder on the script."
   },
   {
     "role1": "imp",
@@ -436,18 +456,13 @@
   },
   {
     "role1": "innkeeper",
-    "role2": "philosopher",
-    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "innkeeper",
     "role2": "pixie",
     "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
   },
   {
-    "role1": "investigator",
-    "role2": "philosopher",
-    "reason": "The Philosopher turned Investigator, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information even if they would later die that night"
+    "role1": "judge",
+    "role2": "organgrinder",
+    "reason": "A Judge forces a nomination to pass or fail, which is completely independent of the vote count, so the Judge can force a vote on an Organ Grinder to pass even if the Organ Grinder did not vote."
   },
   {
     "role1": "juggler",
@@ -463,11 +478,6 @@
     "role1": "king",
     "role2": "marionette",
     "reason": "The King cannot be made the Marionette if the Choirboy is in play"
-  },
-  {
-    "role1": "librarian",
-    "role2": "philosopher",
-    "reason": "The Philosopher turned Librarian, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information, even if they would later die that night"
   },
   {
     "role1": "lilmonsta",
@@ -531,11 +541,6 @@
   },
   {
     "role1": "minstrel",
-    "role2": "philosopher",
-    "reason": "A Drunk Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "minstrel",
     "role2": "pixie",
     "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability"
   },
@@ -566,11 +571,6 @@
   },
   {
     "role1": "nodashii",
-    "role2": "philosopher",
-    "reason": "A drunk Philosopher is not told they change & learn their ability did not trigger"
-  },
-  {
-    "role1": "nodashii",
     "role2": "pixie",
     "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
   },
@@ -580,44 +580,14 @@
     "reason": "The Soldier cannot poisoned from No Dashii whilst sober and healthy."
   },
   {
+    "role1": "organgrinder",
+    "role2": "slayer",
+    "reason": "Public actions can be taken while players have their eyes closed to vote."
+  },
+  {
     "role1": "philosopher",
     "role2": "pixie",
     "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
-  },
-  {
-    "role1": "philosopher",
-    "role2": "poisoner",
-    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "philosopher",
-    "role2": "pukka",
-    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "philosopher",
-    "role2": "sailor",
-    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "philosopher",
-    "role2": "sweetheart",
-    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "philosopher",
-    "role2": "vigormortis",
-    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
-  },
-  {
-    "role1": "philosopher",
-    "role2": "washerwoman",
-    "reason": "The Philosopher turned Washerwoman, after the first night, would wake at the earliest opportunity after poison & drunk effects & learn their information even if they would later die that night."
-  },
-  {
-    "role1": "philosopher",
-    "role2": "widow",
-    "reason": "A drunk or poisoned Philosopher is not told they change & learn their ability did not trigger."
   },
   {
     "role1": "pithag",
