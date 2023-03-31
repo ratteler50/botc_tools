@@ -19,6 +19,20 @@ fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
     .sortedBy { it.standardAmyOrder }
 }
 
+fun updateSao() {
+  val roles = Role.setFromJson(gson, File("./src/data/roles.json").readText())
+  val sao = Sao.listFromJson(gson, File("./src/data/sao.json").readText())
+    .sortedWith(compareBy({ it.type }, { it.category }, { it.pixels }, { it.characters }))
+  val updatedRoles = roles.map { role ->
+    when (val index = sao.indexOfFirst { it.id == role.id }) {
+      -1 -> role
+      else -> role.copy(standardAmyOrder = index + 1)
+    }
+  }
+  File("./src/data/roles.json").writeText(gson.toJson(updatedRoles))
+}
+
+
 fun getJinxTable(): ImmutableTable<String, String, Jinx> {
   val jinxes = Jinx.listFromJson(gson, File("./src/data/jinxes.json").readText())
   val interactions = Jinx.listFromJson(gson, File("./src/data/interactions.json").readText())
