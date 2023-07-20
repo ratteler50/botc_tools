@@ -5,16 +5,18 @@ import java.io.File
 
 val gson: Gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create()
 
+private const val SCRIPT_INPUT = "./src/data/example_script.json"
+private const val SCRIPT_OUTPUT = "./src/data/output.md"
+
 fun main() {
   val roleMap = Role.toMap(Role.setFromJson(gson, File("./src/data/roles.json").readText()))
-  File("./src/data/output.txt").writeText(ScriptPrinter(getScriptRoles(roleMap),
+  File(SCRIPT_OUTPUT).writeText(ScriptPrinter(getScriptRoles(roleMap),
                                                         getJinxTable(),
                                                         roleMap).textScriptString())
 }
 
-
 fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
-  val charList = Script.getRolesOnScript(gson, File("./src/data/example_script.json").readText())
+  val charList = Script.getRolesOnScript(gson, File(SCRIPT_INPUT).readText())
   return charList.map { char -> checkNotNull(roleMap[char]) { "Couldn't find $char in roleMap" } }
     .sortedBy { it.standardAmyOrder }
 }
