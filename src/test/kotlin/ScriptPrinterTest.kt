@@ -23,7 +23,7 @@ class ScriptPrinterTest {
 
   @Test
   fun printScript_empty() {
-    val printer = ScriptPrinter(listOf(), ImmutableTable.of(), mapOf())
+    val printer = ScriptPrinter(null, listOf(), ImmutableTable.of(), mapOf())
     printer.printScript()
     assertThat(outputStreamCaptor.toString()).isEqualTo("""
         **__INSERT SCRIPT TITLE HERE__**
@@ -42,9 +42,7 @@ class ScriptPrinterTest {
 
         __First Night__
 
-
         __Other Nights__
-        
         
       """.trimIndent())
   }
@@ -52,65 +50,71 @@ class ScriptPrinterTest {
   @Test
   fun printScript_happyCase() {
     val roleMap = Role.toMap(Role.setFromJson(gson, getRoleJson()))
-    val printer = ScriptPrinter(getScriptRoles(roleMap), getJinxTable(), roleMap)
+    val printer = ScriptPrinter(
+      Script(id = "_meta", name = "EXAMPLE_SCRIPT_NAME"),
+      getScriptRoles(roleMap),
+      getJinxTable(),
+      roleMap
+    )
     printer.printScript()
     assertThat(outputStreamCaptor.toString()).isEqualTo("""
-    **__INSERT SCRIPT TITLE HERE__**
+    **__EXAMPLE_SCRIPT_NAME__**
+    
+    __Fabled__
+    > - **Spirit of Ivory** -- There can't be more than 1 extra evil player.
     
     __Townsfolk__
-    > **Snake Charmer** -- Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.
-    > **Amnesiac** -- You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.
-    > **Magician** -- The Demon thinks you are a Minion. Minions think you are a Demon.
+    > - **Snake Charmer** -- Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.
+    > - **Amnesiac** -- You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.
+    > - **Magician** -- The Demon thinks you are a Minion. Minions think you are a Demon.
     
     __Outsiders__
-    > **Damsel** -- All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.
-    > **Barber** -- If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.
+    > - **Damsel** -- All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.
+    > - **Barber** -- If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.
     
     __Minions__
-    > **Witch** -- Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.
-    > **Spy** -- Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.
-    > **Scarlet Woman** -- If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)
-    > **Boomdandy** -- If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.
+    > - **Witch** -- Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.
+    > - **Spy** -- Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.
+    > - **Scarlet Woman** -- If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)
+    > - **Boomdandy** -- If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.
     
     __Demons__
-    > **Fang Gu** -- Each night\*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]
-    > **Vortox** -- Each night\*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.
+    > - **Fang Gu** -- Each night\*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]
+    > - **Vortox** -- Each night\*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.
     
     
     **__Jinxes and Clarifications__**
     
-    > **Magician** - Some special clarification for Magician specific to playing text game.
-    > **Fang Gu / Scarlet Woman** - If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu.
-    > **Spy / Damsel** - Only 1 jinxed character can be in play.
-    > **Spy / Magician** - When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed.
+    > - **Magician** - Some special clarification for Magician specific to playing text game.
+    > - **Fang Gu / Scarlet Woman** - If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu.
+    > - **Spy / Damsel** - Only 1 jinxed character can be in play.
+    > - **Spy / Magician** - When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed.
     
     **__WAKE ORDER__**
     
     __First Night__
-    
-    > Magician
-    > **MINION INFO**
-    > **DEMON INFO**
-    > Snake Charmer
-    > Witch
-    > Damsel
-    > Amnesiac
-    > Spy
-    > **DAWN**
+    > - Magician
+    > - **MINION INFO**
+    > - **DEMON INFO**
+    > - Snake Charmer
+    > - Witch
+    > - Damsel
+    > - Amnesiac
+    > - Spy
+    > - **DAWN**
     
     __Other Nights__
-    
-    > **DUSK**
-    > Snake Charmer
-    > Witch
-    > Scarlet Woman
-    > Fang Gu
-    > Vortox
-    > Barber
-    > Damsel
-    > Amnesiac
-    > Spy
-    > **DAWN**
+    > - **DUSK**
+    > - Snake Charmer
+    > - Witch
+    > - Scarlet Woman
+    > - Fang Gu
+    > - Vortox
+    > - Barber
+    > - Damsel
+    > - Amnesiac
+    > - Spy
+    > - **DAWN**
 
     """.trimIndent())
   }
@@ -118,6 +122,15 @@ class ScriptPrinterTest {
   private fun getRoleJson(): String {
     return """
       [
+        {
+          "id": "spiritofivory",
+          "name": "Spirit of Ivory",
+          "team": "fabled",
+          "reminders": [
+            "No extra evil"
+          ],
+          "ability": "There can't be more than 1 extra evil player."
+        },
         {
           "id":"snakecharmer",
           "name":"Snake Charmer",
@@ -295,7 +308,7 @@ class ScriptPrinterTest {
 
   private fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
     val json =
-      """[{"id":"vortox"},{"id":"amnesiac"},{"id":"snake_charmer"},{"id":"spy"},{"id":"damsel"},{"id":"barber"},{"id":"boomdandy"},{"id":"witch"},{"id":"magician"},{"id":"scarlet_woman"},{"id":"fang_gu"}]"""
+      """[{"id": "spiritofivory"}, {"id":"vortox"},{"id":"amnesiac"},{"id":"snake_charmer"},{"id":"spy"},{"id":"damsel"},{"id":"barber"},{"id":"boomdandy"},{"id":"witch"},{"id":"magician"},{"id":"scarlet_woman"},{"id":"fang_gu"}]"""
     val charList = Script.getRolesOnScript(gson, json)
     return charList.map { checkNotNull(roleMap[it]) {"Couldn't find $it in $roleMap"} }.sortedBy { it.standardAmyOrder }
   }

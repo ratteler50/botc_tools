@@ -1,12 +1,14 @@
 import com.google.common.collect.Table
 
 class ScriptPrinter(
+  private val scriptMetadata: Script?,
   private val script: List<Role>,
   private val jinxTable: Table<String, String, Jinx>,
   private val roleMap: Map<String, Role>,
 ) {
   companion object {
-    const val SCRIPT_TITLE = "**__INSERT SCRIPT TITLE HERE__**"
+    const val DEFAULT_SCRIPT_TITLE = "INSERT SCRIPT TITLE HERE"
+    const val FABLED_DIVIDER = "__Fabled__"
     const val TOWNSFOLK_DIVIDER = "__Townsfolk__"
     const val OUTSIDER_DIVIDER = "__Outsiders__"
     const val MINIONS_DIVIDER = "__Minions__"
@@ -19,8 +21,9 @@ class ScriptPrinter(
 
   fun textScriptString(): String {
     return buildString {
-      appendLine(SCRIPT_TITLE)
+      appendLine("**__${scriptMetadata?.name ?: DEFAULT_SCRIPT_TITLE}__**")
       appendLine()
+      append(buildFabled())
       append(buildScriptRoles())
       appendLine()
       append(buildJinxes())
@@ -36,19 +39,28 @@ class ScriptPrinter(
   private fun buildScriptRoles(): String =
     buildString {
       appendLine(TOWNSFOLK_DIVIDER)
-      getTownsfolkRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      getTownsfolkRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
       appendLine()
       appendLine(OUTSIDER_DIVIDER)
-      getOutsiderRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      getOutsiderRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
       appendLine()
       appendLine(MINIONS_DIVIDER)
-      getMinionRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      getMinionRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
       appendLine()
       appendLine(DEMONS_DIVIDER)
-      getDemonRoles().forEach { appendLine("> ${it.asTextScriptEntry()}") }
+      getDemonRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
       appendLine()
     }
 
+  private fun buildFabled(): String {
+    val fabled = getFabledRoles()
+    if(fabled.isEmpty()) return ""
+    return buildString {
+      appendLine(FABLED_DIVIDER)
+      fabled.forEach { appendLine("> - ${it.asTextScriptEntry()}")}
+      appendLine()
+    }
+  }
 
   private fun buildJinxes(): String {
     val jinxes = getJinxes().toSet()
@@ -57,8 +69,8 @@ class ScriptPrinter(
     return buildString {
       appendLine(JINXES_DIVIDER)
       appendLine()
-      textClarifications.forEach { appendLine("> $it") }
-      jinxes.forEach { appendLine("> ${it.asTextScriptEntry(roleMap)}") }
+      textClarifications.forEach { appendLine("> - $it") }
+      jinxes.forEach { appendLine("> - ${it.asTextScriptEntry(roleMap)}") }
     }
   }
 
@@ -66,14 +78,15 @@ class ScriptPrinter(
     appendLine(WAKE_ORDER_DIVIDER)
     appendLine()
     appendLine(FIRST_NIGHT_DIVIDER)
-    appendLine()
-    getFirstNightWakers().forEach { appendLine("> $it") }
+    getFirstNightWakers().forEach { appendLine("> - $it") }
     appendLine()
     appendLine(OTHER_NIGHTS_DIVIDER)
-    appendLine()
-    getOtherNightWakers().forEach { appendLine("> $it") }
+    getOtherNightWakers().forEach { appendLine("> - $it") }
   }
 
+  private fun getFabledRoles(): List<Role> {
+    return script.filter { it.type == Role.Type.FABLED }
+  }
   private fun getTownsfolkRoles(): List<Role> {
     return script.filter { it.type == Role.Type.TOWNSFOLK }
   }

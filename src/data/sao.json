@@ -308,11 +308,25 @@
     "characters": 88
   },
   {
+    "id": "harpy",
+    "type": 3,
+    "category": 2,
+    "pixels": 2278,
+    "characters": 0
+  },
+  {
     "id": "heretic",
     "type": 2,
     "category": 6,
     "pixels": 1702,
     "characters": 64
+  },
+  {
+    "id": "high_priestess",
+    "type": 1,
+    "category": 2,
+    "pixels": 1922,
+    "characters": 80
   },
   {
     "id": "huntsman",
@@ -362,6 +376,13 @@
     "category": 6,
     "pixels": 2192,
     "characters": 96
+  },
+  {
+    "id": "knight",
+    "type": 1,
+    "category": 1,
+    "pixels": 1451,
+    "characters": 51
   },
   {
     "id": "legion",
@@ -714,6 +735,13 @@
     "characters": 104
   },
   {
+    "id": "steward",
+    "type": 1,
+    "category": 1,
+    "pixels": 1124,
+    "characters": 32
+  },
+  {
     "id": "sweetheart",
     "type": 2,
     "category": 6,
@@ -761,6 +789,13 @@
     "category": 6,
     "pixels": 2239,
     "characters": 95
+  },
+  {
+    "id": "vizier",
+    "type": 3,
+    "category": 6,
+    "pixels": 2422,
+    "characters": 115
   },
   {
     "id": "vortox",

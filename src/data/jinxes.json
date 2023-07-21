@@ -42,7 +42,7 @@
   {
     "role1": "flowergirl",
     "role2": "organgrinder",
-    "reason":  "If players' eyes were closed during the nominations, the Flowergirl learns how many times the Demon voted."
+    "reason": "If players' eyes were closed during the nominations, the Flowergirl learns how many times the Demon voted."
   },
   {
     "role1": "godfather",
@@ -113,6 +113,11 @@
     "role1": "lilmonsta",
     "role2": "scarletwoman",
     "reason": "If there are 5 or more players alive and the player holding the Lil' Monsta token dies, the Scarlet Woman is given the Lil' Monsta token tonight."
+  },
+  {
+    "role1": "lilmonsta",
+    "role2": "vizier",
+    "reason": "The Vizier can die by execution if they are babysitting Lil' Monsta."
   },
   {
     "role1": "lleech",
@@ -353,6 +358,36 @@
     "role1": "spy",
     "role2": "poppygrower",
     "reason": "If the Poppy Grower is in play, the Spy does not see the Grimoire until the Poppy Grower dies."
+  },
+  {
+    "role1": "vizier",
+    "role2": "investigator",
+    "reason": "If the Investigator learns that the Vizier is in play, the existence of the Vizier is not announced by the Storyteller."
+  },
+  {
+    "role1": "vizier",
+    "role2": "preacher",
+    "reason": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins."
+  },
+  {
+    "role1": "vizier",
+    "role2": "courtier",
+    "reason": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins."
+  },
+  {
+    "role1": "vizier",
+    "role2": "alchemist",
+    "reason": "If the Alchemist has the Vizier ability, they may only choose to execute immediately if three or more players voted, regardless of those players' alignment."
+  },
+  {
+    "role1": "vizier",
+    "role2": "magician",
+    "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+  },
+  {
+    "role1": "vizier",
+    "role2": "fearmonger",
+    "reason": "The Vizier wakes with the Fearmonger, learns who they choose and cannot choose to immediately execute that player."
   },
   {
     "role1": "widow",
