@@ -11,6 +11,11 @@
   },
   {
     "role1": "apprentice",
+    "role2": "vizier",
+    "reason": "An Apprentice Vizier acts just like a regular one, including the fact they do not die if exiled."
+  },
+  {
+    "role1": "apprentice",
     "role2": "vortox",
     "reason": "Apprentice with a Townsfolk ability gets false information."
   },
@@ -145,6 +150,11 @@
     "reason": "The votes on their nominations are still affected by the Organ Grinder."
   },
   {
+    "role1": "butcher",
+    "role2": "vizier",
+    "reason": "A Vizier can force a Butcher nomination in the same way as they can force a standard one."
+  },
+  {
     "role1": "cannibal",
     "role2": "chef",
     "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
@@ -243,6 +253,11 @@
     "role1": "doomsayer",
     "role2": "organgrinder",
     "reason": "Public actions can be taken while players have their eyes closed to vote."
+  },
+  {
+    "role1": "doomsayer",
+    "role2": "vizier",
+    "reason": "A Vizier cannot die to the Doomsayer, so evil players must be careful when Doomsaying with a Vizier in play lest they either kill their own Demon as the only remaining evil option to die or have no-one die because the ST targets the Vizier with the Doomsayer ability."
   },
   {
     "role1": "drunk",
@@ -611,6 +626,11 @@
   },
   {
     "role1": "pithag",
+    "role2": "vizier",
+    "reason": "If a Vizier is created, all players immediately learn who the new Vizier is. If an extant Vizier is made into another character, there is no public indication of this."
+  },
+  {
+    "role1": "pithag",
     "role2": "zombuul",
     "reason": "The Pit-Hag's arbitrary deaths can kill the Zombuul twice in order for them to be dead."
   },
@@ -673,5 +693,10 @@
     "role1": "soldier",
     "role2": "vigormortis",
     "reason": "The Soldier cannot poisoned by the Vigormortis whilst sober and healthy."
+  },
+  {
+    "role1": "barber",
+    "role2": "vizier",
+    "reason": " If the Vizier character is swapped, all players immediately learn who the new Vizier is, if they are alive."
   }
 ]

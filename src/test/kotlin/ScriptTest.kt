@@ -62,4 +62,25 @@ class ScriptTest {
       "dawn",
     )
   }
+
+  @Test
+  fun scriptGetMetadata_returnsMetadata() {
+    val inputScript =
+      """[{"id": "_meta", "logo": "https://i.postimg.cc/CKxv6qTn/whoami.png", "name": "Who Am I", "author": "Dae"}, {"id": "pixie"}, {"id": "balloonist"}, {"id": "dreamer"}]"""
+    assertThat(Script.getScriptMetadata(Gson(), inputScript)).isEqualTo(
+      Script(
+        id = "_meta",
+        logo = "https://i.postimg.cc/CKxv6qTn/whoami.png",
+        name = "Who Am I",
+        author = "Dae"
+      )
+    )
+  }
+
+  @Test
+  fun scriptGetMetadata_noMetadata_returnsNull() {
+    val inputScript =
+      """[{"id": "pixie"}, {"id": "balloonist"}, {"id": "dreamer"}]"""
+    assertThat(Script.getScriptMetadata(Gson(), inputScript)).isNull()
+  }
 }
