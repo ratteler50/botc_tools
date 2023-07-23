@@ -22,7 +22,7 @@ fun main() {
   )
 }
 
-fun getScriptMetadata() : Script? = Script.getScriptMetadata(gson, File(SCRIPT_INPUT).readText())
+fun getScriptMetadata(): Script? = Script.getScriptMetadata(gson, File(SCRIPT_INPUT).readText())
 
 fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
   val charList = Script.getRolesOnScript(gson, File(SCRIPT_INPUT).readText())
@@ -30,7 +30,21 @@ fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
     .sortedBy { it.standardAmyOrder }
 }
 
+fun updateSaoFromRawSao() {
+  File(SAO_JSON).writeText(
+    gson.toJson(
+      Sao.listFromRawJson(File("./src/data/raw_sao.json").readText()).sortedWith(
+        compareBy({ it.type },
+                  { it.category },
+                  { it.pixels },
+                  { it.characters })
+      )
+    )
+  )
+}
+
 fun updateSao() {
+  updateSaoFromRawSao()
   val roles = Role.setFromJson(gson, File(ROLES_JSON).readText())
   val sao = Sao.listFromJson(gson, File(SAO_JSON).readText())
     .sortedWith(compareBy({ it.type }, { it.category }, { it.pixels }, { it.characters }))
