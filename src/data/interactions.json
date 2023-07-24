@@ -157,27 +157,22 @@
   {
     "role1": "cannibal",
     "role2": "chef",
-    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+    "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
   },
   {
     "role1": "cannibal",
     "role2": "grandmother",
-    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+    "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
   },
   {
     "role1": "cannibal",
     "role2": "investigator",
-    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+    "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
   },
   {
     "role1": "cannibal",
     "role2": "librarian",
-    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
-  },
-  {
-    "role1": "cannibal",
-    "role2": "mephit",
-    "reason": "If a player turned by the Mezepheles is executed the Cannibal is drunk."
+    "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
   },
   {
     "role1": "cannibal",
@@ -197,7 +192,7 @@
   {
     "role1": "cannibal",
     "role2": "washerwoman",
-    "reason": "The Cannibal would wake at the earliest opportunity (after poison & drunk effects) to learn their information, even if they would later die that night."
+    "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
   },
   {
     "role1": "cerenovus",
@@ -291,11 +286,6 @@
   },
   {
     "role1": "eviltwin",
-    "role2": "mephit",
-    "reason": "If the Good Twin is turned Evil by the Mezepheles, then a new twin must be assigned & both players are told."
-  },
-  {
-    "role1": "eviltwin",
     "role2": "mezepheles",
     "reason": "If the Good Twin is turned Evil by the Mezepheles, then a new twin must be assigned & both players are told."
   },
@@ -346,11 +336,6 @@
   },
   {
     "role1": "fortuneteller",
-    "role2": "mephit",
-    "reason": "If the player turned by the Mezepheles was the red herring, the token is moved to a good player."
-  },
-  {
-    "role1": "fortuneteller",
     "role2": "mezepheles",
     "reason": "If the player turned by the Mezepheles was the red herring, the token is moved to a good player."
   },
@@ -391,11 +376,6 @@
   },
   {
     "role1": "goon",
-    "role2": "mephit",
-    "reason": "The Goon can revert back to Good the same night they are turned by the Mezepheles. The Goon would not make the Mezepheles drunk."
-  },
-  {
-    "role1": "goon",
     "role2": "mezepheles",
     "reason": "The Goon can revert back to Good the same night they are turned by the Mezepheles. The Goon would not make the Mezepheles drunk."
   },
@@ -428,11 +408,6 @@
     "role1": "gossip",
     "role2": "soldier",
     "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Soldier."
-  },
-  {
-    "role1": "grandmother",
-    "role2": "mephit",
-    "reason": "If the grandchild is turned Evil by the Mezepheles, then they remain the grandchild."
   },
   {
     "role1": "grandmother",
@@ -543,11 +518,6 @@
     "role1": "mayor",
     "role2": "soldier",
     "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Soldier."
-  },
-  {
-    "role1": "mephit",
-    "role2": "widow",
-    "reason": "If the Good player who knows about the Widow is turned by the Mezepheles, then a new player is informed."
   },
   {
     "role1": "mezepheles",
