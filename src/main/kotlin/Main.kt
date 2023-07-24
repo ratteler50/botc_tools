@@ -6,18 +6,19 @@ import java.io.File
 val gson: Gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create()
 
 private const val SCRIPT_INPUT = "./src/data/example_script.json"
-private const val SCRIPT_OUTPUT = "./src/data/output.md"
 private const val ROLES_JSON = "./src/data/roles.json"
 private const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
 private const val SAO_JSON = "./src/data/sao.json"
 
 fun main() {
   val roleMap = Role.toMap(Role.setFromJson(gson, File(ROLES_JSON).readText()))
+  val scriptMetadata = getScriptMetadata()
+  val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
   updateNightOrder()
   updateSao()
-  File(SCRIPT_OUTPUT).writeText(
+  File(outputFilename).writeText(
     ScriptPrinter(
-      getScriptMetadata(), getScriptRoles(roleMap), getJinxTable(), roleMap
+      scriptMetadata, getScriptRoles(roleMap), getJinxTable(), roleMap
     ).textScriptString()
   )
 }
