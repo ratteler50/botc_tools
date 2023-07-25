@@ -21,7 +21,8 @@ class ScriptPrinter(
 
   fun textScriptString(): String {
     return buildString {
-      appendLine("**__${scriptMetadata?.name ?: DEFAULT_SCRIPT_TITLE}__**")
+      append("**__${scriptMetadata?.name ?: DEFAULT_SCRIPT_TITLE}__**")
+      appendLine(scriptMetadata?.author?.let { " by $it" } ?: "")
       appendLine()
       append(buildFabled())
       append(buildScriptRoles())
@@ -54,10 +55,10 @@ class ScriptPrinter(
 
   private fun buildFabled(): String {
     val fabled = getFabledRoles()
-    if(fabled.isEmpty()) return ""
+    if (fabled.isEmpty()) return ""
     return buildString {
       appendLine(FABLED_DIVIDER)
-      fabled.forEach { appendLine("> - ${it.asTextScriptEntry()}")}
+      fabled.forEach { appendLine("> - ${it.asTextScriptEntry()}") }
       appendLine()
     }
   }
@@ -87,6 +88,7 @@ class ScriptPrinter(
   private fun getFabledRoles(): List<Role> {
     return script.filter { it.type == Role.Type.FABLED }
   }
+
   private fun getTownsfolkRoles(): List<Role> {
     return script.filter { it.type == Role.Type.TOWNSFOLK }
   }

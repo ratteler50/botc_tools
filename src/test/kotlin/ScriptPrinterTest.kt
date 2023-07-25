@@ -51,14 +51,14 @@ class ScriptPrinterTest {
   fun printScript_happyCase() {
     val roleMap = Role.toMap(Role.setFromJson(gson, getRoleJson()))
     val printer = ScriptPrinter(
-      Script(id = "_meta", name = "EXAMPLE_SCRIPT_NAME"),
+      Script(id = "_meta", name = "EXAMPLE_SCRIPT_NAME", author = "somebody"),
       getScriptRoles(roleMap),
       getJinxTable(),
       roleMap
     )
     printer.printScript()
     assertThat(outputStreamCaptor.toString()).isEqualTo("""
-    **__EXAMPLE_SCRIPT_NAME__**
+    **__EXAMPLE_SCRIPT_NAME__** by somebody
     
     __Fabled__
     > - **Spirit of Ivory** -- There can't be more than 1 extra evil player.

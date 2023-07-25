@@ -5,7 +5,7 @@ import java.io.File
 
 val gson: Gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create()
 
-private const val SCRIPT_INPUT = "./src/data/example_script.json"
+private const val SCRIPT_INPUT = "./src/data/input_script.json"
 private const val ROLES_JSON = "./src/data/roles.json"
 private const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
 private const val SAO_JSON = "./src/data/sao.json"

@@ -1,6 +1,7 @@
 target/
 .idea/
 *.iml
+*.md
 
 # Default ignored files
 /shelf/
