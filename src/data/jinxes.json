@@ -15,14 +15,19 @@
     "reason": "The Baron might only add 1 Outsider, not 2."
   },
   {
-    "role1": "butler",
-    "role2": "cannibal",
-    "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
+    "role1": "baron",
+    "role2": "plaguedoctor",
+    "reason": "If the Storyteller gains the Baron ability, up to two players become Outsiders."
+  },
+  {
+    "role1": "boomdandy",
+    "role2": "plaguedoctor",
+    "reason": "If the Plague Doctor is executed and the Storyteller would gain the Boomdandy ability, the Boomdandy ability triggers immediately."
   },
   {
     "role1": "butler",
-    "role2": "organgrinder",
-    "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
+    "role2": "cannibal",
+    "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
   },
   {
     "role1": "cerenovus",
@@ -35,13 +40,28 @@
     "reason": "The Chambermaid learns if the Mathematician wakes tonight or not, even though the Chambermaid wakes first."
   },
   {
+    "role1": "eviltwin",
+    "role2": "plaguedoctor",
+    "reason": "The Storyteller cannot gain the Evil Twin ability if the Plague Doctor dies."
+  },
+  {
     "role1": "fanggu",
     "role2": "scarletwoman",
     "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."
   },
   {
-    "role1": "flowergirl",
-    "role2": "organgrinder",
+    "role1": "fearmonger",
+    "role2": "plaguedoctor",
+    "reason": "If the Plague Doctor dies, a living Minion gains the Fearmonger ability in addition to their own ability, and learns this."
+  },
+  {
+    "role1": "goblin",
+    "role2": "plaguedoctor",
+    "reason": "If the Plague Doctor dies, a living Minion gains the Goblin ability in addition to their own ability, and learns this."
+  },
+  {
+    "role1": "organgrinder",
+    "role2": "flowergirl",
     "reason": "If players' eyes were closed during the nominations, the Flowergirl learns how many times the Demon voted."
   },
   {
@@ -166,6 +186,11 @@
   },
   {
     "role1": "marionette",
+    "role2": "plaguedoctor",
+    "reason": "If the Demon has a neighbour who is alive and a Townsfolk or Outsider when the Plague Doctor dies, that player becomes an evil Marionette. If there is already an extra evil player, this does not happen."
+  },
+  {
+    "role1": "marionette",
     "role2": "poppygrower",
     "reason": "When the Poppy Grower dies, the Demon learns the Marionette but the Marionette learns nothing."
   },
@@ -175,8 +200,13 @@
     "reason": "The Marionette does not learn 3 not in-play characters. The Demon learns an extra 3 instead."
   },
   {
-    "role1": "minstrel",
-    "role2": "organgrinder",
+    "role1": "organgrinder",
+    "role2": "butler",
+    "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
+  },
+  {
+    "role1": "organgrinder",
+    "role2": "minstrel",
     "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
   },
   {
@@ -335,6 +365,11 @@
     "reason": "Players that die by nomination register as being executed to the Undertaker."
   },
   {
+    "role1": "scarletwoman",
+    "role2": "plaguedoctor",
+    "reason": "If the Plague Doctor dies, a living Minion gains the Scarlet Woman ability in addition to their own ability, and learns this."
+  },
+  {
     "role1": "spy",
     "role2": "alchemist",
     "reason": "The Alchemist can not have the Spy ability."
@@ -358,6 +393,11 @@
     "role1": "spy",
     "role2": "poppygrower",
     "reason": "If the Poppy Grower is in play, the Spy does not see the Grimoire until the Poppy Grower dies."
+  },
+  {
+    "role1": "spy",
+    "role2": "plaguedoctor",
+    "reason": "If the Plague Doctor dies, a living Minion gains the Spy ability in addition to their own ability, and learns this."
   },
   {
     "role1": "vizier",

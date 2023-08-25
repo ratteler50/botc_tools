@@ -931,11 +931,19 @@
     "ability": "When you die, 1 player is drunk from now on."
   },
   {
+    "id": "plaguedoctor",
+    "name": "Plague Doctor",
+    "team": "outsider",
+    "standardAmyOrder": 72,
+    "setup": false,
+    "ability": "If you die, the Storyteller gains a not-in-play Minion ability."
+  },
+  {
     "id": "recluse",
     "name": "Recluse",
     "edition": "tb",
     "team": "outsider",
-    "standardAmyOrder": 72,
+    "standardAmyOrder": 73,
     "setup": false,
     "ability": "You might register as evil & as a Minion or Demon, even if dead."
   },
@@ -944,7 +952,7 @@
     "name": "Mutant",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 73,
+    "standardAmyOrder": 74,
     "setup": false,
     "ability": "If you are “mad” about being an Outsider, you might be executed."
   },
@@ -952,7 +960,7 @@
     "id": "heretic",
     "name": "Heretic",
     "team": "outsider",
-    "standardAmyOrder": 74,
+    "standardAmyOrder": 75,
     "setup": false,
     "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead."
   },
@@ -960,7 +968,7 @@
     "id": "damsel",
     "name": "Damsel",
     "team": "outsider",
-    "standardAmyOrder": 75,
+    "standardAmyOrder": 76,
     "firstNight": 32,
     "firstNightReminder": "Wake all the Minions, show them the 'This character selected you' card and the Damsel token.",
     "otherNight": 47,
@@ -976,7 +984,7 @@
     "name": "Klutz",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 76,
+    "standardAmyOrder": 77,
     "setup": false,
     "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses."
   },
@@ -985,7 +993,7 @@
     "name": "Drunk",
     "edition": "tb",
     "team": "outsider",
-    "standardAmyOrder": 77,
+    "standardAmyOrder": 78,
     "remindersGlobal": [
       "Drunk"
     ],
@@ -996,7 +1004,7 @@
     "id": "golem",
     "name": "Golem",
     "team": "outsider",
-    "standardAmyOrder": 78,
+    "standardAmyOrder": 79,
     "reminders": [
       "Can not nominate"
     ],
@@ -1008,7 +1016,7 @@
     "name": "Moonchild",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 79,
+    "standardAmyOrder": 80,
     "otherNight": 51,
     "otherNightReminder": "If the Moonchild used their ability to target a player today: If that player is good, they die.",
     "reminders": [
@@ -1022,7 +1030,7 @@
     "name": "Barber",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 80,
+    "standardAmyOrder": 81,
     "otherNight": 41,
     "otherNightReminder": "If the Barber died today: Wake the Demon. Show the 'This character selected you' card, then Barber token. The Demon either shows a 'no' head signal, or points to 2 players. If they chose players: Swap the character tokens. Wake each player. Show 'You are', then their new character token.",
     "reminders": [
@@ -1035,7 +1043,7 @@
     "id": "politician",
     "name": "Politician",
     "team": "outsider",
-    "standardAmyOrder": 81,
+    "standardAmyOrder": 82,
     "setup": false,
     "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead."
   },
@@ -1044,7 +1052,7 @@
     "name": "Lunatic",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 82,
+    "standardAmyOrder": 83,
     "firstNight": 8,
     "firstNightReminder": "If 7 or more players: Show the Lunatic a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by the Lunatic is a Demon that would wake tonight: Allow the Lunatic to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon’s real character token. Show them the Lunatic player. If the Lunatic attacked players: Show the real demon each marked player. Remove any Lunatic 'attack' markers.",
     "otherNight": 21,
@@ -1062,7 +1070,7 @@
     "name": "Godfather",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 83,
+    "standardAmyOrder": 84,
     "firstNight": 21,
     "firstNightReminder": "Show each of the Outsider tokens in play.",
     "otherNight": 38,
@@ -1078,7 +1086,7 @@
     "id": "widow",
     "name": "Widow",
     "team": "minion",
-    "standardAmyOrder": 84,
+    "standardAmyOrder": 85,
     "firstNight": 18,
     "firstNightReminder": "Show the Grimoire to the Widow for as long as they need. The Widow points to a player. That player is poisoned. Wake a good player. Show the 'These characters are in play' card, then the Widow character token.",
     "reminders": [
@@ -1095,7 +1103,7 @@
     "name": "Poisoner",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 85,
+    "standardAmyOrder": 86,
     "firstNight": 17,
     "firstNightReminder": "The Poisoner points to a player. That player is poisoned.",
     "otherNight": 7,
@@ -1111,7 +1119,7 @@
     "name": "Devil's Advocate",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 86,
+    "standardAmyOrder": 87,
     "firstNight": 22,
     "firstNightReminder": "The Devil’s Advocate points to a living player. That player survives execution tomorrow.",
     "otherNight": 13,
@@ -1126,7 +1134,7 @@
     "id": "harpy",
     "name": "Harpy",
     "team": "minion",
-    "standardAmyOrder": 87,
+    "standardAmyOrder": 88,
     "firstNight": 27,
     "firstNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",
     "otherNight": 18,
@@ -1141,7 +1149,7 @@
     "name": "Witch",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 88,
+    "standardAmyOrder": 89,
     "firstNight": 24,
     "firstNightReminder": "The Witch points to a player. If that player nominates tomorrow they die immediately.",
     "otherNight": 14,
@@ -1157,7 +1165,7 @@
     "name": "Spy",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 89,
+    "standardAmyOrder": 90,
     "firstNight": 52,
     "firstNightReminder": "Show the Grimoire to the Spy for as long as they need.",
     "otherNight": 69,
@@ -1170,7 +1178,7 @@
     "name": "Cerenovus",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 90,
+    "standardAmyOrder": 91,
     "firstNight": 25,
     "firstNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
     "otherNight": 15,
@@ -1185,7 +1193,7 @@
     "id": "fearmonger",
     "name": "Fearmonger",
     "team": "minion",
-    "standardAmyOrder": 91,
+    "standardAmyOrder": 92,
     "firstNight": 26,
     "firstNightReminder": "The Fearmonger points to a player. Place the Fear token next to that player and announce that a new player has been selected with the Fearmonger ability.",
     "otherNight": 17,
@@ -1201,7 +1209,7 @@
     "name": "Pit-Hag",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 92,
+    "standardAmyOrder": 93,
     "otherNight": 16,
     "otherNightReminder": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
     "setup": false,
@@ -1211,7 +1219,7 @@
     "id": "psychopath",
     "name": "Psychopath",
     "team": "minion",
-    "standardAmyOrder": 93,
+    "standardAmyOrder": 94,
     "setup": false,
     "ability": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo.",
     "textGameClarification": "When using their ability, The psychopath must publicly announce they are the psychopath and pick a player. The message must be pinned. before nominations open, the psychopath will be warned privately if they intend to use their ability, unless they tell us they don't intend to earlier. If the psychopath is executed, the psychopath and the nominator will send a message in you storyteller chat of your pick of rock paper or scissors. If the psychopath loses, they die. If the psychopath nominated themself a storyteller will play against them."
@@ -1221,7 +1229,7 @@
     "name": "Assassin",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 94,
+    "standardAmyOrder": 95,
     "otherNight": 37,
     "otherNightReminder": "If the Assassin has not yet used their ability: The Assassin either shows the 'no' head signal, or points to a player. That player dies.",
     "reminders": [
@@ -1236,7 +1244,7 @@
     "name": "Baron",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 95,
+    "standardAmyOrder": 96,
     "setup": true,
     "ability": "There are extra Outsiders in play. [+2 Outsiders]"
   },
@@ -1244,7 +1252,7 @@
     "id": "mezepheles",
     "name": "Mezepheles",
     "team": "minion",
-    "standardAmyOrder": 96,
+    "standardAmyOrder": 97,
     "firstNight": 28,
     "firstNightReminder": "Show the Mezepheles their secret word.",
     "otherNight": 19,
@@ -1260,7 +1268,7 @@
     "id": "goblin",
     "name": "Goblin",
     "team": "minion",
-    "standardAmyOrder": 97,
+    "standardAmyOrder": 98,
     "reminders": [
       "Claimed"
     ],
@@ -1273,7 +1281,7 @@
     "name": "Scarlet Woman",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 98,
+    "standardAmyOrder": 99,
     "otherNight": 20,
     "otherNightReminder": "If the Scarlet Woman became the Demon today: Show the 'You are' card, then the demon token.",
     "reminders": [
@@ -1287,7 +1295,7 @@
     "name": "Mastermind",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 99,
+    "standardAmyOrder": 100,
     "setup": false,
     "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses."
   },
@@ -1296,7 +1304,7 @@
     "name": "Evil Twin",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 100,
+    "standardAmyOrder": 101,
     "firstNight": 23,
     "firstNightReminder": "Wake the Evil Twin and their twin. Confirm that they have acknowledged each other. Point to the Evil Twin. Show their Evil Twin token to the twin player. Point to the twin. Show their character token to the Evil Twin player.",
     "reminders": [
@@ -1309,7 +1317,7 @@
     "id": "boomdandy",
     "name": "Boomdandy",
     "team": "minion",
-    "standardAmyOrder": 101,
+    "standardAmyOrder": 102,
     "setup": false,
     "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies."
   },
@@ -1317,7 +1325,7 @@
     "id": "marionette",
     "name": "Marionette",
     "team": "minion",
-    "standardAmyOrder": 102,
+    "standardAmyOrder": 103,
     "firstNight": 12,
     "firstNightReminder": "Select one of the good players next to the Demon and place the Is the Marionette reminder token. Wake the Demon and show them the Marionette.",
     "remindersGlobal": [
@@ -1330,7 +1338,7 @@
     "id": "organgrinder",
     "name": "Organ Grinder",
     "team": "minion",
-    "standardAmyOrder": 103,
+    "standardAmyOrder": 104,
     "reminders": [
       "About to die"
     ],
@@ -1341,7 +1349,7 @@
     "id": "vizier",
     "name": "Vizier",
     "team": "minion",
-    "standardAmyOrder": 104,
+    "standardAmyOrder": 105,
     "firstNight": 59,
     "otherNightReminder": "Announce the Vizier player to the group.",
     "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately."
@@ -1351,7 +1359,7 @@
     "name": "Pukka",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 105,
+    "standardAmyOrder": 106,
     "firstNight": 29,
     "firstNightReminder": "The Pukka points to a player. That player is poisoned.",
     "otherNight": 27,
@@ -1367,7 +1375,7 @@
     "id": "lilmonsta",
     "name": "Lil' Monsta",
     "team": "demon",
-    "standardAmyOrder": 106,
+    "standardAmyOrder": 107,
     "firstNight": 15,
     "firstNightReminder": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta.",
     "otherNight": 36,
@@ -1383,7 +1391,7 @@
     "id": "lleech",
     "name": "Lleech",
     "team": "demon",
-    "standardAmyOrder": 107,
+    "standardAmyOrder": 108,
     "firstNight": 16,
     "firstNightReminder": "The Lleech points to a player. Place the Poisoned reminder token.",
     "otherNight": 35,
@@ -1400,7 +1408,7 @@
     "name": "No Dashii",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 108,
+    "standardAmyOrder": 109,
     "otherNight": 31,
     "otherNightReminder": "The No Dashii points to a player. That player dies.",
     "reminders": [
@@ -1415,7 +1423,7 @@
     "name": "Imp",
     "edition": "tb",
     "team": "demon",
-    "standardAmyOrder": 109,
+    "standardAmyOrder": 110,
     "otherNight": 25,
     "otherNightReminder": "The Imp points to a player. That player dies. If the Imp chose themselves: Replace the character of 1 alive minion with a spare Imp token. Show the 'You are' card, then the Imp token.",
     "reminders": [
@@ -1429,7 +1437,7 @@
     "name": "Shabaloth",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 110,
+    "standardAmyOrder": 111,
     "otherNight": 28,
     "otherNightReminder": "One player that the Shabaloth chose the previous night might be resurrected. The Shabaloth points to two players. Those players die.",
     "reminders": [
@@ -1444,7 +1452,7 @@
     "name": "Po",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 111,
+    "standardAmyOrder": 112,
     "otherNight": 29,
     "otherNightReminder": "If the Po chose no-one the previous night: The Po points to three players. Otherwise: The Po either shows the 'no' head signal , or points to a player. Chosen players die",
     "reminders": [
@@ -1459,7 +1467,7 @@
     "name": "Zombuul",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 112,
+    "standardAmyOrder": 113,
     "otherNight": 26,
     "otherNightReminder": "If no-one died during the day: The Zombuul points to a player. That player dies.",
     "reminders": [
@@ -1473,7 +1481,7 @@
     "id": "alhadikhia",
     "name": "Al-Hadikhia",
     "team": "demon",
-    "standardAmyOrder": 113,
+    "standardAmyOrder": 114,
     "otherNight": 34,
     "otherNightReminder": "The Al-Hadikhia chooses 3 players. Announce the first player, wake them to nod yes to live or shake head no to die, kill or resurrect accordingly, then put to sleep and announce the next player. If all 3 are alive after this, all 3 die.",
     "reminders": [
@@ -1492,7 +1500,7 @@
     "name": "Vigormortis",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 114,
+    "standardAmyOrder": 115,
     "otherNight": 33,
     "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
     "reminders": [
@@ -1508,7 +1516,7 @@
     "name": "Fang Gu",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 115,
+    "standardAmyOrder": 116,
     "otherNight": 30,
     "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
     "reminders": [
@@ -1523,7 +1531,7 @@
     "name": "Vortox",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 116,
+    "standardAmyOrder": 117,
     "otherNight": 32,
     "otherNightReminder": "The Vortox points to a player. That player dies.",
     "reminders": [
@@ -1536,7 +1544,7 @@
     "id": "legion",
     "name": "Legion",
     "team": "demon",
-    "standardAmyOrder": 117,
+    "standardAmyOrder": 118,
     "otherNight": 24,
     "otherNightReminder": "Choose a player, that player dies.",
     "reminders": [
@@ -1550,7 +1558,7 @@
     "id": "leviathan",
     "name": "Leviathan",
     "team": "demon",
-    "standardAmyOrder": 118,
+    "standardAmyOrder": 119,
     "firstNight": 58,
     "firstNightReminder": "Place the Leviathan 'Day 1' marker. Announce 'The Leviathan is in play; this is Day 1.'",
     "otherNight": 75,
@@ -1570,7 +1578,7 @@
     "id": "riot",
     "name": "Riot",
     "team": "demon",
-    "standardAmyOrder": 119,
+    "standardAmyOrder": 120,
     "setup": true,
     "ability": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]"
   },
