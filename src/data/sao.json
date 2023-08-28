@@ -497,11 +497,11 @@
     "characters": 44
   },
   {
-    "id": "plaguedoctor",
+    "id": "plague_doctor",
     "type": 2,
     "category": 6,
-    "pixels": 1547,
-    "characters": 54
+    "pixels": 1524,
+    "characters": 63
   },
   {
     "id": "recluse",
