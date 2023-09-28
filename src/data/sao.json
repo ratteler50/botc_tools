@@ -63,6 +63,13 @@
     "characters": 88
   },
   {
+    "id": "shugenja",
+    "type": 1,
+    "category": 1,
+    "pixels": 2422,
+    "characters": 117
+  },
+  {
     "id": "bounty_hunter",
     "type": 1,
     "category": 1,
