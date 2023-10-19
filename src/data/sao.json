@@ -777,6 +777,13 @@
     "characters": 96
   },
   {
+    "id": "ojo",
+    "type": 4,
+    "category": 3,
+    "pixels": 2250,
+    "characters": 101
+  },
+  {
     "id": "shabaloth",
     "type": 4,
     "category": 3,
