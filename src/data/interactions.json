@@ -668,5 +668,35 @@
     "role1": "barber",
     "role2": "vizier",
     "reason": " If the Vizier character is swapped, all players immediately learn who the new Vizier is, if they are alive."
+  },
+  {
+    "role1": "ojo",
+    "role2": "goon",
+    "reason": "If the Ojo chooses Goon and is the first player to do so tonight, they are made drunk and change the Goon's alignment."
+  },
+  {
+    "role1": "ojo",
+    "role2": "lunatic",
+    "reason": "The Demon learns the player a Lunatic-Ojo chose, not the character they chose."
+  },
+  {
+    "role1": "ojo",
+    "role2": "mathematician",
+    "reason": "The Ojo killing a different character to the one they chose is not a malfunction, it's part of the Ojo's own ability."
+  },
+  {
+    "role1": "ojo",
+    "role2": "mayor",
+    "reason": "If the Ojo chooses Mayor, it's still possible to bounce it to another player."
+  },
+  {
+    "role1": "ojo",
+    "role2": "recluse",
+    "reason": "If the Ojo chooses Recluse, the Recluse might register as something else and cause a Storyteller-choice death."
+  },
+  {
+    "role1": "ojo",
+    "role2": "spy",
+    "reason": "The Spy might register as a good character the Ojo chose and die instead… You should think very carefully about whether this is a good idea."
   }
 ]
