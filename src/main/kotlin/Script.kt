@@ -1,4 +1,5 @@
 import com.google.gson.Gson
+import com.google.gson.JsonElement
 import com.google.gson.reflect.TypeToken
 
 data class Script(
@@ -9,13 +10,26 @@ data class Script(
 ) {
   companion object {
     fun getRolesOnScript(gson: Gson, json: String): Set<String> =
-      gson.fromJson<List<Script>?>(json, object : TypeToken<List<Script>>() {}.type).asSequence()
-        .map { it.id.lowercase() }.filterNot { it == "_meta" }
-        .map { it.replace(Regex("[^a-z]"), "") }.plus(listOf("minion", "demon", "dusk", "dawn"))
-        .toSet()
+      gson.fromJson<List<JsonElement>>(json, object : TypeToken<List<JsonElement>>() {}.type)
+        .asSequence().map { parseRole(it) }.filterNotNull().toSet()
+        .plus(listOf("minion", "demon", "dusk", "dawn"))
+
+    private fun parseRole(entry: JsonElement): String? {
+      if (entry.isJsonObject) return parseRole(gson.fromJson(entry, Script::class.java))
+      return parseRole(gson.fromJson(entry, String::class.java))
+    }
+
+    private fun parseRole(entry: Script): String? {
+      return if (entry.id == "_meta") null else parseRole(entry.id)
+    }
+
+    private fun parseRole(entry: String): String {
+      return entry.lowercase().replace(Regex("[^a-z]"), "")
+    }
 
     fun getScriptMetadata(gson: Gson, json: String): Script? =
-      gson.fromJson<List<Script>?>(json, object : TypeToken<List<Script>>() {}.type)
-        .firstOrNull { it.id.lowercase() == "_meta" }
+      gson.fromJson<List<JsonElement>?>(json, object : TypeToken<List<JsonElement>>() {}.type)
+        .filter { it.isJsonObject }.map { gson.fromJson(it, Script::class.java) }
+        .firstOrNull { it.id == "_meta" }
   }
 }
