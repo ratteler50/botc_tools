@@ -13,7 +13,7 @@ data class Script(
   companion object {
     fun getRolesOnScript(gson: Gson, json: String): Set<String> =
       gson.fromJson<List<JsonElement>>(json, object : TypeToken<List<JsonElement>>() {}.type)
-        .asSequence().map { parseRole(it) }.filterNotNull().toSet()
+        .mapNotNull { parseRole(it) }.toSet()
         .plus(listOf("minion", "demon", "dusk", "dawn"))
 
     private fun parseRole(entry: JsonElement): String? =
