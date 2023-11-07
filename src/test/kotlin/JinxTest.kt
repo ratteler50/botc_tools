@@ -50,6 +50,43 @@ class JinxTest {
   }
 
   @Test
+  fun jinxList_rawFormat_parsesExpected() {
+    val json = """[{
+    "id": "Spy",
+    "jinx": [
+      {
+        "id": "Magician",
+        "reason": "When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed."
+      },
+      {
+        "id": "Poppy Grower",
+        "reason": "If the Poppy Grower is in play, the Spy does not see the Grimoire until the Poppy Grower dies."
+      }
+    ]
+  },
+  {
+    "id": "Widow",
+    "jinx": [
+      {
+        "id": "Alchemist",
+        "reason": "The Alchemist can not have the Widow ability."
+      }
+    ]
+  }]"""
+
+    val actualValue = Jinx.listFromRawJson(Gson(), json)
+    assertThat(actualValue).containsExactly(Jinx("Spy",
+                                                 "Magician",
+                                                 "When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed."),
+                                            Jinx("Spy",
+                                                 "Poppy Grower",
+                                                 "If the Poppy Grower is in play, the Spy does not see the Grimoire until the Poppy Grower dies."),
+                                            Jinx("Widow",
+                                                 "Alchemist",
+                                                 "The Alchemist can not have the Widow ability."))
+  }
+
+  @Test
   fun jinxTable_containsExpectedEntries() {
     val jinxList = listOf(Jinx("spy",
                                "magician",

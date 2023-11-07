@@ -9,12 +9,15 @@ private const val SCRIPT_INPUT = "./src/data/input_script.json"
 private const val ROLES_JSON = "./src/data/roles.json"
 private const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
 private const val SAO_JSON = "./src/data/sao.json"
+private const val JINXES_JSON = "./src/data/jinxes.json"
+private const val RAW_JINXES_JSON = "./src/data/raw_jinxes.json"
 
 fun main() {
   val roleMap = Role.toMap(Role.setFromJson(gson, File(ROLES_JSON).readText()))
   val scriptMetadata = getScriptMetadata()
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
   updateNightOrder()
+  updateJinxesFromRawJinxes()
   updateSao()
   File(outputFilename).writeText(
     ScriptPrinter(
@@ -40,6 +43,15 @@ fun updateSaoFromRawSao() {
                   { it.pixels },
                   { it.characters })
       )
+    )
+  )
+}
+
+fun updateJinxesFromRawJinxes() {
+  File(JINXES_JSON).writeText(
+    gson.toJson(
+      Jinx.listFromRawJson(gson, File(RAW_JINXES_JSON).readText())
+        .sortedWith(compareBy({ it.role1 }, { it.role2 }))
     )
   )
 }
