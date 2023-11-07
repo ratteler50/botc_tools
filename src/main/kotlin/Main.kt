@@ -5,12 +5,16 @@ import java.io.File
 
 val gson: Gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create()
 
-private const val SCRIPT_INPUT = "./src/data/input_script.json"
+private const val INPUT_SCRIPT_JSON = "./src/data/input_script.json"
 private const val ROLES_JSON = "./src/data/roles.json"
 private const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
-private const val SAO_JSON = "./src/data/sao.json"
-private const val JINXES_JSON = "./src/data/jinxes.json"
+private const val RAW_INTERACTIONS_JSON = "./src/data/raw_interactions.json"
+private const val INTERACTIONS_JSON = "./src/data/interactions.json"
 private const val RAW_JINXES_JSON = "./src/data/raw_jinxes.json"
+private const val JINXES_JSON = "./src/data/jinxes.json"
+private const val RAW_SAO_JSON = "./src/data/raw_sao.json"
+private const val SAO_JSON = "./src/data/sao.json"
+
 
 fun main() {
   val roleMap = Role.toMap(Role.setFromJson(gson, File(ROLES_JSON).readText()))
@@ -18,6 +22,7 @@ fun main() {
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
   updateNightOrder()
   updateJinxesFromRawJinxes()
+  updateRawInteractionsFromInteractions()
   updateSao()
   File(outputFilename).writeText(
     ScriptPrinter(
@@ -26,10 +31,11 @@ fun main() {
   )
 }
 
-fun getScriptMetadata(): Script? = Script.getScriptMetadata(gson, File(SCRIPT_INPUT).readText())
+fun getScriptMetadata(): Script? =
+  Script.getScriptMetadata(gson, File(INPUT_SCRIPT_JSON).readText())
 
 fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
-  val charList = Script.getRolesOnScript(gson, File(SCRIPT_INPUT).readText())
+  val charList = Script.getRolesOnScript(gson, File(INPUT_SCRIPT_JSON).readText())
   return charList.map { char -> checkNotNull(roleMap[char]) { "Couldn't find $char in roleMap" } }
     .sortedBy { it.standardAmyOrder }
 }
@@ -37,12 +43,10 @@ fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
 fun updateSaoFromRawSao() {
   File(SAO_JSON).writeText(
     gson.toJson(
-      Sao.listFromRawJson(File("./src/data/raw_sao.json").readText()).sortedWith(
-        compareBy({ it.type },
-                  { it.category },
-                  { it.pixels },
-                  { it.characters })
-      )
+      Sao.listFromRawJson(File(RAW_SAO_JSON).readText())
+        .sortedWith(
+          compareBy({ it.type }, { it.category }, { it.pixels }, { it.characters })
+        )
     )
   )
 }
@@ -55,6 +59,21 @@ fun updateJinxesFromRawJinxes() {
     )
   )
 }
+
+fun updateRawInteractionsFromInteractions() {
+  File(RAW_INTERACTIONS_JSON).writeText(
+    gson.toJson(Jinx.listFromJson(gson, File(INTERACTIONS_JSON).readText())
+                  .sortedWith(compareBy({ it.role1 }, { it.role2 })).groupBy { it.role1 }
+                  .map { Jinx.buildRawJsonForRole(it.value) })
+  )
+  File(INTERACTIONS_JSON).writeText(
+    gson.toJson(
+      Jinx.listFromRawJson(gson, File(RAW_INTERACTIONS_JSON).readText())
+        .sortedWith(compareBy({ it.role1 }, { it.role2 }))
+    )
+  )
+}
+
 
 fun updateSao() {
   updateSaoFromRawSao()
@@ -89,8 +108,8 @@ fun updateNightOrder() {
 
 
 fun getJinxTable(): ImmutableTable<String, String, Jinx> {
-  val jinxes = Jinx.listFromJson(gson, File("./src/data/jinxes.json").readText())
-  val interactions = Jinx.listFromJson(gson, File("./src/data/interactions.json").readText())
+  val jinxes = Jinx.listFromJson(gson, File(JINXES_JSON).readText())
+  val interactions = Jinx.listFromJson(gson, File(INTERACTIONS_JSON).readText())
   val jinxTable = Jinx.toTable(jinxes)
   val interactionTable = Jinx.toTable(interactions)
   return ImmutableTable.builder<String, String, Jinx>().putAll(jinxTable).putAll(interactionTable)

@@ -1,5 +1,6 @@
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
+import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import com.google.gson.reflect.TypeToken
 
@@ -14,7 +15,19 @@ data class Jinx(val role1: String, val role2: String, val reason: String) {
           outerRole.getAsJsonArray("jinx").map { it.asJsonObject }
             .map { Jinx(outerRole.get("id").asString, it.get("id").asString, it.get("reason").asString) }
         }
-
+    fun buildRawJsonForRole(jinxes: List<Jinx>): JsonObject {
+      val outputObject = JsonObject()
+      val jinxList = JsonArray()
+      for (jinx in jinxes) {
+        val jinxEntry = JsonObject()
+        jinxEntry.addProperty("id", jinx.role2)
+        jinxEntry.addProperty("reason", jinx.reason)
+        jinxList.add(jinxEntry)
+      }
+      outputObject.addProperty("id", jinxes[0].role1)
+      outputObject.add("jinx", jinxList)
+      return outputObject
+    }
 
     fun toTable(jinxes: List<Jinx>): ImmutableTable<String, String, Jinx> {
       val tableBuilder = ImmutableTable.builder<String, String, Jinx>()
