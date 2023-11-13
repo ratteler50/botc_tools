@@ -326,7 +326,8 @@
       "Poisoned"
     ],
     "setup": false,
-    "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned."
+    "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
+    "textGameClarification": "On the first night, the snake charmer will pick before evil info."
   },
   {
     "id": "cultleader",
@@ -338,7 +339,8 @@
     "otherNight": 68,
     "otherNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
     "setup": false,
-    "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins."
+    "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins.",
+    "textGameClarification": "There will be a thread. Prior to nominations opening players can state interest in forming a cult. At the time we normally open nominations, we instead lock PMs and privately collect people's votes on the cult(s). And of course people can prevote on those before we start collecting them officially. Once we have everyone's votes, nominations open and no more cults can be called that day."
   },
   {
     "id": "flowergirl",
@@ -501,7 +503,8 @@
       "?"
     ],
     "setup": false,
-    "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are."
+    "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
+    "textGameClarification": "Amnesiac may continue to guess once per day while dead."
   },
   {
     "id": "juggler",
@@ -795,7 +798,8 @@
       "Evil wakes"
     ],
     "setup": false,
-    "ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night."
+    "ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
+    "textGameClarification": "Info will be given if a poisoned poppy grower dies."
   },
   {
     "id": "minstrel",
@@ -1327,7 +1331,8 @@
     "team": "minion",
     "standardAmyOrder": 103,
     "setup": false,
-    "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies."
+    "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.",
+    "textGameClarification": "After the day ends and boomdandy is executed and dies, players have two hours to speak publicly only. We will create a Boomdandy Thread for players to place their votes in. The last name given is who they are pointing at. Players can set preconditional boomdandy votes, if it does not yield a clear choice it will not be accepted; all preconditional votes are made public after deaths are announced."
   },
   {
     "id": "marionette",
