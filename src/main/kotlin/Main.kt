@@ -22,6 +22,7 @@ fun main() {
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
   updateNightOrder()
   updateJinxesFromRawJinxes()
+  updateInteractionsFromRawInteractions()
   updateRawInteractionsFromInteractions()
   updateSao()
   File(outputFilename).writeText(
@@ -59,6 +60,15 @@ fun updateJinxesFromRawJinxes() {
   File(JINXES_JSON).writeText(
     gson.toJson(
       Jinx.listFromRawJson(gson, File(RAW_JINXES_JSON).readText())
+        .sortedWith(compareBy({ it.role1 }, { it.role2 }))
+    )
+  )
+}
+
+fun updateInteractionsFromRawInteractions() {
+  File(INTERACTIONS_JSON).writeText(
+    gson.toJson(
+      Jinx.listFromRawJson(gson, File(RAW_INTERACTIONS_JSON).readText())
         .sortedWith(compareBy({ it.role1 }, { it.role2 }))
     )
   )
