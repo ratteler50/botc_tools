@@ -4,6 +4,7 @@ class ScriptPrinter(
   private val scriptMetadata: Script?,
   private val script: List<Role>,
   private val jinxTable: Table<String, String, Jinx>,
+  private val interactionsTable: Table<String, String, Jinx>,
   private val roleMap: Map<String, Role>,
 ) {
   companion object {
@@ -13,7 +14,9 @@ class ScriptPrinter(
     const val OUTSIDER_DIVIDER = "__Outsiders__"
     const val MINIONS_DIVIDER = "__Minions__"
     const val DEMONS_DIVIDER = "__Demons__"
-    const val JINXES_DIVIDER = "**__Jinxes and Clarifications__**"
+    const val JINXES_AND_CLARIFICATIONS_DIVIDER = "**__Jinxes and Clarifications__**"
+    const val JINXES_DIVIDER = "__Jinxes__"
+    const val CLARIFICATIONS_DIVIDER = "__Clarifications__"
     const val WAKE_ORDER_DIVIDER = "**__WAKE ORDER__**"
     const val FIRST_NIGHT_DIVIDER = "__First Night__"
     const val OTHER_NIGHTS_DIVIDER = "__Other Nights__"
@@ -26,9 +29,7 @@ class ScriptPrinter(
       appendLine()
       append(buildFabled())
       append(buildScriptRoles())
-      appendLine()
-      append(buildJinxes())
-      appendLine()
+      append(buildJinxesAndClarifications())
       append(buildWakeOrder())
     }
   }
@@ -63,15 +64,36 @@ class ScriptPrinter(
     }
   }
 
+  private fun buildJinxesAndClarifications(): String {
+    val jinxes = buildJinxes()
+    val clarifications = buildClarifications()
+    if (jinxes.isEmpty() && clarifications.isEmpty()) return ""
+    return buildString {
+      appendLine(JINXES_AND_CLARIFICATIONS_DIVIDER)
+      appendLine()
+      appendLine(jinxes)
+      appendLine(clarifications)
+    }
+  }
+
+
   private fun buildJinxes(): String {
-    val jinxes = getJinxes().toSet()
-    val textClarifications = script.mapNotNull { it.asTextScriptClarificationEntry() }
-    if (jinxes.isEmpty() && textClarifications.isEmpty()) return ""
+    val jinxes = getInteractions(jinxTable).toSet()
+    if (jinxes.isEmpty()) return ""
     return buildString {
       appendLine(JINXES_DIVIDER)
-      appendLine()
-      textClarifications.forEach { appendLine("> - $it") }
       jinxes.forEach { appendLine("> - ${it.asTextScriptEntry(roleMap)}") }
+    }
+  }
+
+  private fun buildClarifications(): String {
+    val interactions = getInteractions(interactionsTable).toSet()
+    val textClarifications = script.mapNotNull { it.asTextScriptClarificationEntry() }.sorted()
+    if (interactions.isEmpty() && textClarifications.isEmpty()) return ""
+    return buildString {
+      appendLine(CLARIFICATIONS_DIVIDER)
+      textClarifications.forEach { appendLine("> - $it") }
+      interactions.forEach { appendLine("> - ${it.asTextScriptEntry(roleMap)}") }
     }
   }
 
@@ -105,15 +127,15 @@ class ScriptPrinter(
     return script.filter { it.type == Role.Type.DEMON }
   }
 
-  private fun getJinxes(): List<Jinx> {
-    val scriptJinxes = arrayListOf<Jinx>()
+  private fun getInteractions(interactionTable: Table<String, String, Jinx>): List<Jinx> {
+    val scriptInteractions = arrayListOf<Jinx>()
     for (entry1 in script) {
       for (entry2 in script) {
-        val jinx = jinxTable[entry1.id, entry2.id]
-        if (jinx != null) scriptJinxes.add(jinx)
+        val interaction = interactionTable[entry1.id, entry2.id]
+        if (interaction != null) scriptInteractions.add(interaction)
       }
     }
-    return scriptJinxes.sortedWith(compareBy({ it.role1 }, { it.role2 }))
+    return scriptInteractions.sortedWith(compareBy({ it.role1 }, { it.role2 }))
   }
 
   private fun getFirstNightWakers(): List<String> {

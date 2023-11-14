@@ -26,7 +26,11 @@ fun main() {
   updateSao()
   File(outputFilename).writeText(
     ScriptPrinter(
-      scriptMetadata, getScriptRoles(roleMap), getJinxTable(), roleMap
+      scriptMetadata,
+      getScriptRoles(roleMap),
+      getJinxTable(JINXES_JSON),
+      getJinxTable(INTERACTIONS_JSON),
+      roleMap
     ).textScriptString()
   )
 }
@@ -107,13 +111,8 @@ fun updateNightOrder() {
 }
 
 
-fun getJinxTable(): ImmutableTable<String, String, Jinx> {
-  val jinxes = Jinx.listFromJson(gson, File(JINXES_JSON).readText())
-  val interactions = Jinx.listFromJson(gson, File(INTERACTIONS_JSON).readText())
-  val jinxTable = Jinx.toTable(jinxes)
-  val interactionTable = Jinx.toTable(interactions)
-  return ImmutableTable.builder<String, String, Jinx>().putAll(jinxTable).putAll(interactionTable)
-    .build()
+fun getJinxTable(inputJson: String): ImmutableTable<String, String, Jinx> {
+  return Jinx.toTable(Jinx.listFromJson(gson, File(inputJson).readText()))
 }
 
 fun normalize(str: String): String = str.lowercase().replace(Regex("[^a-z]"), "")
