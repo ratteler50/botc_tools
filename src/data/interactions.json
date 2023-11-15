@@ -92,7 +92,7 @@
   {
     "role1": "Courtier",
     "role2": "Pixie",
-    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+    "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
   },
   {
     "role1": "Drunk",
@@ -547,12 +547,12 @@
   {
     "role1": "Pixie",
     "role2": "Pukka",
-    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+    "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
   },
   {
     "role1": "Pixie",
     "role2": "Sailor",
-    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+    "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
   },
   {
     "role1": "Plague Doctor",
@@ -627,7 +627,7 @@
   {
     "role1": "Poisoner",
     "role2": "Pixie",
-    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+    "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
   },
   {
     "role1": "Politician",
@@ -702,7 +702,7 @@
   {
     "role1": "Recluse",
     "role2": "Cannibal",
-    "reason": "If the Cannibal has an “even if dead” ability, such as the Recluse, the Cannibal keeps that ability when they die (but loses their Cannibal ability).."
+    "reason": "If the Cannibal has an “even if dead” ability, such as the Recluse, the Cannibal keeps that ability when they die (but loses their Cannibal ability)."
   },
   {
     "role1": "Recluse",
@@ -777,7 +777,7 @@
   {
     "role1": "Sweetheart",
     "role2": "Pixie",
-    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+    "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
   },
   {
     "role1": "Vigormortis",
@@ -792,7 +792,7 @@
   {
     "role1": "Vigormortis",
     "role2": "Pixie",
-    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+    "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
   },
   {
     "role1": "Vigormortis",
@@ -972,7 +972,7 @@
   {
     "role1": "Widow",
     "role2": "Pixie",
-    "reason": "If the Pixie is drunk on the first night, you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
+    "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
   },
   {
     "role1": "Zombuul",
