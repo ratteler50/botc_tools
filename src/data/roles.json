@@ -26,6 +26,7 @@
     "firstNight": 46,
     "firstNightReminder": "Point to the two non-Demon players marked *KNOW*.",
     "reminders": [
+      "Know",
       "Know"
     ],
     "ability": "You start knowing 2 players that are not the Demon.",
@@ -45,6 +46,8 @@
     "firstNight": 47,
     "firstNightReminder": "Point to 3 players including one evil player, in no particular order.",
     "reminders": [
+      "Seen",
+      "Seen",
       "Seen"
     ],
     "setup": false,
@@ -185,6 +188,7 @@
     "standardAmyOrder": 10,
     "firstNight": 49,
     "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
+    "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
     "flavour": "これは夢。それも夢。すべて夢です。",
     "urls": {
       "jinxes": "/jinxes/shugenja",
@@ -201,7 +205,7 @@
     "firstNight": 50,
     "firstNightReminder": "Point to 1 evil player. Wake the townsfolk who is evil and show them the 'You are' card and the thumbs down evil sign.",
     "otherNight": 66,
-    "otherNightReminder": "If the known evil player has died, point to another evil player. ",
+    "otherNightReminder": "If the known evil player has died, point to another evil player.",
     "reminders": [
       "Known"
     ],
@@ -319,7 +323,9 @@
     "otherNight": 6,
     "otherNightReminder": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
     "reminders": [
-      "At a sermon"
+      "No Ability",
+      "No Ability",
+      "No Ability"
     ],
     "setup": false,
     "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",
@@ -422,7 +428,7 @@
     "team": "townsfolk",
     "standardAmyOrder": 22,
     "firstNight": 39,
-    "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon. ",
+    "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon.",
     "otherNight": 56,
     "otherNightReminder": "The Fortune Teller points to two players. Show the head signal (nod 'yes', shake 'no') for whether one of those players is the Demon.",
     "reminders": [
@@ -448,6 +454,10 @@
     "otherNight": 74,
     "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
     "reminders": [
+      "Abnormal",
+      "Abnormal",
+      "Abnormal",
+      "Abnormal",
       "Abnormal"
     ],
     "setup": false,
@@ -734,6 +744,8 @@
     "otherNight": 49,
     "otherNightReminder": "If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
     "reminders": [
+      "?",
+      "?",
       "?"
     ],
     "setup": false,
@@ -755,6 +767,10 @@
     "otherNight": 63,
     "otherNightReminder": "If today was the Juggler’s first day: Show the hand signal for the number (0, 1, 2, etc.) of 'Correct' markers. Remove markers.",
     "reminders": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct",
       "Correct"
     ],
     "setup": false,
@@ -937,9 +953,9 @@
     "team": "townsfolk",
     "standardAmyOrder": 47,
     "firstNight": 2,
-    "firstNightReminder": "The Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token and add the 'Is the Philosopher' reminder. If the character is in play, place the drunk marker by that player.",
+    "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token",
     "otherNight": 2,
-    "otherNightReminder": "If the Philosopher has not used their ability: the Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token and add the 'Is the Philosopher' reminder. If the character is in play, place the drunk marker by that player.",
+    "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
     "reminders": [
       "Drunk",
       "Is the Philosopher"
@@ -1052,6 +1068,7 @@
     "team": "townsfolk",
     "standardAmyOrder": 53,
     "reminders": [
+      "Can not die",
       "Can not die"
     ],
     "setup": false,
@@ -1414,6 +1431,9 @@
     "name": "Plague Doctor",
     "team": "outsider",
     "standardAmyOrder": 73,
+    "reminders": [
+      "Storyteller Ability"
+    ],
     "setup": false,
     "ability": "If you die, the Storyteller gains a not-in-play Minion ability.",
     "flavour": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
@@ -1722,6 +1742,7 @@
     "firstNight": 27,
     "firstNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",
     "otherNight": 18,
+    "otherNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",
     "reminders": [
       "Mad",
       "2nd"
@@ -2029,7 +2050,7 @@
     "team": "minion",
     "standardAmyOrder": 105,
     "reminders": [
-      "About to die"
+      "About to Die"
     ],
     "setup": false,
     "ability": "All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote.",
@@ -2064,10 +2085,11 @@
     "firstNight": 29,
     "firstNightReminder": "The Pukka points to a player. That player is poisoned.",
     "otherNight": 27,
-    "otherNightReminder": "The Pukka points to a player. That player is poisoned. The previously poisoned player dies. ",
+    "otherNightReminder": "The Pukka points to a player. That player is poisoned. The previously poisoned player dies.",
     "reminders": [
+      "Dead",
       "Poisoned",
-      "Dead"
+      "Poisoned"
     ],
     "setup": false,
     "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",
@@ -2134,6 +2156,7 @@
     "otherNightReminder": "The No Dashii points to a player. That player dies.",
     "reminders": [
       "Dead",
+      "Poisoned",
       "Poisoned"
     ],
     "setup": false,
@@ -2171,6 +2194,7 @@
     "team": "demon",
     "standardAmyOrder": 112,
     "otherNight": 34,
+    "otherNightReminder": "The Ojo chooses a character.",
     "reminders": [
       "Dead"
     ],
@@ -2193,6 +2217,7 @@
     "otherNightReminder": "One player that the Shabaloth chose the previous night might be resurrected. The Shabaloth points to two players. Those players die.",
     "reminders": [
       "Dead",
+      "Dead",
       "Alive"
     ],
     "setup": false,
@@ -2213,6 +2238,8 @@
     "otherNight": 29,
     "otherNightReminder": "If the Po chose no-one the previous night: The Po points to three players. Otherwise: The Po either shows the 'no' head signal , or points to a player. Chosen players die",
     "reminders": [
+      "Dead",
+      "Dead",
       "Dead",
       "3 attacks"
     ],
@@ -2256,9 +2283,7 @@
     "reminders": [
       "1",
       "2",
-      "3",
-      "Chose death",
-      "Chose life"
+      "3"
     ],
     "setup": false,
     "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
@@ -2282,6 +2307,10 @@
     "reminders": [
       "Dead",
       "Has ability",
+      "Has ability",
+      "Has ability",
+      "Poisoned",
+      "Poisoned",
       "Poisoned"
     ],
     "setup": true,
@@ -2727,6 +2756,7 @@
     "team": "fabled",
     "otherNightReminder": "Wake each player marked \"Visitor\" or \"False Info\" one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked \"Visitor\" or, if you are waking the player marked \"False Info\", show them any number of fingers except the number of evil players marked \"Visitor.\"",
     "reminders": [
+      "Visitor",
       "Visitor",
       "False Info"
     ],
