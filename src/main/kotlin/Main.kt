@@ -1,3 +1,5 @@
+import Role.Type.FABLED
+import Role.Type.TRAVELLER
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -109,13 +111,32 @@ fun updateNightOrder() {
   val nightSheet = NightSheet.fromJson(gson, File(NIGHTSHEET_JSON).readText())
   val updatedRoles = roles.map { role ->
     when (val index = nightSheet.firstNight.indexOfFirst { normalize(it) == normalize(role.id) }) {
-      -1 -> role.copy(firstNight = null)
+      -1 -> {
+        if ((role.type == TRAVELLER || role.type == FABLED) && role.firstNightReminder != null) {
+          role.copy(firstNight = 1)
+        } else {
+          role.copy(firstNight = null)
+        }
+      }
       else -> role.copy(firstNight = index + 2)
     }
   }.map { role ->
-    when (val index = nightSheet.otherNight.indexOfFirst { normalize(it) == normalize(role.id) }) {
-      -1 -> role.copy(otherNight = null)
-      else -> role.copy(otherNight = index + 1)
+    when (val index =
+      nightSheet.otherNight.indexOfFirst { normalize(it) == normalize(role.id) }) {
+      -1 -> {
+        if ((role.type == TRAVELLER || role.type == FABLED) && role.otherNightReminder != null) {
+          role.copy(otherNight = 2)
+        } else {
+          role.copy(otherNight = null)
+        }
+      }
+      else -> {
+        if(role.id == "dusk") {
+          role.copy(otherNight = index + 1)
+        } else {
+          role.copy(otherNight = index + 2)
+        }
+      }
     }
   }
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
