@@ -14,12 +14,21 @@ data class Role(
   val otherNight: Int? = null,
   val otherNightReminder: String? = null,
   @SerializedName("reminders", alternate = ["reminderTokens"]) val reminders: List<String>? = null,
-  @SerializedName("remindersGlobal", alternate = ["globalReminderTokens"])
+  @SerializedName("remindersGlobal", alternate = ["globalReminderTokens", "globalReminders"])
   val remindersGlobal: List<String>? = null,
   val setup: Boolean? = null,
   val ability: String? = null,
+  val flavour: String? = null,
+  val urls: Urls? = null,
   val textGameClarification: String? = null,
 ) {
+
+  data class Urls(
+    val jinxes: String? = null,
+    val token: String? = null,
+    val icon: String? = null,
+    val wiki: String? = null
+  )
   enum class Type {
     @SerializedName("townsfolk")
     TOWNSFOLK,

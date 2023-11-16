@@ -38,21 +38,20 @@ class ScriptPrinter(
     print(textScriptString())
   }
 
-  private fun buildScriptRoles(): String =
-    buildString {
-      appendLine(TOWNSFOLK_DIVIDER)
-      getTownsfolkRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
-      appendLine()
-      appendLine(OUTSIDER_DIVIDER)
-      getOutsiderRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
-      appendLine()
-      appendLine(MINIONS_DIVIDER)
-      getMinionRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
-      appendLine()
-      appendLine(DEMONS_DIVIDER)
-      getDemonRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
-      appendLine()
-    }
+  private fun buildScriptRoles(): String = buildString {
+    appendLine(TOWNSFOLK_DIVIDER)
+    getTownsfolkRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
+    appendLine()
+    appendLine(OUTSIDER_DIVIDER)
+    getOutsiderRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
+    appendLine()
+    appendLine(MINIONS_DIVIDER)
+    getMinionRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
+    appendLine()
+    appendLine(DEMONS_DIVIDER)
+    getDemonRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }
+    appendLine()
+  }
 
   private fun buildFabled(): String {
     val fabled = getFabledRoles()
@@ -139,13 +138,27 @@ class ScriptPrinter(
   }
 
   private fun getFirstNightWakers(): List<String> {
-    return script.filterNot { it.firstNight == null }.sortedBy { it.firstNight }
-      .map { it.name ?: throw IllegalStateException("Name needed for role $it") }
+    return script.filterNot { it.firstNight == null }.sortedBy { it.firstNight }.map {
+      renamePlaceholders(it.name) ?: throw IllegalStateException("Name needed for role $it")
+    }
   }
 
 
   private fun getOtherNightWakers(): List<String> {
-    return script.filterNot { it.otherNight == null }.sortedBy { it.otherNight }
-      .map { it.name ?: throw IllegalStateException("Name needed for role $it") }
+    return script.filterNot { it.otherNight == null }.sortedBy { it.otherNight }.map {
+      renamePlaceholders(it.name) ?: throw IllegalStateException("Name needed for role $it")
+    }
+  }
+
+  private fun renamePlaceholders(name: String?): String? {
+    return when (name) {
+      "Demon Info" -> "**DEMON INFO**"
+      "Minion Info" -> "**MINION INFO**"
+      "Dusk" -> "**DUSK**"
+      "Dawn" -> "**DAWN**"
+      else -> {
+        name
+      }
+    }
   }
 }

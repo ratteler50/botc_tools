@@ -88,7 +88,6 @@ fun updateRawInteractionsFromInteractions() {
   )
 }
 
-
 fun updateSao() {
   updateSaoFromRawSao()
   val roles = Role.setFromJson(gson, File(ROLES_JSON).readText())
@@ -99,7 +98,9 @@ fun updateSao() {
       -1 -> role
       else -> role.copy(standardAmyOrder = index + 1)
     }
-  }.sortedWith(compareBy(nullsLast()) { it.standardAmyOrder })
+  }
+    .sortedWith(compareBy<Role, Int?>(nullsLast()) { it.standardAmyOrder }.thenBy(nullsLast()) { it.type }
+                  .thenBy { it.edition }.thenBy { it.name })
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }
 

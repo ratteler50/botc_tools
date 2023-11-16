@@ -9,7 +9,14 @@
     "reminders": [
       "Know"
     ],
-    "ability": "You start knowing 1 good player."
+    "ability": "You start knowing 1 good player.",
+    "flavour": "",
+    "urls": {
+      "jinxes": "/jinxes/steward",
+      "token": "/token/steward.png",
+      "icon": "/icon/steward.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/steward"
+    }
   },
   {
     "id": "knight",
@@ -21,7 +28,14 @@
     "reminders": [
       "Know"
     ],
-    "ability": "You start knowing 2 players that are not the Demon."
+    "ability": "You start knowing 2 players that are not the Demon.",
+    "flavour": "",
+    "urls": {
+      "jinxes": "/jinxes/knight",
+      "token": "/token/knight.png",
+      "icon": "/icon/knight.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/knight"
+    }
   },
   {
     "id": "noble",
@@ -34,7 +48,13 @@
       "Seen"
     ],
     "setup": false,
-    "ability": "You start knowing 3 players, 1 and only 1 of which is evil."
+    "ability": "You start knowing 3 players, 1 and only 1 of which is evil.",
+    "flavour": "Sarcasm is indeed the lowest form of wit. But speaking in response to your criticism, Sir, it is, nevertheless, a form of wit.",
+    "urls": {
+      "token": "/token/noble.png",
+      "icon": "/icon/noble.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Noble"
+    }
   },
   {
     "id": "investigator",
@@ -49,7 +69,14 @@
       "Wrong"
     ],
     "setup": false,
-    "ability": "You start knowing that 1 of 2 players is a particular Minion."
+    "ability": "You start knowing that 1 of 2 players is a particular Minion.",
+    "flavour": "It is a fine night for a stroll, wouldn't you say, Mister Morozov? Or should I say... BARON Morozov?",
+    "urls": {
+      "jinxes": "/jinxes/investigator",
+      "token": "/token/investigator.png",
+      "icon": "/icon/investigator.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Investigator"
+    }
   },
   {
     "id": "chef",
@@ -60,7 +87,13 @@
     "firstNight": 37,
     "firstNightReminder": "Show the finger signal (0, 1, 2, …) for the number of pairs of neighbouring evil players.",
     "setup": false,
-    "ability": "You start knowing how many pairs of evil players there are."
+    "ability": "You start knowing how many pairs of evil players there are.",
+    "flavour": "This evening's reservations seem odd. Never before has Mrs Mayweather kept company with that scamp from Hudson lane. Yet, tonight, they have a table for two. Strange.",
+    "urls": {
+      "token": "/token/chef.png",
+      "icon": "/icon/chef.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Chef"
+    }
   },
   {
     "id": "washerwoman",
@@ -75,7 +108,13 @@
       "Wrong"
     ],
     "setup": false,
-    "ability": "You start knowing that 1 of 2 players is a particular Townsfolk."
+    "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
+    "flavour": "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",
+    "urls": {
+      "token": "/token/washerwoman.png",
+      "icon": "/icon/washerwoman.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Washerwoman"
+    }
   },
   {
     "id": "clockmaker",
@@ -86,7 +125,14 @@
     "firstNight": 42,
     "firstNightReminder": "Show the hand signal for the number (1, 2, 3, etc.) of places from Demon to closest Minion.",
     "setup": false,
-    "ability": "You start knowing how many steps from the Demon to its nearest Minion."
+    "ability": "You start knowing how many steps from the Demon to its nearest Minion.",
+    "flavour": "Do not disturb me. The tick must continue, for the circle is a symbol of life, and contains all things - all answers - in it's divine machinery. I must work.",
+    "urls": {
+      "jinxes": "/jinxes/clockmaker",
+      "token": "/token/clockmaker.png",
+      "icon": "/icon/clockmaker.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Clockmaker"
+    }
   },
   {
     "id": "librarian",
@@ -101,7 +147,13 @@
       "Wrong"
     ],
     "setup": false,
-    "ability": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)"
+    "ability": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
+    "flavour": "Certainly Madam, under normal circumstances, you may borrow the Codex Malificarium from the library vaults. However, you do not seem to be a member.",
+    "urls": {
+      "token": "/token/librarian.png",
+      "icon": "/icon/librarian.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Librarian"
+    }
   },
   {
     "id": "grandmother",
@@ -117,7 +169,14 @@
       "Grandchild"
     ],
     "setup": false,
-    "ability": "You start knowing a good player & their character. If the Demon kills them, you die too."
+    "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
+    "flavour": "Take a jacket if you go outside, deary. And your thermos. And your beanie. I have a weak heart, you know. Whatever would I do if you caught cold... or worse?",
+    "urls": {
+      "jinxes": "/jinxes/grandmother",
+      "token": "/token/grandmother.png",
+      "icon": "/icon/grandmother.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Grandmother"
+    }
   },
   {
     "id": "shugenja",
@@ -125,7 +184,14 @@
     "team": "townsfolk",
     "standardAmyOrder": 10,
     "firstNight": 49,
-    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary."
+    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
+    "flavour": "これは夢。それも夢。すべて夢です。",
+    "urls": {
+      "jinxes": "/jinxes/shugenja",
+      "token": "/token/shugenja.png",
+      "icon": "/icon/shugenja.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Shugenja"
+    }
   },
   {
     "id": "bountyhunter",
@@ -140,7 +206,13 @@
       "Known"
     ],
     "setup": true,
-    "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]"
+    "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
+    "flavour": "Alone, I walk these streets, paved with the sick stench of corruption. Its thickness worms its way into my nostrils, unbidden, burning with revulsion. And anticipation. The illness of this wretched place grows each night. And I... I am the cure.",
+    "urls": {
+      "token": "/token/bountyhunter.png",
+      "icon": "/icon/bountyhunter.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Bounty Hunter"
+    }
   },
   {
     "id": "pixie",
@@ -154,7 +226,13 @@
       "Has ability"
     ],
     "setup": false,
-    "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die."
+    "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+    "flavour": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town. Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
+    "urls": {
+      "token": "/token/pixie.png",
+      "icon": "/icon/pixie.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Pixie"
+    }
   },
   {
     "id": "empath",
@@ -167,7 +245,13 @@
     "otherNight": 55,
     "otherNightReminder": "Show the finger signal (0, 1, 2) for the number of evil neighbours.",
     "setup": false,
-    "ability": "Each night, you learn how many of your 2 alive neighbours are evil."
+    "ability": "Each night, you learn how many of your 2 alive neighbours are evil.",
+    "flavour": "My skin prickles. Something is not right here. I can feel it.",
+    "urls": {
+      "token": "/token/empath.png",
+      "icon": "/icon/empath.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Empath"
+    }
   },
   {
     "id": "highpriestess",
@@ -178,7 +262,12 @@
     "firstNightReminder": "Point to a player.",
     "otherNight": 71,
     "otherNightReminder": "Point to a player.",
-    "ability": "Each night, learn which player the Storyteller believes you should talk to most."
+    "ability": "Each night, learn which player the Storyteller believes you should talk to most.",
+    "urls": {
+      "token": "/token/highpriestess.png",
+      "icon": "/icon/highpriestess.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/High_Priestess"
+    }
   },
   {
     "id": "sailor",
@@ -194,7 +283,13 @@
       "Drunk"
     ],
     "setup": false,
-    "ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die."
+    "ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die.",
+    "flavour": "I'll drink any one of yer under the table! You! The chatterbox! Reckon you can take me? No? Howza 'bout you, Grandma? You ever tried Old McKillys Extra Spiced Rum before? Guaranteed to put hairs on yer chest! Step aboard, aye!",
+    "urls": {
+      "token": "/token/sailor.png",
+      "icon": "/icon/sailor.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Sailor"
+    }
   },
   {
     "id": "general",
@@ -206,7 +301,13 @@
     "otherNight": 72,
     "otherNightReminder": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
     "setup": false,
-    "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither."
+    "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
+    "flavour": "I don’t have time for quotes.",
+    "urls": {
+      "token": "/token/general.png",
+      "icon": "/icon/general.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/General"
+    }
   },
   {
     "id": "preacher",
@@ -221,7 +322,14 @@
       "At a sermon"
     ],
     "setup": false,
-    "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability."
+    "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",
+    "flavour": "It is better to be rich and healthy than poor and sick.",
+    "urls": {
+      "jinxes": "/jinxes/preacher",
+      "token": "/token/preacher.png",
+      "icon": "/icon/preacher.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Preacher"
+    }
   },
   {
     "id": "chambermaid",
@@ -234,7 +342,14 @@
     "otherNight": 73,
     "otherNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, …) for how many of those players wake tonight for their ability.",
     "setup": false,
-    "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability."
+    "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
+    "flavour": "I aint seen nothin' untoward, Milady. Begging your pardon, but if I did see somethin', it certainly weren't the master o' the house sneaking into the professor's laboratory 'round eleven o'clock and mixing up fancy potions, just like you said, Miss.",
+    "urls": {
+      "jinxes": "/jinxes/chambermaid",
+      "token": "/token/chambermaid.png",
+      "icon": "/icon/chambermaid.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Chambermaid"
+    }
   },
   {
     "id": "balloonist",
@@ -253,7 +368,14 @@
       "Seen Traveller"
     ],
     "setup": true,
-    "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]"
+    "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
+    "flavour": "More heat! Higher! Higher! Più alto! Ahhh... it is so beautiful from up here, don't you agree? Can you see the children fishing by the river, under the willow? Can you see the glint of the sun on the circus tent-poles? What's this? An old man, alone, passed out in the vineyard? Less heat! Lower! Lower! Vai più in basso!",
+    "urls": {
+      "jinxes": "/jinxes/balloonist",
+      "token": "/token/balloonist.png",
+      "icon": "/icon/balloonist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Balloonist"
+    }
   },
   {
     "id": "king",
@@ -265,7 +387,14 @@
     "otherNight": 65,
     "otherNightReminder": "If there are more dead than living, show the King a character token of a living player.",
     "setup": false,
-    "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are."
+    "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
+    "flavour": "Betwixt the unknown strains of mortal strife And morbid night, sweet with mystery and woe Lies unfettered joys of fate’s long and colored life Who’s garden blooms with each painted face to show.",
+    "urls": {
+      "jinxes": "/jinxes/king",
+      "token": "/token/king.png",
+      "icon": "/icon/king.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/King"
+    }
   },
   {
     "id": "dreamer",
@@ -278,7 +407,13 @@
     "otherNight": 58,
     "otherNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
     "setup": false,
-    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct."
+    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
+    "flavour": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
+    "urls": {
+      "token": "/token/dreamer.png",
+      "icon": "/icon/dreamer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Dreamer"
+    }
   },
   {
     "id": "fortuneteller",
@@ -294,7 +429,13 @@
       "Red herring"
     ],
     "setup": false,
-    "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you."
+    "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
+    "flavour": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
+    "urls": {
+      "token": "/token/fortuneteller.png",
+      "icon": "/icon/fortuneteller.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fortune Teller"
+    }
   },
   {
     "id": "mathematician",
@@ -310,7 +451,14 @@
       "Abnormal"
     ],
     "setup": false,
-    "ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability."
+    "ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
+    "flavour": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; i.e., there are statements of the language of x which can neither be proved nor disproved in x. Ergo, one of you is incorrect.",
+    "urls": {
+      "jinxes": "/jinxes/mathematician",
+      "token": "/token/mathematician.png",
+      "icon": "/icon/mathematician.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mathematician"
+    }
   },
   {
     "id": "snakecharmer",
@@ -327,6 +475,12 @@
     ],
     "setup": false,
     "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
+    "flavour": "Effendi... I am but a humble man, but my pipe is golden and a single tune will tame the wildest djinn, Insh'Allah. They say that greed hangs more men than rope, but not I, effendi... not I.",
+    "urls": {
+      "token": "/token/snakecharmer.png",
+      "icon": "/icon/snakecharmer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Snake Charmer"
+    },
     "textGameClarification": "On the first night, the snake charmer will pick before evil info."
   },
   {
@@ -340,6 +494,12 @@
     "otherNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
     "setup": false,
     "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins.",
+    "flavour": "Thinking themselves wise, they became fools.",
+    "urls": {
+      "token": "/token/cultleader.png",
+      "icon": "/icon/cultleader.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Cult Leader"
+    },
     "textGameClarification": "There will be a thread. Prior to nominations opening players can state interest in forming a cult. At the time we normally open nominations, we instead lock PMs and privately collect people's votes on the cult(s). And of course people can prevote on those before we start collecting them officially. Once we have everyone's votes, nominations open and no more cults can be called that day."
   },
   {
@@ -355,7 +515,14 @@
       "Demon not voted"
     ],
     "setup": false,
-    "ability": "Each night*, you learn if a Demon voted today."
+    "ability": "Each night*, you learn if a Demon voted today.",
+    "flavour": "Yesterday's violets have withered and died, but today my poppies bloom.",
+    "urls": {
+      "jinxes": "/jinxes/flowergirl",
+      "token": "/token/flowergirl.png",
+      "icon": "/icon/flowergirl.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Flowergirl"
+    }
   },
   {
     "id": "towncrier",
@@ -370,7 +537,14 @@
       "Minion nominated"
     ],
     "setup": false,
-    "ability": "Each night*, you learn if a Minion nominated today."
+    "ability": "Each night*, you learn if a Minion nominated today.",
+    "flavour": "Hear ye! Hear ye! Witchcraft in the labyrinth! Genius savant reveals all! Town in danger! Hear Ye!",
+    "urls": {
+      "jinxes": "/jinxes/towncrier",
+      "token": "/token/towncrier.png",
+      "icon": "/icon/towncrier.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Town Crier"
+    }
   },
   {
     "id": "oracle",
@@ -381,7 +555,13 @@
     "otherNight": 61,
     "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of dead evil players.",
     "setup": false,
-    "ability": "Each night*, you learn how many dead players are evil."
+    "ability": "Each night*, you learn how many dead players are evil.",
+    "flavour": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",
+    "urls": {
+      "token": "/token/oracle.png",
+      "icon": "/icon/oracle.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Oracle"
+    }
   },
   {
     "id": "undertaker",
@@ -395,7 +575,14 @@
       "Executed"
     ],
     "setup": false,
-    "ability": "Each night*, you learn which character died by execution today."
+    "ability": "Each night*, you learn which character died by execution today.",
+    "flavour": "Hmmm....what have we here? The left boot is worn down to the heel, with flint shavings under the tongue. This is the garb of a Military man.",
+    "urls": {
+      "jinxes": "/jinxes/undertaker",
+      "token": "/token/undertaker.png",
+      "icon": "/icon/undertaker.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Undertaker"
+    }
   },
   {
     "id": "innkeeper",
@@ -410,7 +597,14 @@
       "Drunk"
     ],
     "setup": false,
-    "ability": "Each night*, choose 2 players: they can't die tonight, but 1 is drunk until dusk."
+    "ability": "Each night*, choose 2 players: they can't die tonight, but 1 is drunk until dusk.",
+    "flavour": "Come inside, fair Traveller, and rest your weary bones. Drink and be merry, for the legions of the Dark One shall not harass thee tonight.",
+    "urls": {
+      "jinxes": "/jinxes/innkeeper",
+      "token": "/token/innkeeper.png",
+      "icon": "/icon/innkeeper.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Innkeeper"
+    }
   },
   {
     "id": "gambler",
@@ -424,7 +618,14 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die."
+    "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
+    "flavour": "Heads, I win. Tails, you lose.",
+    "urls": {
+      "jinxes": "/jinxes/gambler",
+      "token": "/token/gambler.png",
+      "icon": "/icon/gambler.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Gambler"
+    }
   },
   {
     "id": "monk",
@@ -438,7 +639,14 @@
       "Protected"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player (not yourself): they are safe from the Demon tonight."
+    "ability": "Each night*, choose a player (not yourself): they are safe from the Demon tonight.",
+    "flavour": "'Tis an ill and deathly wind that blows tonight. Come, my brother, take shelter in the abbey while the storm rages. By my word, or by my life, you will be safe.",
+    "urls": {
+      "jinxes": "/jinxes/monk",
+      "token": "/token/monk.png",
+      "icon": "/icon/monk.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Monk"
+    }
   },
   {
     "id": "lycanthrope",
@@ -451,7 +659,14 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night*, choose a living player: if good, they die, but they are the only player that can die tonight."
+    "ability": "Each night*, choose a living player: if good, they die, but they are the only player that can die tonight.",
+    "flavour": "Beneath the thin veneer of civilisation lies a howling madness.",
+    "urls": {
+      "jinxes": "/jinxes/lycanthrope",
+      "token": "/token/lycanthrope.png",
+      "icon": "/icon/lycanthrope.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Lycanthrope"
+    }
   },
   {
     "id": "exorcist",
@@ -465,7 +680,14 @@
       "Chosen"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight."
+    "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
+    "flavour": "We cast you out, every unclean spirit, every satanic power, every onslaught of the infernal adversary, every legion, every diabolical group and sect, in the name and by the power of our Lord Jesus Christ. We command you, begone and fly far from the Church of God, from the souls made by God in His image and redeemed by the precious blood of the divine Lamb.",
+    "urls": {
+      "jinxes": "/jinxes/exorcist",
+      "token": "/token/exorcist.png",
+      "icon": "/icon/exorcist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Exorcist"
+    }
   },
   {
     "id": "gossip",
@@ -479,7 +701,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies."
+    "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
+    "flavour": "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.",
+    "urls": {
+      "token": "/token/gossip.png",
+      "icon": "/icon/gossip.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Gossip"
+    }
   },
   {
     "id": "savant",
@@ -488,7 +716,13 @@
     "team": "townsfolk",
     "standardAmyOrder": 36,
     "setup": false,
-    "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false."
+    "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
+    "flavour": "72 matchsticks on the floor... the sun sets early but the moon is unchanged... a torn piece of cloth... evil in the manor house... 3 by 3... the one we trusted is not what he seems... green light means magnesium... residue, but the pattern is wrong... 72 matchsticks on the floor...",
+    "urls": {
+      "token": "/token/savant.png",
+      "icon": "/icon/savant.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Savant"
+    }
   },
   {
     "id": "amnesiac",
@@ -504,6 +738,12 @@
     ],
     "setup": false,
     "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
+    "flavour": "Wait. What. Who? Oh, ok. Wait. What?",
+    "urls": {
+      "token": "/token/amnesiac.png",
+      "icon": "/icon/amnesiac.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Amnesiac"
+    },
     "textGameClarification": "Amnesiac may continue to guess once per day while dead."
   },
   {
@@ -518,7 +758,13 @@
       "Correct"
     ],
     "setup": false,
-    "ability": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct."
+    "ability": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.",
+    "flavour": "For my next trick, as per request, I will need a flower, a bag of beans, a toy snake, a paintbrush, and a motorized gasoline-powered hedge trimming device. I warn you, this trick may be my last. Oh dear.",
+    "urls": {
+      "token": "/token/juggler.png",
+      "icon": "/icon/juggler.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Juggler"
+    }
   },
   {
     "id": "nightwatchman",
@@ -533,7 +779,12 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, at night, choose a player: they learn who you are."
+    "ability": "Once per game, at night, choose a player: they learn who you are.",
+    "urls": {
+      "token": "/token/nightwatchman.png",
+      "icon": "/icon/nightwatchman.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Nightwatchman"
+    }
   },
   {
     "id": "engineer",
@@ -548,7 +799,14 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, at night, choose which Minions or which Demon is in play."
+    "ability": "Once per game, at night, choose which Minions or which Demon is in play.",
+    "flavour": "If it bends, great. If it breaks, well, it probably needed fixing anyway.",
+    "urls": {
+      "jinxes": "/jinxes/engineer",
+      "token": "/token/engineer.png",
+      "icon": "/icon/engineer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Engineer"
+    }
   },
   {
     "id": "artist",
@@ -560,7 +818,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question."
+    "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
+    "flavour": "Mon Dieu! C'est lumineux! My work, she is... how you say... Magnifique! Dieu est révélé! Oui.",
+    "urls": {
+      "token": "/token/artist.png",
+      "icon": "/icon/artist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Artist"
+    }
   },
   {
     "id": "courtier",
@@ -579,7 +843,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days."
+    "ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.",
+    "flavour": "Speech was given to man to disguise his thoughts. I am more afraid of an army of one hundred sheep led by a lion than an army of one hundred lions led by a sheep.",
+    "urls": {
+      "token": "/token/courtier.png",
+      "icon": "/icon/courtier.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Courtier"
+    }
   },
   {
     "id": "fisherman",
@@ -590,7 +860,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, during the day, visit the Storyteller for some advice to help you win."
+    "ability": "Once per game, during the day, visit the Storyteller for some advice to help you win.",
+    "flavour": "This was my favourite part of the river… see how the sunlight makes a rainbow from the monastery to the market? This was the best place for big fish. And the older I get, the bigger they were.",
+    "urls": {
+      "token": "/token/fisherman.png",
+      "icon": "/icon/fisherman.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fisherman"
+    }
   },
   {
     "id": "slayer",
@@ -602,7 +878,14 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, during the day, publicly choose a player: if they are the Demon, they die."
+    "ability": "Once per game, during the day, publicly choose a player: if they are the Demon, they die.",
+    "flavour": "Die.",
+    "urls": {
+      "jinxes": "/jinxes/slayer",
+      "token": "/token/slayer.png",
+      "icon": "/icon/slayer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Slayer"
+    }
   },
   {
     "id": "professor",
@@ -617,7 +900,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected."
+    "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
+    "flavour": "The process is simple. Attach the hydraulic confabulator to the modified chi matrix amplifier, add 20 CCs of pseudodorafine, keep his Z levels above 20%, and your husband will be fine. Now, all we need is a lightning strike.",
+    "urls": {
+      "token": "/token/professor.png",
+      "icon": "/icon/professor.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Professor"
+    }
   },
   {
     "id": "seamstress",
@@ -633,7 +922,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment."
+    "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
+    "flavour": "Did you hear that stranger in the cashmere coat put the word on our young Belle? And she said yes? Well, that's nothing compared to what Harry and that juggler got up to at the fair! The things I could say if I was a tattletale... my yes.",
+    "urls": {
+      "token": "/token/seamstress.png",
+      "icon": "/icon/seamstress.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Seamstress"
+    }
   },
   {
     "id": "philosopher",
@@ -650,7 +945,13 @@
       "Is the Philosopher"
     ],
     "setup": false,
-    "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk."
+    "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
+    "flavour": "If anything is real, beer is real. Drink, for tomorrow we may die. Why? Why not.",
+    "urls": {
+      "token": "/token/philosopher.png",
+      "icon": "/icon/philosopher.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Philosopher"
+    }
   },
   {
     "id": "huntsman",
@@ -665,7 +966,14 @@
       "No ability"
     ],
     "setup": true,
-    "ability": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]"
+    "ability": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",
+    "flavour": "My cabin is warm and sturdy. My axe by the door, my boots drying by the fire, and elk stew a-simmering… Hark! A scream echoes through the valley! The rain and the mud and the cold, cold wind mask the scent of the wolves, but I know the path and my pace is steady. I am coming.",
+    "urls": {
+      "jinxes": "/jinxes/huntsman",
+      "token": "/token/huntsman.png",
+      "icon": "/icon/huntsman.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Huntsman"
+    }
   },
   {
     "id": "soldier",
@@ -674,7 +982,14 @@
     "team": "townsfolk",
     "standardAmyOrder": 49,
     "setup": false,
-    "ability": "You are safe from the Demon."
+    "ability": "You are safe from the Demon.",
+    "flavour": "As David said to Goliath, as Theseus said to the Minotaur, as Arjuna said to Bhagadatta... No.",
+    "urls": {
+      "jinxes": "/jinxes/soldier",
+      "token": "/token/soldier.png",
+      "icon": "/icon/soldier.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Soldier"
+    }
   },
   {
     "id": "fool",
@@ -686,7 +1001,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "The first time you die, you don't."
+    "ability": "The first time you die, you don't.",
+    "flavour": "...and the King said What?! I've never even owned a pair of rubber pantaloons, let alone a custard cannon! Ho-ho! Jolly day!",
+    "urls": {
+      "token": "/token/fool.png",
+      "icon": "/icon/fool.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fool"
+    }
   },
   {
     "id": "pacifist",
@@ -695,7 +1016,14 @@
     "team": "townsfolk",
     "standardAmyOrder": 51,
     "setup": false,
-    "ability": "Executed good players might not die."
+    "ability": "Executed good players might not die.",
+    "flavour": "Distrust all in whom the impulse to punish is powerful.",
+    "urls": {
+      "jinxes": "/jinxes/pacifist",
+      "token": "/token/pacifist.png",
+      "icon": "/icon/pacifist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Pacifist"
+    }
   },
   {
     "id": "alchemist",
@@ -708,7 +1036,14 @@
       "Is the Alchemist"
     ],
     "setup": false,
-    "ability": "You have a not-in-play Minion ability."
+    "ability": "You have a not-in-play Minion ability.",
+    "flavour": "Visit the interior of the Earth. By rectification thou shalt find the hidden stone. Above the gold, lieth the red. Kether in Malkuth.",
+    "urls": {
+      "jinxes": "/jinxes/alchemist",
+      "token": "/token/alchemist.png",
+      "icon": "/icon/alchemist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Alchemist"
+    }
   },
   {
     "id": "tealady",
@@ -720,7 +1055,13 @@
       "Can not die"
     ],
     "setup": false,
-    "ability": "If both your alive neighbours are good, they can't die."
+    "ability": "If both your alive neighbours are good, they can't die.",
+    "flavour": "Sit in silence, for there is nothing to say. Peace be with you.",
+    "urls": {
+      "token": "/token/tealady.png",
+      "icon": "/icon/tealady.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Tea Lady"
+    }
   },
   {
     "id": "sage",
@@ -731,7 +1072,14 @@
     "otherNight": 44,
     "otherNightReminder": "If the Sage was killed by a Demon: Point to two players, one of which is that Demon.",
     "setup": false,
-    "ability": "If the Demon kills you, you learn that it is 1 of 2 players."
+    "ability": "If the Demon kills you, you learn that it is 1 of 2 players.",
+    "flavour": "These mountainous tomes guard the secret, I am sure of it! Twixt word and word, it lies in wait. More candles, boy! More ink! These notes may look arcane, but the infernal puzzle is revealing itself.",
+    "urls": {
+      "jinxes": "/jinxes/sage",
+      "token": "/token/sage.png",
+      "icon": "/icon/sage.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Sage"
+    }
   },
   {
     "id": "farmer",
@@ -741,7 +1089,14 @@
     "otherNight": 50,
     "otherNightReminder": "If a Farmer died tonight, choose another good player and make them the Farmer. Wake this player, show them the 'You are' card and the Farmer character token.",
     "setup": false,
-    "ability": "If you die at night, an alive good player becomes a Farmer."
+    "ability": "If you die at night, an alive good player becomes a Farmer.",
+    "flavour": "Even the high and mighty need food on the table. Without us, the city starves.",
+    "urls": {
+      "jinxes": "/jinxes/farmer",
+      "token": "/token/farmer.png",
+      "icon": "/icon/farmer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Farmer"
+    }
   },
   {
     "id": "magician",
@@ -751,7 +1106,14 @@
     "firstNight": 5,
     "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
     "setup": false,
-    "ability": "The Demon thinks you are a Minion. Minions think you are a Demon."
+    "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
+    "flavour": "1… 2… Abra… 3… 4… Cadabra… <poof!> And, as you can see, ladies and gentlemen, Captain Farnsworth’s bag of gold has disappeared! Gone! Without a trace! Thank you, and goodnight!",
+    "urls": {
+      "jinxes": "/jinxes/magician",
+      "token": "/token/magician.png",
+      "icon": "/icon/magician.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Magician"
+    }
   },
   {
     "id": "ravenkeeper",
@@ -762,7 +1124,14 @@
     "otherNight": 54,
     "otherNightReminder": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player’s character token.",
     "setup": false,
-    "ability": "If you die at night, you are woken to choose a player: you learn their character."
+    "ability": "If you die at night, you are woken to choose a player: you learn their character.",
+    "flavour": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! Take your message to those in dark corners! To the manor and to the river! Let them read of the nature of my death.",
+    "urls": {
+      "jinxes": "/jinxes/ravenkeeper",
+      "token": "/token/ravenkeeper.png",
+      "icon": "/icon/ravenkeeper.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Ravenkeeper"
+    }
   },
   {
     "id": "choirboy",
@@ -772,7 +1141,13 @@
     "otherNight": 46,
     "otherNightReminder": "If the King was killed by the Demon, wake the Choirboy and point to the Demon player.",
     "setup": true,
-    "ability": "If the Demon kills the King, you learn which player is the Demon. [+ the King]"
+    "ability": "If the Demon kills the King, you learn which player is the Demon. [+ the King]",
+    "flavour": "I saw it, I did. I was in the pews, tidying the hymn books, when a dreadful tune started from the pipe organ. The organist had a long cloak, and long fingers on the keys. And a hat that looked… just like… yours.",
+    "urls": {
+      "token": "/token/choirboy.png",
+      "icon": "/icon/choirboy.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Choirboy"
+    }
   },
   {
     "id": "virgin",
@@ -784,7 +1159,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately."
+    "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
+    "flavour": "I am pure. Let those who are without sin cast themselves down and suffer in my stead. My reputation shall not be stained with your venomous accusations.",
+    "urls": {
+      "token": "/token/virgin.png",
+      "icon": "/icon/virgin.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Virgin"
+    }
   },
   {
     "id": "poppygrower",
@@ -800,6 +1181,13 @@
     ],
     "setup": false,
     "ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
+    "flavour": "In the hidden groves of the deep forest, the black poppy dwells. To see its revelry is to be enchanted. To smell its thick aroma is to be lost forever, a slave to the gods of light and dark.",
+    "urls": {
+      "jinxes": "/jinxes/poppygrower",
+      "token": "/token/poppygrower.png",
+      "icon": "/icon/poppygrower.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Poppy Grower"
+    },
     "textGameClarification": "Info will be given if a poisoned poppy grower dies."
   },
   {
@@ -812,7 +1200,14 @@
       "Everyone drunk"
     ],
     "setup": false,
-    "ability": "When a Minion dies by execution, all other players (except Travellers) are drunk until dusk tomorrow."
+    "ability": "When a Minion dies by execution, all other players (except Travellers) are drunk until dusk tomorrow.",
+    "flavour": "And I shall hear, tho' soft you tread above me... And all my dreams will warm and sweeter be... If you'll not fail to tell me that you love me... I simply sleep in peace until you come to me.",
+    "urls": {
+      "jinxes": "/jinxes/minstrel",
+      "token": "/token/minstrel.png",
+      "icon": "/icon/minstrel.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Minstrel"
+    }
   },
   {
     "id": "mayor",
@@ -821,7 +1216,14 @@
     "team": "townsfolk",
     "standardAmyOrder": 62,
     "setup": false,
-    "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead."
+    "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
+    "flavour": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
+    "urls": {
+      "jinxes": "/jinxes/mayor",
+      "token": "/token/mayor.png",
+      "icon": "/icon/mayor.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mayor"
+    }
   },
   {
     "id": "atheist",
@@ -829,7 +1231,13 @@
     "team": "townsfolk",
     "standardAmyOrder": 63,
     "setup": true,
-    "ability": "The Storyteller can break the game rules & if executed, good wins, even if you are dead. [No evil characters]"
+    "ability": "The Storyteller can break the game rules & if executed, good wins, even if you are dead. [No evil characters]",
+    "flavour": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands.",
+    "urls": {
+      "token": "/token/atheist.png",
+      "icon": "/icon/atheist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Atheist"
+    }
   },
   {
     "id": "cannibal",
@@ -841,7 +1249,14 @@
       "Died today"
     ],
     "setup": false,
-    "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution."
+    "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
+    "flavour": "I don’t like clowns. They taste funny.",
+    "urls": {
+      "jinxes": "/jinxes/cannibal",
+      "token": "/token/cannibal.png",
+      "icon": "/icon/cannibal.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Cannibal"
+    }
   },
   {
     "id": "snitch",
@@ -851,7 +1266,14 @@
     "firstNight": 7,
     "firstNightReminder": "After Minion info wake each Minion and show them three not-in-play character tokens. These may be the same or different to each other and the ones shown to the Demon.",
     "setup": false,
-    "ability": "Minions start knowing 3 not-in-play characters."
+    "ability": "Minions start knowing 3 not-in-play characters.",
+    "flavour": "It was John.",
+    "urls": {
+      "jinxes": "/jinxes/snitch",
+      "token": "/token/snitch.png",
+      "icon": "/icon/snitch.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Snitch"
+    }
   },
   {
     "id": "butler",
@@ -867,7 +1289,14 @@
       "Master"
     ],
     "setup": false,
-    "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too."
+    "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
+    "flavour": "Certainly, sir.",
+    "urls": {
+      "jinxes": "/jinxes/butler",
+      "token": "/token/butler.png",
+      "icon": "/icon/butler.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Butler"
+    }
   },
   {
     "id": "goon",
@@ -879,7 +1308,13 @@
       "Drunk"
     ],
     "setup": false,
-    "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment."
+    "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.",
+    "flavour": "Yes boss. I explained fings real good to dat geezer. He don't want me explain it again. Nah boss, I don't need no doctor - it's only a knife wound. Be right come mornin'.",
+    "urls": {
+      "token": "/token/goon.png",
+      "icon": "/icon/goon.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Goon"
+    }
   },
   {
     "id": "acrobat",
@@ -892,7 +1327,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night*, if either good living neighbour is drunk or poisoned, you die."
+    "ability": "Each night*, if either good living neighbour is drunk or poisoned, you die.",
+    "flavour": "Welcome, one and all, to the greatest show on earth.",
+    "urls": {
+      "token": "/token/acrobat.png",
+      "icon": "/icon/acrobat.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Acrobat"
+    }
   },
   {
     "id": "puzzlemaster",
@@ -904,7 +1345,13 @@
       "Guess used"
     ],
     "setup": false,
-    "ability": "1 player is drunk, even if you die. If you guess (once) who it is, learn the Demon player, but guess wrong & get false info."
+    "ability": "1 player is drunk, even if you die. If you guess (once) who it is, learn the Demon player, but guess wrong & get false info.",
+    "flavour": "When one begins to think that some thing is merely some other thing, one is usually on the brink of an error. Patience, patience. Don’t confuse",
+    "urls": {
+      "token": "/token/puzzlemaster.png",
+      "icon": "/icon/puzzlemaster.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Puzzlemaster"
+    }
   },
   {
     "id": "tinker",
@@ -918,7 +1365,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "You might die at any time."
+    "ability": "You might die at any time.",
+    "flavour": "I think I see the problem. Luckily,I have an idea! This catapult will shoot twice as far with just a minor adjustment...",
+    "urls": {
+      "token": "/token/tinker.png",
+      "icon": "/icon/tinker.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Tinker"
+    }
   },
   {
     "id": "saint",
@@ -927,7 +1380,14 @@
     "team": "outsider",
     "standardAmyOrder": 71,
     "setup": false,
-    "ability": "If you die by execution, your team loses."
+    "ability": "If you die by execution, your team loses.",
+    "flavour": "Wisdom begets peace. Patience begets wisdom. Fear not, for the time shall come when fear too shall pass. Let us pray, and may the unity of our vision make saints of us all.",
+    "urls": {
+      "jinxes": "/jinxes/saint",
+      "token": "/token/saint.png",
+      "icon": "/icon/saint.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Saint"
+    }
   },
   {
     "id": "sweetheart",
@@ -941,7 +1401,13 @@
       "Drunk"
     ],
     "setup": false,
-    "ability": "When you die, 1 player is drunk from now on."
+    "ability": "When you die, 1 player is drunk from now on.",
+    "flavour": "I will never forget her. Never.",
+    "urls": {
+      "token": "/token/sweetheart.png",
+      "icon": "/icon/sweetheart.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Sweetheart"
+    }
   },
   {
     "id": "plaguedoctor",
@@ -949,7 +1415,14 @@
     "team": "outsider",
     "standardAmyOrder": 73,
     "setup": false,
-    "ability": "If you die, the Storyteller gains a not-in-play Minion ability."
+    "ability": "If you die, the Storyteller gains a not-in-play Minion ability.",
+    "flavour": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
+    "urls": {
+      "jinxes": "/jinxes/plagueDoctor",
+      "token": "/token/plagueDoctor.png",
+      "icon": "/icon/plagueDoctor.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Plague_Doctor"
+    }
   },
   {
     "id": "recluse",
@@ -958,7 +1431,13 @@
     "team": "outsider",
     "standardAmyOrder": 74,
     "setup": false,
-    "ability": "You might register as evil & as a Minion or Demon, even if dead."
+    "ability": "You might register as evil & as a Minion or Demon, even if dead.",
+    "flavour": "Garn git ya darn grub ya mitts ofma lorn yasee. Grr. Natsy pikkins yonder southwise ye begittin afta ya! Git! Me harvy no so widda licks and demmons no be fightin' hadsup ne'er ma kin. Git, assay!",
+    "urls": {
+      "token": "/token/recluse.png",
+      "icon": "/icon/recluse.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Recluse"
+    }
   },
   {
     "id": "mutant",
@@ -967,7 +1446,13 @@
     "team": "outsider",
     "standardAmyOrder": 75,
     "setup": false,
-    "ability": "If you are “mad” about being an Outsider, you might be executed."
+    "ability": "If you are “mad” about being an Outsider, you might be executed.",
+    "flavour": "I am not a freak! I am a human being! Have mercy!",
+    "urls": {
+      "token": "/token/mutant.png",
+      "icon": "/icon/mutant.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mutant"
+    }
   },
   {
     "id": "heretic",
@@ -975,7 +1460,14 @@
     "team": "outsider",
     "standardAmyOrder": 76,
     "setup": false,
-    "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead."
+    "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
+    "flavour": "After the hail has smashed the roof and splintered the glass of the Cathedral windows, it melts again into the earth, like a dying lamb in the desert sun. Such is the parable of the madman.",
+    "urls": {
+      "jinxes": "/jinxes/heretic",
+      "token": "/token/heretic.png",
+      "icon": "/icon/heretic.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Heretic"
+    }
   },
   {
     "id": "damsel",
@@ -990,7 +1482,14 @@
       "Guess used"
     ],
     "setup": false,
-    "ability": "All Minions know you are in play. If a Minion publicly guesses you (once), your team loses."
+    "ability": "All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.",
+    "flavour": "Don't touch the hair, honey.",
+    "urls": {
+      "jinxes": "/jinxes/damsel",
+      "token": "/token/damsel.png",
+      "icon": "/icon/damsel.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Damsel"
+    }
   },
   {
     "id": "klutz",
@@ -999,7 +1498,13 @@
     "team": "outsider",
     "standardAmyOrder": 78,
     "setup": false,
-    "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses."
+    "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
+    "flavour": "Oops.",
+    "urls": {
+      "token": "/token/klutz.png",
+      "icon": "/icon/klutz.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Klutz"
+    }
   },
   {
     "id": "drunk",
@@ -1011,7 +1516,13 @@
       "Drunk"
     ],
     "setup": true,
-    "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not."
+    "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
+    "flavour": "This is all perfectly <burp> logical. I know that Miss Dearheart is a Fortune Teller. Mrs Dearheart swears that Jenkins here is her Butler. It's simple <hic> deduction.",
+    "urls": {
+      "token": "/token/drunk.png",
+      "icon": "/icon/drunk.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Drunk"
+    }
   },
   {
     "id": "golem",
@@ -1022,7 +1533,14 @@
       "Can not nominate"
     ],
     "setup": false,
-    "ability": "You may only nominate once per game. When you do, if the nominee is not the Demon, they die."
+    "ability": "You may only nominate once per game. When you do, if the nominee is not the Demon, they die.",
+    "flavour": "Golem help? Golem smash! Golem help.",
+    "urls": {
+      "jinxes": "/jinxes/golem",
+      "token": "/token/golem.png",
+      "icon": "/icon/golem.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Golem"
+    }
   },
   {
     "id": "moonchild",
@@ -1036,7 +1554,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player, they die."
+    "ability": "When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player, they die.",
+    "flavour": "Scorpio looks sideways at the lovers, and you have a choice to make. With silver cross my palm, and your fate shall be revealed. With steel cross my throat, and by the stars you shall regret it.",
+    "urls": {
+      "token": "/token/moonchild.png",
+      "icon": "/icon/moonchild.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Moonchild"
+    }
   },
   {
     "id": "barber",
@@ -1050,7 +1574,13 @@
       "Haircuts tonight"
     ],
     "setup": false,
-    "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters."
+    "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
+    "flavour": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
+    "urls": {
+      "token": "/token/barber.png",
+      "icon": "/icon/barber.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Barber"
+    }
   },
   {
     "id": "politician",
@@ -1058,7 +1588,14 @@
     "team": "outsider",
     "standardAmyOrder": 83,
     "setup": false,
-    "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead."
+    "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead.",
+    "flavour": "I’m glad you asked that question. Truly, I am. But I think the REAL question here is…",
+    "urls": {
+      "jinxes": "/jinxes/politician",
+      "token": "/token/politician.png",
+      "icon": "/icon/politician.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Politician"
+    }
   },
   {
     "id": "lunatic",
@@ -1076,7 +1613,14 @@
       "Attack 3"
     ],
     "setup": false,
-    "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night."
+    "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
+    "flavour": "I am the night... I think.",
+    "urls": {
+      "jinxes": "/jinxes/lunatic",
+      "token": "/token/lunatic.png",
+      "icon": "/icon/lunatic.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Lunatic"
+    }
   },
   {
     "id": "godfather",
@@ -1093,7 +1637,14 @@
       "Dead"
     ],
     "setup": true,
-    "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [−1 or +1 Outsider]"
+    "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [−1 or +1 Outsider]",
+    "flavour": "Normally, it's just business. But when you insult my daughter, you insult me. And when you insult me, you insult my family. You really should be more careful - it would be a shame if you had an unfortunate accident.",
+    "urls": {
+      "jinxes": "/jinxes/godfather",
+      "token": "/token/godfather.png",
+      "icon": "/icon/godfather.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Godfather"
+    }
   },
   {
     "id": "widow",
@@ -1109,7 +1660,14 @@
       "Knows"
     ],
     "setup": false,
-    "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play."
+    "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
+    "flavour": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",
+    "urls": {
+      "jinxes": "/jinxes/widow",
+      "token": "/token/widow.png",
+      "icon": "/icon/widow.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Widow"
+    }
   },
   {
     "id": "poisoner",
@@ -1125,7 +1683,13 @@
       "Poisoned"
     ],
     "setup": false,
-    "ability": "Each night, choose a player: they are poisoned tonight and tomorrow day."
+    "ability": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
+    "flavour": "Add compound Alpha to compound Beta... NOT TOO MUCH!",
+    "urls": {
+      "token": "/token/poisoner.png",
+      "icon": "/icon/poisoner.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Poisoner"
+    }
   },
   {
     "id": "devilsadvocate",
@@ -1141,7 +1705,14 @@
       "Survives execution"
     ],
     "setup": false,
-    "ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die."
+    "ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die.",
+    "flavour": "My client, should the objection be overruled, pleads innocent by virtue of the prosecution's non-observance of statute 27.B - incorrect or misleading conjugation of a verb. The fact that 9 of the jury died last night is simply prima face, which is, as Wills vs Thule set precedent for, further reason to acquit.",
+    "urls": {
+      "jinxes": "/jinxes/devilsadvocate",
+      "token": "/token/devilsadvocate.png",
+      "icon": "/icon/devilsadvocate.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Devil's Advocate"
+    }
   },
   {
     "id": "harpy",
@@ -1155,7 +1726,14 @@
       "Mad",
       "2nd"
     ],
-    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die."
+    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
+    "flavour": "So fair a day I never did see, nor so fowl a presence hanging over me.",
+    "urls": {
+      "jinxes": "/jinxes/harpy",
+      "token": "/token/harpy.png",
+      "icon": "/icon/harpy.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Harpy"
+    }
   },
   {
     "id": "witch",
@@ -1171,7 +1749,13 @@
       "Cursed"
     ],
     "setup": false,
-    "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability."
+    "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",
+    "flavour": "Three drops of goat's blood. A lock of hair, torn in anger. The name is spoken, the shadow cast. Walk left foot first down that bramble-filled path, and don't look back.",
+    "urls": {
+      "token": "/token/witch.png",
+      "icon": "/icon/witch.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Witch"
+    }
   },
   {
     "id": "spy",
@@ -1184,7 +1768,14 @@
     "otherNight": 70,
     "otherNightReminder": "Show the Grimoire to the Spy for as long as they need.",
     "setup": false,
-    "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead."
+    "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
+    "flavour": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",
+    "urls": {
+      "jinxes": "/jinxes/spy",
+      "token": "/token/spy.png",
+      "icon": "/icon/spy.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Spy"
+    }
   },
   {
     "id": "cerenovus",
@@ -1200,7 +1791,14 @@
       "Mad"
     ],
     "setup": false,
-    "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed."
+    "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
+    "flavour": "Reality is merely an opinion. Specifically, my opinion.",
+    "urls": {
+      "jinxes": "/jinxes/cerenovus",
+      "token": "/token/cerenovus.png",
+      "icon": "/icon/cerenovus.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Cerenovus"
+    }
   },
   {
     "id": "fearmonger",
@@ -1215,7 +1813,13 @@
       "Fear"
     ],
     "setup": false,
-    "ability": "Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player."
+    "ability": "Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player.",
+    "flavour": "Beware of gazing long into the Abyss, lest the Abyss also gaze into you.",
+    "urls": {
+      "token": "/token/fearmonger.png",
+      "icon": "/icon/fearmonger.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fearmonger"
+    }
   },
   {
     "id": "pithag",
@@ -1226,7 +1830,14 @@
     "otherNight": 16,
     "otherNightReminder": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
     "setup": false,
-    "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary."
+    "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
+    "flavour": "Round about the cauldron go; In the poisoned entrails throw; Toad, that under cold stone; Days and nights has thirty-one; Sweated venom sleeping got; Boil thou first in the charmed pot.",
+    "urls": {
+      "jinxes": "/jinxes/pithag",
+      "token": "/token/pithag.png",
+      "icon": "/icon/pithag.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Pit-Hag"
+    }
   },
   {
     "id": "psychopath",
@@ -1235,6 +1846,12 @@
     "standardAmyOrder": 95,
     "setup": false,
     "ability": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo.",
+    "flavour": "Surprise!",
+    "urls": {
+      "token": "/token/psychopath.png",
+      "icon": "/icon/psychopath.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Psychopath"
+    },
     "textGameClarification": "When using their ability, The psychopath must publicly announce they are the psychopath and pick a player. The message must be pinned. before nominations open, the psychopath will be warned privately if they intend to use their ability, unless they tell us they don't intend to earlier. If the psychopath is executed, the psychopath and the nominator will send a message in you storyteller chat of your pick of rock paper or scissors. If the psychopath loses, they die. If the psychopath nominated themself a storyteller will play against them."
   },
   {
@@ -1250,7 +1867,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not."
+    "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
+    "flavour": "...",
+    "urls": {
+      "token": "/token/assassin.png",
+      "icon": "/icon/assassin.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Assassin"
+    }
   },
   {
     "id": "baron",
@@ -1259,7 +1882,13 @@
     "team": "minion",
     "standardAmyOrder": 97,
     "setup": true,
-    "ability": "There are extra Outsiders in play. [+2 Outsiders]"
+    "ability": "There are extra Outsiders in play. [+2 Outsiders]",
+    "flavour": "This town has gone to the dogs, what? Cheap foreign labor... that's the ticket. Stuff them in the mine, I say. A bit of hard work never hurt anyone, and a clip'o'the ears to any brigand who says otherwise. It's all about the bottom line, what?",
+    "urls": {
+      "token": "/token/baron.png",
+      "icon": "/icon/baron.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Baron"
+    }
   },
   {
     "id": "mezepheles",
@@ -1275,7 +1904,13 @@
       "No ability"
     ],
     "setup": false,
-    "ability": "You start knowing a secret word. The 1st good player to say this word becomes evil that night."
+    "ability": "You start knowing a secret word. The 1st good player to say this word becomes evil that night.",
+    "flavour": "That which issues from the heart alone, will bend the hearts of others to your own.",
+    "urls": {
+      "token": "/token/mezepheles.png",
+      "icon": "/icon/mezepheles.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mezepheles"
+    }
   },
   {
     "id": "goblin",
@@ -1287,6 +1922,13 @@
     ],
     "setup": false,
     "ability": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.",
+    "flavour": "You don’t want to insult the goblins. You really, really don’t. On a completely different note… can I have another piece of cake?",
+    "urls": {
+      "jinxes": "/jinxes/goblin",
+      "token": "/token/goblin.png",
+      "icon": "/icon/goblin.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Goblin"
+    },
     "textGameClarification": "The public claim must occur between the nomination and the first vote. You may also preclaim in your storyteller chat."
   },
   {
@@ -1301,7 +1943,14 @@
       "Demon"
     ],
     "setup": false,
-    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)"
+    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)",
+    "flavour": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
+    "urls": {
+      "jinxes": "/jinxes/scarletwoman",
+      "token": "/token/scarletwoman.png",
+      "icon": "/icon/scarletwoman.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Scarlet Woman"
+    }
   },
   {
     "id": "mastermind",
@@ -1310,7 +1959,14 @@
     "team": "minion",
     "standardAmyOrder": 101,
     "setup": false,
-    "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses."
+    "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
+    "flavour": "The tentacles of that monster are nailed to the doors of the church. Mothers & children are dancing in the street. Excellent. Everything is proceeding exactly as I have planned.",
+    "urls": {
+      "jinxes": "/jinxes/mastermind",
+      "token": "/token/mastermind.png",
+      "icon": "/icon/mastermind.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mastermind"
+    }
   },
   {
     "id": "eviltwin",
@@ -1324,7 +1980,13 @@
       "Twin"
     ],
     "setup": false,
-    "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live."
+    "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
+    "flavour": "I'm not Sara! I'm Clara! SHE is Sara! Sara is the evil one! Not me!",
+    "urls": {
+      "token": "/token/eviltwin.png",
+      "icon": "/icon/eviltwin.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Evil Twin"
+    }
   },
   {
     "id": "boomdandy",
@@ -1333,6 +1995,12 @@
     "standardAmyOrder": 103,
     "setup": false,
     "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.",
+    "flavour": "Tick... Tick... Tick... TOCK.",
+    "urls": {
+      "token": "/token/boomdandy.png",
+      "icon": "/icon/boomdandy.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Boomdandy"
+    },
     "textGameClarification": "After the day ends and boomdandy is executed and dies, players have two hours to speak publicly only. We will create a Boomdandy Thread for players to place their votes in. The last name given is who they are pointing at. Players can set preconditional boomdandy votes, if it does not yield a clear choice it will not be accepted; all preconditional votes are made public after deaths are announced."
   },
   {
@@ -1346,7 +2014,14 @@
       "Is the Marionette"
     ],
     "setup": true,
-    "ability": "You think you are a good character but you are not. The Demon knows who you are. [You neighbour the Demon]"
+    "ability": "You think you are a good character but you are not. The Demon knows who you are. [You neighbour the Demon]",
+    "flavour": "Words, words. They're all we have to go on.",
+    "urls": {
+      "jinxes": "/jinxes/marionette",
+      "token": "/token/marionette.png",
+      "icon": "/icon/marionette.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Marionette"
+    }
   },
   {
     "id": "organgrinder",
@@ -1357,7 +2032,13 @@
       "About to die"
     ],
     "setup": false,
-    "ability": "All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote."
+    "ability": "All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote.",
+    "flavour": "Flavour Text.",
+    "urls": {
+      "token": "/token/organgrinder.png",
+      "icon": "/icon/organgrinder.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Organ Grinder"
+    }
   },
   {
     "id": "vizier",
@@ -1366,7 +2047,13 @@
     "standardAmyOrder": 106,
     "firstNight": 60,
     "otherNightReminder": "Announce the Vizier player to the group.",
-    "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately."
+    "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.",
+    "flavour": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.",
+    "urls": {
+      "token": "/token/vizier.png",
+      "icon": "/icon/vizier.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Vizier"
+    }
   },
   {
     "id": "pukka",
@@ -1383,7 +2070,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy."
+    "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",
+    "flavour": "You truly have been kind welcoming me into your beautiful home. I am so sorry I accidentally scratched you. A little thing. No matter. But please, take this golden toothpick as a humble token of my regret and appreciation.",
+    "urls": {
+      "token": "/token/pukka.png",
+      "icon": "/icon/pukka.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Pukka"
+    }
   },
   {
     "id": "lilmonsta",
@@ -1399,7 +2092,14 @@
       "Dead"
     ],
     "setup": true,
-    "ability": "Each night, Minions choose who babysits Lil' Monsta's token & \"is the Demon\". A player dies each night*. [+1 Minion]"
+    "ability": "Each night, Minions choose who babysits Lil' Monsta's token & \"is the Demon\". A player dies each night*. [+1 Minion]",
+    "flavour": "Step 1: Be cute. Step 2: World domination. Step 3: Bweakfast.",
+    "urls": {
+      "jinxes": "/jinxes/lilmonsta",
+      "token": "/token/lilmonsta.png",
+      "icon": "/icon/lilmonsta.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Lil' Monsta"
+    }
   },
   {
     "id": "lleech",
@@ -1415,7 +2115,14 @@
       "Poisoned"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if & only if they die."
+    "ability": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if & only if they die.",
+    "flavour": "Tasty, tasty, tasty, tasty, tasty, tasty, tasty, tasty brai- I mean pie! Yes. Tasty pie. That’s what I meant to say.",
+    "urls": {
+      "jinxes": "/jinxes/lleech",
+      "token": "/token/lleech.png",
+      "icon": "/icon/lleech.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Lleech"
+    }
   },
   {
     "id": "nodashii",
@@ -1430,7 +2137,13 @@
       "Poisoned"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player: they die. Your 2 Townsfolk neighbours are poisoned."
+    "ability": "Each night*, choose a player: they die. Your 2 Townsfolk neighbours are poisoned.",
+    "flavour": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",
+    "urls": {
+      "token": "/token/nodashii.png",
+      "icon": "/icon/nodashii.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/No Dashii"
+    }
   },
   {
     "id": "imp",
@@ -1444,7 +2157,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp."
+    "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
+    "flavour": "We must keep our wits sharp and our sword sharper. Evil walks among us, and will stop at nothing to destroy us good, simple folk, bringing our fine town to ruin. Trust no-one. But, if you must trust someone, trust me.",
+    "urls": {
+      "token": "/token/imp.png",
+      "icon": "/icon/imp.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Imp"
+    }
   },
   {
     "id": "ojo",
@@ -1456,7 +2175,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies."
+    "ability": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
+    "flavour": "Like a bonfire on a moonless night… I see you, mortal.",
+    "urls": {
+      "token": "/token/ojo.png",
+      "icon": "/icon/ojo.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Ojo"
+    }
   },
   {
     "id": "shabaloth",
@@ -1471,7 +2196,13 @@
       "Alive"
     ],
     "setup": false,
-    "ability": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated."
+    "ability": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
+    "flavour": "Blarg f'taag nm mataan! No sho gumtha m'sik na yuuu. Fluuuuuuuuurg h-sikkkh.",
+    "urls": {
+      "token": "/token/shabaloth.png",
+      "icon": "/icon/shabaloth.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Shabaloth"
+    }
   },
   {
     "id": "po",
@@ -1486,7 +2217,13 @@
       "3 attacks"
     ],
     "setup": false,
-    "ability": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight."
+    "ability": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.",
+    "flavour": "Would you like a flower? I'm so lonely.",
+    "urls": {
+      "token": "/token/po.png",
+      "icon": "/icon/po.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Po"
+    }
   },
   {
     "id": "zombuul",
@@ -1501,7 +2238,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead."
+    "ability": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.",
+    "flavour": "I do not. Understand. Your ways. Fellow human. Show me. The dirt. Where the holy. Lay. Sleeping. I too. Must sleep. Soon.",
+    "urls": {
+      "token": "/token/zombuul.png",
+      "icon": "/icon/zombuul.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Zombuul"
+    }
   },
   {
     "id": "alhadikhia",
@@ -1519,6 +2262,13 @@
     ],
     "setup": false,
     "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
+    "flavour": "Alsukut min dhahab.",
+    "urls": {
+      "jinxes": "/jinxes/alhadikhia",
+      "token": "/token/alhadikhia.png",
+      "icon": "/icon/alhadikhia.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Al-Hadikhia"
+    },
     "textGameClarification": "At night, after all check ins, if Al-Hadikhia is in play, we will lock the channel. Their first pick will be announced, we will privately message for a response, then second, then third. After all picks and responses from the necessary players, we may require another full check in depending on the script"
   },
   {
@@ -1535,7 +2285,13 @@
       "Poisoned"
     ],
     "setup": true,
-    "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. [−1 Outsider]"
+    "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. [−1 Outsider]",
+    "flavour": "All doors are one door. All keys are one key. All cups are one cup, but whosoever drinketh of the water that I give shall never thirst, but the water shall be in him a well springing up into everlasting life.",
+    "urls": {
+      "token": "/token/vigormortis.png",
+      "icon": "/icon/vigormortis.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Vigormortis"
+    }
   },
   {
     "id": "fanggu",
@@ -1550,7 +2306,14 @@
       "Once"
     ],
     "setup": true,
-    "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]"
+    "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
+    "flavour": "Your walls and your weapons are but smoke in dreams.",
+    "urls": {
+      "jinxes": "/jinxes/fanggu",
+      "token": "/token/fanggu.png",
+      "icon": "/icon/fanggu.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fang Gu"
+    }
   },
   {
     "id": "vortox",
@@ -1564,7 +2327,13 @@
       "Dead"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins."
+    "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
+    "flavour": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",
+    "urls": {
+      "token": "/token/vortox.png",
+      "icon": "/icon/vortox.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Vortox"
+    }
   },
   {
     "id": "legion",
@@ -1578,7 +2347,14 @@
       "About to die"
     ],
     "setup": true,
-    "ability": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]"
+    "ability": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]",
+    "flavour": "We are the chill wind on a winter’s day. We are the shadow in the moonless night. We are the poison in your tea and the whisper in your ear. We are everywhere.",
+    "urls": {
+      "jinxes": "/jinxes/legion",
+      "token": "/token/legion.png",
+      "icon": "/icon/legion.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Legion"
+    }
   },
   {
     "id": "leviathan",
@@ -1598,7 +2374,14 @@
       "Good player executed"
     ],
     "setup": false,
-    "ability": "If more than 1 good player is executed, you win. All players know you are in play. After day 5, evil wins."
+    "ability": "If more than 1 good player is executed, you win. All players know you are in play. After day 5, evil wins.",
+    "flavour": "To the last, I grapple with thee. From Hell’s heart, I stab at thee. For hate’s sake, I spit my last breath at thee.",
+    "urls": {
+      "jinxes": "/jinxes/leviathan",
+      "token": "/token/leviathan.png",
+      "icon": "/icon/leviathan.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Leviathan"
+    }
   },
   {
     "id": "riot",
@@ -1606,7 +2389,41 @@
     "team": "demon",
     "standardAmyOrder": 122,
     "setup": true,
-    "ability": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]"
+    "ability": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]",
+    "flavour": "Larga vida a la revolución! Mi revolucion!",
+    "urls": {
+      "jinxes": "/jinxes/riot",
+      "token": "/token/riot.png",
+      "icon": "/icon/riot.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Riot"
+    }
+  },
+  {
+    "id": "gangster",
+    "name": "Gangster",
+    "team": "traveler",
+    "setup": false,
+    "ability": "Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees.",
+    "flavour": "I like your shoes. It would be such a shame if you had a little accident, and they got ruined. Now that you mention it, I like your cufflinks too.",
+    "urls": {
+      "token": "/token/gangster.png",
+      "icon": "/icon/gangster.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Gangster"
+    }
+  },
+  {
+    "id": "beggar",
+    "name": "Beggar",
+    "edition": "tb",
+    "team": "traveler",
+    "setup": false,
+    "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment. You are sober & healthy.",
+    "flavour": "Alms for the poor, good Sir? Spare a coin, Madam? Thank you. God bless! You're a right kind soul and no mistake! I'll have some swanky nosh tonight, I will!",
+    "urls": {
+      "token": "/token/beggar.png",
+      "icon": "/icon/beggar.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Beggar"
+    }
   },
   {
     "id": "bureaucrat",
@@ -1619,7 +2436,41 @@
       "3 votes"
     ],
     "setup": false,
-    "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow."
+    "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
+    "flavour": "Sign here please. And here. And here. Aaaaaaaaand here. This should all be sorted and tallied by the end of the day, assuming everyone's signatures are legible. We haven't had a mix-up in the paperwork for ages. Yesterday noon, if memory serves...",
+    "urls": {
+      "token": "/token/bureaucrat.png",
+      "icon": "/icon/bureaucrat.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Bureaucrat"
+    }
+  },
+  {
+    "id": "gunslinger",
+    "name": "Gunslinger",
+    "edition": "tb",
+    "team": "traveler",
+    "setup": false,
+    "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.",
+    "flavour": "It's time someone took matters into their own hands. That someone... is me.",
+    "urls": {
+      "token": "/token/gunslinger.png",
+      "icon": "/icon/gunslinger.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Gunslinger"
+    }
+  },
+  {
+    "id": "scapegoat",
+    "name": "Scapegoat",
+    "edition": "tb",
+    "team": "traveler",
+    "setup": false,
+    "ability": "If a player of your alignment is executed, you might be executed instead.",
+    "flavour": "Good evening! Thank you for inviting me to the ball. I'm not from around here, but you sure seem like a friendly bunch, by golly. I'm sure we'll get along just dandy. What's all that rope for?",
+    "urls": {
+      "token": "/token/scapegoat.png",
+      "icon": "/icon/scapegoat.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Scapegoat"
+    }
   },
   {
     "id": "thief",
@@ -1632,31 +2483,13 @@
       "Negative vote"
     ],
     "setup": false,
-    "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow."
-  },
-  {
-    "id": "gunslinger",
-    "name": "Gunslinger",
-    "edition": "tb",
-    "team": "traveler",
-    "setup": false,
-    "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die."
-  },
-  {
-    "id": "scapegoat",
-    "name": "Scapegoat",
-    "edition": "tb",
-    "team": "traveler",
-    "setup": false,
-    "ability": "If a player of your alignment is executed, you might be executed instead."
-  },
-  {
-    "id": "beggar",
-    "name": "Beggar",
-    "edition": "tb",
-    "team": "traveler",
-    "setup": false,
-    "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment. You are sober & healthy."
+    "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
+    "flavour": "I aint done nuffink. I weren't even in dat alley last night! It weren't me what stole Mayor Bruno's briefcase wiv all dem fancy dockoments innit. Besides, it was too 'eavy to carry far.",
+    "urls": {
+      "token": "/token/thief.png",
+      "icon": "/icon/thief.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Thief"
+    }
   },
   {
     "id": "apprentice",
@@ -1668,26 +2501,13 @@
       "Is the Apprentice"
     ],
     "setup": false,
-    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil)."
-  },
-  {
-    "id": "matron",
-    "name": "Matron",
-    "edition": "bmr",
-    "team": "traveler",
-    "setup": false,
-    "ability": "Each day, you may choose up to 3 sets of 2 players to swap seats. Players may not leave their seats to talk in private."
-  },
-  {
-    "id": "judge",
-    "name": "Judge",
-    "edition": "bmr",
-    "team": "traveler",
-    "reminders": [
-      "No ability"
-    ],
-    "setup": false,
-    "ability": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail."
+    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
+    "flavour": "For years have I traveled, studying the ways of The Craft. Which craft, you ask? Simply that of the simple folk. Nothing to worry about. Not yet.",
+    "urls": {
+      "token": "/token/apprentice.png",
+      "icon": "/icon/apprentice.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Apprentice"
+    }
   },
   {
     "id": "bishop",
@@ -1699,7 +2519,44 @@
       "Nominate evil"
     ],
     "setup": false,
-    "ability": "Only the Storyteller can nominate. At least 1 opposite player must be nominated each day."
+    "ability": "Only the Storyteller can nominate. At least 1 opposite player must be nominated each day.",
+    "flavour": "In nomine Patris, et Filii, et Spiritus Sancti… Nos mos Dei. Deus vult de nobis.",
+    "urls": {
+      "token": "/token/bishop.png",
+      "icon": "/icon/bishop.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Bishop"
+    }
+  },
+  {
+    "id": "judge",
+    "name": "Judge",
+    "edition": "bmr",
+    "team": "traveler",
+    "reminders": [
+      "No ability"
+    ],
+    "setup": false,
+    "ability": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail.",
+    "flavour": "I find the defendant guilty of the crimes of murder, fraud, arson, larceny, impersonating an officer of the law, practicing medicine without a license, slander, regicide, and littering.",
+    "urls": {
+      "token": "/token/judge.png",
+      "icon": "/icon/judge.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Judge"
+    }
+  },
+  {
+    "id": "matron",
+    "name": "Matron",
+    "edition": "bmr",
+    "team": "traveler",
+    "setup": false,
+    "ability": "Each day, you may choose up to 3 sets of 2 players to swap seats. Players may not leave their seats to talk in private.",
+    "flavour": "Miss Featherbottom, be quiet. Master Rutherford, a teacup needs just the four fingers, please. I know you are a father of nine, but age, or lack there-of as the case may be, is never an excuse for poor manners.",
+    "urls": {
+      "token": "/token/matron.png",
+      "icon": "/icon/matron.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Matron"
+    }
   },
   {
     "id": "voudon",
@@ -1707,7 +2564,13 @@
     "edition": "bmr",
     "team": "traveler",
     "setup": false,
-    "ability": "Only you and the dead can vote. They don't need a vote token to do so. A 50% majority is not required."
+    "ability": "Only you and the dead can vote. They don't need a vote token to do so. A 50% majority is not required.",
+    "flavour": "Bien venu. Sit down. Breathe deep. Enter the land of the dead. See with their eyes. Speak with their voice. Yon sel lang se janm ase.",
+    "urls": {
+      "token": "/token/voudon.png",
+      "icon": "/icon/voudon.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Voudon"
+    }
   },
   {
     "id": "barista",
@@ -1721,27 +2584,13 @@
       "Ability twice"
     ],
     "setup": false,
-    "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which."
-  },
-  {
-    "id": "harlot",
-    "name": "Harlot",
-    "edition": "snv",
-    "team": "traveler",
-    "otherNightReminder": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
-    "reminders": [
-      "Dead"
-    ],
-    "setup": false,
-    "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die."
-  },
-  {
-    "id": "butcher",
-    "name": "Butcher",
-    "edition": "snv",
-    "team": "traveler",
-    "setup": false,
-    "ability": "Each day, after the 1st execution, you may nominate again."
+    "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.",
+    "flavour": "There really is no cause to worry because when you think about it we are all capable and qualified and smart enough to grab the bull by the horns and sit down and figure this out like the reasonable adults we are by the way would you like another cup it really is the most amazing beverage they say it is from the east but anyway where were we ah yes going for a jog and really nutting out this demon business which we can do with just a little teensy mental boost and some logical thinking for example Senior Hu here is a regular customer and therefore quite trustworthy and would anyone like another cup?",
+    "urls": {
+      "token": "/token/barista.png",
+      "icon": "/icon/barista.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Barista"
+    }
   },
   {
     "id": "bonecollector",
@@ -1754,7 +2603,27 @@
       "Has ability"
     ],
     "setup": false,
-    "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk."
+    "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
+    "flavour": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers.",
+    "urls": {
+      "token": "/token/bonecollector.png",
+      "icon": "/icon/bonecollector.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Bone Collector"
+    }
+  },
+  {
+    "id": "butcher",
+    "name": "Butcher",
+    "edition": "snv",
+    "team": "traveler",
+    "setup": false,
+    "ability": "Each day, after the 1st execution, you may nominate again.",
+    "flavour": "It tastes like chicken. More please.",
+    "urls": {
+      "token": "/token/butcher.png",
+      "icon": "/icon/butcher.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Butcher"
+    }
   },
   {
     "id": "deviant",
@@ -1762,14 +2631,31 @@
     "edition": "snv",
     "team": "traveler",
     "setup": false,
-    "ability": "If you were funny today, you cannot die by exile."
+    "ability": "If you were funny today, you cannot die by exile.",
+    "flavour": "Twas the lady's quip, forsooth.",
+    "urls": {
+      "token": "/token/deviant.png",
+      "icon": "/icon/deviant.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Deviant"
+    }
   },
   {
-    "id": "gangster",
-    "name": "Gangster",
+    "id": "harlot",
+    "name": "Harlot",
+    "edition": "snv",
     "team": "traveler",
+    "otherNightReminder": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+    "reminders": [
+      "Dead"
+    ],
     "setup": false,
-    "ability": "Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees."
+    "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
+    "flavour": "Enchanté, Sailor. You look like you need someone to really listen to your troubles. I'm a good listener. Very, very good.",
+    "urls": {
+      "token": "/token/harlot.png",
+      "icon": "/icon/harlot.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Harlot"
+    }
   },
   {
     "id": "angel",
@@ -1779,25 +2665,61 @@
       "Protect",
       "Something Bad"
     ],
-    "ability": "Something bad might happen to whoever is most responsible for the death of a new player."
+    "ability": "Something bad might happen to whoever is most responsible for the death of a new player.",
+    "flavour": "Let those who are without sin dare to raise their hand to my chosen, for I shall strike such fools down with the fury and righteousness of a thousand storms.",
+    "urls": {
+      "token": "/token/angel.png",
+      "icon": "/icon/angel.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Angel"
+    }
+  },
+  {
+    "id": "bootlegger",
+    "name": "Bootlegger",
+    "team": "fabled",
+    "ability": "This script has homebrew characters or rules.",
+    "flavour": "",
+    "urls": {
+      "token": "/token/bootlegger.png",
+      "icon": "/icon/bootlegger.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Bootlegger"
+    }
   },
   {
     "id": "buddhist",
     "name": "Buddhist",
     "team": "fabled",
-    "ability": "For the first 2 minutes of each day, veteran players may not talk."
+    "ability": "For the first 2 minutes of each day, veteran players may not talk.",
+    "flavour": "You throw thorns. Falling in my silence, they become flowers.",
+    "urls": {
+      "token": "/token/buddhist.png",
+      "icon": "/icon/buddhist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Buddhist"
+    }
   },
   {
     "id": "djinn",
     "name": "Djinn",
     "team": "fabled",
-    "ability": "Use the Djinn's special rule. All players know what it is."
+    "ability": "Use the Djinn's special rule. All players know what it is.",
+    "flavour": "",
+    "urls": {
+      "token": "/token/djinn.png",
+      "icon": "/icon/djinn.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Djinn"
+    }
   },
   {
     "id": "doomsayer",
     "name": "Doomsayer",
     "team": "fabled",
-    "ability": "If 4 or more players live, each living player may publicly choose (once per game) that a player of their own alignment dies."
+    "ability": "If 4 or more players live, each living player may publicly choose (once per game) that a player of their own alignment dies.",
+    "flavour": "And on the Seventh Day, there shall be a great flood and a pestilence upon the People of the Village of the Ravens! The dead shall rise and the living shall repent! O Woe! O Unholy day! Only by great sacrifice shall they prevail! So sayeth the Sages of Nostros and so sayeth I.",
+    "urls": {
+      "token": "/token/doomsayer.png",
+      "icon": "/icon/doomsayer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Doomsayer"
+    }
   },
   {
     "id": "duchess",
@@ -1808,7 +2730,25 @@
       "Visitor",
       "False Info"
     ],
-    "ability": "Each day, 3 players may choose to visit you. At night*, each visitor learns how many visitors are evil, but 1 gets false info."
+    "ability": "Each day, 3 players may choose to visit you. At night*, each visitor learns how many visitors are evil, but 1 gets false info.",
+    "flavour": "We shall entertain between the hours of 6 and 7 precisely. Tea at 6:15. Scones at 6:45. Do not be late. Formal wear applies, as always.",
+    "urls": {
+      "token": "/token/duchess.png",
+      "icon": "/icon/duchess.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Duchess"
+    }
+  },
+  {
+    "id": "ferryman",
+    "name": "Ferryman",
+    "team": "fabled",
+    "ability": "On the final day, all dead players regain their vote token.",
+    "flavour": "When righteous dreams come, they have the weight of truth.",
+    "urls": {
+      "token": "/token/ferryman.png",
+      "icon": "/icon/ferryman.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Ferryman"
+    }
   },
   {
     "id": "fibbin",
@@ -1817,13 +2757,37 @@
     "reminders": [
       "Used"
     ],
-    "ability": "Once per game, 1 good player might get false information."
+    "ability": "Once per game, 1 good player might get false information.",
+    "flavour": "Tee. Hee. Hee.",
+    "urls": {
+      "token": "/token/fibbin.png",
+      "icon": "/icon/fibbin.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fibbin"
+    }
   },
   {
     "id": "fiddler",
     "name": "Fiddler",
     "team": "fabled",
-    "ability": "Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win."
+    "ability": "Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win.",
+    "flavour": "I'll wager mi lyef ye cannae best me in a fiddle contest, ye boss-eyed snook! We'll go out on the lash, get the pub jammers an' have a right craic. I'll be layin' ma boots into ya come mornin' ye rumbly muppet.",
+    "urls": {
+      "token": "/token/fiddler.png",
+      "icon": "/icon/fiddler.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fiddler"
+    }
+  },
+  {
+    "id": "gardener",
+    "name": "Gardener",
+    "team": "fabled",
+    "ability": "The Storyteller assigns 1 or more players' characters.",
+    "flavour": "",
+    "urls": {
+      "token": "/token/gardener.png",
+      "icon": "/icon/gardener.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Gardener"
+    }
   },
   {
     "id": "hellslibrarian",
@@ -1832,7 +2796,13 @@
     "reminders": [
       "Something Bad"
     ],
-    "ability": "Something bad might happen to whoever talks when the Storyteller has asked for silence."
+    "ability": "Something bad might happen to whoever talks when the Storyteller has asked for silence.",
+    "flavour": "Shhhhhh. Please be quiet. It is best not to disturb the Librarian. I've heard it has a temper.",
+    "urls": {
+      "token": "/token/hellslibrarian.png",
+      "icon": "/icon/hellslibrarian.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Hell's Librarian"
+    }
   },
   {
     "id": "revolutionary",
@@ -1841,13 +2811,25 @@
     "reminders": [
       "Used"
     ],
-    "ability": "2 neighboring players are known to be the same alignment. Once per game, one of them registers falsely."
+    "ability": "2 neighboring players are known to be the same alignment. Once per game, one of them registers falsely.",
+    "flavour": "Divided, we stalled.",
+    "urls": {
+      "token": "/token/revolutionary.png",
+      "icon": "/icon/revolutionary.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Revolutionary"
+    }
   },
   {
     "id": "sentinel",
     "name": "Sentinel",
     "team": "fabled",
-    "ability": "There might be 1 extra or 1 fewer Outsider in play."
+    "ability": "There might be 1 extra or 1 fewer Outsider in play.",
+    "flavour": "Weapons, please.",
+    "urls": {
+      "token": "/token/sentinel.png",
+      "icon": "/icon/sentinel.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Sentinel"
+    }
   },
   {
     "id": "spiritofivory",
@@ -1856,7 +2838,13 @@
     "reminders": [
       "No extra evil"
     ],
-    "ability": "There can't be more than 1 extra evil player."
+    "ability": "There can't be more than 1 extra evil player.",
+    "flavour": "The Wasteland calls. Bones rise to flesh, then fall to dust. The great spirit grows. The great spirit watches. The great spirit guides. The human listens, or the human is no more.",
+    "urls": {
+      "token": "/token/spiritofivory.png",
+      "icon": "/icon/spiritofivory.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Spirit Of Ivory"
+    }
   },
   {
     "id": "stormcatcher",
@@ -1866,7 +2854,13 @@
     "reminders": [
       "Safe"
     ],
-    "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is."
+    "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.",
+    "flavour": "At dawn, the temple's long shadow creeps to the fountain. At dusk, the obelisk blocks the red glare, cooling warm water under the archway. All lines converge here. A storm is coming, and this, this pebbled and lush and holy place between the apple trees, is the eye.",
+    "urls": {
+      "token": "/token/stormcatcher.png",
+      "icon": "/icon/stormcatcher.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Storm Catcher"
+    }
   },
   {
     "id": "toymaker",
@@ -1876,27 +2870,33 @@
     "reminders": [
       "Final Night: No Attack"
     ],
-    "ability": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info."
+    "ability": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info.",
+    "flavour": "It buzzes! It walks down stairs! It keeps you warm at night! It tastes like sugar! The kiddies love it! Introducing... the brand new... Warm'o-buzzy-wuzzy-walk'a'bot-thingy-contraption! Fun for all ages!",
+    "urls": {
+      "token": "/token/toymaker.png",
+      "icon": "/icon/toymaker.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Toymaker"
+    }
   },
   {
-    "id": "minion",
-    "name": "**MINION INFO**",
-    "firstNight": 6
+    "id": "dawn",
+    "name": "Dawn",
+    "firstNight": 58,
+    "otherNight": 75
   },
   {
     "id": "demon",
-    "name": "**DEMON INFO**",
+    "name": "Demon Info",
     "firstNight": 9
   },
   {
     "id": "dusk",
-    "name": "**DUSK**",
+    "name": "Dusk",
     "otherNight": 1
   },
   {
-    "id": "dawn",
-    "name": "**DAWN**",
-    "firstNight": 58,
-    "otherNight": 75
+    "id": "minion",
+    "name": "Minion Info",
+    "firstNight": 6
   }
 ]

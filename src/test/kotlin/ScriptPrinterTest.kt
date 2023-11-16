@@ -306,22 +306,22 @@ class ScriptPrinterTest {
         },
         {
           "id": "minion",
-          "name": "**MINION INFO**",
+          "name": "Minion Info",
           "firstNight": 6
         },
         {
           "id": "demon",
-          "name": "**DEMON INFO**",
+          "name": "Demon Info",
           "firstNight": 9
         },
         {
           "id": "dusk",
-          "name": "**DUSK**",
+          "name": "Dusk",
           "otherNight": 1
         },
         {
           "id": "dawn",
-          "name": "**DAWN**",
+          "name": "Dawn",
           "firstNight": 53,
           "otherNight": 73
         }
