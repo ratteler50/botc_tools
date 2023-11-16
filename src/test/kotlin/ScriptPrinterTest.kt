@@ -62,9 +62,6 @@ class ScriptPrinterTest {
       """
     **__EXAMPLE_SCRIPT_NAME__** by somebody
     
-    __Fabled__
-    > - **Spirit of Ivory** -- There can't be more than 1 extra evil player.
-    
     __Townsfolk__
     > - **Snake Charmer** -- Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.
     > - **Monk** -- Each night\*, choose a player (not yourself): they are safe from the Demon tonight.
@@ -84,6 +81,12 @@ class ScriptPrinterTest {
     __Demons__
     > - **Fang Gu** -- Each night\*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]
     > - **Vortox** -- Each night\*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.
+    
+    __Travellers__
+    > - **Gangster** -- Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees.
+    
+    __Fabled__
+    > - **Spirit of Ivory** -- There can't be more than 1 extra evil player.
     
     **__Jinxes and Clarifications__**
     
@@ -140,6 +143,19 @@ class ScriptPrinterTest {
           ],
           "ability": "There can't be more than 1 extra evil player."
         },
+       {
+        "id": "gangster",
+        "name": "Gangster",
+        "team": "traveler",
+        "setup": false,
+        "ability": "Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees.",
+        "flavour": "I like your shoes. It would be such a shame if you had a little accident, and they got ruined. Now that you mention it, I like your cufflinks too.",
+        "urls": {
+          "token": "/token/gangster.png",
+          "icon": "/icon/gangster.png",
+          "wiki": "https://wiki.bloodontheclocktower.com/Gangster"
+          }
+       },
         {
           "id": "monk",
           "name": "Monk",
@@ -331,7 +347,7 @@ class ScriptPrinterTest {
 
   private fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
     val json =
-      """[{"id": "spiritofivory"}, {"id":"vortox"},{"id":"amnesiac"},{"id":"snake_charmer"},{"id":"spy"},{"id":"damsel"},{"id":"barber"},{"id":"boomdandy"},{"id":"witch"},{"id":"magician"},{"id":"scarlet_woman"},{"id":"fang_gu"},"monk"]"""
+      """[{"id": "spiritofivory"}, "gangster", {"id":"vortox"},{"id":"amnesiac"},{"id":"snake_charmer"},{"id":"spy"},{"id":"damsel"},{"id":"barber"},{"id":"boomdandy"},{"id":"witch"},{"id":"magician"},{"id":"scarlet_woman"},{"id":"fang_gu"},"monk"]"""
     val charList = Script.getRolesOnScript(gson, json)
     return charList.map { checkNotNull(roleMap[it]) { "Couldn't find $it in $roleMap" } }
       .sortedBy { it.standardAmyOrder }

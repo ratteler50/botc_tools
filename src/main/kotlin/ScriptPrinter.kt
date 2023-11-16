@@ -10,6 +10,7 @@ class ScriptPrinter(
   companion object {
     const val DEFAULT_SCRIPT_TITLE = "INSERT SCRIPT TITLE HERE"
     const val FABLED_DIVIDER = "__Fabled__"
+    const val TRAVELLER_DIVIDER = "__Travellers__"
     const val TOWNSFOLK_DIVIDER = "__Townsfolk__"
     const val OUTSIDER_DIVIDER = "__Outsiders__"
     const val MINIONS_DIVIDER = "__Minions__"
@@ -27,8 +28,9 @@ class ScriptPrinter(
       append("**__${scriptMetadata?.name ?: DEFAULT_SCRIPT_TITLE}__**")
       appendLine(scriptMetadata?.author?.let { " by $it" } ?: "")
       appendLine()
-      append(buildFabled())
       append(buildScriptRoles())
+      append(buildTravellers())
+      append(buildFabled())
       append(buildJinxesAndClarifications())
       append(buildWakeOrder())
     }
@@ -59,6 +61,16 @@ class ScriptPrinter(
     return buildString {
       appendLine(FABLED_DIVIDER)
       fabled.forEach { appendLine("> - ${it.asTextScriptEntry()}") }
+      appendLine()
+    }
+  }
+
+  private fun buildTravellers(): String {
+    val travellers = getTravellerRoles()
+    if (travellers.isEmpty()) return ""
+    return buildString {
+      appendLine(TRAVELLER_DIVIDER)
+      travellers.forEach { appendLine("> - ${it.asTextScriptEntry()}") }
       appendLine()
     }
   }
@@ -108,6 +120,10 @@ class ScriptPrinter(
 
   private fun getFabledRoles(): List<Role> {
     return script.filter { it.type == Role.Type.FABLED }
+  }
+
+  private fun getTravellerRoles(): List<Role> {
+    return script.filter { it.type == Role.Type.TRAVELER }
   }
 
   private fun getTownsfolkRoles(): List<Role> {
