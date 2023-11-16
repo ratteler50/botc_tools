@@ -42,8 +42,8 @@ data class Role(
     @SerializedName("demon")
     DEMON,
 
-    @SerializedName("traveler", alternate = ["traveller"])
-    TRAVELER,
+    @SerializedName("traveller", alternate = ["traveler"])
+    TRAVELLER,
 
     @SerializedName("fabled")
     FABLED,

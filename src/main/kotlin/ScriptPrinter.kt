@@ -123,7 +123,7 @@ class ScriptPrinter(
   }
 
   private fun getTravellerRoles(): List<Role> {
-    return script.filter { it.type == Role.Type.TRAVELER }
+    return script.filter { it.type == Role.Type.TRAVELLER }
   }
 
   private fun getTownsfolkRoles(): List<Role> {
