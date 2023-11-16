@@ -749,6 +749,7 @@
     "team": "townsfolk",
     "standardAmyOrder": 56,
     "firstNight": 5,
+    "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
     "setup": false,
     "ability": "The Demon thinks you are a Minion. Minions think you are a Demon."
   },
