@@ -50,7 +50,6 @@
       "Seen",
       "Seen"
     ],
-    "setup": false,
     "ability": "You start knowing 3 players, 1 and only 1 of which is evil.",
     "flavour": "Sarcasm is indeed the lowest form of wit. But speaking in response to your criticism, Sir, it is, nevertheless, a form of wit.",
     "urls": {
@@ -71,7 +70,6 @@
       "Minion",
       "Wrong"
     ],
-    "setup": false,
     "ability": "You start knowing that 1 of 2 players is a particular Minion.",
     "flavour": "It is a fine night for a stroll, wouldn't you say, Mister Morozov? Or should I say... BARON Morozov?",
     "urls": {
@@ -89,7 +87,6 @@
     "standardAmyOrder": 5,
     "firstNight": 37,
     "firstNightReminder": "Show the finger signal (0, 1, 2, …) for the number of pairs of neighbouring evil players.",
-    "setup": false,
     "ability": "You start knowing how many pairs of evil players there are.",
     "flavour": "This evening's reservations seem odd. Never before has Mrs Mayweather kept company with that scamp from Hudson lane. Yet, tonight, they have a table for two. Strange.",
     "urls": {
@@ -110,7 +107,6 @@
       "Townsfolk",
       "Wrong"
     ],
-    "setup": false,
     "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
     "flavour": "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",
     "urls": {
@@ -127,7 +123,6 @@
     "standardAmyOrder": 7,
     "firstNight": 42,
     "firstNightReminder": "Show the hand signal for the number (1, 2, 3, etc.) of places from Demon to closest Minion.",
-    "setup": false,
     "ability": "You start knowing how many steps from the Demon to its nearest Minion.",
     "flavour": "Do not disturb me. The tick must continue, for the circle is a symbol of life, and contains all things - all answers - in it's divine machinery. I must work.",
     "urls": {
@@ -149,7 +144,6 @@
       "Outsider",
       "Wrong"
     ],
-    "setup": false,
     "ability": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
     "flavour": "Certainly Madam, under normal circumstances, you may borrow the Codex Malificarium from the library vaults. However, you do not seem to be a member.",
     "urls": {
@@ -171,7 +165,6 @@
     "reminders": [
       "Grandchild"
     ],
-    "setup": false,
     "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
     "flavour": "Take a jacket if you go outside, deary. And your thermos. And your beanie. I have a weak heart, you know. Whatever would I do if you caught cold... or worse?",
     "urls": {
@@ -187,8 +180,8 @@
     "team": "townsfolk",
     "standardAmyOrder": 10,
     "firstNight": 49,
-    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
     "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
+    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
     "flavour": "これは夢。それも夢。すべて夢です。",
     "urls": {
       "jinxes": "/jinxes/shugenja",
@@ -229,7 +222,6 @@
       "Mad",
       "Has ability"
     ],
-    "setup": false,
     "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
     "flavour": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town. Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
     "urls": {
@@ -248,7 +240,6 @@
     "firstNightReminder": "Show the finger signal (0, 1, 2) for the number of evil alive neighbours of the Empath.",
     "otherNight": 55,
     "otherNightReminder": "Show the finger signal (0, 1, 2) for the number of evil neighbours.",
-    "setup": false,
     "ability": "Each night, you learn how many of your 2 alive neighbours are evil.",
     "flavour": "My skin prickles. Something is not right here. I can feel it.",
     "urls": {
@@ -286,7 +277,6 @@
     "reminders": [
       "Drunk"
     ],
-    "setup": false,
     "ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die.",
     "flavour": "I'll drink any one of yer under the table! You! The chatterbox! Reckon you can take me? No? Howza 'bout you, Grandma? You ever tried Old McKillys Extra Spiced Rum before? Guaranteed to put hairs on yer chest! Step aboard, aye!",
     "urls": {
@@ -304,7 +294,6 @@
     "firstNightReminder": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
     "otherNight": 72,
     "otherNightReminder": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
-    "setup": false,
     "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
     "flavour": "I don’t have time for quotes.",
     "urls": {
@@ -327,7 +316,6 @@
       "No Ability",
       "No Ability"
     ],
-    "setup": false,
     "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",
     "flavour": "It is better to be rich and healthy than poor and sick.",
     "urls": {
@@ -347,7 +335,6 @@
     "firstNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, …) for how many of those players wake tonight for their ability.",
     "otherNight": 73,
     "otherNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, …) for how many of those players wake tonight for their ability.",
-    "setup": false,
     "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
     "flavour": "I aint seen nothin' untoward, Milady. Begging your pardon, but if I did see somethin', it certainly weren't the master o' the house sneaking into the professor's laboratory 'round eleven o'clock and mixing up fancy potions, just like you said, Miss.",
     "urls": {
@@ -392,7 +379,6 @@
     "firstNightReminder": "Wake the Demon, show them the 'This character selected you' card, show the King token and point to the King player.",
     "otherNight": 65,
     "otherNightReminder": "If there are more dead than living, show the King a character token of a living player.",
-    "setup": false,
     "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
     "flavour": "Betwixt the unknown strains of mortal strife And morbid night, sweet with mystery and woe Lies unfettered joys of fate’s long and colored life Who’s garden blooms with each painted face to show.",
     "urls": {
@@ -412,7 +398,6 @@
     "firstNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
     "otherNight": 58,
     "otherNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
-    "setup": false,
     "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
     "flavour": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
     "urls": {
@@ -434,7 +419,6 @@
     "reminders": [
       "Red herring"
     ],
-    "setup": false,
     "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
     "flavour": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
     "urls": {
@@ -460,7 +444,6 @@
       "Abnormal",
       "Abnormal"
     ],
-    "setup": false,
     "ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
     "flavour": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; i.e., there are statements of the language of x which can neither be proved nor disproved in x. Ergo, one of you is incorrect.",
     "urls": {
@@ -483,7 +466,6 @@
     "reminders": [
       "Poisoned"
     ],
-    "setup": false,
     "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
     "flavour": "Effendi... I am but a humble man, but my pipe is golden and a single tune will tame the wildest djinn, Insh'Allah. They say that greed hangs more men than rope, but not I, effendi... not I.",
     "urls": {
@@ -502,7 +484,6 @@
     "firstNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
     "otherNight": 68,
     "otherNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
-    "setup": false,
     "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins.",
     "flavour": "Thinking themselves wise, they became fools.",
     "urls": {
@@ -524,7 +505,6 @@
       "Demon voted",
       "Demon not voted"
     ],
-    "setup": false,
     "ability": "Each night*, you learn if a Demon voted today.",
     "flavour": "Yesterday's violets have withered and died, but today my poppies bloom.",
     "urls": {
@@ -546,7 +526,6 @@
       "Minions not nominated",
       "Minion nominated"
     ],
-    "setup": false,
     "ability": "Each night*, you learn if a Minion nominated today.",
     "flavour": "Hear ye! Hear ye! Witchcraft in the labyrinth! Genius savant reveals all! Town in danger! Hear Ye!",
     "urls": {
@@ -564,7 +543,6 @@
     "standardAmyOrder": 28,
     "otherNight": 61,
     "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of dead evil players.",
-    "setup": false,
     "ability": "Each night*, you learn how many dead players are evil.",
     "flavour": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",
     "urls": {
@@ -584,7 +562,6 @@
     "reminders": [
       "Executed"
     ],
-    "setup": false,
     "ability": "Each night*, you learn which character died by execution today.",
     "flavour": "Hmmm....what have we here? The left boot is worn down to the heel, with flint shavings under the tongue. This is the garb of a Military man.",
     "urls": {
@@ -606,7 +583,6 @@
       "Protected",
       "Drunk"
     ],
-    "setup": false,
     "ability": "Each night*, choose 2 players: they can't die tonight, but 1 is drunk until dusk.",
     "flavour": "Come inside, fair Traveller, and rest your weary bones. Drink and be merry, for the legions of the Dark One shall not harass thee tonight.",
     "urls": {
@@ -627,7 +603,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
     "flavour": "Heads, I win. Tails, you lose.",
     "urls": {
@@ -648,7 +623,6 @@
     "reminders": [
       "Protected"
     ],
-    "setup": false,
     "ability": "Each night*, choose a player (not yourself): they are safe from the Demon tonight.",
     "flavour": "'Tis an ill and deathly wind that blows tonight. Come, my brother, take shelter in the abbey while the storm rages. By my word, or by my life, you will be safe.",
     "urls": {
@@ -668,7 +642,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, choose a living player: if good, they die, but they are the only player that can die tonight.",
     "flavour": "Beneath the thin veneer of civilisation lies a howling madness.",
     "urls": {
@@ -689,7 +662,6 @@
     "reminders": [
       "Chosen"
     ],
-    "setup": false,
     "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
     "flavour": "We cast you out, every unclean spirit, every satanic power, every onslaught of the infernal adversary, every legion, every diabolical group and sect, in the name and by the power of our Lord Jesus Christ. We command you, begone and fly far from the Church of God, from the souls made by God in His image and redeemed by the precious blood of the divine Lamb.",
     "urls": {
@@ -710,7 +682,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
     "flavour": "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.",
     "urls": {
@@ -725,7 +696,6 @@
     "edition": "snv",
     "team": "townsfolk",
     "standardAmyOrder": 36,
-    "setup": false,
     "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
     "flavour": "72 matchsticks on the floor... the sun sets early but the moon is unchanged... a torn piece of cloth... evil in the manor house... 3 by 3... the one we trusted is not what he seems... green light means magnesium... residue, but the pattern is wrong... 72 matchsticks on the floor...",
     "urls": {
@@ -748,7 +718,6 @@
       "?",
       "?"
     ],
-    "setup": false,
     "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
     "flavour": "Wait. What. Who? Oh, ok. Wait. What?",
     "urls": {
@@ -773,7 +742,6 @@
       "Correct",
       "Correct"
     ],
-    "setup": false,
     "ability": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.",
     "flavour": "For my next trick, as per request, I will need a flower, a bag of beans, a toy snake, a paintbrush, and a motorized gasoline-powered hedge trimming device. I warn you, this trick may be my last. Oh dear.",
     "urls": {
@@ -794,7 +762,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, at night, choose a player: they learn who you are.",
     "urls": {
       "token": "/token/nightwatchman.png",
@@ -814,7 +781,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, at night, choose which Minions or which Demon is in play.",
     "flavour": "If it bends, great. If it breaks, well, it probably needed fixing anyway.",
     "urls": {
@@ -833,7 +799,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
     "flavour": "Mon Dieu! C'est lumineux! My work, she is... how you say... Magnifique! Dieu est révélé! Oui.",
     "urls": {
@@ -858,7 +823,6 @@
       "Drunk 1",
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.",
     "flavour": "Speech was given to man to disguise his thoughts. I am more afraid of an army of one hundred sheep led by a lion than an army of one hundred lions led by a sheep.",
     "urls": {
@@ -875,7 +839,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, during the day, visit the Storyteller for some advice to help you win.",
     "flavour": "This was my favourite part of the river… see how the sunlight makes a rainbow from the monastery to the market? This was the best place for big fish. And the older I get, the bigger they were.",
     "urls": {
@@ -893,7 +856,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, during the day, publicly choose a player: if they are the Demon, they die.",
     "flavour": "Die.",
     "urls": {
@@ -915,7 +877,6 @@
       "Alive",
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
     "flavour": "The process is simple. Attach the hydraulic confabulator to the modified chi matrix amplifier, add 20 CCs of pseudodorafine, keep his Z levels above 20%, and your husband will be fine. Now, all we need is a lightning strike.",
     "urls": {
@@ -937,7 +898,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
     "flavour": "Did you hear that stranger in the cashmere coat put the word on our young Belle? And she said yes? Well, that's nothing compared to what Harry and that juggler got up to at the fair! The things I could say if I was a tattletale... my yes.",
     "urls": {
@@ -960,7 +920,6 @@
       "Drunk",
       "Is the Philosopher"
     ],
-    "setup": false,
     "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
     "flavour": "If anything is real, beer is real. Drink, for tomorrow we may die. Why? Why not.",
     "urls": {
@@ -997,7 +956,6 @@
     "edition": "tb",
     "team": "townsfolk",
     "standardAmyOrder": 49,
-    "setup": false,
     "ability": "You are safe from the Demon.",
     "flavour": "As David said to Goliath, as Theseus said to the Minotaur, as Arjuna said to Bhagadatta... No.",
     "urls": {
@@ -1016,7 +974,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "The first time you die, you don't.",
     "flavour": "...and the King said What?! I've never even owned a pair of rubber pantaloons, let alone a custard cannon! Ho-ho! Jolly day!",
     "urls": {
@@ -1031,7 +988,6 @@
     "edition": "bmr",
     "team": "townsfolk",
     "standardAmyOrder": 51,
-    "setup": false,
     "ability": "Executed good players might not die.",
     "flavour": "Distrust all in whom the impulse to punish is powerful.",
     "urls": {
@@ -1051,7 +1007,6 @@
     "remindersGlobal": [
       "Is the Alchemist"
     ],
-    "setup": false,
     "ability": "You have a not-in-play Minion ability.",
     "flavour": "Visit the interior of the Earth. By rectification thou shalt find the hidden stone. Above the gold, lieth the red. Kether in Malkuth.",
     "urls": {
@@ -1071,7 +1026,6 @@
       "Can not die",
       "Can not die"
     ],
-    "setup": false,
     "ability": "If both your alive neighbours are good, they can't die.",
     "flavour": "Sit in silence, for there is nothing to say. Peace be with you.",
     "urls": {
@@ -1088,7 +1042,6 @@
     "standardAmyOrder": 54,
     "otherNight": 44,
     "otherNightReminder": "If the Sage was killed by a Demon: Point to two players, one of which is that Demon.",
-    "setup": false,
     "ability": "If the Demon kills you, you learn that it is 1 of 2 players.",
     "flavour": "These mountainous tomes guard the secret, I am sure of it! Twixt word and word, it lies in wait. More candles, boy! More ink! These notes may look arcane, but the infernal puzzle is revealing itself.",
     "urls": {
@@ -1105,7 +1058,6 @@
     "standardAmyOrder": 55,
     "otherNight": 50,
     "otherNightReminder": "If a Farmer died tonight, choose another good player and make them the Farmer. Wake this player, show them the 'You are' card and the Farmer character token.",
-    "setup": false,
     "ability": "If you die at night, an alive good player becomes a Farmer.",
     "flavour": "Even the high and mighty need food on the table. Without us, the city starves.",
     "urls": {
@@ -1122,7 +1074,6 @@
     "standardAmyOrder": 56,
     "firstNight": 5,
     "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
-    "setup": false,
     "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
     "flavour": "1… 2… Abra… 3… 4… Cadabra… <poof!> And, as you can see, ladies and gentlemen, Captain Farnsworth’s bag of gold has disappeared! Gone! Without a trace! Thank you, and goodnight!",
     "urls": {
@@ -1140,7 +1091,6 @@
     "standardAmyOrder": 57,
     "otherNight": 54,
     "otherNightReminder": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player’s character token.",
-    "setup": false,
     "ability": "If you die at night, you are woken to choose a player: you learn their character.",
     "flavour": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! Take your message to those in dark corners! To the manor and to the river! Let them read of the nature of my death.",
     "urls": {
@@ -1175,7 +1125,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
     "flavour": "I am pure. Let those who are without sin cast themselves down and suffer in my stead. My reputation shall not be stained with your venomous accusations.",
     "urls": {
@@ -1196,7 +1145,6 @@
     "reminders": [
       "Evil wakes"
     ],
-    "setup": false,
     "ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
     "flavour": "In the hidden groves of the deep forest, the black poppy dwells. To see its revelry is to be enchanted. To smell its thick aroma is to be lost forever, a slave to the gods of light and dark.",
     "urls": {
@@ -1216,7 +1164,6 @@
     "reminders": [
       "Everyone drunk"
     ],
-    "setup": false,
     "ability": "When a Minion dies by execution, all other players (except Travellers) are drunk until dusk tomorrow.",
     "flavour": "And I shall hear, tho' soft you tread above me... And all my dreams will warm and sweeter be... If you'll not fail to tell me that you love me... I simply sleep in peace until you come to me.",
     "urls": {
@@ -1232,7 +1179,6 @@
     "edition": "tb",
     "team": "townsfolk",
     "standardAmyOrder": 62,
-    "setup": false,
     "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
     "flavour": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
     "urls": {
@@ -1265,7 +1211,6 @@
       "Poisoned",
       "Died today"
     ],
-    "setup": false,
     "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
     "flavour": "I don’t like clowns. They taste funny.",
     "urls": {
@@ -1282,7 +1227,6 @@
     "standardAmyOrder": 65,
     "firstNight": 7,
     "firstNightReminder": "After Minion info wake each Minion and show them three not-in-play character tokens. These may be the same or different to each other and the ones shown to the Demon.",
-    "setup": false,
     "ability": "Minions start knowing 3 not-in-play characters.",
     "flavour": "It was John.",
     "urls": {
@@ -1305,7 +1249,6 @@
     "reminders": [
       "Master"
     ],
-    "setup": false,
     "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
     "flavour": "Certainly, sir.",
     "urls": {
@@ -1324,7 +1267,6 @@
     "reminders": [
       "Drunk"
     ],
-    "setup": false,
     "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.",
     "flavour": "Yes boss. I explained fings real good to dat geezer. He don't want me explain it again. Nah boss, I don't need no doctor - it's only a knife wound. Be right come mornin'.",
     "urls": {
@@ -1343,7 +1285,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, if either good living neighbour is drunk or poisoned, you die.",
     "flavour": "Welcome, one and all, to the greatest show on earth.",
     "urls": {
@@ -1361,7 +1302,6 @@
       "Drunk",
       "Guess used"
     ],
-    "setup": false,
     "ability": "1 player is drunk, even if you die. If you guess (once) who it is, learn the Demon player, but guess wrong & get false info.",
     "flavour": "When one begins to think that some thing is merely some other thing, one is usually on the brink of an error. Patience, patience. Don’t confuse",
     "urls": {
@@ -1381,7 +1321,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "You might die at any time.",
     "flavour": "I think I see the problem. Luckily,I have an idea! This catapult will shoot twice as far with just a minor adjustment...",
     "urls": {
@@ -1396,7 +1335,6 @@
     "edition": "tb",
     "team": "outsider",
     "standardAmyOrder": 71,
-    "setup": false,
     "ability": "If you die by execution, your team loses.",
     "flavour": "Wisdom begets peace. Patience begets wisdom. Fear not, for the time shall come when fear too shall pass. Let us pray, and may the unity of our vision make saints of us all.",
     "urls": {
@@ -1417,7 +1355,6 @@
     "reminders": [
       "Drunk"
     ],
-    "setup": false,
     "ability": "When you die, 1 player is drunk from now on.",
     "flavour": "I will never forget her. Never.",
     "urls": {
@@ -1434,7 +1371,6 @@
     "reminders": [
       "Storyteller Ability"
     ],
-    "setup": false,
     "ability": "If you die, the Storyteller gains a not-in-play Minion ability.",
     "flavour": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
     "urls": {
@@ -1450,7 +1386,6 @@
     "edition": "tb",
     "team": "outsider",
     "standardAmyOrder": 74,
-    "setup": false,
     "ability": "You might register as evil & as a Minion or Demon, even if dead.",
     "flavour": "Garn git ya darn grub ya mitts ofma lorn yasee. Grr. Natsy pikkins yonder southwise ye begittin afta ya! Git! Me harvy no so widda licks and demmons no be fightin' hadsup ne'er ma kin. Git, assay!",
     "urls": {
@@ -1465,7 +1400,6 @@
     "edition": "snv",
     "team": "outsider",
     "standardAmyOrder": 75,
-    "setup": false,
     "ability": "If you are “mad” about being an Outsider, you might be executed.",
     "flavour": "I am not a freak! I am a human being! Have mercy!",
     "urls": {
@@ -1479,7 +1413,6 @@
     "name": "Heretic",
     "team": "outsider",
     "standardAmyOrder": 76,
-    "setup": false,
     "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
     "flavour": "After the hail has smashed the roof and splintered the glass of the Cathedral windows, it melts again into the earth, like a dying lamb in the desert sun. Such is the parable of the madman.",
     "urls": {
@@ -1501,7 +1434,6 @@
     "reminders": [
       "Guess used"
     ],
-    "setup": false,
     "ability": "All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.",
     "flavour": "Don't touch the hair, honey.",
     "urls": {
@@ -1517,7 +1449,6 @@
     "edition": "snv",
     "team": "outsider",
     "standardAmyOrder": 78,
-    "setup": false,
     "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
     "flavour": "Oops.",
     "urls": {
@@ -1552,7 +1483,6 @@
     "reminders": [
       "Can not nominate"
     ],
-    "setup": false,
     "ability": "You may only nominate once per game. When you do, if the nominee is not the Demon, they die.",
     "flavour": "Golem help? Golem smash! Golem help.",
     "urls": {
@@ -1573,7 +1503,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player, they die.",
     "flavour": "Scorpio looks sideways at the lovers, and you have a choice to make. With silver cross my palm, and your fate shall be revealed. With steel cross my throat, and by the stars you shall regret it.",
     "urls": {
@@ -1593,7 +1522,6 @@
     "reminders": [
       "Haircuts tonight"
     ],
-    "setup": false,
     "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
     "flavour": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
     "urls": {
@@ -1607,7 +1535,6 @@
     "name": "Politician",
     "team": "outsider",
     "standardAmyOrder": 83,
-    "setup": false,
     "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead.",
     "flavour": "I’m glad you asked that question. Truly, I am. But I think the REAL question here is…",
     "urls": {
@@ -1632,7 +1559,6 @@
       "Attack 2",
       "Attack 3"
     ],
-    "setup": false,
     "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
     "flavour": "I am the night... I think.",
     "urls": {
@@ -1679,7 +1605,6 @@
     "remindersGlobal": [
       "Knows"
     ],
-    "setup": false,
     "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
     "flavour": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",
     "urls": {
@@ -1702,7 +1627,6 @@
     "reminders": [
       "Poisoned"
     ],
-    "setup": false,
     "ability": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
     "flavour": "Add compound Alpha to compound Beta... NOT TOO MUCH!",
     "urls": {
@@ -1724,7 +1648,6 @@
     "reminders": [
       "Survives execution"
     ],
-    "setup": false,
     "ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die.",
     "flavour": "My client, should the objection be overruled, pleads innocent by virtue of the prosecution's non-observance of statute 27.B - incorrect or misleading conjugation of a verb. The fact that 9 of the jury died last night is simply prima face, which is, as Wills vs Thule set precedent for, further reason to acquit.",
     "urls": {
@@ -1769,7 +1692,6 @@
     "reminders": [
       "Cursed"
     ],
-    "setup": false,
     "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",
     "flavour": "Three drops of goat's blood. A lock of hair, torn in anger. The name is spoken, the shadow cast. Walk left foot first down that bramble-filled path, and don't look back.",
     "urls": {
@@ -1788,7 +1710,6 @@
     "firstNightReminder": "Show the Grimoire to the Spy for as long as they need.",
     "otherNight": 70,
     "otherNightReminder": "Show the Grimoire to the Spy for as long as they need.",
-    "setup": false,
     "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
     "flavour": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",
     "urls": {
@@ -1811,7 +1732,6 @@
     "reminders": [
       "Mad"
     ],
-    "setup": false,
     "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
     "flavour": "Reality is merely an opinion. Specifically, my opinion.",
     "urls": {
@@ -1833,7 +1753,6 @@
     "reminders": [
       "Fear"
     ],
-    "setup": false,
     "ability": "Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player.",
     "flavour": "Beware of gazing long into the Abyss, lest the Abyss also gaze into you.",
     "urls": {
@@ -1850,7 +1769,6 @@
     "standardAmyOrder": 94,
     "otherNight": 16,
     "otherNightReminder": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
-    "setup": false,
     "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
     "flavour": "Round about the cauldron go; In the poisoned entrails throw; Toad, that under cold stone; Days and nights has thirty-one; Sweated venom sleeping got; Boil thou first in the charmed pot.",
     "urls": {
@@ -1865,7 +1783,6 @@
     "name": "Psychopath",
     "team": "minion",
     "standardAmyOrder": 95,
-    "setup": false,
     "ability": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo.",
     "flavour": "Surprise!",
     "urls": {
@@ -1887,7 +1804,6 @@
       "Dead",
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
     "flavour": "...",
     "urls": {
@@ -1924,7 +1840,6 @@
       "Turns evil",
       "No ability"
     ],
-    "setup": false,
     "ability": "You start knowing a secret word. The 1st good player to say this word becomes evil that night.",
     "flavour": "That which issues from the heart alone, will bend the hearts of others to your own.",
     "urls": {
@@ -1941,7 +1856,6 @@
     "reminders": [
       "Claimed"
     ],
-    "setup": false,
     "ability": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.",
     "flavour": "You don’t want to insult the goblins. You really, really don’t. On a completely different note… can I have another piece of cake?",
     "urls": {
@@ -1963,7 +1877,6 @@
     "reminders": [
       "Demon"
     ],
-    "setup": false,
     "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)",
     "flavour": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
     "urls": {
@@ -1979,7 +1892,6 @@
     "edition": "bmr",
     "team": "minion",
     "standardAmyOrder": 101,
-    "setup": false,
     "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
     "flavour": "The tentacles of that monster are nailed to the doors of the church. Mothers & children are dancing in the street. Excellent. Everything is proceeding exactly as I have planned.",
     "urls": {
@@ -2000,7 +1912,6 @@
     "reminders": [
       "Twin"
     ],
-    "setup": false,
     "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
     "flavour": "I'm not Sara! I'm Clara! SHE is Sara! Sara is the evil one! Not me!",
     "urls": {
@@ -2014,7 +1925,6 @@
     "name": "Boomdandy",
     "team": "minion",
     "standardAmyOrder": 103,
-    "setup": false,
     "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.",
     "flavour": "Tick... Tick... Tick... TOCK.",
     "urls": {
@@ -2052,7 +1962,6 @@
     "reminders": [
       "About to Die"
     ],
-    "setup": false,
     "ability": "All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote.",
     "flavour": "Flavour Text.",
     "urls": {
@@ -2091,7 +2000,6 @@
       "Poisoned",
       "Poisoned"
     ],
-    "setup": false,
     "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",
     "flavour": "You truly have been kind welcoming me into your beautiful home. I am so sorry I accidentally scratched you. A little thing. No matter. But please, take this golden toothpick as a humble token of my regret and appreciation.",
     "urls": {
@@ -2136,7 +2044,6 @@
       "Dead",
       "Poisoned"
     ],
-    "setup": false,
     "ability": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if & only if they die.",
     "flavour": "Tasty, tasty, tasty, tasty, tasty, tasty, tasty, tasty brai- I mean pie! Yes. Tasty pie. That’s what I meant to say.",
     "urls": {
@@ -2159,7 +2066,6 @@
       "Poisoned",
       "Poisoned"
     ],
-    "setup": false,
     "ability": "Each night*, choose a player: they die. Your 2 Townsfolk neighbours are poisoned.",
     "flavour": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",
     "urls": {
@@ -2179,7 +2085,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
     "flavour": "We must keep our wits sharp and our sword sharper. Evil walks among us, and will stop at nothing to destroy us good, simple folk, bringing our fine town to ruin. Trust no-one. But, if you must trust someone, trust me.",
     "urls": {
@@ -2198,7 +2103,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
     "flavour": "Like a bonfire on a moonless night… I see you, mortal.",
     "urls": {
@@ -2220,7 +2124,6 @@
       "Dead",
       "Alive"
     ],
-    "setup": false,
     "ability": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
     "flavour": "Blarg f'taag nm mataan! No sho gumtha m'sik na yuuu. Fluuuuuuuuurg h-sikkkh.",
     "urls": {
@@ -2243,7 +2146,6 @@
       "Dead",
       "3 attacks"
     ],
-    "setup": false,
     "ability": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.",
     "flavour": "Would you like a flower? I'm so lonely.",
     "urls": {
@@ -2264,7 +2166,6 @@
       "Died today",
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.",
     "flavour": "I do not. Understand. Your ways. Fellow human. Show me. The dirt. Where the holy. Lay. Sleeping. I too. Must sleep. Soon.",
     "urls": {
@@ -2285,7 +2186,6 @@
       "2",
       "3"
     ],
-    "setup": false,
     "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
     "flavour": "Alsukut min dhahab.",
     "urls": {
@@ -2355,7 +2255,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
     "flavour": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",
     "urls": {
@@ -2402,7 +2301,6 @@
       "Day 5",
       "Good player executed"
     ],
-    "setup": false,
     "ability": "If more than 1 good player is executed, you win. All players know you are in play. After day 5, evil wins.",
     "flavour": "To the last, I grapple with thee. From Hell’s heart, I stab at thee. For hate’s sake, I spit my last breath at thee.",
     "urls": {
@@ -2431,7 +2329,6 @@
     "id": "gangster",
     "name": "Gangster",
     "team": "traveler",
-    "setup": false,
     "ability": "Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees.",
     "flavour": "I like your shoes. It would be such a shame if you had a little accident, and they got ruined. Now that you mention it, I like your cufflinks too.",
     "urls": {
@@ -2445,7 +2342,6 @@
     "name": "Beggar",
     "edition": "tb",
     "team": "traveler",
-    "setup": false,
     "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment. You are sober & healthy.",
     "flavour": "Alms for the poor, good Sir? Spare a coin, Madam? Thank you. God bless! You're a right kind soul and no mistake! I'll have some swanky nosh tonight, I will!",
     "urls": {
@@ -2464,7 +2360,6 @@
     "reminders": [
       "3 votes"
     ],
-    "setup": false,
     "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
     "flavour": "Sign here please. And here. And here. Aaaaaaaaand here. This should all be sorted and tallied by the end of the day, assuming everyone's signatures are legible. We haven't had a mix-up in the paperwork for ages. Yesterday noon, if memory serves...",
     "urls": {
@@ -2478,7 +2373,6 @@
     "name": "Gunslinger",
     "edition": "tb",
     "team": "traveler",
-    "setup": false,
     "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.",
     "flavour": "It's time someone took matters into their own hands. That someone... is me.",
     "urls": {
@@ -2492,7 +2386,6 @@
     "name": "Scapegoat",
     "edition": "tb",
     "team": "traveler",
-    "setup": false,
     "ability": "If a player of your alignment is executed, you might be executed instead.",
     "flavour": "Good evening! Thank you for inviting me to the ball. I'm not from around here, but you sure seem like a friendly bunch, by golly. I'm sure we'll get along just dandy. What's all that rope for?",
     "urls": {
@@ -2511,7 +2404,6 @@
     "reminders": [
       "Negative vote"
     ],
-    "setup": false,
     "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
     "flavour": "I aint done nuffink. I weren't even in dat alley last night! It weren't me what stole Mayor Bruno's briefcase wiv all dem fancy dockoments innit. Besides, it was too 'eavy to carry far.",
     "urls": {
@@ -2529,7 +2421,6 @@
     "reminders": [
       "Is the Apprentice"
     ],
-    "setup": false,
     "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
     "flavour": "For years have I traveled, studying the ways of The Craft. Which craft, you ask? Simply that of the simple folk. Nothing to worry about. Not yet.",
     "urls": {
@@ -2547,7 +2438,6 @@
       "Nominate good",
       "Nominate evil"
     ],
-    "setup": false,
     "ability": "Only the Storyteller can nominate. At least 1 opposite player must be nominated each day.",
     "flavour": "In nomine Patris, et Filii, et Spiritus Sancti… Nos mos Dei. Deus vult de nobis.",
     "urls": {
@@ -2564,7 +2454,6 @@
     "reminders": [
       "No ability"
     ],
-    "setup": false,
     "ability": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail.",
     "flavour": "I find the defendant guilty of the crimes of murder, fraud, arson, larceny, impersonating an officer of the law, practicing medicine without a license, slander, regicide, and littering.",
     "urls": {
@@ -2578,7 +2467,6 @@
     "name": "Matron",
     "edition": "bmr",
     "team": "traveler",
-    "setup": false,
     "ability": "Each day, you may choose up to 3 sets of 2 players to swap seats. Players may not leave their seats to talk in private.",
     "flavour": "Miss Featherbottom, be quiet. Master Rutherford, a teacup needs just the four fingers, please. I know you are a father of nine, but age, or lack there-of as the case may be, is never an excuse for poor manners.",
     "urls": {
@@ -2592,7 +2480,6 @@
     "name": "Voudon",
     "edition": "bmr",
     "team": "traveler",
-    "setup": false,
     "ability": "Only you and the dead can vote. They don't need a vote token to do so. A 50% majority is not required.",
     "flavour": "Bien venu. Sit down. Breathe deep. Enter the land of the dead. See with their eyes. Speak with their voice. Yon sel lang se janm ase.",
     "urls": {
@@ -2612,7 +2499,6 @@
       "Sober & Healthy",
       "Ability twice"
     ],
-    "setup": false,
     "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.",
     "flavour": "There really is no cause to worry because when you think about it we are all capable and qualified and smart enough to grab the bull by the horns and sit down and figure this out like the reasonable adults we are by the way would you like another cup it really is the most amazing beverage they say it is from the east but anyway where were we ah yes going for a jog and really nutting out this demon business which we can do with just a little teensy mental boost and some logical thinking for example Senior Hu here is a regular customer and therefore quite trustworthy and would anyone like another cup?",
     "urls": {
@@ -2631,7 +2517,6 @@
       "No ability",
       "Has ability"
     ],
-    "setup": false,
     "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
     "flavour": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers.",
     "urls": {
@@ -2645,7 +2530,6 @@
     "name": "Butcher",
     "edition": "snv",
     "team": "traveler",
-    "setup": false,
     "ability": "Each day, after the 1st execution, you may nominate again.",
     "flavour": "It tastes like chicken. More please.",
     "urls": {
@@ -2659,7 +2543,6 @@
     "name": "Deviant",
     "edition": "snv",
     "team": "traveler",
-    "setup": false,
     "ability": "If you were funny today, you cannot die by exile.",
     "flavour": "Twas the lady's quip, forsooth.",
     "urls": {
@@ -2677,7 +2560,6 @@
     "reminders": [
       "Dead"
     ],
-    "setup": false,
     "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
     "flavour": "Enchanté, Sailor. You look like you need someone to really listen to your troubles. I'm a good listener. Very, very good.",
     "urls": {
@@ -2853,6 +2735,7 @@
     "id": "sentinel",
     "name": "Sentinel",
     "team": "fabled",
+    "setup": true,
     "ability": "There might be 1 extra or 1 fewer Outsider in play.",
     "flavour": "Weapons, please.",
     "urls": {
