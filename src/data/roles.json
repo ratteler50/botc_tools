@@ -4,7 +4,7 @@
     "name": "Steward",
     "team": "townsfolk",
     "standardAmyOrder": 1,
-    "firstNight": 45,
+    "firstNight": 46,
     "firstNightReminder": "Point to the good player marked *KNOW*.",
     "reminders": [
       "Know"
@@ -23,7 +23,7 @@
     "name": "Knight",
     "team": "townsfolk",
     "standardAmyOrder": 2,
-    "firstNight": 46,
+    "firstNight": 47,
     "firstNightReminder": "Point to the two non-Demon players marked *KNOW*.",
     "reminders": [
       "Know",
@@ -43,7 +43,7 @@
     "name": "Noble",
     "team": "townsfolk",
     "standardAmyOrder": 3,
-    "firstNight": 47,
+    "firstNight": 48,
     "firstNightReminder": "Point to 3 players including one evil player, in no particular order.",
     "reminders": [
       "Seen",
@@ -59,12 +59,28 @@
     }
   },
   {
+    "id": "chef",
+    "name": "Chef",
+    "edition": "tb",
+    "team": "townsfolk",
+    "standardAmyOrder": 4,
+    "firstNight": 38,
+    "firstNightReminder": "Show the finger signal (0, 1, 2, …) for the number of pairs of neighbouring evil players.",
+    "ability": "You start knowing how many pairs of evil players there are.",
+    "flavour": "This evening's reservations seem odd. Never before has Mrs Mayweather kept company with that scamp from Hudson lane. Yet, tonight, they have a table for two. Strange.",
+    "urls": {
+      "token": "/token/chef.png",
+      "icon": "/icon/chef.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Chef"
+    }
+  },
+  {
     "id": "investigator",
     "name": "Investigator",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 4,
-    "firstNight": 36,
+    "standardAmyOrder": 5,
+    "firstNight": 37,
     "firstNightReminder": "Show the character token of a Minion in play. Point to two players, one of which is that character.",
     "reminders": [
       "Minion",
@@ -80,28 +96,12 @@
     }
   },
   {
-    "id": "chef",
-    "name": "Chef",
-    "edition": "tb",
-    "team": "townsfolk",
-    "standardAmyOrder": 5,
-    "firstNight": 37,
-    "firstNightReminder": "Show the finger signal (0, 1, 2, …) for the number of pairs of neighbouring evil players.",
-    "ability": "You start knowing how many pairs of evil players there are.",
-    "flavour": "This evening's reservations seem odd. Never before has Mrs Mayweather kept company with that scamp from Hudson lane. Yet, tonight, they have a table for two. Strange.",
-    "urls": {
-      "token": "/token/chef.png",
-      "icon": "/icon/chef.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Chef"
-    }
-  },
-  {
     "id": "washerwoman",
     "name": "Washerwoman",
     "edition": "tb",
     "team": "townsfolk",
     "standardAmyOrder": 6,
-    "firstNight": 34,
+    "firstNight": 35,
     "firstNightReminder": "Show the character token of a Townsfolk in play. Point to two players, one of which is that character.",
     "reminders": [
       "Townsfolk",
@@ -121,7 +121,7 @@
     "edition": "snv",
     "team": "townsfolk",
     "standardAmyOrder": 7,
-    "firstNight": 42,
+    "firstNight": 43,
     "firstNightReminder": "Show the hand signal for the number (1, 2, 3, etc.) of places from Demon to closest Minion.",
     "ability": "You start knowing how many steps from the Demon to its nearest Minion.",
     "flavour": "Do not disturb me. The tick must continue, for the circle is a symbol of life, and contains all things - all answers - in it's divine machinery. I must work.",
@@ -138,7 +138,7 @@
     "edition": "tb",
     "team": "townsfolk",
     "standardAmyOrder": 8,
-    "firstNight": 35,
+    "firstNight": 36,
     "firstNightReminder": "Show the character token of an Outsider in play. Point to two players, one of which is that character.",
     "reminders": [
       "Outsider",
@@ -158,7 +158,7 @@
     "edition": "bmr",
     "team": "townsfolk",
     "standardAmyOrder": 9,
-    "firstNight": 41,
+    "firstNight": 42,
     "firstNightReminder": "Show the marked character token. Point to the marked player.",
     "otherNight": 54,
     "otherNightReminder": "If the Grandmother’s grandchild was killed by the Demon tonight: The Grandmother dies.",
@@ -175,27 +175,11 @@
     }
   },
   {
-    "id": "shugenja",
-    "name": "Shugenja",
-    "team": "townsfolk",
-    "standardAmyOrder": 10,
-    "firstNight": 49,
-    "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
-    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
-    "flavour": "これは夢。それも夢。すべて夢です。",
-    "urls": {
-      "jinxes": "/jinxes/shugenja",
-      "token": "/token/shugenja.png",
-      "icon": "/icon/shugenja.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Shugenja"
-    }
-  },
-  {
     "id": "bountyhunter",
     "name": "Bounty Hunter",
     "team": "townsfolk",
-    "standardAmyOrder": 11,
-    "firstNight": 50,
+    "standardAmyOrder": 10,
+    "firstNight": 51,
     "firstNightReminder": "Point to 1 evil player. Wake the townsfolk who is evil and show them the 'You are' card and the thumbs down evil sign.",
     "otherNight": 67,
     "otherNightReminder": "If the known evil player has died, point to another evil player.",
@@ -212,11 +196,27 @@
     }
   },
   {
+    "id": "shugenja",
+    "name": "Shugenja",
+    "team": "townsfolk",
+    "standardAmyOrder": 11,
+    "firstNight": 50,
+    "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
+    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
+    "flavour": "これは夢。それも夢。すべて夢です。",
+    "urls": {
+      "jinxes": "/jinxes/shugenja",
+      "token": "/token/shugenja.png",
+      "icon": "/icon/shugenja.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Shugenja"
+    }
+  },
+  {
     "id": "pixie",
     "name": "Pixie",
     "team": "townsfolk",
     "standardAmyOrder": 12,
-    "firstNight": 30,
+    "firstNight": 31,
     "firstNightReminder": "Show the Pixie 1 in-play Townsfolk character token.",
     "reminders": [
       "Mad",
@@ -236,7 +236,7 @@
     "edition": "tb",
     "team": "townsfolk",
     "standardAmyOrder": 13,
-    "firstNight": 38,
+    "firstNight": 39,
     "firstNightReminder": "Show the finger signal (0, 1, 2) for the number of evil alive neighbours of the Empath.",
     "otherNight": 56,
     "otherNightReminder": "Show the finger signal (0, 1, 2) for the number of evil neighbours.",
@@ -253,7 +253,7 @@
     "name": "High Priestess",
     "team": "townsfolk",
     "standardAmyOrder": 14,
-    "firstNight": 54,
+    "firstNight": 55,
     "firstNightReminder": "Point to a player.",
     "otherNight": 72,
     "otherNightReminder": "Point to a player.",
@@ -270,7 +270,7 @@
     "edition": "bmr",
     "team": "townsfolk",
     "standardAmyOrder": 15,
-    "firstNight": 11,
+    "firstNight": 12,
     "firstNightReminder": "The Sailor points to a living player. Either the Sailor, or the chosen player, is drunk.",
     "otherNight": 5,
     "otherNightReminder": "The previously drunk player is no longer drunk. The Sailor points to a living player. Either the Sailor, or the chosen player, is drunk.",
@@ -290,7 +290,7 @@
     "name": "General",
     "team": "townsfolk",
     "standardAmyOrder": 16,
-    "firstNight": 55,
+    "firstNight": 56,
     "firstNightReminder": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
     "otherNight": 73,
     "otherNightReminder": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
@@ -307,7 +307,7 @@
     "name": "Preacher",
     "team": "townsfolk",
     "standardAmyOrder": 17,
-    "firstNight": 14,
+    "firstNight": 15,
     "firstNightReminder": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
     "otherNight": 7,
     "otherNightReminder": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
@@ -331,7 +331,7 @@
     "edition": "bmr",
     "team": "townsfolk",
     "standardAmyOrder": 18,
-    "firstNight": 56,
+    "firstNight": 57,
     "firstNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, …) for how many of those players wake tonight for their ability.",
     "otherNight": 74,
     "otherNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, …) for how many of those players wake tonight for their ability.",
@@ -345,11 +345,69 @@
     }
   },
   {
+    "id": "dreamer",
+    "name": "Dreamer",
+    "edition": "snv",
+    "team": "townsfolk",
+    "standardAmyOrder": 19,
+    "firstNight": 44,
+    "firstNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
+    "otherNight": 59,
+    "otherNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
+    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
+    "flavour": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
+    "urls": {
+      "token": "/token/dreamer.png",
+      "icon": "/icon/dreamer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Dreamer"
+    }
+  },
+  {
+    "id": "snakecharmer",
+    "name": "Snake Charmer",
+    "edition": "snv",
+    "team": "townsfolk",
+    "standardAmyOrder": 20,
+    "firstNight": 21,
+    "firstNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
+    "otherNight": 12,
+    "otherNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
+    "reminders": [
+      "Poisoned"
+    ],
+    "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
+    "flavour": "Effendi... I am but a humble man, but my pipe is golden and a single tune will tame the wildest djinn, Insh'Allah. They say that greed hangs more men than rope, but not I, effendi... not I.",
+    "urls": {
+      "token": "/token/snakecharmer.png",
+      "icon": "/icon/snakecharmer.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Snake Charmer"
+    },
+    "textGameClarification": "On the first night, the snake charmer will pick before evil info."
+  },
+  {
+    "id": "king",
+    "name": "King",
+    "team": "townsfolk",
+    "standardAmyOrder": 21,
+    "firstNight": 11,
+    "firstNightReminder": "Wake the Demon, show them the 'This character selected you' card, show the King token and point to the King player.",
+    "otherNight": 66,
+    "otherNightReminder": "If there are more dead than living, show the King a character token of a living player.",
+    "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
+    "flavour": "Betwixt the unknown strains of mortal strife And morbid night, sweet with mystery and woe Lies unfettered joys of fate’s long and colored life Who’s garden blooms with each painted face to show.",
+    "urls": {
+      "jinxes": "/jinxes/king",
+      "token": "/token/king.png",
+      "icon": "/icon/king.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/King"
+    }
+  },
+  {
     "id": "balloonist",
     "name": "Balloonist",
     "team": "townsfolk",
-    "standardAmyOrder": 19,
-    "firstNight": 48,
+    "standardAmyOrder": 22,
+    "firstNight": 49,
     "firstNightReminder": "Choose a character type. Point to a player whose character is of that type. Place the Balloonist's Seen reminder next to that character.",
     "otherNight": 65,
     "otherNightReminder": "Choose a character type that does not yet have a Seen reminder next to a character of that type. Point to a player whose character is of that type, if there are any. Place the Balloonist's Seen reminder next to that character.",
@@ -371,69 +429,12 @@
     }
   },
   {
-    "id": "king",
-    "name": "King",
-    "team": "townsfolk",
-    "standardAmyOrder": 20,
-    "firstNight": 10,
-    "firstNightReminder": "Wake the Demon, show them the 'This character selected you' card, show the King token and point to the King player.",
-    "otherNight": 66,
-    "otherNightReminder": "If there are more dead than living, show the King a character token of a living player.",
-    "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
-    "flavour": "Betwixt the unknown strains of mortal strife And morbid night, sweet with mystery and woe Lies unfettered joys of fate’s long and colored life Who’s garden blooms with each painted face to show.",
-    "urls": {
-      "jinxes": "/jinxes/king",
-      "token": "/token/king.png",
-      "icon": "/icon/king.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/King"
-    }
-  },
-  {
-    "id": "dreamer",
-    "name": "Dreamer",
-    "edition": "snv",
-    "team": "townsfolk",
-    "standardAmyOrder": 21,
-    "firstNight": 43,
-    "firstNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
-    "otherNight": 59,
-    "otherNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
-    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
-    "flavour": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
-    "urls": {
-      "token": "/token/dreamer.png",
-      "icon": "/icon/dreamer.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Dreamer"
-    }
-  },
-  {
-    "id": "fortuneteller",
-    "name": "Fortune Teller",
-    "edition": "tb",
-    "team": "townsfolk",
-    "standardAmyOrder": 22,
-    "firstNight": 39,
-    "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon.",
-    "otherNight": 57,
-    "otherNightReminder": "The Fortune Teller points to two players. Show the head signal (nod 'yes', shake 'no') for whether one of those players is the Demon.",
-    "reminders": [
-      "Red herring"
-    ],
-    "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
-    "flavour": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
-    "urls": {
-      "token": "/token/fortuneteller.png",
-      "icon": "/icon/fortuneteller.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Fortune Teller"
-    }
-  },
-  {
     "id": "mathematician",
     "name": "Mathematician",
     "edition": "snv",
     "team": "townsfolk",
     "standardAmyOrder": 23,
-    "firstNight": 57,
+    "firstNight": 58,
     "firstNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
     "otherNight": 75,
     "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
@@ -454,33 +455,11 @@
     }
   },
   {
-    "id": "snakecharmer",
-    "name": "Snake Charmer",
-    "edition": "snv",
-    "team": "townsfolk",
-    "standardAmyOrder": 24,
-    "firstNight": 20,
-    "firstNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
-    "otherNight": 12,
-    "otherNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
-    "reminders": [
-      "Poisoned"
-    ],
-    "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
-    "flavour": "Effendi... I am but a humble man, but my pipe is golden and a single tune will tame the wildest djinn, Insh'Allah. They say that greed hangs more men than rope, but not I, effendi... not I.",
-    "urls": {
-      "token": "/token/snakecharmer.png",
-      "icon": "/icon/snakecharmer.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Snake Charmer"
-    },
-    "textGameClarification": "On the first night, the snake charmer will pick before evil info."
-  },
-  {
     "id": "cultleader",
     "name": "Cult Leader",
     "team": "townsfolk",
-    "standardAmyOrder": 25,
-    "firstNight": 52,
+    "standardAmyOrder": 24,
+    "firstNight": 53,
     "firstNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
     "otherNight": 69,
     "otherNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
@@ -492,6 +471,27 @@
       "wiki": "https://wiki.bloodontheclocktower.com/Cult Leader"
     },
     "textGameClarification": "There will be a thread. Prior to nominations opening players can state interest in forming a cult. At the time we normally open nominations, we instead lock PMs and privately collect people's votes on the cult(s). And of course people can prevote on those before we start collecting them officially. Once we have everyone's votes, nominations open and no more cults can be called that day."
+  },
+  {
+    "id": "fortuneteller",
+    "name": "Fortune Teller",
+    "edition": "tb",
+    "team": "townsfolk",
+    "standardAmyOrder": 25,
+    "firstNight": 40,
+    "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon.",
+    "otherNight": 57,
+    "otherNightReminder": "The Fortune Teller points to two players. Show the head signal (nod 'yes', shake 'no') for whether one of those players is the Demon.",
+    "reminders": [
+      "Red herring"
+    ],
+    "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
+    "flavour": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
+    "urls": {
+      "token": "/token/fortuneteller.png",
+      "icon": "/icon/fortuneteller.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fortune Teller"
+    }
   },
   {
     "id": "flowergirl",
@@ -709,7 +709,7 @@
     "name": "Amnesiac",
     "team": "townsfolk",
     "standardAmyOrder": 37,
-    "firstNight": 33,
+    "firstNight": 34,
     "firstNightReminder": "Decide the Amnesiac's entire ability. If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
     "otherNight": 50,
     "otherNightReminder": "If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
@@ -755,7 +755,7 @@
     "name": "Nightwatchman",
     "team": "townsfolk",
     "standardAmyOrder": 39,
-    "firstNight": 51,
+    "firstNight": 52,
     "firstNightReminder": "The Nightwatchman may point to a player. Wake that player, show the 'This character selected you' card and the Nightwatchman token, then point to the Nightwatchman player.",
     "otherNight": 68,
     "otherNightReminder": "The Nightwatchman may point to a player. Wake that player, show the 'This character selected you' card and the Nightwatchman token, then point to the Nightwatchman player.",
@@ -774,7 +774,7 @@
     "name": "Engineer",
     "team": "townsfolk",
     "standardAmyOrder": 40,
-    "firstNight": 13,
+    "firstNight": 14,
     "firstNightReminder": "The Engineer shows a 'no' head signal, or points to a Demon or points to the relevant number of Minions. If the Engineer chose characters, replace the Demon or Minions with the choices, then wake the relevant players and show them the You are card and the relevant character tokens.",
     "otherNight": 6,
     "otherNightReminder": "The Engineer shows a 'no' head signal, or points to a Demon or points to the relevant number of Minions. If the Engineer chose characters, replace the Demon or Minions with the choices, then wake the relevant players and show them the 'You are' card and the relevant character tokens.",
@@ -813,7 +813,7 @@
     "edition": "bmr",
     "team": "townsfolk",
     "standardAmyOrder": 42,
-    "firstNight": 19,
+    "firstNight": 20,
     "firstNightReminder": "The Courtier either shows a 'no' head signal, or points to a character on the sheet. If the Courtier used their ability: If that character is in play, that player is drunk.",
     "otherNight": 9,
     "otherNightReminder": "Reduce the remaining number of days the marked player is poisoned. If the Courtier has not yet used their ability: The Courtier either shows a 'no' head signal, or points to a character on the sheet. If the Courtier used their ability: If that character is in play, that player is drunk.",
@@ -832,27 +832,11 @@
     }
   },
   {
-    "id": "fisherman",
-    "name": "Fisherman",
-    "team": "townsfolk",
-    "standardAmyOrder": 43,
-    "reminders": [
-      "No ability"
-    ],
-    "ability": "Once per game, during the day, visit the Storyteller for some advice to help you win.",
-    "flavour": "This was my favourite part of the river… see how the sunlight makes a rainbow from the monastery to the market? This was the best place for big fish. And the older I get, the bigger they were.",
-    "urls": {
-      "token": "/token/fisherman.png",
-      "icon": "/icon/fisherman.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Fisherman"
-    }
-  },
-  {
     "id": "slayer",
     "name": "Slayer",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 44,
+    "standardAmyOrder": 43,
     "reminders": [
       "No ability"
     ],
@@ -863,6 +847,22 @@
       "token": "/token/slayer.png",
       "icon": "/icon/slayer.png",
       "wiki": "https://wiki.bloodontheclocktower.com/Slayer"
+    }
+  },
+  {
+    "id": "fisherman",
+    "name": "Fisherman",
+    "team": "townsfolk",
+    "standardAmyOrder": 44,
+    "reminders": [
+      "No ability"
+    ],
+    "ability": "Once per game, during the day, visit the Storyteller for some advice to help you win.",
+    "flavour": "This was my favourite part of the river… see how the sunlight makes a rainbow from the monastery to the market? This was the best place for big fish. And the older I get, the bigger they were.",
+    "urls": {
+      "token": "/token/fisherman.png",
+      "icon": "/icon/fisherman.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fisherman"
     }
   },
   {
@@ -891,7 +891,7 @@
     "edition": "snv",
     "team": "townsfolk",
     "standardAmyOrder": 46,
-    "firstNight": 44,
+    "firstNight": 45,
     "firstNightReminder": "The Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
     "otherNight": 63,
     "otherNightReminder": "If the Seamstress has not yet used their ability: the Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
@@ -912,7 +912,7 @@
     "edition": "snv",
     "team": "townsfolk",
     "standardAmyOrder": 47,
-    "firstNight": 2,
+    "firstNight": 3,
     "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token",
     "otherNight": 3,
     "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
@@ -933,7 +933,7 @@
     "name": "Huntsman",
     "team": "townsfolk",
     "standardAmyOrder": 48,
-    "firstNight": 31,
+    "firstNight": 32,
     "firstNightReminder": "The Huntsman shakes their head 'no' or points to a player. If they point to the Damsel, wake that player, show the 'You are' card and a not-in-play character token.",
     "otherNight": 48,
     "otherNightReminder": "The Huntsman shakes their head 'no' or points to a player. If they point to the Damsel, wake that player, show the 'You are' card and a not-in-play character token.",
@@ -983,26 +983,11 @@
     }
   },
   {
-    "id": "pacifist",
-    "name": "Pacifist",
-    "edition": "bmr",
-    "team": "townsfolk",
-    "standardAmyOrder": 51,
-    "ability": "Executed good players might not die.",
-    "flavour": "Distrust all in whom the impulse to punish is powerful.",
-    "urls": {
-      "jinxes": "/jinxes/pacifist",
-      "token": "/token/pacifist.png",
-      "icon": "/icon/pacifist.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Pacifist"
-    }
-  },
-  {
     "id": "alchemist",
     "name": "Alchemist",
     "team": "townsfolk",
-    "standardAmyOrder": 52,
-    "firstNight": 3,
+    "standardAmyOrder": 51,
+    "firstNight": 4,
     "firstNightReminder": "Show the Alchemist a not-in-play Minion token",
     "remindersGlobal": [
       "Is the Alchemist"
@@ -1014,6 +999,21 @@
       "token": "/token/alchemist.png",
       "icon": "/icon/alchemist.png",
       "wiki": "https://wiki.bloodontheclocktower.com/Alchemist"
+    }
+  },
+  {
+    "id": "pacifist",
+    "name": "Pacifist",
+    "edition": "bmr",
+    "team": "townsfolk",
+    "standardAmyOrder": 52,
+    "ability": "Executed good players might not die.",
+    "flavour": "Distrust all in whom the impulse to punish is powerful.",
+    "urls": {
+      "jinxes": "/jinxes/pacifist",
+      "token": "/token/pacifist.png",
+      "icon": "/icon/pacifist.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Pacifist"
     }
   },
   {
@@ -1072,7 +1072,7 @@
     "name": "Magician",
     "team": "townsfolk",
     "standardAmyOrder": 56,
-    "firstNight": 5,
+    "firstNight": 6,
     "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
     "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
     "flavour": "1… 2… Abra… 3… 4… Cadabra… <poof!> And, as you can see, ladies and gentlemen, Captain Farnsworth’s bag of gold has disappeared! Gone! Without a trace! Thank you, and goodnight!",
@@ -1084,27 +1084,10 @@
     }
   },
   {
-    "id": "ravenkeeper",
-    "name": "Ravenkeeper",
-    "edition": "tb",
-    "team": "townsfolk",
-    "standardAmyOrder": 57,
-    "otherNight": 55,
-    "otherNightReminder": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player’s character token.",
-    "ability": "If you die at night, you are woken to choose a player: you learn their character.",
-    "flavour": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! Take your message to those in dark corners! To the manor and to the river! Let them read of the nature of my death.",
-    "urls": {
-      "jinxes": "/jinxes/ravenkeeper",
-      "token": "/token/ravenkeeper.png",
-      "icon": "/icon/ravenkeeper.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Ravenkeeper"
-    }
-  },
-  {
     "id": "choirboy",
     "name": "Choirboy",
     "team": "townsfolk",
-    "standardAmyOrder": 58,
+    "standardAmyOrder": 57,
     "otherNight": 47,
     "otherNightReminder": "If the King was killed by the Demon, wake the Choirboy and point to the Demon player.",
     "setup": true,
@@ -1117,28 +1100,28 @@
     }
   },
   {
-    "id": "virgin",
-    "name": "Virgin",
+    "id": "ravenkeeper",
+    "name": "Ravenkeeper",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 59,
-    "reminders": [
-      "No ability"
-    ],
-    "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
-    "flavour": "I am pure. Let those who are without sin cast themselves down and suffer in my stead. My reputation shall not be stained with your venomous accusations.",
+    "standardAmyOrder": 58,
+    "otherNight": 55,
+    "otherNightReminder": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player’s character token.",
+    "ability": "If you die at night, you are woken to choose a player: you learn their character.",
+    "flavour": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! Take your message to those in dark corners! To the manor and to the river! Let them read of the nature of my death.",
     "urls": {
-      "token": "/token/virgin.png",
-      "icon": "/icon/virgin.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Virgin"
+      "jinxes": "/jinxes/ravenkeeper",
+      "token": "/token/ravenkeeper.png",
+      "icon": "/icon/ravenkeeper.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Ravenkeeper"
     }
   },
   {
     "id": "poppygrower",
     "name": "Poppy Grower",
     "team": "townsfolk",
-    "standardAmyOrder": 60,
-    "firstNight": 4,
+    "standardAmyOrder": 59,
+    "firstNight": 5,
     "firstNightReminder": "Do not inform the Demon/Minions who each other are",
     "otherNight": 4,
     "otherNightReminder": "If the Poppy Grower has died, show the Minions/Demon who each other are.",
@@ -1154,6 +1137,23 @@
       "wiki": "https://wiki.bloodontheclocktower.com/Poppy Grower"
     },
     "textGameClarification": "Info will be given if a poisoned poppy grower dies."
+  },
+  {
+    "id": "virgin",
+    "name": "Virgin",
+    "edition": "tb",
+    "team": "townsfolk",
+    "standardAmyOrder": 60,
+    "reminders": [
+      "No ability"
+    ],
+    "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
+    "flavour": "I am pure. Let those who are without sin cast themselves down and suffer in my stead. My reputation shall not be stained with your venomous accusations.",
+    "urls": {
+      "token": "/token/virgin.png",
+      "icon": "/icon/virgin.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Virgin"
+    }
   },
   {
     "id": "minstrel",
@@ -1174,18 +1174,21 @@
     }
   },
   {
-    "id": "mayor",
-    "name": "Mayor",
-    "edition": "tb",
+    "id": "cannibal",
+    "name": "Cannibal",
     "team": "townsfolk",
     "standardAmyOrder": 62,
-    "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
-    "flavour": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
+    "reminders": [
+      "Poisoned",
+      "Died today"
+    ],
+    "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
+    "flavour": "I don’t like clowns. They taste funny.",
     "urls": {
-      "jinxes": "/jinxes/mayor",
-      "token": "/token/mayor.png",
-      "icon": "/icon/mayor.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Mayor"
+      "jinxes": "/jinxes/cannibal",
+      "token": "/token/cannibal.png",
+      "icon": "/icon/cannibal.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Cannibal"
     }
   },
   {
@@ -1203,21 +1206,18 @@
     }
   },
   {
-    "id": "cannibal",
-    "name": "Cannibal",
+    "id": "mayor",
+    "name": "Mayor",
+    "edition": "tb",
     "team": "townsfolk",
     "standardAmyOrder": 64,
-    "reminders": [
-      "Poisoned",
-      "Died today"
-    ],
-    "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
-    "flavour": "I don’t like clowns. They taste funny.",
+    "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
+    "flavour": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
     "urls": {
-      "jinxes": "/jinxes/cannibal",
-      "token": "/token/cannibal.png",
-      "icon": "/icon/cannibal.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Cannibal"
+      "jinxes": "/jinxes/mayor",
+      "token": "/token/mayor.png",
+      "icon": "/icon/mayor.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mayor"
     }
   },
   {
@@ -1225,7 +1225,7 @@
     "name": "Snitch",
     "team": "outsider",
     "standardAmyOrder": 65,
-    "firstNight": 7,
+    "firstNight": 8,
     "firstNightReminder": "After Minion info wake each Minion and show them three not-in-play character tokens. These may be the same or different to each other and the ones shown to the Demon.",
     "ability": "Minions start knowing 3 not-in-play characters.",
     "flavour": "It was John.",
@@ -1242,7 +1242,7 @@
     "edition": "tb",
     "team": "outsider",
     "standardAmyOrder": 66,
-    "firstNight": 40,
+    "firstNight": 41,
     "firstNightReminder": "The Butler points to a player. Mark that player as 'Master'.",
     "otherNight": 70,
     "otherNightReminder": "The Butler points to a player. Mark that player as 'Master'.",
@@ -1395,24 +1395,10 @@
     }
   },
   {
-    "id": "mutant",
-    "name": "Mutant",
-    "edition": "snv",
-    "team": "outsider",
-    "standardAmyOrder": 75,
-    "ability": "If you are “mad” about being an Outsider, you might be executed.",
-    "flavour": "I am not a freak! I am a human being! Have mercy!",
-    "urls": {
-      "token": "/token/mutant.png",
-      "icon": "/icon/mutant.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Mutant"
-    }
-  },
-  {
     "id": "heretic",
     "name": "Heretic",
     "team": "outsider",
-    "standardAmyOrder": 76,
+    "standardAmyOrder": 75,
     "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
     "flavour": "After the hail has smashed the roof and splintered the glass of the Cathedral windows, it melts again into the earth, like a dying lamb in the desert sun. Such is the parable of the madman.",
     "urls": {
@@ -1423,11 +1409,25 @@
     }
   },
   {
+    "id": "mutant",
+    "name": "Mutant",
+    "edition": "snv",
+    "team": "outsider",
+    "standardAmyOrder": 76,
+    "ability": "If you are “mad” about being an Outsider, you might be executed.",
+    "flavour": "I am not a freak! I am a human being! Have mercy!",
+    "urls": {
+      "token": "/token/mutant.png",
+      "icon": "/icon/mutant.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mutant"
+    }
+  },
+  {
     "id": "damsel",
     "name": "Damsel",
     "team": "outsider",
     "standardAmyOrder": 77,
-    "firstNight": 32,
+    "firstNight": 33,
     "firstNightReminder": "Wake all the Minions, show them the 'This character selected you' card and the Damsel token.",
     "otherNight": 49,
     "otherNightReminder": "If selected by the Huntsman, wake the Damsel, show 'You are' card and a not-in-play Townsfolk token.",
@@ -1512,29 +1512,10 @@
     }
   },
   {
-    "id": "barber",
-    "name": "Barber",
-    "edition": "snv",
-    "team": "outsider",
-    "standardAmyOrder": 82,
-    "otherNight": 43,
-    "otherNightReminder": "If the Barber died today: Wake the Demon. Show the 'This character selected you' card, then Barber token. The Demon either shows a 'no' head signal, or points to 2 players. If they chose players: Swap the character tokens. Wake each player. Show 'You are', then their new character token.",
-    "reminders": [
-      "Haircuts tonight"
-    ],
-    "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
-    "flavour": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
-    "urls": {
-      "token": "/token/barber.png",
-      "icon": "/icon/barber.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Barber"
-    }
-  },
-  {
     "id": "politician",
     "name": "Politician",
     "team": "outsider",
-    "standardAmyOrder": 83,
+    "standardAmyOrder": 82,
     "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead.",
     "flavour": "I’m glad you asked that question. Truly, I am. But I think the REAL question here is…",
     "urls": {
@@ -1549,8 +1530,8 @@
     "name": "Lunatic",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 84,
-    "firstNight": 8,
+    "standardAmyOrder": 83,
+    "firstNight": 9,
     "firstNightReminder": "If 7 or more players: Show the Lunatic a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by the Lunatic is a Demon that would wake tonight: Allow the Lunatic to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon’s real character token. Show them the Lunatic player. If the Lunatic attacked players: Show the real demon each marked player. Remove any Lunatic 'attack' markers.",
     "otherNight": 22,
     "otherNightReminder": "Allow the Lunatic to do the actions of the Demon. Place their 'attack' markers. If the Lunatic selected players: Wake the Demon. Show the 'attack' marker, then point to each marked player. Remove any Lunatic 'attack' markers.",
@@ -1569,12 +1550,53 @@
     }
   },
   {
+    "id": "barber",
+    "name": "Barber",
+    "edition": "snv",
+    "team": "outsider",
+    "standardAmyOrder": 84,
+    "otherNight": 43,
+    "otherNightReminder": "If the Barber died today: Wake the Demon. Show the 'This character selected you' card, then Barber token. The Demon either shows a 'no' head signal, or points to 2 players. If they chose players: Swap the character tokens. Wake each player. Show 'You are', then their new character token.",
+    "reminders": [
+      "Haircuts tonight"
+    ],
+    "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
+    "flavour": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
+    "urls": {
+      "token": "/token/barber.png",
+      "icon": "/icon/barber.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Barber"
+    }
+  },
+  {
+    "id": "widow",
+    "name": "Widow",
+    "team": "minion",
+    "standardAmyOrder": 85,
+    "firstNight": 19,
+    "firstNightReminder": "Show the Grimoire to the Widow for as long as they need. The Widow points to a player. That player is poisoned. Wake a good player. Show the 'These characters are in play' card, then the Widow character token.",
+    "reminders": [
+      "Poisoned"
+    ],
+    "remindersGlobal": [
+      "Knows"
+    ],
+    "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
+    "flavour": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",
+    "urls": {
+      "jinxes": "/jinxes/widow",
+      "token": "/token/widow.png",
+      "icon": "/icon/widow.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Widow"
+    }
+  },
+  {
     "id": "godfather",
     "name": "Godfather",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 85,
-    "firstNight": 21,
+    "standardAmyOrder": 86,
+    "firstNight": 22,
     "firstNightReminder": "Show each of the Outsider tokens in play.",
     "otherNight": 40,
     "otherNightReminder": "If an Outsider died today: The Godfather points to a player. That player dies.",
@@ -1593,34 +1615,12 @@
     }
   },
   {
-    "id": "widow",
-    "name": "Widow",
-    "team": "minion",
-    "standardAmyOrder": 86,
-    "firstNight": 18,
-    "firstNightReminder": "Show the Grimoire to the Widow for as long as they need. The Widow points to a player. That player is poisoned. Wake a good player. Show the 'These characters are in play' card, then the Widow character token.",
-    "reminders": [
-      "Poisoned"
-    ],
-    "remindersGlobal": [
-      "Knows"
-    ],
-    "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
-    "flavour": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",
-    "urls": {
-      "jinxes": "/jinxes/widow",
-      "token": "/token/widow.png",
-      "icon": "/icon/widow.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Widow"
-    }
-  },
-  {
     "id": "poisoner",
     "name": "Poisoner",
     "edition": "tb",
     "team": "minion",
     "standardAmyOrder": 87,
-    "firstNight": 17,
+    "firstNight": 18,
     "firstNightReminder": "The Poisoner points to a player. That player is poisoned.",
     "otherNight": 8,
     "otherNightReminder": "The previously poisoned player is no longer poisoned. The Poisoner points to a player. That player is poisoned.",
@@ -1641,7 +1641,7 @@
     "edition": "bmr",
     "team": "minion",
     "standardAmyOrder": 88,
-    "firstNight": 22,
+    "firstNight": 23,
     "firstNightReminder": "The Devil’s Advocate points to a living player. That player survives execution tomorrow.",
     "otherNight": 14,
     "otherNightReminder": "The Devil’s Advocate points to a living player, different from the previous night. That player survives execution tomorrow.",
@@ -1662,7 +1662,7 @@
     "name": "Harpy",
     "team": "minion",
     "standardAmyOrder": 89,
-    "firstNight": 27,
+    "firstNight": 28,
     "firstNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",
     "otherNight": 19,
     "otherNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",
@@ -1680,12 +1680,31 @@
     }
   },
   {
+    "id": "spy",
+    "name": "Spy",
+    "edition": "tb",
+    "team": "minion",
+    "standardAmyOrder": 90,
+    "firstNight": 54,
+    "firstNightReminder": "Show the Grimoire to the Spy for as long as they need.",
+    "otherNight": 71,
+    "otherNightReminder": "Show the Grimoire to the Spy for as long as they need.",
+    "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
+    "flavour": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",
+    "urls": {
+      "jinxes": "/jinxes/spy",
+      "token": "/token/spy.png",
+      "icon": "/icon/spy.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Spy"
+    }
+  },
+  {
     "id": "witch",
     "name": "Witch",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 90,
-    "firstNight": 24,
+    "standardAmyOrder": 91,
+    "firstNight": 25,
     "firstNightReminder": "The Witch points to a player. If that player nominates tomorrow they die immediately.",
     "otherNight": 15,
     "otherNightReminder": "If there are 4 or more players alive: The Witch points to a player. If that player nominates tomorrow they die immediately.",
@@ -1701,31 +1720,12 @@
     }
   },
   {
-    "id": "spy",
-    "name": "Spy",
-    "edition": "tb",
-    "team": "minion",
-    "standardAmyOrder": 91,
-    "firstNight": 53,
-    "firstNightReminder": "Show the Grimoire to the Spy for as long as they need.",
-    "otherNight": 71,
-    "otherNightReminder": "Show the Grimoire to the Spy for as long as they need.",
-    "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
-    "flavour": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",
-    "urls": {
-      "jinxes": "/jinxes/spy",
-      "token": "/token/spy.png",
-      "icon": "/icon/spy.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Spy"
-    }
-  },
-  {
     "id": "cerenovus",
     "name": "Cerenovus",
     "edition": "snv",
     "team": "minion",
     "standardAmyOrder": 92,
-    "firstNight": 25,
+    "firstNight": 26,
     "firstNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
     "otherNight": 16,
     "otherNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
@@ -1746,7 +1746,7 @@
     "name": "Fearmonger",
     "team": "minion",
     "standardAmyOrder": 93,
-    "firstNight": 26,
+    "firstNight": 27,
     "firstNightReminder": "The Fearmonger points to a player. Place the Fear token next to that player and announce that a new player has been selected with the Fearmonger ability.",
     "otherNight": 18,
     "otherNightReminder": "The Fearmonger points to a player. If different from the previous night, place the Fear token next to that player and announce that a new player has been selected with the Fearmonger ability.",
@@ -1832,7 +1832,7 @@
     "name": "Mezepheles",
     "team": "minion",
     "standardAmyOrder": 98,
-    "firstNight": 28,
+    "firstNight": 29,
     "firstNightReminder": "Show the Mezepheles their secret word.",
     "otherNight": 20,
     "otherNightReminder": "Wake the 1st good player that said the Mezepheles' secret word and show them the 'You are' card and the thumbs down evil signal.",
@@ -1887,27 +1887,12 @@
     }
   },
   {
-    "id": "mastermind",
-    "name": "Mastermind",
-    "edition": "bmr",
-    "team": "minion",
-    "standardAmyOrder": 101,
-    "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
-    "flavour": "The tentacles of that monster are nailed to the doors of the church. Mothers & children are dancing in the street. Excellent. Everything is proceeding exactly as I have planned.",
-    "urls": {
-      "jinxes": "/jinxes/mastermind",
-      "token": "/token/mastermind.png",
-      "icon": "/icon/mastermind.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Mastermind"
-    }
-  },
-  {
     "id": "eviltwin",
     "name": "Evil Twin",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 102,
-    "firstNight": 23,
+    "standardAmyOrder": 101,
+    "firstNight": 24,
     "firstNightReminder": "Wake the Evil Twin and their twin. Confirm that they have acknowledged each other. Point to the Evil Twin. Show their Evil Twin token to the twin player. Point to the twin. Show their character token to the Evil Twin player.",
     "reminders": [
       "Twin"
@@ -1921,44 +1906,10 @@
     }
   },
   {
-    "id": "boomdandy",
-    "name": "Boomdandy",
-    "team": "minion",
-    "standardAmyOrder": 103,
-    "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.",
-    "flavour": "Tick... Tick... Tick... TOCK.",
-    "urls": {
-      "token": "/token/boomdandy.png",
-      "icon": "/icon/boomdandy.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Boomdandy"
-    },
-    "textGameClarification": "After the day ends and boomdandy is executed and dies, players have two hours to speak publicly only. We will create a Boomdandy Thread for players to place their votes in. The last name given is who they are pointing at. Players can set preconditional boomdandy votes, if it does not yield a clear choice it will not be accepted; all preconditional votes are made public after deaths are announced."
-  },
-  {
-    "id": "marionette",
-    "name": "Marionette",
-    "team": "minion",
-    "standardAmyOrder": 104,
-    "firstNight": 12,
-    "firstNightReminder": "Select one of the good players next to the Demon and place the Is the Marionette reminder token. Wake the Demon and show them the Marionette.",
-    "remindersGlobal": [
-      "Is the Marionette"
-    ],
-    "setup": true,
-    "ability": "You think you are a good character but you are not. The Demon knows who you are. [You neighbour the Demon]",
-    "flavour": "Words, words. They're all we have to go on.",
-    "urls": {
-      "jinxes": "/jinxes/marionette",
-      "token": "/token/marionette.png",
-      "icon": "/icon/marionette.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Marionette"
-    }
-  },
-  {
     "id": "organgrinder",
     "name": "Organ Grinder",
     "team": "minion",
-    "standardAmyOrder": 105,
+    "standardAmyOrder": 102,
     "reminders": [
       "About to Die"
     ],
@@ -1974,8 +1925,8 @@
     "id": "vizier",
     "name": "Vizier",
     "team": "minion",
-    "standardAmyOrder": 106,
-    "firstNight": 60,
+    "standardAmyOrder": 103,
+    "firstNight": 61,
     "otherNightReminder": "Announce the Vizier player to the group.",
     "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.",
     "flavour": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.",
@@ -1986,12 +1937,61 @@
     }
   },
   {
+    "id": "mastermind",
+    "name": "Mastermind",
+    "edition": "bmr",
+    "team": "minion",
+    "standardAmyOrder": 104,
+    "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
+    "flavour": "The tentacles of that monster are nailed to the doors of the church. Mothers & children are dancing in the street. Excellent. Everything is proceeding exactly as I have planned.",
+    "urls": {
+      "jinxes": "/jinxes/mastermind",
+      "token": "/token/mastermind.png",
+      "icon": "/icon/mastermind.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Mastermind"
+    }
+  },
+  {
+    "id": "boomdandy",
+    "name": "Boomdandy",
+    "team": "minion",
+    "standardAmyOrder": 105,
+    "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.",
+    "flavour": "Tick... Tick... Tick... TOCK.",
+    "urls": {
+      "token": "/token/boomdandy.png",
+      "icon": "/icon/boomdandy.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Boomdandy"
+    },
+    "textGameClarification": "After the day ends and boomdandy is executed and dies, players have two hours to speak publicly only. We will create a Boomdandy Thread for players to place their votes in. The last name given is who they are pointing at. Players can set preconditional boomdandy votes, if it does not yield a clear choice it will not be accepted; all preconditional votes are made public after deaths are announced."
+  },
+  {
+    "id": "marionette",
+    "name": "Marionette",
+    "team": "minion",
+    "standardAmyOrder": 106,
+    "firstNight": 13,
+    "firstNightReminder": "Select one of the good players next to the Demon and place the Is the Marionette reminder token. Wake the Demon and show them the Marionette.",
+    "remindersGlobal": [
+      "Is the Marionette"
+    ],
+    "setup": true,
+    "ability": "You think you are a good character but you are not. The Demon knows who you are. [You neighbour the Demon]",
+    "flavour": "Words, words. They're all we have to go on.",
+    "urls": {
+      "jinxes": "/jinxes/marionette",
+      "token": "/token/marionette.png",
+      "icon": "/icon/marionette.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Marionette"
+    }
+  },
+  {
     "id": "pukka",
     "name": "Pukka",
     "edition": "bmr",
     "team": "demon",
     "standardAmyOrder": 107,
-    "firstNight": 29,
+    "firstNight": 30,
     "firstNightReminder": "The Pukka points to a player. That player is poisoned.",
     "otherNight": 28,
     "otherNightReminder": "The Pukka points to a player. That player is poisoned. The previously poisoned player dies.",
@@ -2013,7 +2013,7 @@
     "name": "Lil' Monsta",
     "team": "demon",
     "standardAmyOrder": 108,
-    "firstNight": 15,
+    "firstNight": 16,
     "firstNightReminder": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta.",
     "otherNight": 38,
     "otherNightReminder": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta. Choose a player, that player dies.",
@@ -2036,7 +2036,7 @@
     "name": "Lleech",
     "team": "demon",
     "standardAmyOrder": 109,
-    "firstNight": 16,
+    "firstNight": 17,
     "firstNightReminder": "The Lleech points to a player. Place the Poisoned reminder token.",
     "otherNight": 37,
     "otherNightReminder": "The Lleech points to a player. That player dies.",
@@ -2155,53 +2155,30 @@
     }
   },
   {
-    "id": "zombuul",
-    "name": "Zombuul",
-    "edition": "bmr",
+    "id": "vortox",
+    "name": "Vortox",
+    "edition": "snv",
     "team": "demon",
     "standardAmyOrder": 115,
-    "otherNight": 27,
-    "otherNightReminder": "If no-one died during the day: The Zombuul points to a player. That player dies.",
+    "otherNight": 33,
+    "otherNightReminder": "The Vortox points to a player. That player dies.",
     "reminders": [
-      "Died today",
       "Dead"
     ],
-    "ability": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.",
-    "flavour": "I do not. Understand. Your ways. Fellow human. Show me. The dirt. Where the holy. Lay. Sleeping. I too. Must sleep. Soon.",
+    "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
+    "flavour": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",
     "urls": {
-      "token": "/token/zombuul.png",
-      "icon": "/icon/zombuul.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Zombuul"
+      "token": "/token/vortox.png",
+      "icon": "/icon/vortox.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Vortox"
     }
-  },
-  {
-    "id": "alhadikhia",
-    "name": "Al-Hadikhia",
-    "team": "demon",
-    "standardAmyOrder": 116,
-    "otherNight": 36,
-    "otherNightReminder": "The Al-Hadikhia chooses 3 players. Announce the first player, wake them to nod yes to live or shake head no to die, kill or resurrect accordingly, then put to sleep and announce the next player. If all 3 are alive after this, all 3 die.",
-    "reminders": [
-      "1",
-      "2",
-      "3"
-    ],
-    "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
-    "flavour": "Alsukut min dhahab.",
-    "urls": {
-      "jinxes": "/jinxes/alhadikhia",
-      "token": "/token/alhadikhia.png",
-      "icon": "/icon/alhadikhia.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Al-Hadikhia"
-    },
-    "textGameClarification": "At night, after all check ins, if Al-Hadikhia is in play, we will lock the channel. Their first pick will be announced, we will privately message for a response, then second, then third. After all picks and responses from the necessary players, we may require another full check in depending on the script"
   },
   {
     "id": "vigormortis",
     "name": "Vigormortis",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 117,
+    "standardAmyOrder": 116,
     "otherNight": 34,
     "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
     "reminders": [
@@ -2223,51 +2200,10 @@
     }
   },
   {
-    "id": "fanggu",
-    "name": "Fang Gu",
-    "edition": "snv",
-    "team": "demon",
-    "standardAmyOrder": 118,
-    "otherNight": 31,
-    "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
-    "reminders": [
-      "Dead",
-      "Once"
-    ],
-    "setup": true,
-    "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
-    "flavour": "Your walls and your weapons are but smoke in dreams.",
-    "urls": {
-      "jinxes": "/jinxes/fanggu",
-      "token": "/token/fanggu.png",
-      "icon": "/icon/fanggu.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Fang Gu"
-    }
-  },
-  {
-    "id": "vortox",
-    "name": "Vortox",
-    "edition": "snv",
-    "team": "demon",
-    "standardAmyOrder": 119,
-    "otherNight": 33,
-    "otherNightReminder": "The Vortox points to a player. That player dies.",
-    "reminders": [
-      "Dead"
-    ],
-    "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
-    "flavour": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",
-    "urls": {
-      "token": "/token/vortox.png",
-      "icon": "/icon/vortox.png",
-      "wiki": "https://wiki.bloodontheclocktower.com/Vortox"
-    }
-  },
-  {
     "id": "legion",
     "name": "Legion",
     "team": "demon",
-    "standardAmyOrder": 120,
+    "standardAmyOrder": 117,
     "otherNight": 25,
     "otherNightReminder": "Choose a player, that player dies.",
     "reminders": [
@@ -2285,11 +2221,75 @@
     }
   },
   {
+    "id": "alhadikhia",
+    "name": "Al-Hadikhia",
+    "team": "demon",
+    "standardAmyOrder": 118,
+    "otherNight": 36,
+    "otherNightReminder": "The Al-Hadikhia chooses 3 players. Announce the first player, wake them to nod yes to live or shake head no to die, kill or resurrect accordingly, then put to sleep and announce the next player. If all 3 are alive after this, all 3 die.",
+    "reminders": [
+      "1",
+      "2",
+      "3"
+    ],
+    "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
+    "flavour": "Alsukut min dhahab.",
+    "urls": {
+      "jinxes": "/jinxes/alhadikhia",
+      "token": "/token/alhadikhia.png",
+      "icon": "/icon/alhadikhia.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Al-Hadikhia"
+    },
+    "textGameClarification": "At night, after all check ins, if Al-Hadikhia is in play, we will lock the channel. Their first pick will be announced, we will privately message for a response, then second, then third. After all picks and responses from the necessary players, we may require another full check in depending on the script"
+  },
+  {
+    "id": "zombuul",
+    "name": "Zombuul",
+    "edition": "bmr",
+    "team": "demon",
+    "standardAmyOrder": 119,
+    "otherNight": 27,
+    "otherNightReminder": "If no-one died during the day: The Zombuul points to a player. That player dies.",
+    "reminders": [
+      "Died today",
+      "Dead"
+    ],
+    "ability": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.",
+    "flavour": "I do not. Understand. Your ways. Fellow human. Show me. The dirt. Where the holy. Lay. Sleeping. I too. Must sleep. Soon.",
+    "urls": {
+      "token": "/token/zombuul.png",
+      "icon": "/icon/zombuul.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Zombuul"
+    }
+  },
+  {
+    "id": "fanggu",
+    "name": "Fang Gu",
+    "edition": "snv",
+    "team": "demon",
+    "standardAmyOrder": 120,
+    "otherNight": 31,
+    "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
+    "reminders": [
+      "Dead",
+      "Once"
+    ],
+    "setup": true,
+    "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
+    "flavour": "Your walls and your weapons are but smoke in dreams.",
+    "urls": {
+      "jinxes": "/jinxes/fanggu",
+      "token": "/token/fanggu.png",
+      "icon": "/icon/fanggu.png",
+      "wiki": "https://wiki.bloodontheclocktower.com/Fang Gu"
+    }
+  },
+  {
     "id": "leviathan",
     "name": "Leviathan",
     "team": "demon",
     "standardAmyOrder": 121,
-    "firstNight": 59,
+    "firstNight": 60,
     "firstNightReminder": "Place the Leviathan 'Day 1' marker. Announce 'The Leviathan is in play; this is Day 1.'",
     "otherNight": 77,
     "otherNightReminder": "Change the Leviathan Day reminder for the next day.",
@@ -2355,7 +2355,7 @@
     "name": "Bureaucrat",
     "edition": "tb",
     "team": "traveller",
-    "firstNight": 1,
+    "firstNight": 2,
     "firstNightReminder": "The Bureaucrat points to a player. Put the Bureaucrat's '3 votes' reminder by the chosen player's character token.",
     "otherNight": 2,
     "otherNightReminder": "The Bureaucrat points to a player. Put the Bureaucrat's '3 votes' reminder by the chosen player's character token.",
@@ -2401,7 +2401,7 @@
     "name": "Thief",
     "edition": "tb",
     "team": "traveller",
-    "firstNight": 1,
+    "firstNight": 2,
     "firstNightReminder": "The Thief points to a player. Put the Thief's 'Negative vote' reminder by the chosen player's character token.",
     "otherNight": 2,
     "otherNightReminder": "The Thief points to a player. Put the Thief's 'Negative vote' reminder by the chosen player's character token.",
@@ -2421,7 +2421,7 @@
     "name": "Apprentice",
     "edition": "bmr",
     "team": "traveller",
-    "firstNight": 1,
+    "firstNight": 2,
     "firstNightReminder": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
     "reminders": [
       "Is the Apprentice"
@@ -2498,7 +2498,7 @@
     "name": "Barista",
     "edition": "snv",
     "team": "traveller",
-    "firstNight": 1,
+    "firstNight": 2,
     "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
     "otherNight": 2,
     "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
@@ -2773,7 +2773,7 @@
     "id": "stormcatcher",
     "name": "Storm Catcher",
     "team": "fabled",
-    "firstNight": 1,
+    "firstNight": 2,
     "firstNightReminder": "Mark a good player as \"Safe\". Wake each evil player and show them the marked player.",
     "reminders": [
       "Safe"
@@ -2806,22 +2806,23 @@
   {
     "id": "dawn",
     "name": "Dawn",
-    "firstNight": 58,
+    "firstNight": 59,
     "otherNight": 76
   },
   {
     "id": "demon",
     "name": "Demon Info",
-    "firstNight": 9
+    "firstNight": 10
   },
   {
     "id": "dusk",
     "name": "Dusk",
+    "firstNight": 1,
     "otherNight": 1
   },
   {
     "id": "minion",
     "name": "Minion Info",
-    "firstNight": 6
+    "firstNight": 7
   }
 ]

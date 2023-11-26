@@ -109,37 +109,28 @@ fun updateSao() {
 fun updateNightOrder() {
   val roles = Role.setFromJson(gson, File(ROLES_JSON).readText())
   val nightSheet = NightSheet.fromJson(gson, File(NIGHTSHEET_JSON).readText())
+
   val updatedRoles = roles.map { role ->
-    when (val index = nightSheet.firstNight.indexOfFirst { normalize(it) == normalize(role.id) }) {
-      -1 -> {
-        if ((role.type == TRAVELLER || role.type == FABLED) && role.firstNightReminder != null) {
-          role.copy(firstNight = 1)
-        } else {
-          role.copy(firstNight = null)
-        }
-      }
-      else -> role.copy(firstNight = index + 2)
-    }
-  }.map { role ->
-    when (val index =
-      nightSheet.otherNight.indexOfFirst { normalize(it) == normalize(role.id) }) {
-      -1 -> {
-        if ((role.type == TRAVELLER || role.type == FABLED) && role.otherNightReminder != null) {
-          role.copy(otherNight = 2)
-        } else {
-          role.copy(otherNight = null)
-        }
-      }
-      else -> {
-        if(role.id == "dusk") {
-          role.copy(otherNight = index + 1)
-        } else {
-          role.copy(otherNight = index + 2)
-        }
-      }
-    }
+    role.copy(
+      firstNight = updatedNightOrder(role, nightSheet.firstNight, role.firstNightReminder != null),
+      otherNight = updatedNightOrder(role, nightSheet.otherNight, role.otherNightReminder != null)
+    )
   }
+
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
+}
+
+private fun updatedNightOrder(
+  role: Role,
+  nightList: List<String>,
+  hasNightReminder: Boolean,
+): Int? {
+  val index = nightList.indexOfFirst { normalize(it) == normalize(role.id) }
+  return when {
+    index == -1 -> if ((role.type == TRAVELLER || role.type == FABLED) && hasNightReminder) 2 else null
+    role.id == "dusk" -> index + 1
+    else -> index + 2
+  }
 }
 
 
