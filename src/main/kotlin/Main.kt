@@ -22,11 +22,7 @@ fun main() {
   val roleMap = Role.toMap(Role.setFromJson(gson, File(ROLES_JSON).readText()))
   val scriptMetadata = getScriptMetadata()
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
-  updateNightOrder()
-  updateJinxesFromRawJinxes()
-  updateInteractionsFromRawInteractions()
-  updateRawInteractionsFromInteractions()
-  updateSao()
+  updateSourceJsons()
   File(outputFilename).writeText(
     ScriptPrinter(
       scriptMetadata,
@@ -36,6 +32,14 @@ fun main() {
       roleMap
     ).textScriptString()
   )
+}
+
+private fun updateSourceJsons() {
+  updateJinxesFromRawJinxes()
+  updateInteractionsFromRawInteractions()
+  updateRawInteractionsFromInteractions()
+  updateNightOrder()
+  updateSao()
 }
 
 fun getScriptMetadata(): Script? =
