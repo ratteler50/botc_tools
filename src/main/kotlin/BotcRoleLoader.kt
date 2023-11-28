@@ -131,42 +131,34 @@ class BotcRoleLoader {
 
 
     fun extractRoleContent(): RoleContent {
-      val content = this.revisions.firstOrNull()?.slots?.main?.content ?: ""
+      val content = revisions.firstOrNull()?.slots?.main?.content ?: ""
+      val doc = Jsoup.parse(content)
+      val summarySectionText = extractSectionText(doc, "Summary").lines()
       return RoleContent(
         rawText = content,
-        flavourText = extractFlavourText(content),
-        abilityText = extractAbilityText(content),
-        examples = extractExamplesText(content),
+        flavourText = doc.select("p.flavour").text().trim('"'),
+        abilityText = summarySectionText.firstOrNull()?.trim('"')?:"",
+        summary = summarySectionText.drop(1).joinToString("\n"),
+        examples = extractSectionText(doc, "Examples").lines(),
+        howToRun = extractSectionText(doc, "How to Run"),
       )
     }
 
-
-    private fun extractFlavourText(htmlContent: String): String {
-      val doc: Document = Jsoup.parse(htmlContent)
-      return doc.select("p.flavour").text().trim('"')
+    private fun extractSectionText(doc: Document, sectionName: String): String {
+      val sectionElement = doc.select("div:containsOwn(== $sectionName ==)").first()
+      return sectionElement?.wholeText()?.replace("== $sectionName ==", "")
+        ?.replace(Regex("[\r\n\t]+"), "\n")
+        ?.trim() ?: ""
     }
-
-    private fun extractAbilityText(htmlContent: String): String {
-      val doc: Document = Jsoup.parse(htmlContent)
-      val pattern = Regex("==\\s*Summary\\s*==\n(.+)")
-      val summaryElement = doc.select("div:containsOwn(== Summary ==)").first()
-      val matchResult = pattern.find(summaryElement?.wholeText() ?: "")
-      return matchResult?.groups?.get(1)?.value?.trim('"') ?: ""
-    }
-
-    private fun extractExamplesText(htmlContent: String): String {
-      val doc: Document = Jsoup.parse(htmlContent)
-      val examplesElement = doc.select("div:containsOwn(== Examples ==)").first()
-      return examplesElement?.wholeText() ?: ""
-    }
-
   }
 
   data class RoleContent(
     val rawText: String,
     val flavourText: String,
     val abilityText: String,
-    val examples: Any,
+    val examples: List<String>,
+    val howToRun: String,
+    val summary: String,
   )
 
   data class RoleResult(
@@ -181,12 +173,15 @@ class BotcRoleLoader {
 // Usage example
 suspend fun main() {
   val loader = BotcRoleLoader()
-  val role = loader.getRole("goon")
+  val role = loader.getRole("bootlegger")
 
   println("Title: ${role.title}")
+  println("wiki URL: ${role.wikiUrl}")
   println("Image URL: ${role.imageUrl}")
-  println("wikiUrl: ${role.wikiUrl}")
-  println("FlavourText: ${role.roleContent.flavourText}")
-  println("AbilityText: ${role.roleContent.abilityText}")
-  println("rawText: ${role.roleContent.rawText}")
+  println("Flavour Text: ${role.roleContent.flavourText}")
+  println("Ability Text: ${role.roleContent.abilityText}")
+  println("Summary: ${role.roleContent.summary}")
+  println("Examples: ${role.roleContent.examples}")
+  println("How To Run: ${role.roleContent.howToRun}")
+  println("Raw Text: ${role.roleContent.rawText}")
 }
