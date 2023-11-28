@@ -4,6 +4,9 @@ import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import java.io.File
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
 
 val gson: Gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create()
 
@@ -18,7 +21,7 @@ private const val RAW_SAO_JSON = "./src/data/raw_sao.json"
 private const val SAO_JSON = "./src/data/sao.json"
 
 
-fun main() {
+suspend fun main() {
   val roleMap = Role.toMap(Role.setFromJson(gson, File(ROLES_JSON).readText()))
   val scriptMetadata = getScriptMetadata()
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
@@ -34,7 +37,8 @@ fun main() {
   )
 }
 
-private fun updateSourceJsons() {
+private suspend fun updateSourceJsons() {
+  updateAbilitiesAndFlavorFromWiki()
   updateJinxesFromRawJinxes()
   updateInteractionsFromRawInteractions()
   updateRawInteractionsFromInteractions()
@@ -107,6 +111,29 @@ fun updateSao() {
   }
     .sortedWith(compareBy<Role, Int?>(nullsLast()) { it.standardAmyOrder }.thenBy(nullsLast()) { it.type }
                   .thenBy { it.edition }.thenBy { it.name })
+  File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
+}
+
+suspend fun updateAbilitiesAndFlavorFromWiki() = coroutineScope {
+  val roles = Role.setFromJson(gson, File(ROLES_JSON).readText())
+  val deferredUpdates = roles.map { role ->
+    async {
+      try {
+        println("Updating ${role.name}")
+        val wikiRole = BotcRoleLoader().getRole(role.name ?: "")
+        role.copy(
+          name = wikiRole.title,
+          ability = wikiRole.roleContent.abilityText,
+          flavour = wikiRole.roleContent.flavourText,
+          urls = role.urls?.copy(wiki = wikiRole.wikiUrl, icon = wikiRole.imageUrl)
+        )
+      } catch (e: Exception) {
+        println("Couldn't update ${role.name}")
+        role
+      }
+    }
+  }
+  val updatedRoles = deferredUpdates.awaitAll()
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }
 

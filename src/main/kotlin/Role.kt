@@ -24,10 +24,8 @@ data class Role(
 ) {
 
   data class Urls(
-    val jinxes: String? = null,
-    val token: String? = null,
+    val wiki: String? = null,
     val icon: String? = null,
-    val wiki: String? = null
   )
   enum class Type {
     @SerializedName("townsfolk")
@@ -48,8 +46,8 @@ data class Role(
     @SerializedName("fabled")
     FABLED,
 
-    @SerializedName("placeholder")
-    PLACEHOLDER
+    @SerializedName("nightphase")
+    NIGHT_PHASE
   }
 
   enum class Edition {
