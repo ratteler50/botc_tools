@@ -1,3 +1,10 @@
+import Role.Edition.SPECIAL
+import Role.Type.DEMON
+import Role.Type.FABLED
+import Role.Type.MINION
+import Role.Type.OUTSIDER
+import Role.Type.TOWNSFOLK
+import Role.Type.TRAVELLER
 import com.google.common.collect.Table
 
 class ScriptPrinter(
@@ -119,27 +126,27 @@ class ScriptPrinter(
   }
 
   private fun getFabledRoles(): List<Role> {
-    return script.filter { it.type == Role.Type.FABLED }
+    return script.filter { it.type == FABLED && it.edition != SPECIAL }
   }
 
   private fun getTravellerRoles(): List<Role> {
-    return script.filter { it.type == Role.Type.TRAVELLER }
+    return script.filter { it.type == TRAVELLER && it.edition != SPECIAL }
   }
 
   private fun getTownsfolkRoles(): List<Role> {
-    return script.filter { it.type == Role.Type.TOWNSFOLK }
+    return script.filter { it.type == TOWNSFOLK && it.edition != SPECIAL }
   }
 
   private fun getOutsiderRoles(): List<Role> {
-    return script.filter { it.type == Role.Type.OUTSIDER }
+    return script.filter { it.type == OUTSIDER && it.edition != SPECIAL }
   }
 
   private fun getMinionRoles(): List<Role> {
-    return script.filter { it.type == Role.Type.MINION }
+    return script.filter { it.type == MINION && it.edition != SPECIAL }
   }
 
   private fun getDemonRoles(): List<Role> {
-    return script.filter { it.type == Role.Type.DEMON }
+    return script.filter { it.type == DEMON && it.edition != SPECIAL}
   }
 
   private fun getInteractions(interactionTable: Table<String, String, Jinx>): List<Jinx> {

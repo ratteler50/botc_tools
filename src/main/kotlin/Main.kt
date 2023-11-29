@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSuppression")
+
 import Role.Type.FABLED
 import Role.Type.TRAVELLER
 import com.google.common.collect.ImmutableTable
@@ -12,6 +14,7 @@ val gson: Gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create(
 
 private const val INPUT_SCRIPT_JSON = "./src/data/input_script.json"
 private const val ROLES_JSON = "./src/data/roles.json"
+private const val RAW_ROLES_JSON = "./src/data/raw_roles.json"
 private const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
 private const val RAW_INTERACTIONS_JSON = "./src/data/raw_interactions.json"
 private const val INTERACTIONS_JSON = "./src/data/interactions.json"
@@ -37,13 +40,36 @@ suspend fun main() {
   )
 }
 
+@Suppress("RedundantSuspendModifier")
 private suspend fun updateSourceJsons() {
+  // updateRolesFromRawRoles()
   updateAbilitiesAndFlavorFromWiki()
   updateJinxesFromRawJinxes()
   updateInteractionsFromRawInteractions()
   updateRawInteractionsFromInteractions()
   updateNightOrder()
   updateSao()
+}
+
+@Suppress("unused")
+fun updateRolesFromRawRoles() {
+  val rawRoles = Role.setFromJson(gson, File(RAW_ROLES_JSON).readText()).associateBy { it.id }
+  val roles = Role.setFromJson(gson, File(ROLES_JSON).readText())
+  roles.map { role ->
+    rawRoles[role.id]?.let { rawRole ->
+      role.copy(
+        id = rawRole.id,
+        name = rawRole.name,
+        ability = rawRole.ability,
+        firstNightReminder = rawRole.firstNightReminder?.takeIf { it.isNotBlank() },
+        otherNightReminder = rawRole.otherNightReminder?.takeIf { it.isNotBlank() },
+        reminders = rawRole.reminders?.takeIf { it.isNotEmpty() },
+      )
+    } ?: role
+  }
+    .run {
+      File(ROLES_JSON).writeText(gson.toJson(this))
+    }
 }
 
 fun getScriptMetadata(): Script? =
@@ -114,6 +140,7 @@ fun updateSao() {
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }
 
+@Suppress("unused")
 suspend fun updateAbilitiesAndFlavorFromWiki() = coroutineScope {
   val roles = Role.setFromJson(gson, File(ROLES_JSON).readText())
   val deferredUpdates = roles.map { role ->
@@ -124,7 +151,7 @@ suspend fun updateAbilitiesAndFlavorFromWiki() = coroutineScope {
         role.copy(
           name = wikiRole.title,
           ability = wikiRole.roleContent.abilityText,
-          flavour = wikiRole.roleContent.flavourText,
+          flavour = wikiRole.roleContent.flavourText.takeIf { it.isNotBlank() },
           urls = role.urls?.copy(wiki = wikiRole.wikiUrl, icon = wikiRole.imageUrl)
         )
       } catch (e: Exception) {
@@ -158,6 +185,16 @@ private fun updatedNightOrder(
 ): Int? {
   val index = nightList.indexOfFirst { normalize(it) == normalize(role.id) }
   return when {
+    role.id == "demoninfo" -> {
+      val demonIndex = nightList.indexOf("DEMON")
+      if (demonIndex == -1) null else demonIndex + 2
+    }
+
+    role.id == "minioninfo" -> {
+      val minionIndex = nightList.indexOf("MINION")
+      if (minionIndex == -1) null else minionIndex + 2
+    }
+
     index == -1 -> if ((role.type == TRAVELLER || role.type == FABLED) && hasNightReminder) 2 else null
     role.id == "dusk" -> index + 1
     else -> index + 2
