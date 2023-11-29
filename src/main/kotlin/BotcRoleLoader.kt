@@ -58,6 +58,7 @@ class BotcRoleLoader {
         roleResult.query.pages.values.firstOrNull() ?: throw Exception("Role details not found")
 
       val imageUrl = page.extractImage(wikiImage, this)
+      val cotcUrl = page.extractCotc()
       val roleContent = page.extractRoleContent()
 
       cont.resume(
@@ -65,6 +66,7 @@ class BotcRoleLoader {
           page.title,
           "$wikiUrl${URLEncoder.encode(bestMatch.title, "UTF-8").replace("+", "_")}",
           imageUrl,
+          cotcUrl,
           roleContent,
         )
       )
@@ -121,11 +123,14 @@ class BotcRoleLoader {
     )
 
     fun extractImage(wikiImageUrl: String, loader: BotcRoleLoader): String {
-      return this.revisions.firstOrNull()?.slots?.main?.content?.let { content ->
-        Regex("\\[\\[File:(.*?)\\|").find(content)?.groupValues?.get(1)?.let { imageName ->
-          val encodedImageUrl = "$wikiImageUrl${URLEncoder.encode(imageName, "UTF-8")}"
-          loader.getFinalUrl(encodedImageUrl)
-        }
+      val content = revisions.firstOrNull()?.slots?.main?.content ?: ""
+      val imageName = Regex("\\[\\[File:(.*?)\\|").find(content)?.groupValues?.get(1) ?: ""
+      return loader.getFinalUrl("$wikiImageUrl${URLEncoder.encode(imageName, "UTF-8")}")
+    }
+
+    fun extractCotc(): String {
+      return revisions.firstOrNull()?.slots?.main?.content?.let {
+        Regex("(https://anchor.fm.*\\.m4a)").find(it)?.groupValues?.get(1)
       } ?: ""
     }
 
@@ -137,7 +142,7 @@ class BotcRoleLoader {
       return RoleContent(
         rawText = content,
         flavourText = doc.select("p.flavour").text().trim('"'),
-        abilityText = summarySectionText.firstOrNull()?.trim('"')?:"",
+        abilityText = summarySectionText.firstOrNull()?.trim('"') ?: "",
         summary = summarySectionText.drop(1).joinToString("\n"),
         examples = extractSectionText(doc, "Examples").lines(),
         howToRun = extractSectionText(doc, "How to Run"),
@@ -165,6 +170,7 @@ class BotcRoleLoader {
     val title: String,
     val wikiUrl: String,
     val imageUrl: String,
+    val cotcUrl: String,
     val roleContent: RoleContent,
   )
 
@@ -173,11 +179,12 @@ class BotcRoleLoader {
 // Usage example
 suspend fun main() {
   val loader = BotcRoleLoader()
-  val role = loader.getRole("bootlegger")
+  val role = loader.getRole("goon")
 
   println("Title: ${role.title}")
   println("wiki URL: ${role.wikiUrl}")
   println("Image URL: ${role.imageUrl}")
+  println("CotC URL: ${role.cotcUrl}")
   println("Flavour Text: ${role.roleContent.flavourText}")
   println("Ability Text: ${role.roleContent.abilityText}")
   println("Summary: ${role.roleContent.summary}")
