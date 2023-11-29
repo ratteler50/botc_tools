@@ -58,7 +58,13 @@ data class Role(
     BAD_MOON_RISING,
 
     @SerializedName("snv")
-    SECTS_AND_VIOLETS
+    SECTS_AND_VIOLETS,
+
+    @SerializedName("fabled")
+    FABLED,
+
+    @SerializedName("special")
+    SPECIAL
   }
 
   companion object {

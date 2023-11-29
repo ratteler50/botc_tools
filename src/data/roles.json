@@ -2384,6 +2384,7 @@
   {
     "id": "angel",
     "name": "Angel",
+    "edition": "fabled",
     "team": "fabled",
     "reminders": [
       "Protect",
