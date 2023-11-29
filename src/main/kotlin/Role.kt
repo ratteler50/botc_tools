@@ -1,6 +1,5 @@
 @file:Suppress("unused")
 
-import com.google.common.collect.ImmutableMap
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
 import com.google.gson.reflect.TypeToken
@@ -22,6 +21,7 @@ data class Role(
   val ability: String? = null,
   val flavour: String? = null,
   val special: List<AppIntegrationFeature>? = null,
+  val jinxes: List<Jinx>? = null,
   val urls: Urls? = null,
   val textGameClarification: String? = null,
 ) {
@@ -69,6 +69,8 @@ data class Role(
     @SerializedName("special")
     SPECIAL
   }
+
+  data class Jinx(val id: String, val reason: String)
 
   data class AppIntegrationFeature(
     val type: IntegrationType,
@@ -159,9 +161,6 @@ data class Role(
     fun setFromJson(gson: Gson, json: String): Set<Role> =
       gson.fromJson<Set<Role>?>(json, object : TypeToken<List<Role>>() {}.type).toSet()
 
-    fun toMap(roles: Set<Role>): ImmutableMap<String, Role> {
-      return roles.stream().collect(ImmutableMap.toImmutableMap({ it.id }, { it }))
-    }
   }
 
   fun asTextScriptEntry(): String {

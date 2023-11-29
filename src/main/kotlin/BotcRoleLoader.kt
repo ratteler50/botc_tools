@@ -139,10 +139,12 @@ class BotcRoleLoader {
       val content = revisions.firstOrNull()?.slots?.main?.content ?: ""
       val doc = Jsoup.parse(content)
       val summarySectionText = extractSectionText(doc, "Summary").lines()
+      val quoteRegex = "^[\u201C\u201D\u201E\u201F\u2033\u2036\"']+|[\u201C\u201D\u201E\u201F\u2033\u2036\"']+$".toRegex()
+
       return RoleContent(
         rawText = content,
-        flavourText = doc.select("p.flavour").text().trim('"'),
-        abilityText = summarySectionText.firstOrNull()?.trim('"') ?: "",
+        flavourText = doc.select("p.flavour").text().replace(quoteRegex, "").trim(),
+        abilityText = summarySectionText.firstOrNull()?.replace(quoteRegex, "")?.trim() ?: "",
         summary = summarySectionText.drop(1).joinToString("\n"),
         examples = extractSectionText(doc, "Examples").lines(),
         howToRun = extractSectionText(doc, "How to Run"),
@@ -179,7 +181,7 @@ class BotcRoleLoader {
 // Usage example
 suspend fun main() {
   val loader = BotcRoleLoader()
-  val role = loader.getRole("goon")
+  val role = loader.getRole("ojo")
 
   println("Title: ${role.title}")
   println("wiki URL: ${role.wikiUrl}")

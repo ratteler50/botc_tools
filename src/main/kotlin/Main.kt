@@ -1,5 +1,6 @@
 @file:Suppress("RedundantSuppression")
 
+import Role.Edition.SPECIAL
 import Role.Type.FABLED
 import Role.Type.TRAVELLER
 import com.google.common.collect.ImmutableTable
@@ -25,7 +26,7 @@ private const val SAO_JSON = "./src/data/sao.json"
 
 
 suspend fun main() {
-  val roleMap = Role.toMap(Role.setFromJson(gson, File(ROLES_JSON).readText()))
+  val roleMap = Role.setFromJson(gson, File(ROLES_JSON).readText()).associateBy { it.id }
   val scriptMetadata = getScriptMetadata()
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
   updateSourceJsons()
@@ -42,7 +43,7 @@ suspend fun main() {
 
 @Suppress("RedundantSuspendModifier")
 private suspend fun updateSourceJsons() {
-  // updateRolesFromRawRoles()
+  updateRolesFromRawRoles()
   updateAbilitiesAndFlavorFromWiki()
   updateJinxesFromRawJinxes()
   updateInteractionsFromRawInteractions()
@@ -61,6 +62,9 @@ fun updateRolesFromRawRoles() {
         id = rawRole.id,
         name = rawRole.name,
         ability = rawRole.ability,
+        edition = rawRole.edition,
+        type = rawRole.type,
+        setup = rawRole.setup.takeIf { it != false },
         firstNightReminder = rawRole.firstNightReminder?.takeIf { it.isNotBlank() },
         otherNightReminder = rawRole.otherNightReminder?.takeIf { it.isNotBlank() },
         reminders = rawRole.reminders?.takeIf { it.isNotEmpty() },
@@ -135,8 +139,11 @@ fun updateSao() {
       else -> role.copy(standardAmyOrder = index + 1)
     }
   }
-    .sortedWith(compareBy<Role, Int?>(nullsLast()) { it.standardAmyOrder }.thenBy(nullsLast()) { it.type }
-                  .thenBy { it.edition }.thenBy { it.name })
+    .sortedWith(compareBy<Role> { it.edition == SPECIAL }
+                  .thenBy(nullsLast()) { it.standardAmyOrder }
+                  .thenBy { it.type }
+                  .thenBy { it.edition }
+                  .thenBy { it.name })
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }
 
@@ -150,7 +157,7 @@ suspend fun updateAbilitiesAndFlavorFromWiki() = coroutineScope {
         val wikiRole = BotcRoleLoader().getRole(role.name ?: "")
         role.copy(
           name = wikiRole.title,
-          ability = wikiRole.roleContent.abilityText,
+          ability = wikiRole.roleContent.abilityText.takeIf { it.isNotBlank() },
           flavour = wikiRole.roleContent.flavourText.takeIf { it.isNotBlank() },
           urls = role.urls?.copy(wiki = wikiRole.wikiUrl, icon = wikiRole.imageUrl)
         )

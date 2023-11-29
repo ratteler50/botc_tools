@@ -49,7 +49,7 @@ class ScriptPrinterTest {
 
   @Test
   fun printScript_happyCase() {
-    val roleMap = Role.toMap(Role.setFromJson(gson, getRoleJson()))
+    val roleMap = Role.setFromJson(gson, getRoleJson()).associateBy { it.id }
     val printer = ScriptPrinter(
       Script(id = "_meta", name = "EXAMPLE_SCRIPT_NAME", author = "somebody"),
       getScriptRoles(roleMap),
@@ -321,12 +321,12 @@ class ScriptPrinterTest {
           "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)"
         },
         {
-          "id": "minion",
+          "id": "minioninfo",
           "name": "Minion Info",
           "firstNight": 6
         },
         {
-          "id": "demon",
+          "id": "demoninfo",
           "name": "Demon Info",
           "firstNight": 9
         },

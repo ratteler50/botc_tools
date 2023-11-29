@@ -23,8 +23,8 @@ class ScriptTest {
       "boomdandy",
       "pukka",
       "zombuul",
-      "minion",
-      "demon",
+      "minioninfo",
+      "demoninfo",
       "dusk",
       "dawn",
     )
@@ -41,8 +41,8 @@ class ScriptTest {
       "poppygrower",
       "lilmonsta",
       "fanggu",
-      "minion",
-      "demon",
+      "minioninfo",
+      "demoninfo",
       "dusk",
       "dawn",
     )
@@ -56,8 +56,8 @@ class ScriptTest {
       "pixie",
       "balloonist",
       "dreamer",
-      "minion",
-      "demon",
+      "minioninfo",
+      "demoninfo",
       "dusk",
       "dawn",
     )
@@ -71,8 +71,8 @@ class ScriptTest {
       "pixie",
       "balloonist",
       "dreamer",
-      "minion",
-      "demon",
+      "minioninfo",
+      "demoninfo",
       "dusk",
       "dawn",
     )

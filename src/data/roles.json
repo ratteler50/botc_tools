@@ -173,7 +173,6 @@
     "reminders": [
       "Known"
     ],
-    "setup": true,
     "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
     "flavour": "Alone, I walk these streets, paved with the sick stench of corruption. Its thickness worms its way into my nostrils, unbidden, burning with revulsion. And anticipation. The illness of this wretched place grows each night. And I... I am the cure.",
     "urls": {
@@ -188,7 +187,7 @@
     "standardAmyOrder": 11,
     "firstNight": 50,
     "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
-    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.”",
+    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
     "flavour": "これは夢。それも夢。すべて夢です。",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Shugenja",
@@ -239,8 +238,8 @@
     "firstNightReminder": "Point to a player.",
     "otherNight": 72,
     "otherNightReminder": "Point to a player.",
-    "ability": "Each night, learn which player the Storyteller believes you should talk to most.”",
-    "flavour": "“There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.”",
+    "ability": "Each night, learn which player the Storyteller believes you should talk to most.",
+    "flavour": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/High_Priestess",
       "icon": "https://wiki.bloodontheclocktower.com/images/6/63/Icon_highpriestess.png"
@@ -579,7 +578,7 @@
       "Safe"
     ],
     "ability": "Each night*, choose a player (not yourself): they are safe from the Demon tonight.",
-    "flavour": "'Tis an ill and deathly wind that blows tonight. Come, my brother, take shelter in the abbey while the storm rages. By my word, or by my life, you will be safe.",
+    "flavour": "Tis an ill and deathly wind that blows tonight. Come, my brother, take shelter in the abbey while the storm rages. By my word, or by my life, you will be safe.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Monk",
       "icon": "https://wiki.bloodontheclocktower.com/images/7/7c/Icon_monk.png"
@@ -1168,7 +1167,7 @@
       "Drunk"
     ],
     "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.",
-    "flavour": "Yes boss. I explained fings real good to dat geezer. He don't want me explain it again. Nah boss, I don't need no doctor - it's only a knife wound. Be right come mornin'",
+    "flavour": "Yes boss. I explained fings real good to dat geezer. He don't want me explain it again. Nah boss, I don't need no doctor - it's only a knife wound. Be right come mornin",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Goon",
       "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_goon.png"
@@ -1264,8 +1263,8 @@
     "reminders": [
       "Storyteller ability"
     ],
-    "ability": "If you die, the Storyteller gains a not-in-play Minion ability.”",
-    "flavour": "“Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.”",
+    "ability": "If you die, the Storyteller gains a not-in-play Minion ability.",
+    "flavour": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Plague_Doctor",
       "icon": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png"
@@ -1538,8 +1537,8 @@
       "Mad",
       "2nd"
     ],
-    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.”",
-    "flavour": "”So fair a day I never did see, nor so fowl a presence hanging over me.”",
+    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
+    "flavour": "So fair a day I never did see, nor so fowl a presence hanging over me.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Harpy",
       "icon": "https://wiki.bloodontheclocktower.com/images/1/1b/Harpy.png"
@@ -1777,7 +1776,7 @@
     "firstNight": 61,
     "firstNightReminder": "Announce the Vizier player to the group.",
     "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.",
-    "flavour": "“An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.”",
+    "flavour": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Vizier",
       "icon": "https://wiki.bloodontheclocktower.com/images/a/a4/Icon_vizier.png"
@@ -1883,7 +1882,7 @@
       "Dead",
       "Poisoned"
     ],
-    "ability": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if (& only if) they die.\" ",
+    "ability": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if (& only if) they die.\"",
     "flavour": "Tasty, tasty, tasty, tasty, tasty, tasty, tasty, tasty brai- I mean pie! Yes. Tasty pie. That’s what I meant to say.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Lleech",
@@ -1938,8 +1937,8 @@
     "reminders": [
       "Dead"
     ],
-    "ability": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.”",
-    "flavour": "“Like a bonfire on a moonless night… I see you, mortal.”",
+    "ability": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
+    "flavour": "Like a bonfire on a moonless night… I see you, mortal.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Ojo",
       "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_ojo.png"
@@ -2316,7 +2315,7 @@
       "?"
     ],
     "ability": "Each night, until dusk, 1) a player becomes sober, healthy & gets true info, or 2) their ability works twice. They learn which.",
-    "flavour": "“A cup of coffee with no cream, Monsieur? I’m terribly sorry, but we’re fresh out of cream — how about with no milk?”",
+    "flavour": "A cup of coffee with no cream, Monsieur? I’m terribly sorry, but we’re fresh out of cream — how about with no milk?",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Barista",
       "icon": "https://wiki.bloodontheclocktower.com/images/2/24/Icon_barista.png"
@@ -2385,6 +2384,7 @@
   {
     "id": "angel",
     "name": "Angel",
+    "edition": "fabled",
     "team": "fabled",
     "firstNight": 2,
     "firstNightReminder": "Announce which players are protected by the Angel. Add the \"Protected\" token to the relevant players.",
@@ -2403,6 +2403,7 @@
   {
     "id": "bootlegger",
     "name": "Bootlegger",
+    "edition": "fabled",
     "team": "fabled",
     "ability": "This script has homebrew characters or rules.",
     "urls": {
@@ -2413,6 +2414,7 @@
   {
     "id": "buddhist",
     "name": "Buddhist",
+    "edition": "fabled",
     "team": "fabled",
     "firstNight": 2,
     "firstNightReminder": "Declare which players are affected by the Buddhist.",
@@ -2426,6 +2428,7 @@
   {
     "id": "djinn",
     "name": "Djinn",
+    "edition": "fabled",
     "team": "fabled",
     "ability": "Use the Djinn's special rule. All players know what it is.",
     "flavour": "نحن لسنا هنا. انت لست حقيقي. كل شيء هو وهم. أسئلتك هي جبل نار في يوم صافٍ.",
@@ -2437,6 +2440,7 @@
   {
     "id": "doomsayer",
     "name": "Doomsayer",
+    "edition": "fabled",
     "team": "fabled",
     "ability": "If 4 or more players live, each living player may publicly choose (once per game) that a player of their own alignment dies.",
     "flavour": "And on the Seventh Day, there shall be a great flood and a pestilence upon the People of the Village of the Ravens! The dead shall rise and the living shall repent! O Woe! O Unholy day! Only by great sacrifice shall they prevail! So sayeth the Sages of Nostros and so sayeth I.",
@@ -2448,6 +2452,7 @@
   {
     "id": "duchess",
     "name": "Duchess",
+    "edition": "fabled",
     "team": "fabled",
     "otherNight": 2,
     "otherNightReminder": "Wake each player marked “Visitor” or “False Info” one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked “Visitor” or, if you are waking the player marked “False Info,” show them any number of fingers except the number of evil players marked “Visitor.”",
@@ -2466,8 +2471,9 @@
   {
     "id": "ferryman",
     "name": "Ferryman",
+    "edition": "fabled",
     "team": "fabled",
-    "ability": "On the final day, all dead players regain their vote token.”",
+    "ability": "On the final day, all dead players regain their vote token.",
     "flavour": "When righteous dreams come, they have the weight of truth",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Ferryman",
@@ -2477,6 +2483,7 @@
   {
     "id": "fibbin",
     "name": "Fibbin",
+    "edition": "fabled",
     "team": "fabled",
     "reminders": [
       "No Ability"
@@ -2491,6 +2498,7 @@
   {
     "id": "fiddler",
     "name": "Fiddler",
+    "edition": "fabled",
     "team": "fabled",
     "ability": "Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win.",
     "flavour": "I'll wager mi lyef ye cannae best me in a fiddle contest, ye boss-eyed snook! We'll go out on the lash, get the pub jammers an' have a right craic. I'll be layin' ma boots into ya come mornin' ye rumbly muppet.",
@@ -2502,6 +2510,7 @@
   {
     "id": "gardener",
     "name": "Gardener",
+    "edition": "fabled",
     "team": "fabled",
     "ability": "The Storyteller assigns 1 or more players' characters.",
     "urls": {
@@ -2512,6 +2521,7 @@
   {
     "id": "hellslibrarian",
     "name": "Hell's Librarian",
+    "edition": "fabled",
     "team": "fabled",
     "reminders": [
       "Something Bad"
@@ -2526,6 +2536,7 @@
   {
     "id": "revolutionary",
     "name": "Revolutionary",
+    "edition": "fabled",
     "team": "fabled",
     "reminders": [
       "Register Falsely?",
@@ -2542,6 +2553,7 @@
   {
     "id": "sentinel",
     "name": "Sentinel",
+    "edition": "fabled",
     "team": "fabled",
     "setup": true,
     "ability": "There might be 1 extra or 1 fewer Outsider in play.",
@@ -2554,6 +2566,7 @@
   {
     "id": "spiritofivory",
     "name": "Spirit of Ivory",
+    "edition": "fabled",
     "team": "fabled",
     "reminders": [
       "No More Evil"
@@ -2568,6 +2581,7 @@
   {
     "id": "stormcatcher",
     "name": "Storm Catcher",
+    "edition": "fabled",
     "team": "fabled",
     "firstNight": 2,
     "firstNightReminder": "At the start of the night, announce which character is favoured by the Storm Catcher. If that character is in play, mark that player as \"Safe\". Wake each evil player and show them the character token, then the marked player.\n If not in play, wake each evil player, show them the \"These Characters Are Not In Play\" info token and the relevant character token.",
@@ -2584,6 +2598,7 @@
   {
     "id": "toymaker",
     "name": "Toymaker",
+    "edition": "fabled",
     "team": "fabled",
     "firstNight": 2,
     "firstNightReminder": "Resolve the Minion Info and Demon Info steps even though there are fewer than 7 players.",
@@ -2602,23 +2617,16 @@
   {
     "id": "dawn",
     "name": "Dawn",
-    "team": "nightphase",
+    "edition": "special",
     "firstNight": 59,
     "firstNightReminder": "Wait for a few seconds. End the Night Phase.",
     "otherNight": 76,
     "otherNightReminder": "Wait for a few seconds. End the Night Phase."
   },
   {
-    "id": "demoninfo",
-    "name": "Demon Info",
-    "team": "nightphase",
-    "firstNight": 10,
-    "firstNightReminder": "If there are 7 or more players, wake the Demon:\n\tShow the *THESE ARE YOUR MINIONS* token. Point to all Minions.\n\tShow the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens."
-  },
-  {
     "id": "dusk",
     "name": "Dusk",
-    "team": "nightphase",
+    "edition": "special",
     "firstNight": 1,
     "firstNightReminder": "Start the Night Phase.",
     "otherNight": 1,
@@ -2627,8 +2635,17 @@
   {
     "id": "minioninfo",
     "name": "Minion Info",
-    "team": "nightphase",
+    "edition": "special",
+    "team": "minion",
     "firstNight": 7,
     "firstNightReminder": "If there are 7 or more players, wake all Minions:\n\tShow the *THIS IS THE DEMON* token. Point to the Demon.\n\tShow the *THESE ARE YOUR MINIONS* token. Point to the other Minions."
+  },
+  {
+    "id": "demoninfo",
+    "name": "Demon Info",
+    "edition": "special",
+    "team": "demon",
+    "firstNight": 10,
+    "firstNightReminder": "If there are 7 or more players, wake the Demon:\n\tShow the *THESE ARE YOUR MINIONS* token. Point to all Minions.\n\tShow the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens."
   }
 ]
