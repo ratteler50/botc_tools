@@ -8,7 +8,6 @@ data class Role(
   val name: String? = null,
   val edition: Edition? = null,
   @SerializedName("team", alternate = ["type"]) val type: Type? = null,
-  val standardAmyOrder: Int? = null,
   val firstNight: Int? = null,
   val firstNightReminder: String? = null,
   val otherNight: Int? = null,
@@ -19,6 +18,7 @@ data class Role(
   val setup: Boolean? = null,
   val ability: String? = null,
   val flavour: String? = null,
+  val standardAmyOrder: Int? = null,
   val urls: Urls? = null,
   val textGameClarification: String? = null,
 ) {

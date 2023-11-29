@@ -2600,7 +2600,7 @@
     "otherNight": 76
   },
   {
-    "id": "demon",
+    "id": "demoninfo",
     "name": "Demon Info",
     "team": "nightphase",
     "firstNight": 10
@@ -2613,7 +2613,7 @@
     "otherNight": 1
   },
   {
-    "id": "minion",
+    "id": "minioninfo",
     "name": "Minion Info",
     "team": "nightphase",
     "firstNight": 7

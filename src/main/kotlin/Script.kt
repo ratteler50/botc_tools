@@ -14,7 +14,7 @@ data class Script(
     fun getRolesOnScript(gson: Gson, json: String): Set<String> =
       gson.fromJson<List<JsonElement>>(json, object : TypeToken<List<JsonElement>>() {}.type)
         .mapNotNull { parseRole(it) }.toSet()
-        .plus(listOf("minion", "demon", "dusk", "dawn"))
+        .plus(listOf("minioninfo", "demoninfo", "dusk", "dawn"))
 
     private fun parseRole(entry: JsonElement): String? =
       when (entry) {
