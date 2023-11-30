@@ -32,16 +32,16 @@ data class Jinx(val role1: String, val role2: String, val reason: String) {
     fun toTable(jinxes: List<Jinx>): ImmutableTable<String, String, Jinx> {
       val tableBuilder = ImmutableTable.builder<String, String, Jinx>()
       jinxes.forEach {
-        tableBuilder.put(normalize(it.role1), normalize(it.role2), it)
-          .put(normalize(it.role2), normalize(it.role1), it)
+        tableBuilder.put(it.role1.normalize(), it.role2.normalize(), it)
+          .put(it.role2.normalize(), it.role1.normalize(), it)
       }
       return tableBuilder.build()
     }
   }
 
   fun asTextScriptEntry(roleMap: Map<String, Role>): String {
-    val name1 = roleMap[normalize(role1)]?.name
-    val name2 = roleMap[normalize(role2)]?.name
+    val name1 = roleMap[role1.normalize()]?.name
+    val name2 = roleMap[role2.normalize()]?.name
     checkNotNull(name1) { "Name1 must be non-null when trying to convert $role1" }
     checkNotNull(name2) { "Name2 must be non-null when trying to convert $role2" }
     return "**$name1 / $name2** - $reason"

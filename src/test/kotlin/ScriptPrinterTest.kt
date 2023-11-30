@@ -49,7 +49,7 @@ class ScriptPrinterTest {
 
   @Test
   fun printScript_happyCase() {
-    val roleMap = Role.setFromJson(gson, getRoleJson()).associateBy { it.id }
+    val roleMap = Role.listFromJson(gson, getRoleJson()).associateBy { it.id }
     val printer = ScriptPrinter(
       Script(id = "_meta", name = "EXAMPLE_SCRIPT_NAME", author = "somebody"),
       getScriptRoles(roleMap),

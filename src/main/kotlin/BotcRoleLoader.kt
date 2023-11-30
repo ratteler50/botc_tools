@@ -2,12 +2,23 @@ import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
 import java.io.IOException
 import java.net.URLEncoder
-import kotlin.coroutines.resume
-import kotlin.coroutines.suspendCoroutine
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
+
+private fun String.encodeUrl() = URLEncoder.encode(this, "UTF-8")
+
+private fun OkHttpClient.getUrlContents(url: String): String =
+  newCall(Request.Builder().url(url).build()).execute().use { response ->
+    if (!response.isSuccessful) throw IOException("Unexpected code $response")
+    response.body?.string() ?: throw IOException("Response body is null")
+  }
+
+private fun OkHttpClient.getFinalUrl(url: String): String =
+  newCall(Request.Builder().url(url).build()).execute().use { response ->
+    response.request.url.toString()
+  }
 
 class BotcRoleLoader {
   private val wikiUrl = "https://wiki.bloodontheclocktower.com/"
@@ -21,59 +32,31 @@ class BotcRoleLoader {
 
   private val client = OkHttpClient()
 
-  private fun getUrlContents(url: String): String {
-    client.newCall(Request.Builder().url(url).build()).execute().use { response ->
-      if (!response.isSuccessful) throw IOException("Unexpected code $response")
-      return response.body?.string() ?: throw IOException("Response body is null")
+
+  fun getRole(role: String): RoleResult {
+    val searchUrl = "$wikiSearch${"*$role*".encodeUrl()}"
+    val searchResponse = client.getUrlContents(searchUrl)
+    val searchResult = gson.fromJson(searchResponse, WikiSearchResult::class.java)
+
+    val bestMatch = searchResult.query.search.firstOrNull {
+      it.wordcount > 100 && !it.snippet.contains("#redirect", ignoreCase = true)
+    } ?: throw Exception("Role not found")
+
+    val roleUrl = "$wikiApi${bestMatch.title.encodeUrl()}"
+    val roleContent = client.getUrlContents(roleUrl).let { it ->
+      gson.fromJson(it, WikiPageResult::class.java).query.pages.values.firstOrNull()
+        ?: throw Exception("Role details not found")
     }
+
+    return RoleResult(
+      title = roleContent.title,
+      wikiUrl = "$wikiUrl${bestMatch.title.encodeUrl().replace("+", "_")}",
+      imageUrl = roleContent.extractImage(wikiImage, client),
+      cotcUrl = roleContent.extractCotc(),
+      roleContent = roleContent.extractRoleContent()
+    )
   }
 
-  private fun getFinalUrl(url: String): String {
-    val request = Request.Builder().url(url).build()
-    client.newCall(request).execute().use { response ->
-      return response.request.url.toString()
-    }
-  }
-
-
-  suspend fun getRole(role: String): RoleResult = suspendCoroutine { cont ->
-    val encodedRole = URLEncoder.encode("*$role*", "UTF-8")
-    val searchUrl = "$wikiSearch$encodedRole"
-
-    try {
-      val searchResponse = getUrlContents(searchUrl)
-      val searchResult = gson.fromJson(searchResponse, WikiSearchResult::class.java)
-
-      val bestMatch = searchResult.query.search.firstOrNull {
-        it.wordcount > 100 && !it.snippet.contains(
-          "#redirect", ignoreCase = true
-        )
-      } ?: throw Exception("Role not found")
-
-      val roleUrl = "$wikiApi${URLEncoder.encode(bestMatch.title, "UTF-8")}"
-      val urlContents = getUrlContents(roleUrl)
-      val roleResult = gson.fromJson(urlContents, WikiPageResult::class.java)
-
-      val page =
-        roleResult.query.pages.values.firstOrNull() ?: throw Exception("Role details not found")
-
-      val imageUrl = page.extractImage(wikiImage, this)
-      val cotcUrl = page.extractCotc()
-      val roleContent = page.extractRoleContent()
-
-      cont.resume(
-        RoleResult(
-          page.title,
-          "$wikiUrl${URLEncoder.encode(bestMatch.title, "UTF-8").replace("+", "_")}",
-          imageUrl,
-          cotcUrl,
-          roleContent,
-        )
-      )
-    } catch (e: Exception) {
-      cont.resumeWith(Result.failure(e))
-    }
-  }
 
   data class WikiSearchResult(
     val batchcomplete: String,
@@ -122,10 +105,10 @@ class BotcRoleLoader {
       @SerializedName("*") val content: String,  // This represents the actual content
     )
 
-    fun extractImage(wikiImageUrl: String, loader: BotcRoleLoader): String {
+    fun extractImage(wikiImageUrl: String, httpClient: OkHttpClient): String {
       val content = revisions.firstOrNull()?.slots?.main?.content ?: ""
       val imageName = Regex("\\[\\[File:(.*?)\\|").find(content)?.groupValues?.get(1) ?: ""
-      return loader.getFinalUrl("$wikiImageUrl${URLEncoder.encode(imageName, "UTF-8")}")
+      return httpClient.getFinalUrl("$wikiImageUrl${imageName.encodeUrl()}")
     }
 
     fun extractCotc(): String {
@@ -179,7 +162,7 @@ class BotcRoleLoader {
 }
 
 // Usage example
-suspend fun main() {
+fun main() {
   val loader = BotcRoleLoader()
   val role = loader.getRole("ojo")
 

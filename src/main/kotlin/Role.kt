@@ -158,8 +158,8 @@ data class Role(
   }
 
   companion object {
-    fun setFromJson(gson: Gson, json: String): Set<Role> =
-      gson.fromJson<Set<Role>?>(json, object : TypeToken<List<Role>>() {}.type).toSet()
+    fun listFromJson(gson: Gson, json: String): List<Role> =
+      gson.fromJson(json, object : TypeToken<List<Role>>() {}.type)
 
   }
 
