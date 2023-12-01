@@ -1378,8 +1378,16 @@
     "team": "outsider",
     "standardAmyOrder": 81,
     "otherNight": 43,
+    "otherNightReminder": "Wake Minions and Demons, allow them to choose new characters.",
+    "reminders": [
+      "Tea Party Tonight"
+    ],
     "ability": "If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.”",
-    "flavour": "One Hat. Too Hat. Three Hat. Tea Hat. Fore Hat. Thrive Hat. Six Hat. Sticks Hat."
+    "flavour": "One Hat. Too Hat. Three Hat. Tea Hat. Fore Hat. Thrive Hat. Six Hat. Sticks Hat.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Hatter",
+      "icon": "https://wiki.bloodontheclocktower.com/images/4/44/Icon_hatter.png"
+    }
   },
   {
     "id": "moonchild",
@@ -2365,7 +2373,7 @@
     "name": "Deviant",
     "edition": "snv",
     "team": "traveller",
-    "ability": "If you were funny today, you cannot be exiled.",
+    "ability": "If you were funny today, you cannot die by exile..",
     "flavour": "Twas the lady's quip, forsooth.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Deviant",

@@ -96,6 +96,7 @@ private fun Role.copyFrom(wikiRole: BotcRoleLoader.RoleResult): Role = copy(
   ability = wikiRole.roleContent.abilityText.takeIf { it.isNotBlank() },
   flavour = wikiRole.roleContent.flavourText.takeIf { it.isNotBlank() },
   urls = urls?.copy(wiki = wikiRole.wikiUrl, icon = wikiRole.imageUrl)
+    ?: Role.Urls(wiki = wikiRole.wikiUrl, icon = wikiRole.imageUrl),
 )
 
 
