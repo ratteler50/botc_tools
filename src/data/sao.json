@@ -560,6 +560,13 @@
     "characters": 92
   },
   {
+    "id": "hatter",
+    "type": 2,
+    "category": 6,
+    "pixels": 2200,
+    "characters": 108
+  },
+  {
     "id": "moonchild",
     "type": 2,
     "category": 6,

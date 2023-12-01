@@ -71,6 +71,11 @@
   },
   {
     "role1": "Legion",
+    "role2": "Hatter",
+    "reason": "If the Hatter dies and Legion is in play, nothing happens. If the Hatter dies and an evil player chooses Legion, all current evil players become Legion."
+  },
+  {
+    "role1": "Legion",
     "role2": "Preacher",
     "reason": "Only 1 jinxed character can be in play."
   },
@@ -78,6 +83,11 @@
     "role1": "Leviathan",
     "role2": "Farmer",
     "reason": "If Leviathan is in play & a Farmer dies by execution, a good player becomes a Farmer that night."
+  },
+  {
+    "role1": "Leviathan",
+    "role2": "Hatter",
+    "reason": "If the Hatter dies on or after day 5, the Demon cannot choose Leviathan."
   },
   {
     "role1": "Leviathan",
@@ -96,6 +106,11 @@
   },
   {
     "role1": "Leviathan",
+    "role2": "Pit-Hag",
+    "reason": "After day 5, the Pit-Hag cannot choose Leviathan."
+  },
+  {
+    "role1": "Leviathan",
     "role2": "Ravenkeeper",
     "reason": "If Leviathan is in play & the Ravenkeeper dies by execution, they wake that night to use their ability."
   },
@@ -108,6 +123,11 @@
     "role1": "Leviathan",
     "role2": "Soldier",
     "reason": "If Leviathan nominates and executes the Soldier, the Soldier does not die."
+  },
+  {
+    "role1": "Lil' Monsta",
+    "role2": "Hatter",
+    "reason": "If a Demon chooses Lil' Monsta, they also choose a Minion to become and babysit Lil' Monsta tonight."
   },
   {
     "role1": "Lil' Monsta",
@@ -283,6 +303,11 @@
     "role1": "Riot",
     "role2": "Grandmother",
     "reason": "If a Riot player nominates and kills the Grandchild, the Grandmother dies too."
+  },
+  {
+    "role1": "Riot",
+    "role2": "Hatter",
+    "reason": "If the Hatter dies, Riot is in play and a Riot chooses a different Demon, a normal evil team is created from the Riot players. If the Hatter dies and the Demon chooses Riot, Minions become Riot too."
   },
   {
     "role1": "Riot",

@@ -244,6 +244,95 @@
     ]
   },
   {
+    "id": "Hatter",
+    "jinx": [
+      {
+        "id": "Alchemist",
+        "reason": "If the Minion whose ability the Alchemist has comes into play, the Alchemist gains a new ability instead."
+      },
+      {
+        "id": "Apprentice",
+        "reason": "An Apprentice with a Minion ability is not a Minion and is not affected by the Hatter ability"
+      },
+      {
+        "id": "Bounty Hunter",
+        "reason": "The Bounty Hunter evil Townsfolk is not a Minion or Demon, so does not choose a new character."
+      },
+      {
+        "id": "Chambermaid",
+        "reason": "A player waking to make only a Hatter choice and nothing else does not count as waking to the Chambermaid - it's not their own ability."
+      },
+      {
+        "id": "Cult Leader",
+        "reason": "An evil Cult Leader is not a Minion or Demon, so does not choose a new character."
+      },
+      {
+        "id": "Damsel",
+        "reason": "Even if the Minions have changed characters, a used guess is still used."
+      },
+      {
+        "id": "Evil Twin",
+        "reason": "If an Evil Twin ability comes into play through the Hatter, you should wake each twin individually to show them who their twin is and what character it is. Remember that the good twin doesn't have to be alive and generally shouldn't be if this happens in late game as this can mean the good team cannot win."
+      },
+      {
+        "id": "Fearmonger",
+        "reason": "If a player becomes a Fearmonger, their choices as their previous character aren’t relevant to the Fearmonger announcement, their first pick will cause an announcement regardless of who it is."
+      },
+      {
+        "id": "Godfather",
+        "reason": "If a Godfather comes into play, they'd immediately learn the in-play Outsiders, whether those Outsiders are dead or alive."
+      },
+      {
+        "id": "Lil’ Monsta",
+        "reason": "A Lil’ Monsta holder would be able to choose another Demon, as usual for Demons."
+      },
+      {
+        "id": "Lleech",
+        "reason": "A Lleech coming into play would immediately select a host, then follow that by choosing a kill."
+      },
+      {
+        "id": "Lunatic",
+        "reason": "A Lunatic can be given the choice to change characters as if they were the real Demon and a Hatter had died, regardless of whether the actual Hatter died or not."
+      },
+      {
+        "id": "Marionette",
+        "reason": "If a player chooses Marionette with the Hatter ability, you should tell them they're a good character and tell the Demon they are the Marionette. There may also be a future jinx for the Marionette."
+      },
+      {
+        "id": "Plague Doctor",
+        "reason": "If the in-play Minion abilities change due to the Hatter, this does not affect a Plague Doctor granted Storyteller ability."
+      },
+      {
+        "id": "Po",
+        "reason": "A Po that comes into play would have the choice to kill no-one or 1 player - choices as a previous character are not relevant for the Po ability."
+      },
+      {
+        "id": "Preacher",
+        "reason": "A Minion chosen by the Preacher that changes character is still affected by the Preacher ability."
+      },
+      {
+        "id": "Pukka",
+        "reason": "If the Demon changes away from being a Pukka, the previously poisoned player immediately sobers and will not die tonight."
+      },
+      {
+        "id": "Recluse",
+        "reason": "It's possible to wake the Recluse as if they were a Minion or Demon to allow them to change characters, but this is very rarely fun, so recommended against."
+      },
+      {
+        "id": "Undertaker",
+        "reason": "The Undertaker learns the information that was true at the time of execution, regardless of whether the executed player's character changes afterwards."
+      },
+      {
+        "id": "Vigormortis",
+        "reason": "A Demon that changes from a Vigormortis to something else while having killed Minions to maintain their abiities in death will cause those abilities to immediately be lost. However, if the Vigor stays in play, a Vigor-killed Minion can change character and continue to use their new ability."
+      },
+      {
+        "id": "Zombuul",
+        "reason": "An already-dead player that chooses to become a Zombuul does not return to life as a once-killed Zombuul, they are already dead."
+      }
+    ]
+  },
+  {
     "id": "High Priestess",
     "jinx": [
       {

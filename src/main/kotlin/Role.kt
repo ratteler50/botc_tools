@@ -165,7 +165,7 @@ data class Role(
 
   fun asTextScriptEntry(): String {
     checkNotNull(name) { "Name must be non-null" }
-    checkNotNull(ability) { "Ability must be non-null" }
+    checkNotNull(ability) { "Ability must be non-null for $name" }
     return "**$name** -- ${ability.replace("*", "\\*")}"
   }
 
