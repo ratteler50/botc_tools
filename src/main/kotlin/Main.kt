@@ -1,14 +1,15 @@
 @file:Suppress("unused", "RedundantSuspendModifier")
 
+import AppConfig.GRIM_TOOL_ROLES
 import AppConfig.INPUT_SCRIPT_JSON
 import AppConfig.INTERACTIONS_JSON
 import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.RAW_INTERACTIONS_JSON
 import AppConfig.RAW_JINXES_JSON
-import AppConfig.RAW_ROLES_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SAO_JSON
+import AppConfig.SCRIPT_TOOL_ROLES
 import Role.Edition.SPECIAL
 import Role.Type.FABLED
 import Role.Type.TRAVELLER
@@ -26,13 +27,14 @@ import kotlinx.coroutines.withContext
 object AppConfig {
   const val INPUT_SCRIPT_JSON = "./src/data/input_script.json"
   const val ROLES_JSON = "./src/data/roles.json"
-  const val RAW_ROLES_JSON = "./src/data/raw_roles.json"
+  const val GRIM_TOOL_ROLES = "./src/data/grim_tool_roles.json"
   const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
   const val RAW_INTERACTIONS_JSON = "./src/data/raw_interactions.json"
   const val INTERACTIONS_JSON = "./src/data/interactions.json"
   const val RAW_JINXES_JSON = "./src/data/raw_jinxes.json"
   const val JINXES_JSON = "./src/data/jinxes.json"
   const val SAO_JSON = "./src/data/sao.json"
+  const val SCRIPT_TOOL_ROLES = "./src/data/script_tool_roles.json"
 }
 
 val gson: Gson by lazy { GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create() }
@@ -47,12 +49,13 @@ suspend fun main() {
 }
 
 private suspend fun updateSourceJsons() {
-  updateRolesFromRawRoles()
+  updateRolesFromGrimToolRoles()
   updateRolesFromWiki()
   updateJinxesFromRawJinxes()
   updateInteractionsFromRawInteractions()
   updateRawInteractionsFromInteractions()
   updateNightOrder()
+  updateSaoLegacy()
   updateSao()
 }
 
@@ -70,8 +73,8 @@ private fun generateTextScript(scriptMetadata: Script?): String {
 private fun getRolesFromJson() = Role.listFromJson(gson, File(ROLES_JSON).readText())
 
 
-private fun updateRolesFromRawRoles() {
-  val rawRoles = Role.listFromJson(gson, File(RAW_ROLES_JSON).readText()).associateBy(Role::id)
+private fun updateRolesFromGrimToolRoles() {
+  val rawRoles = Role.listFromJson(gson, File(GRIM_TOOL_ROLES).readText()).associateBy(Role::id)
   val roles = getRolesFromJson()
   roles.map { role -> rawRoles[role.id]?.let { rawRole -> role.copyFrom(rawRole) } ?: role }
     .run {
@@ -142,6 +145,23 @@ fun updateRawInteractionsFromInteractions() {
 }
 
 fun updateSao() {
+  val rolesSortedBySao =
+    ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText())
+      .filter { it.version != ScriptToolRole.Version.EXTRAS }.map { it.id.normalize() }
+
+  val updatedRoles = getRolesFromJson().map { role ->
+    val index = rolesSortedBySao.indexOf(role.id.normalize())
+    if (index == -1) role.copy(standardAmyOrder = null) else role.copy(standardAmyOrder = index + 1)
+  }.sortedWith(compareBy<Role> { it.edition == SPECIAL }
+                 .thenBy(nullsLast()) { it.standardAmyOrder }
+                 .thenBy { it.type }
+                 .thenBy { it.edition }
+                 .thenBy { it.name })
+
+  File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
+}
+
+fun updateSaoLegacy() {
   val saoFromFile: Map<String, String> =
     gson.fromJson(File(SAO_JSON).readText(), object : TypeToken<Map<String, String>>() {}.type)
       ?: emptyMap()
