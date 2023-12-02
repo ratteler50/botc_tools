@@ -7,7 +7,6 @@ import AppConfig.NIGHTSHEET_JSON
 import AppConfig.RAW_INTERACTIONS_JSON
 import AppConfig.RAW_JINXES_JSON
 import AppConfig.RAW_ROLES_JSON
-import AppConfig.RAW_SAO_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SAO_JSON
 import Role.Edition.SPECIAL
@@ -16,6 +15,7 @@ import Role.Type.TRAVELLER
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
 import java.io.File
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -32,12 +32,11 @@ object AppConfig {
   const val INTERACTIONS_JSON = "./src/data/interactions.json"
   const val RAW_JINXES_JSON = "./src/data/raw_jinxes.json"
   const val JINXES_JSON = "./src/data/jinxes.json"
-  const val RAW_SAO_JSON = "./src/data/raw_sao.json"
   const val SAO_JSON = "./src/data/sao.json"
 }
 
 val gson: Gson by lazy { GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create() }
-val wikiReader by  lazy {BotcRoleLoader()}
+val wikiReader by lazy { BotcRoleLoader() }
 
 
 suspend fun main() {
@@ -67,6 +66,7 @@ private fun generateTextScript(scriptMetadata: Script?): String {
     roleMap
   ).textScriptString()
 }
+
 private fun getRolesFromJson() = Role.listFromJson(gson, File(ROLES_JSON).readText())
 
 
@@ -109,17 +109,6 @@ fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
     .sortedBy { it.standardAmyOrder }
 }
 
-fun updateSaoFromRawSao() {
-  File(SAO_JSON).writeText(
-    gson.toJson(
-      Sao.listFromRawJson(File(RAW_SAO_JSON).readText())
-        .sortedWith(
-          compareBy({ it.type }, { it.category }, { it.pixels }, { it.characters })
-        )
-    )
-  )
-}
-
 fun updateJinxesFromRawJinxes() {
   File(JINXES_JSON).writeText(
     gson.toJson(
@@ -153,27 +142,30 @@ fun updateRawInteractionsFromInteractions() {
 }
 
 fun updateSao() {
-  updateSaoFromRawSao()
-  val roles = getRolesFromJson()
-  val sao = Sao.listFromJson(gson, File(SAO_JSON).readText())
-    .sortedWith(compareBy({ it.type }, { it.category }, { it.pixels }, { it.characters }))
-  val updatedRoles = roles.map { role ->
-    when (val index = sao.indexOfFirst { it.id.normalize() == role.id.normalize() }) {
-      -1 -> role
-      else -> role.copy(standardAmyOrder = index + 1)
-    }
-  }
-    .sortedWith(compareBy<Role> { it.edition == SPECIAL }
-                  .thenBy(nullsLast()) { it.standardAmyOrder }
-                  .thenBy { it.type }
-                  .thenBy { it.edition }
-                  .thenBy { it.name })
+  val saoFromFile: Map<String, String> =
+    gson.fromJson(File(SAO_JSON).readText(), object : TypeToken<Map<String, String>>() {}.type)
+      ?: emptyMap()
+
+  val rolesSortedBySao = saoFromFile
+    .map { (id, sao) -> (id.normalize() to sao.replace(".", "").toInt()) }
+    .sortedBy { it.second }
+    .map { it.first }
+
+  val updatedRoles = getRolesFromJson().map { role ->
+    val index = rolesSortedBySao.indexOf(role.id.normalize())
+    if (index == -1) role else role.copy(standardAmyOrder = index + 1)
+  }.sortedWith(compareBy<Role> { it.edition == SPECIAL }
+                 .thenBy(nullsLast()) { it.standardAmyOrder }
+                 .thenBy { it.type }
+                 .thenBy { it.edition }
+                 .thenBy { it.name })
+
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }
 
 suspend fun updateRolesFromWiki() {
   val roles = getRolesFromJson()
-  withContext(Dispatchers.IO)  {
+  withContext(Dispatchers.IO) {
     val updatedRoles = roles.map { role ->
       async {
         println("Updating ${role.name}")
