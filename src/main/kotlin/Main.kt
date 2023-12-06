@@ -44,6 +44,7 @@ suspend fun main() {
 }
 
 private suspend fun updateSourceJsons() {
+  measureTimeMillis { updateRoleJinxes() }.also { println("Updated role jinxes in $it ms") }
   measureTimeMillis { updateRolesFromGrimToolRoles() }.also { println("Updated roles in $it ms") }
   measureTimeMillis { updateRolesFromWiki() }.also { println("Updated roles from wiki in $it ms") }
   measureTimeMillis { updateNightOrder() }.also { println("Updated night order in $it ms") }
@@ -73,6 +74,15 @@ private fun updateRolesFromGrimToolRoles() {
     }
 }
 
+fun updateRoleJinxes() {
+  val jinxes = Jinx.listFromJson(gson, File(JINXES_JSON).readText()).groupBy{ it.role1.normalize() }
+  val updatedRoles = getRolesFromJson().map { role ->
+    jinxes[role.id.normalize()]?.map { Role.Jinx(it.role2, it.reason) }?.let { role.copy(jinxes = it) } ?: role
+  }
+
+  File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
+}
+
 private fun Role.copyFrom(otherRole: Role): Role = copy(
   id = otherRole.id,
   name = otherRole.name,
@@ -83,6 +93,7 @@ private fun Role.copyFrom(otherRole: Role): Role = copy(
   firstNightReminder = otherRole.firstNightReminder?.takeUnless { it.isBlank() },
   otherNightReminder = otherRole.otherNightReminder?.takeUnless { it.isBlank() },
   reminders = otherRole.reminders?.takeUnless { it.isEmpty() },
+  jinxes = otherRole.jinxes?.takeUnless { it.isEmpty() },
 )
 
 private fun Role.copyFrom(wikiRole: BotcRoleLoader.RoleResult): Role = copy(
@@ -126,14 +137,14 @@ suspend fun updateRolesFromWiki() {
   withContext(Dispatchers.IO) {
     val updatedRoles = roles.map { role ->
       async {
-        var updatedRole: Role // Replace RoleType with the actual type of your role
+        var updatedRole: Role
         val elapsedTimeMillis = measureTimeMillis {
           println("Updating ${role.name}")
           updatedRole =
             runCatching { role.copyFrom(wikiReader.getRole(role.name ?: "")) }.getOrElse {
-                println("Couldn't update ${role.name}: ${it.message}")
-                role  // This ensures the original role is returned in case of failure
-              }
+              println("Couldn't update ${role.name}: ${it.message}")
+              role
+            }
         }
         println("Update complete for ${role.name}: $elapsedTimeMillis ms")
         updatedRole
