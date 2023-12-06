@@ -18,6 +18,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import java.io.File
+import kotlin.system.measureTimeMillis
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -45,18 +46,19 @@ suspend fun main() {
   val scriptMetadata = getScriptMetadata()
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
   updateSourceJsons()
-  File(outputFilename).writeText(generateTextScript(scriptMetadata))
+  measureTimeMillis { File(outputFilename).writeText(generateTextScript(scriptMetadata)) }
+    .also { println("Generated script in $it ms") }
 }
 
 private suspend fun updateSourceJsons() {
-  updateRolesFromGrimToolRoles()
-  updateRolesFromWiki()
-  updateJinxesFromRawJinxes()
-  updateInteractionsFromRawInteractions()
-  updateRawInteractionsFromInteractions()
-  updateNightOrder()
-  updateSaoLegacy()
-  updateSao()
+  measureTimeMillis { updateRolesFromGrimToolRoles() }.also { println("Updated roles in $it ms") }
+  measureTimeMillis { updateRolesFromWiki() }.also { println("Updated roles from wiki in $it ms") }
+  measureTimeMillis { updateJinxesFromRawJinxes() }.also { println("Updated jinxes in $it ms") }
+  measureTimeMillis { updateInteractionsFromRawInteractions() }.also { println("Updated interactions in $it ms") }
+  measureTimeMillis {  updateRawInteractionsFromInteractions() }.also { println("Updated raw interactions in $it ms") }
+  measureTimeMillis { updateNightOrder() }.also { println("Updated night order in $it ms") }
+  measureTimeMillis { updateSaoLegacy() }.also { println("Updated SAO in $it ms") }
+  measureTimeMillis { updateSao() }.also { println("Updated SAO in $it ms") }
 }
 
 private fun generateTextScript(scriptMetadata: Script?): String {
@@ -188,13 +190,16 @@ suspend fun updateRolesFromWiki() {
   withContext(Dispatchers.IO) {
     val updatedRoles = roles.map { role ->
       async {
-        println("Updating ${role.name}")
-        val updatedRole = runCatching { role.copyFrom(wikiReader.getRole(role.name ?: "")) }
-          .getOrElse {
-            println("Couldn't update ${role.name}: ${it.message}")
-            role  // This ensures the original role is returned in case of failure
-          }
-        println("Update complete for ${role.name}")
+        var updatedRole: Role // Replace RoleType with the actual type of your role
+        val elapsedTimeMillis = measureTimeMillis {
+          println("Updating ${role.name}")
+          updatedRole =
+            runCatching { role.copyFrom(wikiReader.getRole(role.name ?: "")) }.getOrElse {
+                println("Couldn't update ${role.name}: ${it.message}")
+                role  // This ensures the original role is returned in case of failure
+              }
+        }
+        println("Update complete for ${role.name}: $elapsedTimeMillis ms")
         updatedRole
       }
     }.awaitAll()

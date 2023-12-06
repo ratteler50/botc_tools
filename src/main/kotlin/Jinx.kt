@@ -11,10 +11,19 @@ data class Jinx(val role1: String, val role2: String, val reason: String) {
 
     fun listFromRawJson(gson: Gson, json: String): List<Jinx> =
       gson.fromJson<List<JsonObject>>(json, object : TypeToken<List<JsonObject>>() {}.type)
+        .filter { it.has("jinxes") || it.has("jinx") }
         .flatMap { outerRole ->
-          outerRole.getAsJsonArray("jinx").map { it.asJsonObject }
-            .map { Jinx(outerRole.get("id").asString, it.get("id").asString, it.get("reason").asString) }
+          val jinxes = outerRole.getAsJsonArray(if (outerRole.has("jinxes")) "jinxes" else "jinx")
+          jinxes.map { it.asJsonObject }
+            .map {
+              Jinx(
+                outerRole.get("id").asString,
+                it.get("id").asString,
+                it.get("reason").asString
+              )
+            }
         }
+
     fun buildRawJsonForRole(jinxes: List<Jinx>): JsonObject {
       val outputObject = JsonObject()
       val jinxList = JsonArray()
