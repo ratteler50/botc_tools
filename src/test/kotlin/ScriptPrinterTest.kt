@@ -355,9 +355,9 @@ class ScriptPrinterTest {
 
   private fun getJinxTable(): ImmutableTable<String, String, Jinx> {
     val json = """[
-      |{"role1": "fanggu", "role2": "scarletwoman", "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."},
-      |{"role1": "spy", "role2": "damsel", "reason": "Only 1 jinxed character can be in play."},
-      |{"role1": "spy", "role2": "magician", "reason": "When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed."}
+      |{"id": "fanggu", "jinxes": [{"id": "scarletwoman", "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."}]},
+      |{"id": "spy", "jinxes": [{"id": "damsel", "reason": "Only 1 jinxed character can be in play."},
+                               |{"id": "magician", "reason": "When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed."}]}
       |]""".trimMargin()
     val jinxes = Jinx.listFromJson(gson, json)
     return Jinx.toTable(jinxes)
@@ -365,8 +365,8 @@ class ScriptPrinterTest {
 
   private fun getClarificationTable(): ImmutableTable<String, String, Jinx> {
     val json = """[
-      |{"role1": "Fang Gu", "role2": "Monk", "reason": "An Outsider chosen by the Monk cannot be jumped to."},
-      |{"role1": "Vortox", "role2": "Monk", "reason": "A player protected by the Monk would get correct information in a Vortox game."}
+      |{"id": "Fang Gu", "jinxes": [{"id": "Monk", "reason": "An Outsider chosen by the Monk cannot be jumped to."}]},
+      |{"id": "Vortox", "jinxes": [{"id": "Monk", "reason": "A player protected by the Monk would get correct information in a Vortox game."}]}
       |]""".trimMargin()
     val interactions = Jinx.listFromJson(gson, json)
     return Jinx.toTable(interactions)

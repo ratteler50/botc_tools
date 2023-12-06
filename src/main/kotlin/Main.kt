@@ -5,10 +5,7 @@ import AppConfig.INPUT_SCRIPT_JSON
 import AppConfig.INTERACTIONS_JSON
 import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
-import AppConfig.RAW_INTERACTIONS_JSON
-import AppConfig.RAW_JINXES_JSON
 import AppConfig.ROLES_JSON
-import AppConfig.SAO_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
 import Role.Edition.SPECIAL
 import Role.Type.FABLED
@@ -16,7 +13,6 @@ import Role.Type.TRAVELLER
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.google.gson.reflect.TypeToken
 import java.io.File
 import kotlin.system.measureTimeMillis
 import kotlinx.coroutines.Dispatchers
@@ -30,11 +26,8 @@ object AppConfig {
   const val ROLES_JSON = "./src/data/roles.json"
   const val GRIM_TOOL_ROLES = "./src/data/grim_tool_roles.json"
   const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
-  const val RAW_INTERACTIONS_JSON = "./src/data/raw_interactions.json"
   const val INTERACTIONS_JSON = "./src/data/interactions.json"
-  const val RAW_JINXES_JSON = "./src/data/raw_jinxes.json"
   const val JINXES_JSON = "./src/data/jinxes.json"
-  const val SAO_JSON = "./src/data/sao.json"
   const val SCRIPT_TOOL_ROLES = "./src/data/script_tool_roles.json"
 }
 
@@ -53,12 +46,8 @@ suspend fun main() {
 private suspend fun updateSourceJsons() {
   measureTimeMillis { updateRolesFromGrimToolRoles() }.also { println("Updated roles in $it ms") }
   measureTimeMillis { updateRolesFromWiki() }.also { println("Updated roles from wiki in $it ms") }
-  measureTimeMillis { updateJinxesFromRawJinxes() }.also { println("Updated jinxes in $it ms") }
-  measureTimeMillis { updateInteractionsFromRawInteractions() }.also { println("Updated interactions in $it ms") }
-  measureTimeMillis {  updateRawInteractionsFromInteractions() }.also { println("Updated raw interactions in $it ms") }
   measureTimeMillis { updateNightOrder() }.also { println("Updated night order in $it ms") }
-  measureTimeMillis { updateSaoLegacy() }.also { println("Updated SAO in $it ms") }
-  measureTimeMillis { updateSao() }.also { println("Updated SAO in $it ms") }
+  measureTimeMillis { updateSaoFromScriptToolRoles() }.also { println("Updated SAO in $it ms") }
 }
 
 private fun generateTextScript(scriptMetadata: Script?): String {
@@ -114,39 +103,8 @@ fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
     .sortedBy { it.standardAmyOrder }
 }
 
-fun updateJinxesFromRawJinxes() {
-  File(JINXES_JSON).writeText(
-    gson.toJson(
-      Jinx.listFromRawJson(gson, File(RAW_JINXES_JSON).readText())
-        .sortedWith(compareBy({ it.role1 }, { it.role2 }))
-    )
-  )
-}
 
-fun updateInteractionsFromRawInteractions() {
-  File(INTERACTIONS_JSON).writeText(
-    gson.toJson(
-      Jinx.listFromRawJson(gson, File(RAW_INTERACTIONS_JSON).readText())
-        .sortedWith(compareBy({ it.role1 }, { it.role2 }))
-    )
-  )
-}
-
-fun updateRawInteractionsFromInteractions() {
-  File(RAW_INTERACTIONS_JSON).writeText(
-    gson.toJson(Jinx.listFromJson(gson, File(INTERACTIONS_JSON).readText())
-                  .sortedWith(compareBy({ it.role1 }, { it.role2 })).groupBy { it.role1 }
-                  .map { Jinx.buildRawJsonForRole(it.value) })
-  )
-  File(INTERACTIONS_JSON).writeText(
-    gson.toJson(
-      Jinx.listFromRawJson(gson, File(RAW_INTERACTIONS_JSON).readText())
-        .sortedWith(compareBy({ it.role1 }, { it.role2 }))
-    )
-  )
-}
-
-fun updateSao() {
+fun updateSaoFromScriptToolRoles() {
   val rolesSortedBySao =
     ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText())
       .filter { it.version != ScriptToolRole.Version.EXTRAS }.map { it.id.normalize() }
@@ -154,28 +112,6 @@ fun updateSao() {
   val updatedRoles = getRolesFromJson().map { role ->
     val index = rolesSortedBySao.indexOf(role.id.normalize())
     if (index == -1) role.copy(standardAmyOrder = null) else role.copy(standardAmyOrder = index + 1)
-  }.sortedWith(compareBy<Role> { it.edition == SPECIAL }
-                 .thenBy(nullsLast()) { it.standardAmyOrder }
-                 .thenBy { it.type }
-                 .thenBy { it.edition }
-                 .thenBy { it.name })
-
-  File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
-}
-
-fun updateSaoLegacy() {
-  val saoFromFile: Map<String, String> =
-    gson.fromJson(File(SAO_JSON).readText(), object : TypeToken<Map<String, String>>() {}.type)
-      ?: emptyMap()
-
-  val rolesSortedBySao = saoFromFile
-    .map { (id, sao) -> (id.normalize() to sao.replace(".", "").toInt()) }
-    .sortedBy { it.second }
-    .map { it.first }
-
-  val updatedRoles = getRolesFromJson().map { role ->
-    val index = rolesSortedBySao.indexOf(role.id.normalize())
-    if (index == -1) role else role.copy(standardAmyOrder = index + 1)
   }.sortedWith(compareBy<Role> { it.edition == SPECIAL }
                  .thenBy(nullsLast()) { it.standardAmyOrder }
                  .thenBy { it.type }
