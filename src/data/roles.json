@@ -1369,7 +1369,7 @@
     ],
     "setup": true,
     "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
-    "flavour": "This is all perfectly *burp* logical. I know that Miss Dearheart is a Fortune Teller. Mrs Dearheart swears that Jenkins here is her Butler. It's simple *hic* deduction.",
+    "flavour": "I’m only a *hic* social drinker, my dear. Admittedly, I am a heavy *burp* socializer.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Drunk",
       "icon": "https://wiki.bloodontheclocktower.com/images/4/4a/Icon_drunk.png"
@@ -1391,28 +1391,11 @@
     }
   },
   {
-    "id": "hatter",
-    "name": "Hatter",
-    "team": "outsider",
-    "standardAmyOrder": 81,
-    "otherNight": 43,
-    "otherNightReminder": "Wake Minions and Demons, allow them to choose new characters.",
-    "reminders": [
-      "Tea Party Tonight"
-    ],
-    "ability": "If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.”",
-    "flavour": "One Hat. Too Hat. Three Hat. Tea Hat. Fore Hat. Thrive Hat. Six Hat. Sticks Hat.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Hatter",
-      "icon": "https://wiki.bloodontheclocktower.com/images/4/44/Icon_hatter.png"
-    }
-  },
-  {
     "id": "moonchild",
     "name": "Moonchild",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 82,
+    "standardAmyOrder": 81,
     "otherNight": 54,
     "otherNightReminder": "If the Moonchild is due to kill a good player, they die. :reminder:",
     "reminders": [
@@ -1429,7 +1412,7 @@
     "id": "politician",
     "name": "Politician",
     "team": "outsider",
-    "standardAmyOrder": 83,
+    "standardAmyOrder": 82,
     "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead.",
     "flavour": "I'm glad you asked that question. Truly, I am. But I think the REAL question here is...",
     "urls": {
@@ -1442,7 +1425,7 @@
     "name": "Lunatic",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 84,
+    "standardAmyOrder": 83,
     "firstNight": 9,
     "firstNightReminder": "If there are 7 or more players, wake the Lunatic: Show the *THESE ARE YOUR MINIONS* token. Point to any players. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the *YOU ARE* info token and the Demon token. Show the *THIS PLAYER IS* info token and the Lunatic token, then point to the Lunatic.",
     "otherNight": 22,
@@ -1470,7 +1453,7 @@
     "name": "Barber",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 85,
+    "standardAmyOrder": 84,
     "otherNight": 44,
     "otherNightReminder": "If the Barber died today or tonight, show the Demon the *THIS CHARACTER SELECTED YOU* & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the *YOU ARE* token & their new character token.",
     "reminders": [
@@ -1481,6 +1464,23 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Barber",
       "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_barber.png"
+    }
+  },
+  {
+    "id": "hatter",
+    "name": "Hatter",
+    "team": "outsider",
+    "standardAmyOrder": 85,
+    "otherNight": 43,
+    "otherNightReminder": "Wake Minions and Demons, allow them to choose new characters.",
+    "reminders": [
+      "Tea Party Tonight"
+    ],
+    "ability": "If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.”",
+    "flavour": "One Hat. Too Hat. Three Hat. Tea Hat. Fore Hat. Thrive Hat. Six Hat. Sticks Hat.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Hatter",
+      "icon": "https://wiki.bloodontheclocktower.com/images/4/44/Icon_hatter.png"
     }
   },
   {
@@ -2807,7 +2807,7 @@
     "name": "Deviant",
     "edition": "snv",
     "team": "traveller",
-    "ability": "If you were funny today, you cannot die by exile..",
+    "ability": "If you were funny today, you cannot die by exile.",
     "flavour": "Twas the lady's quip, forsooth.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Deviant",
