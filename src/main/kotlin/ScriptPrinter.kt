@@ -146,7 +146,7 @@ class ScriptPrinter(
   }
 
   private fun getDemonRoles(): List<Role> {
-    return script.filter { it.type == DEMON && it.edition != SPECIAL}
+    return script.filter { it.type == DEMON && it.edition != SPECIAL }
   }
 
   private fun getInteractions(interactionTable: Table<String, String, Jinx>): List<Jinx> {
@@ -161,14 +161,14 @@ class ScriptPrinter(
   }
 
   private fun getFirstNightWakers(): List<String> {
-    return script.filterNot { it.firstNight == null }.sortedBy { it.firstNight }.map {
+    return script.filter { (it.firstNight ?: 0) > 0 }.sortedBy { it.firstNight }.map {
       renamePlaceholders(it.name) ?: throw IllegalStateException("Name needed for role $it")
     }
   }
 
 
   private fun getOtherNightWakers(): List<String> {
-    return script.filterNot { it.otherNight == null }.sortedBy { it.otherNight }.map {
+    return script.filter { (it.otherNight ?: 0) > 0 }.sortedBy { it.otherNight }.map {
       renamePlaceholders(it.name) ?: throw IllegalStateException("Name needed for role $it")
     }
   }
