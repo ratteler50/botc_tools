@@ -38,7 +38,7 @@ val wikiReader by lazy { BotcRoleLoader() }
 suspend fun main() {
   val scriptMetadata = getScriptMetadata()
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
-  updateSourceJsons()
+  // updateSourceJsons()
   measureTimeMillis { File(outputFilename).writeText(generateTextScript(scriptMetadata)) }
     .also { println("Generated script in $it ms") }
 }
@@ -75,9 +75,11 @@ private fun updateRolesFromGrimToolRoles() {
 }
 
 fun updateRoleJinxes() {
-  val jinxes = Jinx.listFromJson(gson, File(JINXES_JSON).readText()).groupBy{ it.role1.normalize() }
+  val jinxes =
+    Jinx.listFromJson(gson, File(JINXES_JSON).readText()).groupBy { it.role1.normalize() }
   val updatedRoles = getRolesFromJson().map { role ->
-    jinxes[role.id.normalize()]?.map { Role.Jinx(it.role2, it.reason) }?.let { role.copy(jinxes = it) } ?: role
+    jinxes[role.id.normalize()]?.map { Role.Jinx(it.role2, it.reason) }
+      ?.let { role.copy(jinxes = it) } ?: role
   }
 
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
@@ -110,7 +112,7 @@ fun getScriptMetadata(): Script? =
 
 fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
   val charList = Script.getRolesOnScript(gson, File(INPUT_SCRIPT_JSON).readText())
-  return charList.map { char -> checkNotNull(roleMap[char]) { "Couldn't find $char in roleMap" } }
+  return charList.map { char -> roleMap[char.id.normalize()] ?: char }
     .sortedBy { it.standardAmyOrder }
 }
 

@@ -1,3 +1,4 @@
+
 import com.google.gson.Gson
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
@@ -11,22 +12,24 @@ data class Script(
   val author: String? = null,
 ) {
   companion object {
-    fun getRolesOnScript(gson: Gson, json: String): Set<String> =
+    fun getRolesOnScript(gson: Gson, json: String): Set<Role> =
       gson.fromJson<List<JsonElement>>(json, object : TypeToken<List<JsonElement>>() {}.type)
         .mapNotNull { parseRole(it) }.toSet()
-        .plus(listOf("minioninfo", "demoninfo", "dusk", "dawn"))
+        .plus(listOf(Role("minioninfo"), Role("demoninfo"), Role("dusk"), Role("dawn")))
 
-    private fun parseRole(entry: JsonElement): String? =
+    private fun parseRole(entry: JsonElement): Role? =
       when (entry) {
-        is JsonObject -> parseRole(gson.fromJson(entry, Script::class.java))
+        is JsonObject -> parseRole(gson.fromJson(entry, Role::class.java))
         is JsonPrimitive -> parseRole(gson.fromJson(entry, String::class.java))
         else -> null
 
       }
 
-    private fun parseRole(entry: Script): String? =
-      if (entry.id == "_meta") null else parseRole(entry.id)
-    private fun parseRole(entry: String): String = entry.lowercase().replace(Regex("[^a-z]"), "")
+    private fun parseRole(entry: Role): Role? =
+      if (entry.id == "_meta") null else entry.copy(id = entry.id.normalize())
+
+    private fun parseRole(entry: String): Role =
+      Role(entry.normalize())
 
     fun getScriptMetadata(gson: Gson, json: String): Script? =
       gson.fromJson<List<JsonElement>?>(json, object : TypeToken<List<JsonElement>>() {}.type)

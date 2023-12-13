@@ -349,7 +349,7 @@ class ScriptPrinterTest {
     val json =
       """[{"id": "spiritofivory"}, "gangster", {"id":"vortox"},{"id":"amnesiac"},{"id":"snake_charmer"},{"id":"spy"},{"id":"damsel"},{"id":"barber"},{"id":"boomdandy"},{"id":"witch"},{"id":"magician"},{"id":"scarlet_woman"},{"id":"fang_gu"},"monk"]"""
     val charList = Script.getRolesOnScript(gson, json)
-    return charList.map { checkNotNull(roleMap[it]) { "Couldn't find $it in $roleMap" } }
+    return charList.map { roleMap[it.id.normalize()] ?: it }
       .sortedBy { it.standardAmyOrder }
   }
 
