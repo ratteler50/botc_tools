@@ -1,10 +1,11 @@
-import models.Jinx
-import models.Role
-import models.Script
+
 import com.google.common.collect.ImmutableTable
 import com.google.common.truth.Truth.assertThat
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
+import models.Jinx
+import models.Role
+import models.Script
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -78,7 +79,7 @@ class ScriptPrinterTest {
     __Minions__
     > - **Witch** -- Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.
     > - **Spy** -- Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.
-    > - **Scarlet Woman** -- If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)
+    > - **Scarlet Woman** -- If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count)
     > - **Boomdandy** -- If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies.
     
     __Demons__
@@ -321,7 +322,7 @@ class ScriptPrinterTest {
             "Demon"
           ],
           "setup": false,
-          "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)"
+          "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count)"
         },
         {
           "id": "minioninfo",
