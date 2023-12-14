@@ -1,3 +1,5 @@
+package models
+
 import com.google.gson.Gson
 
 data class NightSheet(val firstNight: List<String>, val otherNight: List<String>) {

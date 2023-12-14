@@ -1,8 +1,9 @@
-
+package models
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.google.gson.reflect.TypeToken
+import normalize
 
 data class Jinx(val role1: String, val role2: String, val reason: String) {
   companion object {

@@ -1,3 +1,6 @@
+import models.Jinx
+import models.Role
+import models.Script
 import com.google.common.collect.ImmutableTable
 import com.google.common.truth.Truth.assertThat
 import java.io.ByteArrayOutputStream

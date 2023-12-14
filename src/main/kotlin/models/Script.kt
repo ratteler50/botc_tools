@@ -1,9 +1,11 @@
-
+package models
 import com.google.gson.Gson
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.google.gson.JsonPrimitive
 import com.google.gson.reflect.TypeToken
+import gson
+import normalize
 
 data class Script(
   val id: String,

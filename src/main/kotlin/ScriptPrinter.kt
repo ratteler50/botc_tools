@@ -1,10 +1,13 @@
-import Role.Edition.SPECIAL
-import Role.Type.DEMON
-import Role.Type.FABLED
-import Role.Type.MINION
-import Role.Type.OUTSIDER
-import Role.Type.TOWNSFOLK
-import Role.Type.TRAVELLER
+import models.Jinx
+import models.Role
+import models.Role.Edition.SPECIAL
+import models.Role.Type.DEMON
+import models.Role.Type.FABLED
+import models.Role.Type.MINION
+import models.Role.Type.OUTSIDER
+import models.Role.Type.TOWNSFOLK
+import models.Role.Type.TRAVELLER
+import models.Script
 import com.google.common.collect.Table
 
 class ScriptPrinter(

@@ -40,12 +40,12 @@ class BotcRoleLoader {
 
     val bestMatch = searchResult.query.search.firstOrNull {
       it.wordcount > 100 && !it.snippet.contains("#redirect", ignoreCase = true)
-    } ?: throw Exception("Role not found")
+    } ?: throw Exception("Models.Role not found")
 
     val roleUrl = "$wikiApi${bestMatch.title.encodeUrl()}"
     val roleContent = client.getUrlContents(roleUrl).let { it ->
       gson.fromJson(it, WikiPageResult::class.java).query.pages.values.firstOrNull()
-        ?: throw Exception("Role details not found")
+        ?: throw Exception("Models.Role details not found")
     }
 
     return RoleResult(

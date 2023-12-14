@@ -1,3 +1,5 @@
+package models
+
 import com.google.common.truth.Truth.assertThat
 import com.google.gson.Gson
 import org.junit.Test

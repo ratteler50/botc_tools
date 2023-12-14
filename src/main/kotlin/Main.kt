@@ -7,9 +7,14 @@ import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
-import Role.Edition.SPECIAL
-import Role.Type.FABLED
-import Role.Type.TRAVELLER
+import models.Jinx
+import models.NightSheet
+import models.Role
+import models.ScriptToolRole
+import models.Role.Edition.SPECIAL
+import models.Role.Type.FABLED
+import models.Role.Type.TRAVELLER
+import models.Script
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

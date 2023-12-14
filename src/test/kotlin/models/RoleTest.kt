@@ -1,3 +1,5 @@
+package models
+
 import com.google.common.truth.Truth.assertThat
 import kotlin.test.assertFailsWith
 import org.junit.Test
@@ -10,18 +12,18 @@ class RoleTest {
   @Test
   fun asTextScriptEntry() {
     val exampleRole = Role(id = "ignoredid",
-                           name = "Role Name",
+                           name = "Models.Role Name",
                            ability = "When this role does something, something happens.")
-    val expectedText = "**Role Name** -- When this role does something, something happens."
+    val expectedText = "**Models.Role Name** -- When this role does something, something happens."
     assertThat(exampleRole.asTextScriptEntry()).isEqualTo(expectedText)
   }
 
   @Test
   fun asTextScriptEntry_escapesAsterisk() {
     val exampleRole = Role(id = "ignoredid",
-                           name = "Role Name",
+                           name = "Models.Role Name",
                            ability = "Each night* something happens.")
-    val expectedText = "**Role Name** -- Each night\\* something happens."
+    val expectedText = "**Models.Role Name** -- Each night\\* something happens."
     assertThat(exampleRole.asTextScriptEntry()).isEqualTo(expectedText)
   }
 
@@ -35,7 +37,7 @@ class RoleTest {
   @Test
   fun asTextScriptEntry_missingAbility_throwsException() {
     val exampleRole = Role(id = "ignoredid",
-                           name = "Role Name")
+                           name = "Models.Role Name")
     assertFailsWith(IllegalStateException::class) { exampleRole.asTextScriptEntry() }
   }
 
@@ -43,9 +45,9 @@ class RoleTest {
   @Test
   fun asTextScriptClarificationEntry() {
     val exampleRole = Role(id = "ignoredid",
-                           name = "Role Name",
+                           name = "Models.Role Name",
                            textGameClarification = "Some text game specific thing players should know.")
-    val expectedText = "**Role Name** - Some text game specific thing players should know."
+    val expectedText = "**Models.Role Name** - Some text game specific thing players should know."
     assertThat(exampleRole.asTextScriptClarificationEntry()).isEqualTo(expectedText)
   }
 
