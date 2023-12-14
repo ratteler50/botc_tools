@@ -7,14 +7,6 @@ import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
-import models.Jinx
-import models.NightSheet
-import models.Role
-import models.ScriptToolRole
-import models.Role.Edition.SPECIAL
-import models.Role.Type.FABLED
-import models.Role.Type.TRAVELLER
-import models.Script
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -24,6 +16,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
+import models.Jinx
+import models.NightSheet
+import models.Role
+import models.Role.Edition.SPECIAL
+import models.Role.Type.FABLED
+import models.Role.Type.TRAVELLER
+import models.Script
+import models.ScriptToolRole
 
 
 object AppConfig {
@@ -41,11 +41,18 @@ val wikiReader by lazy { BotcRoleLoader() }
 
 
 suspend fun main() {
-  val scriptMetadata = getScriptMetadata()
+  val inputScriptJson = File(INPUT_SCRIPT_JSON).readText()
+  val scriptMetadata = getScriptMetadata(inputScriptJson)
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
   // updateSourceJsons()
-  measureTimeMillis { File(outputFilename).writeText(generateTextScript(scriptMetadata)) }
-    .also { println("Generated script in $it ms") }
+  measureTimeMillis {
+    File(outputFilename).writeText(
+      generateTextScript(
+        scriptMetadata,
+        inputScriptJson
+      )
+    )
+  }.also { println("Generated script in $it ms") }
 }
 
 private suspend fun updateSourceJsons() {
@@ -56,11 +63,11 @@ private suspend fun updateSourceJsons() {
   measureTimeMillis { updateSaoFromScriptToolRoles() }.also { println("Updated SAO in $it ms") }
 }
 
-private fun generateTextScript(scriptMetadata: Script?): String {
+fun generateTextScript(scriptMetadata: Script?, inputScriptJson: String): String {
   val roleMap = getRolesFromJson().associateBy(Role::id)
   return ScriptPrinter(
     scriptMetadata,
-    getScriptRoles(roleMap),
+    getScriptRoles(roleMap, inputScriptJson),
     getJinxTable(JINXES_JSON),
     getJinxTable(INTERACTIONS_JSON),
     roleMap
@@ -112,11 +119,11 @@ private fun Role.copyFrom(wikiRole: BotcRoleLoader.RoleResult): Role = copy(
 )
 
 
-fun getScriptMetadata(): Script? =
-  Script.getScriptMetadata(gson, File(INPUT_SCRIPT_JSON).readText())
+fun getScriptMetadata(json: String): Script? =
+  Script.getScriptMetadata(gson, json)
 
-fun getScriptRoles(roleMap: Map<String, Role>): List<Role> {
-  val charList = Script.getRolesOnScript(gson, File(INPUT_SCRIPT_JSON).readText())
+fun getScriptRoles(roleMap: Map<String, Role>, scriptJson: String): List<Role> {
+  val charList = Script.getRolesOnScript(gson, scriptJson)
   return charList.map { char -> roleMap[char.id.normalize()] ?: char }
     .sortedBy { it.standardAmyOrder }
 }
