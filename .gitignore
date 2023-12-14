@@ -11,3 +11,5 @@ target/
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# Secrets for Discord Bot.
+/src/main/kotlin/discord/Settings.kt
