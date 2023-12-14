@@ -74,7 +74,7 @@ fun generateTextScript(scriptMetadata: Script?, inputScriptJson: String): String
   ).textScriptString()
 }
 
-private fun getRolesFromJson() = Role.listFromJson(gson, File(ROLES_JSON).readText())
+fun getRolesFromJson() = Role.listFromJson(gson, File(ROLES_JSON).readText())
 
 
 private fun updateRolesFromGrimToolRoles() {
