@@ -5,6 +5,12 @@ import getRolesFromJson
 import getScriptMetadata
 import java.awt.Color
 import models.Role
+import models.Role.Type.DEMON
+import models.Role.Type.FABLED
+import models.Role.Type.MINION
+import models.Role.Type.OUTSIDER
+import models.Role.Type.TOWNSFOLK
+import models.Role.Type.TRAVELLER
 import net.dv8tion.jda.api.EmbedBuilder
 import net.dv8tion.jda.api.JDABuilder
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel
@@ -49,48 +55,49 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
   private fun handleRole(event: SlashCommandInteractionEvent) {
     event.deferReply().queue()
     val roleName = event.options[0].asString
-    val role = roles[roleName.normalize()]
-    if (role == null) {
+    roles[roleName.normalize()]?.let { role ->
+      event.hook.sendMessageEmbeds(buildEmbed(role)).queue()
+    } ?: run {
       event.hook.sendMessage("Role not found: $roleName").queue()
-      return
     }
-    val embed = EmbedBuilder().apply {
-      setTitle(role.name, role.urls?.wiki)
-      setDescription(role.ability)
-      setFooter(role.flavour)
-      setColor(
-        when (role.type) {
-          Role.Type.TOWNSFOLK -> Color(0x2096FF)
-          Role.Type.OUTSIDER -> Color(0x183EFF)
-          Role.Type.MINION -> Color(0x9F0400)
-          Role.Type.DEMON -> Color(0xEC0804)
-          Role.Type.TRAVELLER -> Color(0xc519ff)
-          Role.Type.FABLED -> Color(0xECCB21)
-          else -> Color(0x000000)
-        }
-      )
-      setThumbnail(role.urls?.icon)
-    }.build()
-    event.hook.sendMessageEmbeds(embed).queue()
   }
-}
 
-private fun handleTextScript(event: SlashCommandInteractionEvent) {
-  event.deferReply().queue()
-  val channel: MessageChannel = event.channel
-  val scriptJson = event.options[0].asString
-  try {
-    val scriptMetadata = getScriptMetadata(scriptJson)
-    val output = generateTextScript(scriptMetadata, scriptJson)
+  private fun buildEmbed(role: Role) = EmbedBuilder().run {
+    setTitle(role.name, role.urls?.wiki)
+    setDescription(role.ability)
+    setFooter(role.flavour)
+    setThumbnail(role.urls?.icon)
+    setColor(
+      when (role.type) {
+        TOWNSFOLK -> Color(0x2096FF)
+        OUTSIDER -> Color(0x183EFF)
+        MINION -> Color(0x9F0400)
+        DEMON -> Color(0xEC0804)
+        TRAVELLER -> Color(0xc519ff)
+        FABLED -> Color(0xECCB21)
+        else -> Color(0x000000)
+      }
+    )
+    build()
+  }
 
-    // Send the InputStream as an attachment
-    channel.sendFiles(
-      FileUpload.fromData(
-        output.toByteArray(), "${scriptMetadata?.name ?: "output"}.md"
-      )
-    ).queue()
-    event.hook.sendMessage(scriptJson).queue()
-  } catch (e: Exception) {
-    event.hook.sendMessage("Invalid JSON: $scriptJson").queue()
+  private fun handleTextScript(event: SlashCommandInteractionEvent) {
+    event.deferReply().queue()
+    val channel: MessageChannel = event.channel
+    val scriptJson = event.options[0].asString
+    try {
+      val scriptMetadata = getScriptMetadata(scriptJson)
+      val output = generateTextScript(scriptMetadata, scriptJson)
+
+      // Send the InputStream as an attachment
+      channel.sendFiles(
+        FileUpload.fromData(
+          output.toByteArray(), "${scriptMetadata?.name ?: "output"}.md"
+        )
+      ).queue()
+      event.hook.sendMessage(scriptJson).queue()
+    } catch (e: Exception) {
+      event.hook.sendMessage("Invalid JSON: $scriptJson").queue()
+    }
   }
 }
