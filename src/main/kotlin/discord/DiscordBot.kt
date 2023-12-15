@@ -95,7 +95,7 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
           output.toByteArray(), "${scriptMetadata?.name ?: "output"}.md"
         )
       ).queue()
-      event.hook.sendMessage(scriptJson).queue()
+      event.hook.sendMessage("`$scriptJson`").queue()
     } catch (e: Exception) {
       event.hook.sendMessage("Invalid JSON: $scriptJson").queue()
     }
