@@ -83,14 +83,15 @@ private fun handleTextScript(event: SlashCommandInteractionEvent) {
     val scriptMetadata = getScriptMetadata(scriptJson)
     val output = generateTextScript(scriptMetadata, scriptJson)
 
-    // Send the InputStream as an attachment
-    channel.sendFiles(
-      FileUpload.fromData(
-        output.toByteArray(), "${scriptMetadata?.name ?: "output"}.md"
-      )
-    ).queue()
-    event.hook.sendMessage(scriptJson).queue()
-  } catch (e: Exception) {
-    event.hook.sendMessage("Invalid JSON: $scriptJson").queue()
+      // Send the InputStream as an attachment
+      channel.sendFiles(
+        FileUpload.fromData(
+          output.toByteArray(), "${scriptMetadata?.name ?: "output"}.md"
+        )
+      ).queue()
+      event.hook.sendMessage("`$scriptJson`").queue()
+    } catch (e: Exception) {
+      event.hook.sendMessage("Invalid JSON: $scriptJson").queue()
+    }
   }
 }
