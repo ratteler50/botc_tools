@@ -13,6 +13,7 @@ import models.Role.Type.TOWNSFOLK
 import models.Role.Type.TRAVELLER
 import net.dv8tion.jda.api.EmbedBuilder
 import net.dv8tion.jda.api.JDABuilder
+import net.dv8tion.jda.api.entities.Activity
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
 import net.dv8tion.jda.api.hooks.ListenerAdapter
@@ -41,6 +42,7 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
       commands.forEach { println("name: ${it.name}; id: ${it.id}") }
     }
     jda.awaitReady()
+    jda.presence.activity = Activity.playing("with her string!")
     println("Bot is ready!")
   }
 
