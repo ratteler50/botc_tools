@@ -119,8 +119,7 @@ private fun Role.copyFrom(wikiRole: BotcRoleLoader.RoleResult): Role = copy(
 )
 
 
-fun getScriptMetadata(json: String): Script? =
-  Script.getScriptMetadata(gson, json)
+fun getScriptMetadata(json: String): Script? = Script.getScriptMetadata(gson, json)
 
 fun getScriptRoles(roleMap: Map<String, Role>, scriptJson: String): List<Role> {
   val charList = Script.getRolesOnScript(gson, scriptJson)
@@ -130,18 +129,14 @@ fun getScriptRoles(roleMap: Map<String, Role>, scriptJson: String): List<Role> {
 
 
 fun updateSaoFromScriptToolRoles() {
-  val rolesSortedBySao =
-    ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText())
-      .filter { it.version != ScriptToolRole.Version.EXTRAS }.map { it.id.normalize() }
+  val rolesSortedBySao = ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText())
+    .filter { it.version != ScriptToolRole.Version.EXTRAS }.map { it.id.normalize() }
 
   val updatedRoles = getRolesFromJson().map { role ->
     val index = rolesSortedBySao.indexOf(role.id.normalize())
     if (index == -1) role.copy(standardAmyOrder = null) else role.copy(standardAmyOrder = index + 1)
-  }.sortedWith(compareBy<Role> { it.edition == SPECIAL }
-                 .thenBy(nullsLast()) { it.standardAmyOrder }
-                 .thenBy { it.type }
-                 .thenBy { it.edition }
-                 .thenBy { it.name })
+  }.sortedWith(compareBy<Role> { it.edition == SPECIAL }.thenBy(nullsLast()) { it.standardAmyOrder }
+                 .thenBy { it.type }.thenBy { it.edition }.thenBy { it.name })
 
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }

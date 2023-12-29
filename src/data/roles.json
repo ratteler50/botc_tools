@@ -2061,33 +2061,34 @@
     "team": "demon",
     "standardAmyOrder": 108,
     "firstNight": 4,
-    "firstNightReminder": "",
+    "firstNightReminder": "Wake the Kazali, allow them to choose Minions.",
     "otherNight": 39,
-    "otherNightReminder": "The Kazali chooses a player. :reminder:",
+    "otherNightReminder": "The Kazali chooses a player.",
     "reminders": [
       "Dead"
     ],
+    "setup": true,
     "ability": "Each night*, choose a player: they die. [You choose which players are which Minions. -? to +? Outsiders]",
     "flavour": "Gon(z)a7les6. Take cau8tun. The mech4an4ion is iNvert10d. E99ors insy6tum. Reco{7}fig.",
     "jinxes": [
       {
-        "id": "Bounty Hunter",
+        "id": "bountyhunter",
         "reason": "An evil Townsfolk is only created if the Bounty Hunter is still in play after the Kazali acts."
       },
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "If the Kazali chooses the Goon to become a Minion, remaining Minion choices are decided by the Storyteller."
       },
       {
-        "id": "Marionette",
+        "id": "marionette",
         "reason": "If the Kazali chooses to create a Marionette, they must choose one of their neighbours."
       },
       {
-        "id": "Huntsman",
+        "id": "huntsman",
         "reason": "If the Kazali chooses the Damsel to become a Minion, and a Huntsman is in play, a good player becomes the Damsel."
       },
       {
-        "id": "Choirboy",
+        "id": "choirboy",
         "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
       }
     ],
