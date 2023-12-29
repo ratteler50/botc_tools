@@ -126,8 +126,8 @@ class BotcRoleLoader {
 
       return RoleContent(
         rawText = content,
-        flavourText = doc.select("p.flavour").text().replace(quoteRegex, "").trim(),
-        abilityText = summarySectionText.firstOrNull()?.replace(quoteRegex, "")?.trim() ?: "",
+        flavourText = doc.select("p.flavour").text().trim().replace(quoteRegex, "").trim(),
+        abilityText = summarySectionText.firstOrNull()?.trim()?.replace(quoteRegex, "")?.trim() ?: "",
         summary = summarySectionText.drop(1).joinToString("\n"),
         examples = extractSectionText(doc, "Examples").lines(),
         howToRun = extractSectionText(doc, "How to Run"),
@@ -164,7 +164,7 @@ class BotcRoleLoader {
 // Usage example
 fun main() {
   val loader = BotcRoleLoader()
-  val role = loader.getRole("ojo")
+  val role = loader.getRole("kazali")
 
   println("Title: ${role.title}")
   println("wiki URL: ${role.wikiUrl}")
