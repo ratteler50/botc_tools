@@ -963,6 +963,15 @@
     "isDisabled": false
   },
   {
+    "id": "Kazali",
+    "name": "Kazali",
+    "roleType": "demon",
+    "print": "./images/print/4 - Experimental/demon/Kazali_print.png",
+    "icon": "./images/icon/4 - Experimental/demon/Kazali_icon.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "Pukka",
     "name": "Pukka",
     "roleType": "demon",

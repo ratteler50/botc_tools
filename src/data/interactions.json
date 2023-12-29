@@ -385,6 +385,43 @@
     ]
   },
   {
+    "id": "Kazali",
+    "jinx": [
+      {
+        "id": "Alchemist",
+        "reason": "The Kazali has to choose their Minions so that the Storyteller knows what's in play in order to give the Alchemist their ability."
+      },
+      {
+        "id": "Balloonist",
+        "reason": "A Balloonist could be replaced by the Kazali, but because their setup effect can be duplicated by the Kazali's setup effect, this is legitimate."
+      },
+      {
+        "id": "Chambermaid",
+        "reason": "Minions waking to learn they have become Minions are not waking due to their own ability, but the Kazali's."
+      },
+      {
+        "id": "Damsel",
+        "reason": "Minions are informed about the Damsel after the Kazali has made all their choices. So if the Damsel is chosen by the Kazali to become a Minion, the Minions do not learn there was a Damsel in play."
+      },
+      {
+        "id": "Lunatic",
+        "reason": "While the Lunatic ability technically requires any Demon to learn which players a Lunatikazali picked to become Minions, the Storyteller might choose not to do so."
+      },
+      {
+        "id": "Magician",
+        "reason": "If the Magician is in play, the Storyteller should put the Kazali to sleep when waking each Minion to tell them their character has changed, then show both the Demon and the Magician during the Minion info step."
+      },
+      {
+        "id": "Poppy Grower",
+        "reason": "If the Poppy Grower is in play, the Storyteller should put the Kazali to sleep when waking each Minion to tell them their character has changed and then run the Poppy Grower as normal."
+      },
+      {
+        "id": "Soldier",
+        "reason": "Unlucky Kazali! You might be one Minion down now 😉 Better pay attention during Demon Info to make sure you get told all the players you picked!"
+      }
+    ]
+  },
+  {
     "id": "Knight",
     "jinx": [
       {
