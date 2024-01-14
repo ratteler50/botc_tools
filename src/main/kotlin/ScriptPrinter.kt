@@ -1,3 +1,5 @@
+
+import com.google.common.collect.Table
 import models.Jinx
 import models.Role
 import models.Role.Edition.SPECIAL
@@ -8,7 +10,6 @@ import models.Role.Type.OUTSIDER
 import models.Role.Type.TOWNSFOLK
 import models.Role.Type.TRAVELLER
 import models.Script
-import com.google.common.collect.Table
 
 class ScriptPrinter(
   private val scriptMetadata: Script?,
@@ -38,9 +39,9 @@ class ScriptPrinter(
       append("**__${scriptMetadata?.name ?: DEFAULT_SCRIPT_TITLE}__**")
       appendLine(scriptMetadata?.author?.let { " by $it" } ?: "")
       appendLine()
+      append(buildFabled())
       append(buildScriptRoles())
       append(buildTravellers())
-      append(buildFabled())
       append(buildJinxesAndClarifications())
       append(buildWakeOrder())
     }

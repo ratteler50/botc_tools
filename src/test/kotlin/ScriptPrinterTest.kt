@@ -66,6 +66,9 @@ class ScriptPrinterTest {
       """
     **__EXAMPLE_SCRIPT_NAME__** by somebody
     
+    __Fabled__
+    > - **Spirit of Ivory** -- There can't be more than 1 extra evil player.
+    
     __Townsfolk__
     > - **Snake Charmer** -- Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.
     > - **Monk** -- Each night\*, choose a player (not yourself): they are safe from the Demon tonight.
@@ -88,9 +91,6 @@ class ScriptPrinterTest {
     
     __Travellers__
     > - **Gangster** -- Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees.
-    
-    __Fabled__
-    > - **Spirit of Ivory** -- There can't be more than 1 extra evil player.
     
     **__Jinxes and Clarifications__**
     
