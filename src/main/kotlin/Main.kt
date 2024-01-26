@@ -44,7 +44,7 @@ suspend fun main() {
   val inputScriptJson = File(INPUT_SCRIPT_JSON).readText()
   val scriptMetadata = getScriptMetadata(inputScriptJson)
   val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
-  // updateSourceJsons()
+  updateSourceJsons()
   measureTimeMillis {
     File(outputFilename).writeText(
       generateTextScript(

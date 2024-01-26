@@ -166,9 +166,9 @@
     "name": "Bounty Hunter",
     "team": "townsfolk",
     "standardAmyOrder": 10,
-    "firstNight": 52,
+    "firstNight": 53,
     "firstNightReminder": "Point to the *KNOWN* player.",
-    "otherNight": 69,
+    "otherNight": 70,
     "otherNightReminder": "If the *KNOWN* player died today or tonight, point to a new *KNOWN* player.",
     "reminders": [
       "Known"
@@ -234,9 +234,9 @@
     "name": "High Priestess",
     "team": "townsfolk",
     "standardAmyOrder": 14,
-    "firstNight": 56,
+    "firstNight": 57,
     "firstNightReminder": "Point to a player.",
-    "otherNight": 74,
+    "otherNight": 75,
     "otherNightReminder": "Point to a player.",
     "ability": "Each night, learn which player the Storyteller believes you should talk to most.",
     "flavour": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",
@@ -270,9 +270,9 @@
     "name": "General",
     "team": "townsfolk",
     "standardAmyOrder": 16,
-    "firstNight": 57,
+    "firstNight": 58,
     "firstNightReminder": "Give a thumb signal.",
-    "otherNight": 75,
+    "otherNight": 76,
     "otherNightReminder": "Give a thumb signal.",
     "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
     "flavour": "I don’t have time for quotes.",
@@ -308,9 +308,9 @@
     "edition": "bmr",
     "team": "townsfolk",
     "standardAmyOrder": 18,
-    "firstNight": 58,
+    "firstNight": 59,
     "firstNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
-    "otherNight": 76,
+    "otherNight": 77,
     "otherNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
     "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
     "flavour": "I aint seen nothin' untoward, Milady. Begging your pardon, but if I did see somethin', it certainly weren't the master o' the house sneaking into the professor's laboratory 'round eleven o'clock and mixing up fancy potions, just like you said, Miss.",
@@ -370,7 +370,7 @@
     "standardAmyOrder": 21,
     "firstNight": 12,
     "firstNightReminder": "Wake the Demon. Show the *THIS PLAYER IS* token and the King token, then point to the King.",
-    "otherNight": 68,
+    "otherNight": 69,
     "otherNightReminder": "If the dead outnumber the living, show the character token of an alive player.",
     "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
     "flavour": "Betwixt the unknown strains of mortal strife And morbid night, sweet with mystery and woe Lies unfettered joys of fate’s long and colored life Who’s garden blooms with each painted face to show.",
@@ -380,10 +380,30 @@
     }
   },
   {
+    "id": "villageidiot",
+    "name": "Village Idiot",
+    "team": "townsfolk",
+    "standardAmyOrder": 22,
+    "firstNight": 52,
+    "firstNightReminder": "Choose a Village Idiot to be drunk. Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "otherNight": 68,
+    "otherNightReminder": "Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "reminders": [
+      "Drunk"
+    ],
+    "setup": true,
+    "ability": "Each night, choose a player: you learn their alignment. [+0 to +2 Village Idiots. 1 of the extras is drunk]",
+    "flavour": "Roses are blue, and violets are red, Please reverse what I just said.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Village_Idiot",
+      "icon": "https://wiki.bloodontheclocktower.com/images/d/da/Icon_villageidiot.png"
+    }
+  },
+  {
     "id": "balloonist",
     "name": "Balloonist",
     "team": "townsfolk",
-    "standardAmyOrder": 22,
+    "standardAmyOrder": 23,
     "firstNight": 50,
     "firstNightReminder": "Show any player :reminder:",
     "otherNight": 67,
@@ -407,10 +427,10 @@
     "name": "Mathematician",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 23,
-    "firstNight": 59,
+    "standardAmyOrder": 24,
+    "firstNight": 60,
     "firstNightReminder": "Give a finger signal.",
-    "otherNight": 77,
+    "otherNight": 78,
     "otherNightReminder": "Give a finger signal.",
     "reminders": [
       "Abnormal",
@@ -430,10 +450,10 @@
     "id": "cultleader",
     "name": "Cult Leader",
     "team": "townsfolk",
-    "standardAmyOrder": 24,
-    "firstNight": 54,
+    "standardAmyOrder": 25,
+    "firstNight": 55,
     "firstNightReminder": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token and a thumbs up or down for their new alignment.",
-    "otherNight": 71,
+    "otherNight": 72,
     "otherNightReminder": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token and a thumbs up or down for their new alignment.",
     "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins.",
     "flavour": "Thinking themselves wise, they became fools.",
@@ -448,7 +468,7 @@
     "name": "Fortune Teller",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 25,
+    "standardAmyOrder": 26,
     "firstNight": 41,
     "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
     "otherNight": 59,
@@ -468,7 +488,7 @@
     "name": "Flowergirl",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 26,
+    "standardAmyOrder": 27,
     "otherNight": 62,
     "otherNightReminder": "Either nod or shake your head.",
     "reminders": [
@@ -487,7 +507,7 @@
     "name": "Town Crier",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 27,
+    "standardAmyOrder": 28,
     "otherNight": 63,
     "otherNightReminder": "Either nod or shake your head.",
     "reminders": [
@@ -506,7 +526,7 @@
     "name": "Oracle",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 28,
+    "standardAmyOrder": 29,
     "otherNight": 64,
     "otherNightReminder": "Give a finger signal.",
     "ability": "Each night*, you learn how many dead players are evil.",
@@ -521,7 +541,7 @@
     "name": "Undertaker",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 29,
+    "standardAmyOrder": 30,
     "otherNight": 60,
     "otherNightReminder": "If a player was executed today, show their character token.",
     "reminders": [
@@ -539,7 +559,7 @@
     "name": "Innkeeper",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 30,
+    "standardAmyOrder": 31,
     "otherNight": 10,
     "otherNightReminder": "The Innkeeper chooses 2 players. :reminder: :reminder: :reminder:",
     "reminders": [
@@ -559,7 +579,7 @@
     "name": "Gambler",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 31,
+    "standardAmyOrder": 32,
     "otherNight": 11,
     "otherNightReminder": "The Gambler chooses a player & a character. :reminder:",
     "reminders": [
@@ -577,7 +597,7 @@
     "name": "Monk",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 32,
+    "standardAmyOrder": 33,
     "otherNight": 13,
     "otherNightReminder": "The Monk chooses a player. :reminder:",
     "reminders": [
@@ -594,7 +614,7 @@
     "id": "lycanthrope",
     "name": "Lycanthrope",
     "team": "townsfolk",
-    "standardAmyOrder": 33,
+    "standardAmyOrder": 34,
     "otherNight": 24,
     "otherNightReminder": "The Lycanthrope chooses a player :reminder:",
     "reminders": [
@@ -618,7 +638,7 @@
     "name": "Exorcist",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 34,
+    "standardAmyOrder": 35,
     "otherNight": 23,
     "otherNightReminder": "The Exorcist chooses a player. :reminder: Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the *THIS CHARACTER SELECTED YOU* & Exorcist tokens. Point to the Exorcist.",
     "reminders": [
@@ -636,7 +656,7 @@
     "name": "Gossip",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 35,
+    "standardAmyOrder": 36,
     "otherNight": 42,
     "otherNightReminder": "If the Gossip is due to kill a player, they die. :reminder:",
     "reminders": [
@@ -654,7 +674,7 @@
     "name": "Savant",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 36,
+    "standardAmyOrder": 37,
     "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
     "flavour": "Seventy-two matchsticks on the floor... the sun sets early but the moon is unchanged... a torn piece of cloth... evil in the manor house... three by three... the one we trusted is not what he seems... green light means magnesium... residue, but the pattern is wrong... Seventy-two matchsticks on the floor...",
     "urls": {
@@ -666,7 +686,7 @@
     "id": "amnesiac",
     "name": "Amnesiac",
     "team": "townsfolk",
-    "standardAmyOrder": 37,
+    "standardAmyOrder": 38,
     "firstNight": 35,
     "otherNight": 52,
     "reminders": [
@@ -687,7 +707,7 @@
     "name": "Juggler",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 38,
+    "standardAmyOrder": 39,
     "otherNight": 66,
     "otherNightReminder": "Give a finger signal.",
     "reminders": [
@@ -708,10 +728,10 @@
     "id": "nightwatchman",
     "name": "Nightwatchman",
     "team": "townsfolk",
-    "standardAmyOrder": 39,
-    "firstNight": 53,
+    "standardAmyOrder": 40,
+    "firstNight": 54,
     "firstNightReminder": "The Nightwatchman might choose a player :reminder: Put the Nightwatchman to sleep. Wake the target and show the *THIS PLAYER IS* and Nightwatchman tokens and point to the Nightwatchman.",
-    "otherNight": 70,
+    "otherNight": 71,
     "otherNightReminder": "The Nightwatchman might choose a player :reminder: Put the Nightwatchman to sleep. Wake the target and show the *THIS PLAYER IS* and Nightwatchman tokens and point to the Nightwatchman.",
     "reminders": [
       "No Ability"
@@ -727,7 +747,7 @@
     "id": "engineer",
     "name": "Engineer",
     "team": "townsfolk",
-    "standardAmyOrder": 40,
+    "standardAmyOrder": 41,
     "firstNight": 15,
     "firstNightReminder": "The Engineer might choose Minions or Demons. :reminder: If they do: Put the Engineer to sleep. Wake a target, show them the *YOU ARE* token and their new character token, then put that target to sleep. Repeat for all players that changed characters.",
     "otherNight": 6,
@@ -747,7 +767,7 @@
     "name": "Artist",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 41,
+    "standardAmyOrder": 42,
     "reminders": [
       "No Ability"
     ],
@@ -763,7 +783,7 @@
     "name": "Courtier",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 42,
+    "standardAmyOrder": 43,
     "firstNight": 21,
     "firstNightReminder": "The Courtier might choose a character. :reminder: :reminder:",
     "otherNight": 9,
@@ -786,7 +806,7 @@
     "name": "Slayer",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 43,
+    "standardAmyOrder": 44,
     "reminders": [
       "No Ability"
     ],
@@ -801,7 +821,7 @@
     "id": "fisherman",
     "name": "Fisherman",
     "team": "townsfolk",
-    "standardAmyOrder": 44,
+    "standardAmyOrder": 45,
     "reminders": [
       "No Ability"
     ],
@@ -817,7 +837,7 @@
     "name": "Professor",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 45,
+    "standardAmyOrder": 46,
     "otherNight": 48,
     "otherNightReminder": "The Professor might choose a dead player. :reminder: :reminder:",
     "reminders": [
@@ -836,7 +856,7 @@
     "name": "Seamstress",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 46,
+    "standardAmyOrder": 47,
     "firstNight": 46,
     "firstNightReminder": "The Seamstress might choose 2 players. Nod or shake your head. :reminder:",
     "otherNight": 65,
@@ -856,7 +876,7 @@
     "name": "Philosopher",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 47,
+    "standardAmyOrder": 48,
     "firstNight": 3,
     "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token. :reminder:",
     "otherNight": 3,
@@ -875,7 +895,7 @@
     "id": "huntsman",
     "name": "Huntsman",
     "team": "townsfolk",
-    "standardAmyOrder": 48,
+    "standardAmyOrder": 49,
     "firstNight": 33,
     "firstNightReminder": "The Huntsman might choose a player. :reminder: If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the *YOU ARE* info token and their new character token.",
     "otherNight": 50,
@@ -896,7 +916,7 @@
     "name": "Soldier",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 49,
+    "standardAmyOrder": 50,
     "ability": "You are safe from the Demon.",
     "flavour": "As David said to Goliath, as Theseus said to the Minotaur, as Arjuna said to Bhagadatta... No.",
     "urls": {
@@ -909,7 +929,7 @@
     "name": "Fool",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 50,
+    "standardAmyOrder": 51,
     "reminders": [
       "No Ability"
     ],
@@ -924,7 +944,7 @@
     "id": "alchemist",
     "name": "Alchemist",
     "team": "townsfolk",
-    "standardAmyOrder": 51,
+    "standardAmyOrder": 52,
     "firstNight": 5,
     "firstNightReminder": "Show the *YOU ARE* token and the character token of a not in play Minion.",
     "remindersGlobal": [
@@ -942,7 +962,7 @@
     "name": "Pacifist",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 52,
+    "standardAmyOrder": 53,
     "ability": "Executed good players might not die.",
     "flavour": "Distrust all in whom the impulse to punish is powerful.",
     "urls": {
@@ -955,7 +975,7 @@
     "name": "Tea Lady",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 53,
+    "standardAmyOrder": 54,
     "reminders": [
       "Cannot Die",
       "Cannot Die"
@@ -972,7 +992,7 @@
     "name": "Sage",
     "edition": "snv",
     "team": "townsfolk",
-    "standardAmyOrder": 54,
+    "standardAmyOrder": 55,
     "otherNight": 47,
     "otherNightReminder": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",
     "ability": "If the Demon kills you, you learn that it is 1 of 2 players.",
@@ -986,7 +1006,7 @@
     "id": "farmer",
     "name": "Farmer",
     "team": "townsfolk",
-    "standardAmyOrder": 55,
+    "standardAmyOrder": 56,
     "otherNight": 53,
     "otherNightReminder": "If the Farmer died tonight, wake an alive good player. Show them the *YOU ARE* info token and a Farmer character token. Replace their previous token with the Farmer token.",
     "ability": "If you die at night, an alive good player becomes a Farmer.",
@@ -1000,7 +1020,7 @@
     "id": "magician",
     "name": "Magician",
     "team": "townsfolk",
-    "standardAmyOrder": 56,
+    "standardAmyOrder": 57,
     "firstNight": 7,
     "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
     "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
@@ -1014,7 +1034,7 @@
     "id": "choirboy",
     "name": "Choirboy",
     "team": "townsfolk",
-    "standardAmyOrder": 57,
+    "standardAmyOrder": 58,
     "otherNight": 49,
     "otherNightReminder": "If the Demon killed the King, point to the Demon player.",
     "setup": true,
@@ -1030,7 +1050,7 @@
     "name": "Ravenkeeper",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 58,
+    "standardAmyOrder": 59,
     "otherNight": 57,
     "otherNightReminder": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
     "ability": "If you die at night, you are woken to choose a player: you learn their character.",
@@ -1044,7 +1064,7 @@
     "id": "poppygrower",
     "name": "Poppy Grower",
     "team": "townsfolk",
-    "standardAmyOrder": 59,
+    "standardAmyOrder": 60,
     "firstNight": 6,
     "firstNightReminder": "Do not do the Minion Info and Demon Info steps. Wake the Demon, show the *THESE CHARACTERS ARE NOT IN PLAY* info token and any three good character tokens that are not in play.",
     "otherNight": 4,
@@ -1065,7 +1085,7 @@
     "name": "Virgin",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 60,
+    "standardAmyOrder": 61,
     "reminders": [
       "No Ability"
     ],
@@ -1081,7 +1101,7 @@
     "name": "Minstrel",
     "edition": "bmr",
     "team": "townsfolk",
-    "standardAmyOrder": 61,
+    "standardAmyOrder": 62,
     "reminders": [
       "Everyone Is Drunk"
     ],
@@ -1096,7 +1116,7 @@
     "id": "cannibal",
     "name": "Cannibal",
     "team": "townsfolk",
-    "standardAmyOrder": 62,
+    "standardAmyOrder": 63,
     "otherNightReminder": "Wake the Cannibal and treat them like they have the ability of the most recently killed executee.",
     "reminders": [
       "Poisoned",
@@ -1113,7 +1133,7 @@
     "id": "atheist",
     "name": "Atheist",
     "team": "townsfolk",
-    "standardAmyOrder": 63,
+    "standardAmyOrder": 64,
     "setup": true,
     "ability": "The Storyteller can break the game rules, and if executed, good wins, even if you are dead. [No evil characters]",
     "flavour": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands.",
@@ -1127,7 +1147,7 @@
     "name": "Mayor",
     "edition": "tb",
     "team": "townsfolk",
-    "standardAmyOrder": 64,
+    "standardAmyOrder": 65,
     "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
     "flavour": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
     "urls": {
@@ -1139,7 +1159,7 @@
     "id": "snitch",
     "name": "Snitch",
     "team": "outsider",
-    "standardAmyOrder": 65,
+    "standardAmyOrder": 66,
     "firstNight": 9,
     "firstNightReminder": "Wake each Minion. Show the *THESE CHARACTERS ARE NOT IN PLAY* token and three not-in-play character tokens. Put each Minion to sleep.",
     "ability": "Minions start knowing 3 not-in-play characters.",
@@ -1154,10 +1174,10 @@
     "name": "Butler",
     "edition": "tb",
     "team": "outsider",
-    "standardAmyOrder": 66,
+    "standardAmyOrder": 67,
     "firstNight": 42,
     "firstNightReminder": "The Butler chooses a player. :reminder:",
-    "otherNight": 72,
+    "otherNight": 73,
     "otherNightReminder": "The Butler chooses a player. :reminder:",
     "reminders": [
       "Master"
@@ -1180,7 +1200,7 @@
     "name": "Goon",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 67,
+    "standardAmyOrder": 68,
     "reminders": [
       "Drunk"
     ],
@@ -1195,7 +1215,7 @@
     "id": "acrobat",
     "name": "Acrobat",
     "team": "outsider",
-    "standardAmyOrder": 68,
+    "standardAmyOrder": 69,
     "otherNight": 43,
     "otherNightReminder": "The Acrobat might die",
     "reminders": [
@@ -1212,7 +1232,7 @@
     "id": "puzzlemaster",
     "name": "Puzzlemaster",
     "team": "outsider",
-    "standardAmyOrder": 69,
+    "standardAmyOrder": 70,
     "reminders": [
       "Drunk",
       "Guess Used"
@@ -1229,7 +1249,7 @@
     "name": "Tinker",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 70,
+    "standardAmyOrder": 71,
     "otherNight": 54,
     "otherNightReminder": "The Tinker might die. :reminder:",
     "reminders": [
@@ -1247,7 +1267,7 @@
     "name": "Saint",
     "edition": "tb",
     "team": "outsider",
-    "standardAmyOrder": 71,
+    "standardAmyOrder": 72,
     "ability": "If you die by execution, your team loses.",
     "flavour": "Wisdom begets peace. Patience begets wisdom. Fear not, for the time shall come when fear too shall pass. Let us pray, and may the unity of our vision make saints of us all.",
     "urls": {
@@ -1260,7 +1280,7 @@
     "name": "Sweetheart",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 72,
+    "standardAmyOrder": 73,
     "otherNight": 46,
     "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now. :reminder:",
     "reminders": [
@@ -1277,7 +1297,7 @@
     "id": "plaguedoctor",
     "name": "Plague Doctor",
     "team": "outsider",
-    "standardAmyOrder": 73,
+    "standardAmyOrder": 74,
     "reminders": [
       "Storyteller ability"
     ],
@@ -1293,7 +1313,7 @@
     "name": "Recluse",
     "edition": "tb",
     "team": "outsider",
-    "standardAmyOrder": 74,
+    "standardAmyOrder": 75,
     "ability": "You might register as evil & as a Minion or Demon, even if dead.",
     "flavour": "Garn git ya darn grub ya mitts ofma lorn yasee. Grr. Natsy pikkins yonder southwise ye begittin afta ya! Git! Me harvy no so widda licks and demmons no be fightin' hadsup ne'er ma kin. Git, assay!",
     "urls": {
@@ -1305,7 +1325,7 @@
     "id": "heretic",
     "name": "Heretic",
     "team": "outsider",
-    "standardAmyOrder": 75,
+    "standardAmyOrder": 76,
     "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
     "flavour": "After the hail has smashed the roof and splintered the glass of the Cathedral windows, it melts again into the earth, like a dying lamb in the desert sun. Such is the parable of the madman.",
     "urls": {
@@ -1318,7 +1338,7 @@
     "name": "Mutant",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 76,
+    "standardAmyOrder": 77,
     "ability": "If you are \"mad\" about being an Outsider, you might be executed.",
     "flavour": "I am not a freak! I am a human being! Have mercy!",
     "urls": {
@@ -1330,7 +1350,7 @@
     "id": "damsel",
     "name": "Damsel",
     "team": "outsider",
-    "standardAmyOrder": 77,
+    "standardAmyOrder": 78,
     "firstNight": 34,
     "firstNightReminder": "Wake each Minion. Show the Damsel token. Put each Minion to sleep.",
     "otherNight": 51,
@@ -1350,7 +1370,7 @@
     "name": "Klutz",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 78,
+    "standardAmyOrder": 79,
     "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
     "flavour": "Oops.",
     "urls": {
@@ -1363,7 +1383,7 @@
     "name": "Drunk",
     "edition": "tb",
     "team": "outsider",
-    "standardAmyOrder": 79,
+    "standardAmyOrder": 80,
     "remindersGlobal": [
       "Drunk"
     ],
@@ -1379,7 +1399,7 @@
     "id": "golem",
     "name": "Golem",
     "team": "outsider",
-    "standardAmyOrder": 80,
+    "standardAmyOrder": 81,
     "reminders": [
       "May Not Nominate"
     ],
@@ -1395,7 +1415,7 @@
     "name": "Moonchild",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 81,
+    "standardAmyOrder": 82,
     "otherNight": 55,
     "otherNightReminder": "If the Moonchild is due to kill a good player, they die. :reminder:",
     "reminders": [
@@ -1412,7 +1432,7 @@
     "id": "politician",
     "name": "Politician",
     "team": "outsider",
-    "standardAmyOrder": 82,
+    "standardAmyOrder": 83,
     "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead.",
     "flavour": "I'm glad you asked that question. Truly, I am. But I think the REAL question here is...",
     "urls": {
@@ -1425,7 +1445,7 @@
     "name": "Lunatic",
     "edition": "bmr",
     "team": "outsider",
-    "standardAmyOrder": 83,
+    "standardAmyOrder": 84,
     "firstNight": 10,
     "firstNightReminder": "If there are 7 or more players, wake the Lunatic: Show the *THESE ARE YOUR MINIONS* token. Point to any players. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the *YOU ARE* info token and the Demon token. Show the *THIS PLAYER IS* info token and the Lunatic token, then point to the Lunatic.",
     "otherNight": 22,
@@ -1453,7 +1473,7 @@
     "name": "Barber",
     "edition": "snv",
     "team": "outsider",
-    "standardAmyOrder": 84,
+    "standardAmyOrder": 85,
     "otherNight": 45,
     "otherNightReminder": "If the Barber died today or tonight, show the Demon the *THIS CHARACTER SELECTED YOU* & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the *YOU ARE* token & their new character token.",
     "reminders": [
@@ -1470,7 +1490,7 @@
     "id": "hatter",
     "name": "Hatter",
     "team": "outsider",
-    "standardAmyOrder": 85,
+    "standardAmyOrder": 86,
     "otherNight": 44,
     "otherNightReminder": "Wake Minions and Demons, allow them to choose new characters.",
     "reminders": [
@@ -1487,7 +1507,7 @@
     "id": "widow",
     "name": "Widow",
     "team": "minion",
-    "standardAmyOrder": 86,
+    "standardAmyOrder": 87,
     "firstNight": 20,
     "firstNightReminder": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player. :reminder:",
     "reminders": [
@@ -1530,7 +1550,7 @@
     "name": "Godfather",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 87,
+    "standardAmyOrder": 88,
     "firstNight": 23,
     "firstNightReminder": "Show the character tokens of all in-play Outsiders.",
     "otherNight": 41,
@@ -1558,7 +1578,7 @@
     "name": "Poisoner",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 88,
+    "standardAmyOrder": 89,
     "firstNight": 19,
     "firstNightReminder": "The Poisoner chooses a player. :reminder:",
     "otherNight": 8,
@@ -1578,7 +1598,7 @@
     "name": "Devil's Advocate",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 89,
+    "standardAmyOrder": 90,
     "firstNight": 24,
     "firstNightReminder": "The Devil's Advocate chooses a living player. :reminder:",
     "otherNight": 14,
@@ -1597,7 +1617,7 @@
     "id": "harpy",
     "name": "Harpy",
     "team": "minion",
-    "standardAmyOrder": 90,
+    "standardAmyOrder": 91,
     "firstNight": 29,
     "firstNightReminder": "The Harpy chooses two players. :reminder: :reminder: Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",
     "otherNight": 19,
@@ -1618,10 +1638,10 @@
     "name": "Spy",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 91,
-    "firstNight": 55,
+    "standardAmyOrder": 92,
+    "firstNight": 56,
     "firstNightReminder": "Show the Grimoire for as long as the Spy needs.",
-    "otherNight": 73,
+    "otherNight": 74,
     "otherNightReminder": "Show the Grimoire for as long as the Spy needs.",
     "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
     "flavour": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",
@@ -1661,7 +1681,7 @@
     "name": "Witch",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 92,
+    "standardAmyOrder": 93,
     "firstNight": 26,
     "firstNightReminder": "The Witch chooses a player. :reminder:",
     "otherNight": 15,
@@ -1681,7 +1701,7 @@
     "name": "Cerenovus",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 93,
+    "standardAmyOrder": 94,
     "firstNight": 27,
     "firstNightReminder": "The Cerenovus chooses a player & a character. :reminder: Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
     "otherNight": 16,
@@ -1706,7 +1726,7 @@
     "id": "fearmonger",
     "name": "Fearmonger",
     "team": "minion",
-    "standardAmyOrder": 94,
+    "standardAmyOrder": 95,
     "firstNight": 28,
     "firstNightReminder": "The Fearmonger chooses a player. :reminder: Declare that \"the Fearmonger has chosen a player.\"",
     "otherNight": 18,
@@ -1732,7 +1752,7 @@
     "name": "Pit-Hag",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 95,
+    "standardAmyOrder": 96,
     "otherNight": 17,
     "otherNightReminder": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the *YOU ARE* token & their new character token.",
     "ability": "Each night*, choose a player & a character they become (if not in play). If a Demon is made, deaths tonight are arbitrary.",
@@ -1749,6 +1769,10 @@
       {
         "id": "politician",
         "reason": "A Pit-hag can not create an evil Politician."
+      },
+      {
+        "id": "villageidiot",
+        "reason": "If there is a spare token, the Pit-Hag can create an extra Village Idiot. If so, the drunk Village Idiot might change."
       }
     ],
     "urls": {
@@ -1760,7 +1784,7 @@
     "id": "psychopath",
     "name": "Psychopath",
     "team": "minion",
-    "standardAmyOrder": 96,
+    "standardAmyOrder": 97,
     "ability": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo.",
     "flavour": "Surprise!",
     "urls": {
@@ -1774,7 +1798,7 @@
     "name": "Assassin",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 97,
+    "standardAmyOrder": 98,
     "otherNight": 40,
     "otherNightReminder": "The Assassin might choose a player. :reminder: :reminder:",
     "reminders": [
@@ -1793,7 +1817,7 @@
     "name": "Baron",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 98,
+    "standardAmyOrder": 99,
     "setup": true,
     "ability": "There are extra Outsiders in play. [+2 Outsiders]",
     "flavour": "This town has gone to the dogs, what? Cheap foreign labor... that's the ticket. Stuff them in the mine, I say. A bit of hard work never hurt anyone, and a clip'o'the ears to any brigand who says otherwise. It's all about the bottom line, what?",
@@ -1816,7 +1840,7 @@
     "id": "mezepheles",
     "name": "Mezepheles",
     "team": "minion",
-    "standardAmyOrder": 99,
+    "standardAmyOrder": 100,
     "firstNight": 30,
     "firstNightReminder": "Show the written word.",
     "otherNight": 20,
@@ -1836,7 +1860,7 @@
     "id": "goblin",
     "name": "Goblin",
     "team": "minion",
-    "standardAmyOrder": 100,
+    "standardAmyOrder": 101,
     "reminders": [
       "Claimed"
     ],
@@ -1859,7 +1883,7 @@
     "name": "Scarlet Woman",
     "edition": "tb",
     "team": "minion",
-    "standardAmyOrder": 101,
+    "standardAmyOrder": 102,
     "otherNight": 21,
     "otherNightReminder": "If the Scarlet Woman became the Imp today, show them the *YOU ARE* token, then the Imp token.",
     "reminders": [
@@ -1883,7 +1907,7 @@
     "name": "Evil Twin",
     "edition": "snv",
     "team": "minion",
-    "standardAmyOrder": 102,
+    "standardAmyOrder": 103,
     "firstNight": 25,
     "firstNightReminder": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",
     "reminders": [
@@ -1906,7 +1930,7 @@
     "id": "organgrinder",
     "name": "Organ Grinder",
     "team": "minion",
-    "standardAmyOrder": 103,
+    "standardAmyOrder": 104,
     "reminders": [
       "About To Die"
     ],
@@ -1939,8 +1963,8 @@
     "id": "vizier",
     "name": "Vizier",
     "team": "minion",
-    "standardAmyOrder": 104,
-    "firstNight": 62,
+    "standardAmyOrder": 105,
+    "firstNight": 63,
     "firstNightReminder": "Announce the Vizier player to the group.",
     "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.",
     "flavour": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.",
@@ -1980,7 +2004,7 @@
     "name": "Mastermind",
     "edition": "bmr",
     "team": "minion",
-    "standardAmyOrder": 105,
+    "standardAmyOrder": 106,
     "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
     "flavour": "The tentacles of that monster are nailed to the doors of the church. Mothers and children are dancing in the street. Excellent. Everything is proceeding exactly as I have planned.",
     "urls": {
@@ -1992,7 +2016,7 @@
     "id": "boomdandy",
     "name": "Boomdandy",
     "team": "minion",
-    "standardAmyOrder": 106,
+    "standardAmyOrder": 107,
     "ability": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them, dies.",
     "flavour": "Tick... Tick... Tick... TOCK.",
     "jinxes": [
@@ -2011,7 +2035,7 @@
     "id": "marionette",
     "name": "Marionette",
     "team": "minion",
-    "standardAmyOrder": 107,
+    "standardAmyOrder": 108,
     "firstNight": 14,
     "firstNightReminder": "Wake the Demon. Point to the player marked *IS THE MARIONETTE* and show the *THIS PLAYER IS* token and the Marionette character token.",
     "remindersGlobal": [
@@ -2059,11 +2083,11 @@
     "id": "kazali",
     "name": "Kazali",
     "team": "demon",
-    "standardAmyOrder": 108,
+    "standardAmyOrder": 109,
     "firstNight": 4,
     "firstNightReminder": "Wake the Kazali, allow them to choose Minions.",
     "otherNight": 39,
-    "otherNightReminder": "The Kazali chooses a player.",
+    "otherNightReminder": "The Kazali chooses a player. :reminder: ",
     "reminders": [
       "Dead"
     ],
@@ -2102,7 +2126,7 @@
     "name": "Pukka",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 109,
+    "standardAmyOrder": 110,
     "firstNight": 31,
     "firstNightReminder": "The Pukka chooses a player. :reminder:",
     "otherNight": 28,
@@ -2123,7 +2147,7 @@
     "id": "lilmonsta",
     "name": "Lil' Monsta",
     "team": "demon",
-    "standardAmyOrder": 110,
+    "standardAmyOrder": 111,
     "firstNight": 17,
     "firstNightReminder": "Wake all Minions, allow them to choose a babysitter :reminder:",
     "otherNight": 38,
@@ -2170,7 +2194,7 @@
     "id": "lleech",
     "name": "Lleech",
     "team": "demon",
-    "standardAmyOrder": 111,
+    "standardAmyOrder": 112,
     "firstNight": 18,
     "firstNightReminder": "The Lleech chooses a player. :reminder:",
     "otherNight": 37,
@@ -2205,7 +2229,7 @@
     "name": "No Dashii",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 112,
+    "standardAmyOrder": 113,
     "otherNight": 32,
     "otherNightReminder": "The No Dashii chooses a player. :reminder:",
     "reminders": [
@@ -2225,7 +2249,7 @@
     "name": "Imp",
     "edition": "tb",
     "team": "demon",
-    "standardAmyOrder": 113,
+    "standardAmyOrder": 114,
     "otherNight": 26,
     "otherNightReminder": "The Imp chooses a player. :reminder: If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the *YOU ARE* token, then show the Imp token.",
     "reminders": [
@@ -2242,9 +2266,9 @@
     "id": "ojo",
     "name": "Ojo",
     "team": "demon",
-    "standardAmyOrder": 114,
+    "standardAmyOrder": 115,
     "otherNight": 35,
-    "otherNightReminder": "The Ojo chooses a character.",
+    "otherNightReminder": "The Ojo chooses a character. :reminder: ",
     "reminders": [
       "Dead"
     ],
@@ -2260,7 +2284,7 @@
     "name": "Shabaloth",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 115,
+    "standardAmyOrder": 116,
     "otherNight": 29,
     "otherNightReminder": "A previously chosen player might be resurrected. :reminder: The Shabaloth chooses 2 players. :reminder: :reminder:",
     "reminders": [
@@ -2280,7 +2304,7 @@
     "name": "Po",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 116,
+    "standardAmyOrder": 117,
     "otherNight": 30,
     "otherNightReminder": "The Po may choose a player OR chooses 3 players if they chose no-one last night. :reminder: or :reminder: :reminder: :reminder:",
     "reminders": [
@@ -2301,7 +2325,7 @@
     "name": "Vortox",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 117,
+    "standardAmyOrder": 118,
     "otherNight": 33,
     "otherNightReminder": "The Vortox chooses a player. :reminder:",
     "reminders": [
@@ -2319,7 +2343,7 @@
     "name": "Vigormortis",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 118,
+    "standardAmyOrder": 119,
     "otherNight": 34,
     "otherNightReminder": "The Vigormortis chooses a player. :reminder: If that player is a Minion, poison a neighboring Townsfolk. :reminder: :reminder:",
     "reminders": [
@@ -2343,7 +2367,7 @@
     "id": "legion",
     "name": "Legion",
     "team": "demon",
-    "standardAmyOrder": 119,
+    "standardAmyOrder": 120,
     "otherNight": 25,
     "otherNightReminder": "A player might die. :reminder:",
     "reminders": [
@@ -2376,7 +2400,7 @@
     "id": "alhadikhia",
     "name": "Al-Hadikhia",
     "team": "demon",
-    "standardAmyOrder": 120,
+    "standardAmyOrder": 121,
     "otherNight": 36,
     "otherNightReminder": "The Al-Hadikhia chooses three players. :reminder: :reminder: :reminder: Wake the player marked *1* and say \"the Al-Hadikhia has chosen\", then the player's name, then \"Do you choose to live?\" They either nod or shake their head. Put them to sleep and add or remove shrouds accordingly. Repeat for players marked *2* and *3*. If all three players are now alive, add a shroud to all three.",
     "reminders": [
@@ -2407,7 +2431,7 @@
     "name": "Zombuul",
     "edition": "bmr",
     "team": "demon",
-    "standardAmyOrder": 121,
+    "standardAmyOrder": 122,
     "otherNight": 27,
     "otherNightReminder": "If no one died today, the Zombuul chooses a player. :reminder:",
     "reminders": [
@@ -2426,7 +2450,7 @@
     "name": "Fang Gu",
     "edition": "snv",
     "team": "demon",
-    "standardAmyOrder": 122,
+    "standardAmyOrder": 123,
     "otherNight": 31,
     "otherNightReminder": "The Fang Gu chooses a player. :reminder: If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens & give a thumbs-down. :reminder:",
     "reminders": [
@@ -2451,10 +2475,10 @@
     "id": "leviathan",
     "name": "Leviathan",
     "team": "demon",
-    "standardAmyOrder": 123,
-    "firstNight": 61,
+    "standardAmyOrder": 124,
+    "firstNight": 62,
     "firstNightReminder": "Declare that \"The Leviathan is in play.\" Mark the Leviathan with the *DAY 1* reminder. :reminder:",
-    "otherNight": 79,
+    "otherNight": 80,
     "otherNightReminder": "Optionally, declare that \"The Leviathan is in play.\" Replace the reminder token. :reminder:",
     "reminders": [
       "Day 1",
@@ -2513,7 +2537,7 @@
     "id": "riot",
     "name": "Riot",
     "team": "demon",
-    "standardAmyOrder": 124,
+    "standardAmyOrder": 125,
     "setup": true,
     "ability": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]",
     "flavour": "Larga vida a la revolución! Mi revolucion!",
@@ -3111,9 +3135,9 @@
     "id": "dawn",
     "name": "Dawn",
     "edition": "special",
-    "firstNight": 60,
+    "firstNight": 61,
     "firstNightReminder": "Wait for a few seconds. End the Night Phase.",
-    "otherNight": 78,
+    "otherNight": 79,
     "otherNightReminder": "Wait for a few seconds. End the Night Phase."
   },
   {

@@ -14,8 +14,8 @@
     "name": "Dawn",
     "firstNightReminder": "Wait for a few seconds. End the Night Phase.",
     "otherNightReminder": "Wait for a few seconds. End the Night Phase.",
-    "firstNight": 63,
-    "otherNight": 82
+    "firstNight": 64,
+    "otherNight": 83
   },
   {
     "id": "minioninfo",
@@ -236,7 +236,7 @@
     "setup": false,
     "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
     "firstNight": 45,
-    "otherNight": 76,
+    "otherNight": 77,
     "jinxes": [
       {
         "id": "cannibal",
@@ -328,8 +328,8 @@
       }
     ],
     "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
-    "firstNight": 58,
-    "otherNight": 77,
+    "firstNight": 59,
+    "otherNight": 78,
     "jinxes": [
       {
         "id": "alchemist",
@@ -540,8 +540,8 @@
     "reminders": [],
     "setup": false,
     "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
-    "firstNight": 61,
-    "otherNight": 80,
+    "firstNight": 62,
+    "otherNight": 81,
     "jinxes": [
       {
         "id": "mathematician",
@@ -1042,8 +1042,8 @@
     ],
     "setup": false,
     "ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
-    "firstNight": 62,
-    "otherNight": 81
+    "firstNight": 63,
+    "otherNight": 82
   },
   {
     "id": "flowergirl",
@@ -1326,6 +1326,10 @@
       {
         "id": "politician",
         "reason": "A Pit-hag can not create an evil Politician."
+      },
+      {
+        "id": "villageidiot",
+        "reason": "If there is a spare token, the Pit-Hag can create an extra Village Idiot. If so, the drunk Village Idiot might change."
       }
     ]
   },
@@ -1508,8 +1512,8 @@
     ],
     "setup": false,
     "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
-    "firstNight": 55,
-    "otherNight": 73
+    "firstNight": 56,
+    "otherNight": 74
   },
   {
     "id": "pixie",
@@ -1537,8 +1541,8 @@
     "reminders": [],
     "setup": false,
     "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
-    "firstNight": 60,
-    "otherNight": 79
+    "firstNight": 61,
+    "otherNight": 80
   },
   {
     "id": "preacher",
@@ -1568,7 +1572,7 @@
     "setup": false,
     "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
     "firstNight": 15,
-    "otherNight": 72
+    "otherNight": 73
   },
   {
     "id": "balloonist",
@@ -1598,8 +1602,8 @@
     "reminders": [],
     "setup": false,
     "ability": "Each night, you become the alignment of an alive neighbor. If all good players choose to join your cult, your team wins.",
-    "firstNight": 57,
-    "otherNight": 75
+    "firstNight": 58,
+    "otherNight": 76
   },
   {
     "id": "lycanthrope",
@@ -1651,8 +1655,8 @@
     ],
     "setup": false,
     "ability": "Once per game, at night, choose a player: they learn who you are.",
-    "firstNight": 56,
-    "otherNight": 74
+    "firstNight": 57,
+    "otherNight": 75
   },
   {
     "id": "engineer",
@@ -2275,8 +2279,8 @@
     ],
     "setup": false,
     "ability": "If more than 1 good player is executed, evil wins. All players know you are in play. After day 5, evil wins.",
-    "firstNight": 64,
-    "otherNight": 83,
+    "firstNight": 65,
+    "otherNight": 84,
     "jinxes": [
       {
         "id": "soldier",
@@ -2510,7 +2514,7 @@
     "reminders": [],
     "setup": false,
     "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.",
-    "firstNight": 65,
+    "firstNight": 66,
     "otherNight": 0,
     "jinxes": [
       {
@@ -2578,8 +2582,8 @@
     "reminders": [],
     "setup": false,
     "ability": "Each night, learn which player the Storyteller believes you should talk to most.",
-    "firstNight": 59,
-    "otherNight": 78
+    "firstNight": 60,
+    "otherNight": 79
   },
   {
     "id": "harpy",
@@ -2631,7 +2635,7 @@
     "team": "demon",
     "edition": "",
     "firstNightReminder": "",
-    "otherNightReminder": "The Ojo chooses a character.",
+    "otherNightReminder": "The Ojo chooses a character. :reminder: ",
     "reminders": [
       "Dead"
     ],
@@ -2661,7 +2665,7 @@
     "team": "demon",
     "edition": "",
     "firstNightReminder": "Wake the Kazali, allow them to choose Minions.",
-    "otherNightReminder": "The Kazali chooses a player.",
+    "otherNightReminder": "The Kazali chooses a player. :reminder: ",
     "reminders": [
       "Dead"
     ],
@@ -2691,6 +2695,27 @@
         "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
       }
     ]
+  },
+  {
+    "id": "villageidiot",
+    "name": "Village Idiot",
+    "team": "townsfolk",
+    "edition": "",
+    "firstNightReminder": "Choose a Village Idiot to be drunk. Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "otherNightReminder": "Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "reminders": [
+      "Drunk"
+    ],
+    "setup": true,
+    "ability": "Each night, choose a player: you learn their alignment. [+0 to +2 Village Idiots. 1 of the extras is drunk]",
+    "special": [
+      {
+        "type": "selection",
+        "name": "bag-duplicate"
+      }
+    ],
+    "firstNight": 55,
+    "otherNight": 72
   },
   {
     "id": "doomsayer",

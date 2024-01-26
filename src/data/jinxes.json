@@ -49,6 +49,10 @@
       {
         "id": "Politician",
         "reason": "A Pit-Hag can not create an evil Politician."
+      },
+      {
+        "id": "Village Idiot",
+        "reason": "If there is a spare token, the Pit-Hag can create an extra Village Idiot. If so, the drunk Village Idiot might change."
       }
     ]
   },
