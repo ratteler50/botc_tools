@@ -363,7 +363,7 @@
     "edition": "tb",
     "team": "minion",
     "firstNightReminder": "",
-    "otherNightReminder": "If the Scarlet Woman became the Imp today, show them the *YOU ARE* token, then the Imp token.",
+    "otherNightReminder": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token.",
     "reminders": [
       "Is The Demon"
     ],
@@ -2650,7 +2650,7 @@
     "team": "outsider",
     "edition": "",
     "firstNightReminder": "",
-    "otherNightReminder": "Wake Minions and Demons, allow them to choose new characters.",
+    "otherNightReminder": "If the Hatter died today or tonight, wake Minions and Demons, allow them to choose new characters.",
     "reminders": [
       "Tea Party Tonight"
     ],

@@ -373,7 +373,7 @@
     "otherNight": 69,
     "otherNightReminder": "If the dead outnumber the living, show the character token of an alive player.",
     "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
-    "flavour": "Betwixt the unknown strains of mortal strife And morbid night, sweet with mystery and woe Lies unfettered joys of fate’s long and colored life Who’s garden blooms with each painted face to show.",
+    "flavour": "↑Betwixt the unknown strains of mortal strife→ And morbid night, sweet↓ with mystery and woe ←Lies unfettered joys of fate’s long and colored life Who’s garden blooms with each painted Face to Show.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/King",
       "icon": "https://wiki.bloodontheclocktower.com/images/d/dc/Icon_king.png"
@@ -1492,7 +1492,7 @@
     "team": "outsider",
     "standardAmyOrder": 86,
     "otherNight": 44,
-    "otherNightReminder": "Wake Minions and Demons, allow them to choose new characters.",
+    "otherNightReminder": "If the Hatter died today or tonight, wake Minions and Demons, allow them to choose new characters.",
     "reminders": [
       "Tea Party Tonight"
     ],
@@ -1885,7 +1885,7 @@
     "team": "minion",
     "standardAmyOrder": 102,
     "otherNight": 21,
-    "otherNightReminder": "If the Scarlet Woman became the Imp today, show them the *YOU ARE* token, then the Imp token.",
+    "otherNightReminder": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token.",
     "reminders": [
       "Is The Demon"
     ],
