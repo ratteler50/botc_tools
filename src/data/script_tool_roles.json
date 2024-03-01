@@ -194,7 +194,7 @@
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Village Idiot_Print.png",
     "icon": "./images/icon/4 - Experimental/townsfolk/Village Idiot_icon.png",
-    "version": "4a - Kickstarter Experimental",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -972,11 +972,20 @@
     "isDisabled": false
   },
   {
+    "id": "Yaggababble",
+    "name": "Yaggababble",
+    "roleType": "demon",
+    "print": "./images/print/4 - Experimental/demon/Yaggababble_print.webp",
+    "icon": "./images/icon/4 - Experimental/demon/Yaggababble_icon.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "Kazali",
     "name": "Kazali",
     "roleType": "demon",
-    "print": "./images/print/4 - Experimental/demon/Kazali_print.png",
-    "icon": "./images/icon/4 - Experimental/demon/Kazali_icon.png",
+    "print": "./images/print/4 - Experimental/demon/Kazali_print.webp",
+    "icon": "./images/icon/4 - Experimental/demon/Kazali_icon.webp",
     "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
