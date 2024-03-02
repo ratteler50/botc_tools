@@ -26,7 +26,7 @@ private fun updateRoleJinxes() {
   val jinxes =
     Jinx.listFromJson(gson, File(JINXES_JSON).readText()).groupBy { it.role1.normalize() }
   val updatedRoles = getRolesFromJson().map { role ->
-    jinxes[role.id.normalize()]?.map { Role.Jinx(it.role2, it.reason) }
+    jinxes[role.id.normalize()]?.map { Role.Jinx(it.role2.normalize(), it.reason) }
       ?.let { role.copy(jinxes = it) } ?: role
   }
 
@@ -132,8 +132,9 @@ private fun updateSaoFromScriptToolRoles() {
   val updatedRoles = getRolesFromJson().map { role ->
     val index = rolesSortedBySao.indexOf(role.id.normalize())
     if (index == -1) role.copy(standardAmyOrder = null) else role.copy(standardAmyOrder = index + 1)
-  }.sortedWith(compareBy<Role> { it.edition == Role.Edition.SPECIAL }.thenBy(nullsLast()) { it.standardAmyOrder }
-                 .thenBy { it.type }.thenBy { it.edition }.thenBy { it.name })
+  }
+    .sortedWith(compareBy<Role> { it.edition == Role.Edition.SPECIAL }.thenBy(nullsLast()) { it.standardAmyOrder }
+                  .thenBy { it.type }.thenBy { it.edition }.thenBy { it.name })
 
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }

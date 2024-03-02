@@ -270,6 +270,15 @@
     ]
   },
   {
+    "id": "Yaggababble",
+    "jinx": [
+      {
+        "id": "Exorcist",
+        "reason": "If the Exorcist chooses the Yaggababble, the Yaggababble ability does not kill tonight."
+      }
+    ]
+  },
+  {
     "id": "Baron",
     "jinx": [
       {
