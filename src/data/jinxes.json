@@ -167,7 +167,10 @@
       {
         "id": "Hatter",
         "reason": "If the Hatter dies and Legion is in play, nothing happens. If the Hatter dies and an evil player chooses Legion, all current evil players become Legion."
-      }
+      },
+      {
+        "id": "Summoner",
+        "reason": "If the Summoner creates Legion, most players (including all evil players) become evil Legion."}
     ]
   },
   {
@@ -279,6 +282,27 @@
     ]
   },
   {
+    "id": "Summoner",
+    "jinx": [
+      {
+        "id": "Clockmaker",
+        "reason": "If the Summoner is in play, the Clockmaker does not receive their information until a Demon is created."
+      },
+      {
+        "id": "Alchemist",
+        "reason": "If there is an Alchemist-Summoner in play, the game starts with a Demon in play, as normal. If the Alchemist-Summoner chooses a player, they make that player a Demon but do not change their alignment."
+      },
+      {
+        "id": "Poppy Grower",
+        "reason": "If the Poppy Grower is alive when the Summoner acts, the Summoner chooses which Demon, but the Storyteller chooses which player."
+      },
+      {
+        "id": "Marionette",
+        "reason": "The Marionette neighbours the Summoner. The Summoner knows who the Marionette is."
+      }
+    ]
+  },
+  {
     "id": "Baron",
     "jinx": [
       {
@@ -363,6 +387,10 @@
       {
         "id": "Choirboy",
         "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
+      },
+      {
+        "id": "Summoner",
+        "reason": "The Kazali can not choose to create a Summoner."
       }
     ]
   },
@@ -456,6 +484,10 @@
       {
         "id": "Devil's Advocate",
         "reason": "Players that die by nomination register as being executed to the Devil's Advocate."
+      },
+      {
+        "id": "Summoner",
+        "reason": "If the Summoner creates Riot, the chosen player and all evil players become Riot. The chosen player must be one of the Summoner's living good neighbours."
       },
       {
         "id": "Investigator",

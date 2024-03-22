@@ -961,6 +961,35 @@
     ]
   },
   {
+    "id": "Summoner",
+    "jinx": [
+      {
+        "id": "Barber",
+        "reason": "If the Barber dies while there is no Demon, nothing happens."
+      },
+      {
+        "id": "Engineer",
+        "reason": "If the Engineer chooses to change the Demon while there is no Demon in play, there is no effect."
+      },
+      {
+        "id": "Goon",
+        "reason": "Ouch. That’s not a good time. That’s a drunk Summoner, a Goon that turns evil and an evil team, including that Goon, that immediately loses (all assuming the Summoner is the first to select the Goon that night)."
+      },
+      {
+        "id": "Pit-Hag",
+        "reason": "This is a potentially massively unfun combination, so think incredibly carefully before putting these both on a script together."
+      },
+      {
+        "id": "Revolutionary",
+        "reason": " It’s worth thinking carefully before putting Summoner in a Revolutionary game that’s being played for accessibility reasons."
+      },
+      {
+        "id": "Zombuul",
+        "reason": "If the Summoner chooses a dead player to be the Zombuul, they’re already dead and do not become a registering-as-dead Zombuul, they are just dead and the good team wins."
+      }
+    ]
+  },
+  {
     "id": "Sweetheart",
     "jinx": [
       {

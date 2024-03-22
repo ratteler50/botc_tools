@@ -171,6 +171,15 @@
     "isDisabled": false
   },
   {
+    "id": "Village Idiot",
+    "name": "Village Idiot",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/Village Idiot_Print.png",
+    "icon": "./images/icon/4 - Experimental/townsfolk/Village Idiot_icon.png",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "Snake Charmer",
     "name": "Snake Charmer",
     "roleType": "townsfolk",
@@ -186,15 +195,6 @@
     "print": "./images/print/4 - Experimental/townsfolk/King_print.webp",
     "icon": "./images/icon/4 - Experimental/townsfolk/King_icon.webp",
     "version": "4a - Kickstarter Experimental",
-    "isDisabled": false
-  },
-  {
-    "id": "Village Idiot",
-    "name": "Village Idiot",
-    "roleType": "townsfolk",
-    "print": "./images/print/4 - Experimental/townsfolk/Village Idiot_Print.png",
-    "icon": "./images/icon/4 - Experimental/townsfolk/Village Idiot_icon.png",
-    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -825,6 +825,15 @@
     "print": "./images/print/1 - Trouble Brewing/minion/Spy_print.webp",
     "icon": "./images/icon/1 - Trouble Brewing/minion/Spy_icon.webp",
     "version": "1 - Trouble Brewing",
+    "isDisabled": false
+  },
+  {
+    "id": "Summoner",
+    "name": "Summoner",
+    "roleType": "minion",
+    "print": "./images/print/4 - Experimental/minion/Summoner_print.png",
+    "icon": "./images/icon/4 - Experimental/minion/Summoner_icon.png",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
