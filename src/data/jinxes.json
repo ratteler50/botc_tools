@@ -40,7 +40,7 @@
     "jinx": [
       {
         "id": "Heretic",
-        "reason": "A Pit-Hag can not create a Heretic. "
+        "reason": "A Pit-Hag can not create a Heretic."
       },
       {
         "id": "Damsel",
@@ -91,11 +91,15 @@
       },
       {
         "id": "Ravenkeeper",
-        "reason": "If Leviathan is in play & the Ravenkeeper dies by execution, they wake that night to use their ability."
+        "reason": "If Leviathan is in play & the Ravenkeeper dies by execution, they wake that night to use their ability. They are drunk if their nominator was good."
+      },
+      {
+        "id": "Banshee",
+        "reason": "If Leviathan is in play, and the Banshee dies by execution, all players learn that the Banshee has died, and the Banshee gains their ability."
       },
       {
         "id": "Sage",
-        "reason": "If Leviathan is in play & the Sage dies by execution, they wake that night to use their ability."
+        "reason": "If Leviathan is in play & the Sage dies by execution, they wake that night to use their ability. They are drunk if their nominator was good."
       },
       {
         "id": "Farmer",
@@ -124,7 +128,7 @@
       },
       {
         "id": "Magician",
-        "reason": "Only 1 jinxed character can be in play. "
+        "reason": "Only 1 jinxed character can be in play."
       },
       {
         "id": "Scarlet Woman",
@@ -158,7 +162,7 @@
     "jinx": [
       {
         "id": "Engineer",
-        "reason": "Legion and the Engineer can not both be in play at the start of the game.\nIf the Engineer creates Legion, most players (including all evil players) become evil Legion. "
+        "reason": "Legion and the Engineer can not both be in play at the start of the game.\nIf the Engineer creates Legion, most players (including all evil players) become evil Legion."
       },
       {
         "id": "Preacher",
@@ -170,7 +174,8 @@
       },
       {
         "id": "Summoner",
-        "reason": "If the Summoner creates Legion, most players (including all evil players) become evil Legion."}
+        "reason": "If the Summoner creates Legion, most players (including all evil players) become evil Legion."
+      }
     ]
   },
   {
@@ -203,7 +208,7 @@
       },
       {
         "id": "Damsel",
-        "reason": "Only 1 jinxed character can be in play. "
+        "reason": "Only 1 jinxed character can be in play."
       },
       {
         "id": "Heretic",
@@ -298,7 +303,7 @@
       },
       {
         "id": "Marionette",
-        "reason": "The Marionette neighbours the Summoner. The Summoner knows who the Marionette is."
+        "reason": "The Marionette neighbors the Summoner. The Summoner knows who the Marionette is."
       }
     ]
   },
@@ -340,7 +345,7 @@
       },
       {
         "id": "Plague Doctor",
-        "reason": "If the Demon has a neighbour who is alive and a Townsfolk or Outsider when the Plague Doctor dies, that player becomes an evil Marionette. If there is already an extra evil player, this does not happen."
+        "reason": "If the Demon has a neighbor who is alive and a Townsfolk or Outsider when the Plague Doctor dies, that player becomes an evil Marionette. If there is already an extra evil player, this does not happen."
       },
       {
         "id": "Huntsman",
@@ -353,11 +358,11 @@
     "jinx": [
       {
         "id": "Mastermind",
-        "reason": "If the Mastermind is alive and the Lleech's host dies by execution, the Lleech lives but loses their ability. "
+        "reason": "If the Mastermind is alive and the Lleech's host dies by execution, the Lleech lives but loses their ability."
       },
       {
         "id": "Slayer",
-        "reason": "If the Slayer slays the Lleech's host, the host dies. "
+        "reason": "If the Slayer slays the Lleech's host, the host dies."
       },
       {
         "id": "Heretic",
@@ -378,7 +383,7 @@
       },
       {
         "id": "Marionette",
-        "reason": "If the Kazali chooses to create a Marionette, they must choose one of their neighbours."
+        "reason": "If the Kazali chooses to create a Marionette, they must choose one of their neighbors."
       },
       {
         "id": "Huntsman",
@@ -407,11 +412,11 @@
       },
       {
         "id": "Snitch",
-        "reason": "If the Snitch is in play, each Riot player gets an extra 3 bluffs. "
+        "reason": "If the Snitch is in play, each Riot player gets an extra 3 bluffs."
       },
       {
         "id": "Saint",
-        "reason": "If a good player nominates and kills the Saint, the Saint's team loses. "
+        "reason": "If a good player nominates and kills the Saint, the Saint's team loses."
       },
       {
         "id": "Butler",
@@ -442,6 +447,10 @@
         "reason": "If a Riot player nominates and kills a Sage, the Sage uses their ability tonight."
       },
       {
+        "id": "Banshee",
+        "reason": "If Riot nominates and kills the Banshee, all players learn that the Banshee has died, and the Banshee may nominate two players immediately."
+      },
+      {
         "id": "Ravenkeeper",
         "reason": "If a Riot player nominates and kills the Ravenkeeper, the Ravenkeeper uses their ability tonight."
       },
@@ -459,15 +468,15 @@
       },
       {
         "id": "Exorcist",
-        "reason": "Only 1 jinxed character can be in play. "
+        "reason": "Only 1 jinxed character can be in play."
       },
       {
         "id": "Minstrel",
-        "reason": "Only 1 jinxed character can be in play. "
+        "reason": "Only 1 jinxed character can be in play."
       },
       {
         "id": "Flowergirl",
-        "reason": "Only 1 jinxed character can be in play. "
+        "reason": "Only 1 jinxed character can be in play."
       },
       {
         "id": "Undertaker",
@@ -479,7 +488,7 @@
       },
       {
         "id": "Pacifist",
-        "reason": "Players that die by nomination register as being executed to the Pacifist. "
+        "reason": "Players that die by nomination register as being executed to the Pacifist."
       },
       {
         "id": "Devil's Advocate",
@@ -487,11 +496,11 @@
       },
       {
         "id": "Summoner",
-        "reason": "If the Summoner creates Riot, the chosen player and all evil players become Riot. The chosen player must be one of the Summoner's living good neighbours."
+        "reason": "If the Summoner creates Riot, the chosen player and all evil players become Riot. The chosen player must be one of the Summoner's living good neighbors."
       },
       {
         "id": "Investigator",
-        "reason": "Riot registers as a Minion to the Investigator. "
+        "reason": "Riot registers as a Minion to the Investigator."
       },
       {
         "id": "Clockmaker",
@@ -575,6 +584,15 @@
       {
         "id": "Fearmonger",
         "reason": "The Vizier wakes with the Fearmonger, learns who they choose and cannot choose to immediately execute that player."
+      }
+    ]
+  },
+  {
+    "id": "Vortox",
+    "jinx": [
+      {
+        "id": "Banshee",
+        "reason": "If the Vortox is in play and the Demon kills the Banshee, the players still learn that the Banshee has died."
       }
     ]
   }
