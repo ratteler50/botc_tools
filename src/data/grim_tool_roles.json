@@ -349,7 +349,7 @@
       },
       {
         "id": "damsel",
-        "reason": "Only 1 jinxed character can be in play."
+        "reason": "If the Spy is (or has been) in play, the Damsel is poisoned."
       },
       {
         "id": "heretic",
@@ -1325,11 +1325,19 @@
       },
       {
         "id": "politician",
-        "reason": "A Pit-Hag can not create an evil Politician."
+        "reason": "If the Pit-Hag turns an evil player into the Politician, they can't turn good due to their own ability."
       },
       {
         "id": "villageidiot",
         "reason": "If there is a spare token, the Pit-Hag can create an extra Village Idiot. If so, the drunk Village Idiot might change."
+      },
+      {
+        "id": "cultleader",
+        "reason": "If the Pit-Hag turns an evil player into the Cult Leader, they can't turn good due to their own ability."
+      },
+      {
+        "id": "goon",
+        "reason": "If the Pit-Hag turns an evil player into the Goon, they can't turn good due to their own ability."
       }
     ]
   },
@@ -1576,7 +1584,7 @@
     "otherNightReminder": "If the dead outnumber the living, show the character token of an alive player.",
     "reminders": [],
     "setup": false,
-    "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
+    "ability": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows who you are.",
     "firstNight": 17,
     "otherNight": 76
   },
@@ -1959,7 +1967,7 @@
       },
       {
         "id": "damsel",
-        "reason": "Only 1 jinxed character can be in play."
+        "reason": "If the Widow is (or has been) in play, the Damsel is poisoned."
       },
       {
         "id": "heretic",
@@ -2265,10 +2273,6 @@
       {
         "id": "hatter",
         "reason": "If the Hatter dies and Legion is in play, nothing happens. If the Hatter dies and an evil player chooses Legion, all current evil players become Legion."
-      },
-      {
-        "id": "summoner",
-        "reason": "If the Summoner creates Legion, most players (including all evil players) become evil Legion."
       }
     ]
   },
@@ -2446,10 +2450,6 @@
         "reason": "Players that die by nomination register as being executed to the Devil's Advocate."
       },
       {
-        "id": "summoner",
-        "reason": "If the Summoner creates Riot, the chosen player and all evil players become Riot. The chosen player must be one of the Summoner's living good neighbors."
-      },
-      {
         "id": "investigator",
         "reason": "Riot registers as a Minion to the Investigator."
       },
@@ -2562,6 +2562,10 @@
       {
         "id": "fearmonger",
         "reason": "The Vizier wakes with the Fearmonger, learns who they choose and cannot choose to immediately execute that player."
+      },
+      {
+        "id": "politician",
+        "reason": "The Politician might register as evil to the Vizier."
       }
     ]
   },
@@ -2715,10 +2719,6 @@
       {
         "id": "choirboy",
         "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
-      },
-      {
-        "id": "summoner",
-        "reason": "The Kazali can not choose to create a Summoner."
       }
     ]
   },
@@ -2798,6 +2798,42 @@
       {
         "id": "marionette",
         "reason": "The Marionette neighbors the Summoner. The Summoner knows who the Marionette is."
+      },
+      {
+        "id": "pithag",
+        "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+      },
+      {
+        "id": "hatter",
+        "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+      },
+      {
+        "id": "courtier",
+        "reason": "If the Summoner is drunk on the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
+      },
+      {
+        "id": "engineer",
+        "reason": "If the Engineer removes a Summoner from play before that Summoner uses their ability, the Summoner uses their ability immediately."
+      },
+      {
+        "id": "zombuul",
+        "reason": "If the Summoner turns a dead player into the Zombuul, the Storyteller treats that player as a Zombuul that has died once."
+      },
+      {
+        "id": "pukka",
+        "reason": "The Summoner may choose a player to become the Pukka on the 2nd night."
+      },
+      {
+        "id": "riot",
+        "reason": "If the Summoner creates Riot, all Minions also become Riot."
+      },
+      {
+        "id": "legion",
+        "reason": "If the Summoner creates Legion, most players (including all evil players) become evil Legion."
+      },
+      {
+        "id": "kazali",
+        "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
       }
     ]
   },
