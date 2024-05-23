@@ -14,7 +14,7 @@
     "name": "Dawn",
     "firstNightReminder": "Wait for a few seconds. End the Night Phase.",
     "otherNightReminder": "Wait for a few seconds. End the Night Phase.",
-    "firstNight": 66,
+    "firstNight": 67,
     "otherNight": 86
   },
   {
@@ -236,13 +236,7 @@
     "setup": false,
     "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
     "firstNight": 47,
-    "otherNight": 80,
-    "jinxes": [
-      {
-        "id": "cannibal",
-        "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
-      }
-    ]
+    "otherNight": 80
   },
   {
     "id": "drunk",
@@ -354,6 +348,10 @@
       {
         "id": "heretic",
         "reason": "Only 1 jinxed character can be in play."
+      },
+      {
+        "id": "ogre",
+        "reason": "The Spy registers as evil to the Ogre."
       }
     ]
   },
@@ -540,7 +538,7 @@
     "reminders": [],
     "setup": false,
     "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
-    "firstNight": 64,
+    "firstNight": 65,
     "otherNight": 84,
     "jinxes": [
       {
@@ -1042,7 +1040,7 @@
     ],
     "setup": false,
     "ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
-    "firstNight": 65,
+    "firstNight": 66,
     "otherNight": 85
   },
   {
@@ -1338,6 +1336,10 @@
       {
         "id": "goon",
         "reason": "If the Pit-Hag turns an evil player into the Goon, they can't turn good due to their own ability."
+      },
+      {
+        "id": "ogre",
+        "reason": "If the Pit-Hag turns an evil player into the Ogre, they can't turn good due to their own ability."
       }
     ]
   },
@@ -1555,7 +1557,7 @@
     "reminders": [],
     "setup": false,
     "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
-    "firstNight": 63,
+    "firstNight": 64,
     "otherNight": 83
   },
   {
@@ -1581,7 +1583,7 @@
     "edition": "",
     "team": "townsfolk",
     "firstNightReminder": "Wake the Demon. Show the *THIS PLAYER IS* token and the King token, then point to the King.",
-    "otherNightReminder": "If the dead outnumber the living, show the character token of an alive player.",
+    "otherNightReminder": "If the dead equal or outnumber the living, show the character token of an alive player.",
     "reminders": [],
     "setup": false,
     "ability": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows who you are.",
@@ -1826,7 +1828,17 @@
     "setup": false,
     "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "jinxes": [
+      {
+        "id": "butler",
+        "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
+      },
+      {
+        "id": "juggler",
+        "reason": "If the Juggler guesses on their first day and dies by execution, tonight the living Cannibal learns how many guesses the Juggler got correct."
+      }
+    ]
   },
   {
     "id": "snitch",
@@ -2293,7 +2305,7 @@
     ],
     "setup": false,
     "ability": "If more than 1 good player is executed, evil wins. All players know you are in play. After day 5, evil wins.",
-    "firstNight": 67,
+    "firstNight": 68,
     "otherNight": 87,
     "jinxes": [
       {
@@ -2536,7 +2548,7 @@
     "reminders": [],
     "setup": false,
     "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.",
-    "firstNight": 68,
+    "firstNight": 69,
     "otherNight": 0,
     "jinxes": [
       {
@@ -2557,7 +2569,7 @@
       },
       {
         "id": "magician",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+        "reason": "If the Vizier and Magician are both in play, the Demon does not learn the Minions."
       },
       {
         "id": "fearmonger",
@@ -2608,7 +2620,7 @@
     "reminders": [],
     "setup": false,
     "ability": "Each night, learn which player the Storyteller believes you should talk to most.",
-    "firstNight": 62,
+    "firstNight": 63,
     "otherNight": 82
   },
   {
@@ -2851,6 +2863,24 @@
     "ability": "If the Demon kills you, all players learn this. From now on, you may nominate twice per day and vote twice per nomination.",
     "firstNight": 0,
     "otherNight": 54
+  },
+  {
+    "id": "ogre",
+    "name": "Ogre",
+    "team": "outsider",
+    "edition": "",
+    "firstNightReminder": "The Ogre points to a player.",
+    "reminders": [],
+    "setup": false,
+    "ability": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.",
+    "firstNight": 62,
+    "otherNight": 0,
+    "jinxes": [
+      {
+        "id": "recluse",
+        "reason": "If the Recluse registers as evil to the Ogre, the Ogre learns that they are evil."
+      }
+    ]
   },
   {
     "id": "doomsayer",

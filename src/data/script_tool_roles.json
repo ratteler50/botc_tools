@@ -189,15 +189,6 @@
     "isDisabled": false
   },
   {
-    "id": "King",
-    "name": "King",
-    "roleType": "townsfolk",
-    "print": "./images/print/4 - Experimental/townsfolk/King_print.webp",
-    "icon": "./images/icon/4 - Experimental/townsfolk/King_icon.webp",
-    "version": "4a - Kickstarter Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "Balloonist",
     "name": "Balloonist",
     "roleType": "townsfolk",
@@ -231,6 +222,15 @@
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Fortune Teller_print.webp",
     "icon": "./images/icon/1 - Trouble Brewing/townsfolk/Fortune Teller_icon.webp",
     "version": "1 - Trouble Brewing",
+    "isDisabled": false
+  },
+  {
+    "id": "King",
+    "name": "King",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/King_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/King_icon.webp",
+    "version": "4a - Kickstarter Experimental",
     "isDisabled": false
   },
   {
@@ -600,6 +600,15 @@
     "print": "./images/print/4 - Experimental/outsider/Snitch_print.webp",
     "icon": "./images/icon/4 - Experimental/outsider/Snitch_icon.webp",
     "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "Ogre",
+    "name": "Ogre",
+    "roleType": "outsider",
+    "print": "./images/print/4 - Experimental/outsider/Ogre_print.webp",
+    "icon": "./images/icon/4 - Experimental/outsider/Ogre_icon.webp",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -1301,7 +1310,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Apprentice_print.webp",
     "icon": "./images/icon/Extras/travellers/Apprentice_icon.webp",
-    "version": "3 - Sects and Violets",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -1310,7 +1319,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Barista_print.webp",
     "icon": "./images/icon/Extras/travellers/Barista_icon.webp",
-    "version": "2 - Bad Moon Rising",
+    "version": "3 - Sects and Violets",
     "isDisabled": false
   },
   {
@@ -1328,7 +1337,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Bishop_print.webp",
     "icon": "./images/icon/Extras/travellers/Bishop_icon.webp",
-    "version": "3 - Sects and Violets",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -1337,7 +1346,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Bone Collector_print.webp",
     "icon": "./images/icon/Extras/travellers/Bone Collector_icon.webp",
-    "version": "2 - Bad Moon Rising",
+    "version": "3 - Sects and Violets",
     "isDisabled": false
   },
   {
@@ -1355,7 +1364,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Butcher_print.webp",
     "icon": "./images/icon/Extras/travellers/Butcher_icon.webp",
-    "version": "2 - Bad Moon Rising",
+    "version": "3 - Sects and Violets",
     "isDisabled": false
   },
   {
@@ -1364,7 +1373,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Deviant_print.webp",
     "icon": "./images/icon/Extras/travellers/Deviant_icon.webp",
-    "version": "2 - Bad Moon Rising",
+    "version": "3 - Sects and Violets",
     "isDisabled": false
   },
   {
@@ -1391,7 +1400,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Harlot_print.webp",
     "icon": "./images/icon/Extras/travellers/Harlot_icon.webp",
-    "version": "2 - Bad Moon Rising",
+    "version": "3 - Sects and Violets",
     "isDisabled": false
   },
   {
@@ -1400,7 +1409,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Judge_print.webp",
     "icon": "./images/icon/Extras/travellers/Judge_icon.webp",
-    "version": "3 - Sects and Violets",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -1409,7 +1418,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Matron_print.webp",
     "icon": "./images/icon/Extras/travellers/Matron_icon.webp",
-    "version": "3 - Sects and Violets",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -1436,7 +1445,7 @@
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Voudon_print.webp",
     "icon": "./images/icon/Extras/travellers/Voudon_icon.webp",
-    "version": "3 - Sects and Violets",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   }
 ]

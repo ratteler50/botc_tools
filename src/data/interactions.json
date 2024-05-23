@@ -593,6 +593,31 @@
     ]
   },
   {
+    "id": "Ogre",
+    "jinx": [
+      {
+        "id": "Bounty Hunter",
+        "reason": "A sober Bounty Hunter can be shown an evil Ogre."
+      },
+      {
+        "id": "Cannibal",
+        "reason": "If a good Ogre is executed, the Cannibal gains the Ogre ability, wakes to pick a player, and becomes the alignment of that player. They are not told their alignment. The next time a player dies to execution, the Cannibal loses the Ogre ability but stays the alignment of the player they chose for the rest of the game. If an evil Ogre is executed, the Cannibal is poisoned due to the Cannibal’s ability."
+      },
+      {
+        "id": "Mezepheles",
+        "reason": "If a good Ogre says the Mez word, they turn evil and learn that they are now evil. If an evil Ogre says the Mez word, nothing happens, and a good player may still say the word and turn evil."
+      },
+      {
+        "id": "Spy",
+        "reason": "The Spy does not see which player the Ogre selected, but may see the Ogre’s alignment."
+      },
+      {
+        "id": "Widow",
+        "reason": "The Widow does not see which player the Ogre selected, but may see the Ogre’s alignment."
+      }
+    ]
+  },
+  {
     "id": "Ojo",
     "jinx": [
       {

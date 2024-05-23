@@ -18,11 +18,15 @@
     ]
   },
   {
-    "id": "Butler",
+    "id": "Cannibal",
     "jinx": [
       {
-        "id": "Cannibal",
+        "id": "Butler",
         "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
+      },
+      {
+        "id": "Juggler",
+        "reason": "If the Juggler guesses on their first day and dies by execution, tonight the living Cannibal learns how many guesses the Juggler got correct."
       }
     ]
   },
@@ -61,6 +65,10 @@
       {
         "id": "Goon",
         "reason": "If the Pit-Hag turns an evil player into the Goon, they can't turn good due to their own ability."
+      },
+      {
+        "id": "Ogre",
+        "reason": "If the Pit-Hag turns an evil player into the Ogre, they can't turn good due to their own ability."
       }
     ]
   },
@@ -217,6 +225,10 @@
       {
         "id": "Heretic",
         "reason": "Only 1 jinxed character can be in play."
+      },
+      {
+        "id": "Ogre",
+        "reason": "The Spy registers as evil to the Ogre."
       }
     ]
   },
@@ -611,7 +623,7 @@
       },
       {
         "id": "Magician",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+        "reason": "If the Vizier and Magician are both in play, the Demon does not learn the Minions."
       },
       {
         "id": "Fearmonger",
@@ -629,6 +641,15 @@
       {
         "id": "Banshee",
         "reason": "If the Vortox is in play and the Demon kills the Banshee, the players still learn that the Banshee has died."
+      }
+    ]
+  },
+  {
+    "id": "Ogre",
+    "jinx": [
+      {
+        "id": "Recluse",
+        "reason": "If the Recluse registers as evil to the Ogre, the Ogre learns that they are evil."
       }
     ]
   }
