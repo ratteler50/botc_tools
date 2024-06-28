@@ -389,17 +389,14 @@
     "team": "townsfolk",
     "standardAmyOrder": 22,
     "firstNight": 52,
-    "firstNightReminder": "Show any player :reminder:",
+    "firstNightReminder": "Show any player. :reminder:",
     "otherNight": 70,
-    "otherNightReminder": "Show a player with a different character type to previously :reminder:",
+    "otherNightReminder": "Show a player with a different character type to previously. :reminder:",
     "reminders": [
-      "Seen Townsfolk",
-      "Seen Outsider",
-      "Seen Minion",
-      "Seen Demon"
+      "Know"
     ],
     "setup": true,
-    "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
+    "ability": "Each night, you learn a player of a different character type than last night. [+0 or +1 Outsider]",
     "flavour": "More heat! Higher! Higher! Più alto! Ahhh... it is so beautiful from up here, don't you agree? Can you see the children fishing by the river, under the willow? Can you see the glint of the sun on the circus tent-poles? What's this? An old man, alone, passed out in the vineyard? Less heat! Lower! Lower! Vai più in basso!",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Balloonist",
@@ -1084,7 +1081,7 @@
       "wiki": "https://wiki.bloodontheclocktower.com/Poppy_Grower",
       "icon": "https://wiki.bloodontheclocktower.com/images/9/91/Icon_poppygrower.png"
     },
-    "textGameClarification": "Info will be given if a poisoned poppy grower dies."
+    "textGameClarification": "Info will be given if a poisoned poppy grower dies or the poppy grower ability leaves play."
   },
   {
     "id": "virgin",
@@ -1209,6 +1206,9 @@
     "standardAmyOrder": 68,
     "firstNight": 59,
     "firstNightReminder": "The Ogre points to a player.",
+    "reminders": [
+      "Friend"
+    ],
     "ability": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.",
     "flavour": "<grunt><grin></grunt>",
     "jinxes": [
@@ -1346,9 +1346,9 @@
     "team": "outsider",
     "standardAmyOrder": 76,
     "reminders": [
-      "Storyteller ability"
+      "Duplicate"
     ],
-    "ability": "If you die, the Storyteller gains a not-in-play Minion ability.",
+    "ability": "If you die, the Storyteller gains a Minion ability.",
     "flavour": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Plague_Doctor",
@@ -1673,7 +1673,7 @@
       "Mad",
       "2nd"
     ],
-    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
+    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or one or both might die.",
     "flavour": "So fair a day I never did see, nor so fowl a presence hanging over me.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Harpy",
@@ -1796,6 +1796,10 @@
       {
         "id": "kazali",
         "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+      },
+      {
+        "id": "preacher",
+        "reason": "If the Preacher chose the Summoner on or before the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
       }
     ],
     "urls": {
@@ -2081,16 +2085,12 @@
         "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
       },
       {
-        "id": "flowergirl",
-        "reason": "If the Organ Grinder is causing eyes-closed voting, the Flowergirl wakes tonight to choose a player: they learn if that player voted today. (instead of their normal ability)"
-      },
-      {
         "id": "minstrel",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+        "reason": "If the Minstrel makes everyone drunk, the Organ Grinder keeps their ability but the Minstrel keeps their eyes open when voting."
       },
       {
         "id": "preacher",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+        "reason": "If the Preacher removes the Organ Grinder ability, the Organ Grinder keeps their ability but the Preacher keeps their eyes open when voting."
       }
     ],
     "urls": {
@@ -2135,6 +2135,10 @@
       {
         "id": "politician",
         "reason": "The Politician might register as evil to the Vizier."
+      },
+      {
+        "id": "alsaahir",
+        "reason": "If the Vizier is in play, the Alsaahir must also guess which Demon(s) are in play."
       }
     ],
     "urls": {
@@ -2150,6 +2154,12 @@
     "standardAmyOrder": 109,
     "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
     "flavour": "The tentacles of that monster are nailed to the doors of the church. Mothers and children are dancing in the street. Excellent. Everything is proceeding exactly as I have planned.",
+    "jinxes": [
+      {
+        "id": "alhadikhia",
+        "reason": "If the Al-Hadikhia dies by execution, and the Mastermind is alive, the Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, evil wins. Otherwise, good wins."
+      }
+    ],
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Mastermind",
       "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_mastermind.png"
@@ -2284,6 +2294,10 @@
       {
         "id": "choirboy",
         "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
+      },
+      {
+        "id": "soldier",
+        "reason": "If the Kazali turns the Soldier into a Minion, the Soldier chooses which not-in-play Minion to become."
       }
     ],
     "urls": {
@@ -2327,7 +2341,7 @@
       "Dead"
     ],
     "setup": true,
-    "ability": "Each night, Minions choose who babysits Lil' Monsta's token & \"is the Demon\". A player dies each night*. [+1 Minion]",
+    "ability": "Each night, Minions choose who babysits Lil' Monsta & 'is the Demon'. Each night*, a player might die. [+1 Minion]",
     "flavour": "Step 1: Be cute. Step 2: World domination. Step 3: Bweakfast.",
     "jinxes": [
       {
@@ -2336,7 +2350,7 @@
       },
       {
         "id": "magician",
-        "reason": "Only 1 jinxed character can be in play."
+        "reason": "Each night, the Magician chooses a Minion: if that Minion & Lil' Monsta are alive, that Minion babysits Lil’ Monsta."
       },
       {
         "id": "scarletwoman",
@@ -2556,11 +2570,15 @@
     "jinxes": [
       {
         "id": "engineer",
-        "reason": "Legion and the Engineer can not both be in play at the start of the game.\nIf the Engineer creates Legion, most players (including all evil players) become evil Legion."
+        "reason": "Legion and the Engineer can not both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
       },
       {
         "id": "preacher",
-        "reason": "Only 1 jinxed character can be in play."
+        "reason": "If the Preacher chooses Legion, Legion keeps their ability, but the Preacher might learn they are Legion."
+      },
+      {
+        "id": "minstrel",
+        "reason": "If Legion died by execution today, Legion keeps their ability, but the Minstrel might learn they are Legion."
       },
       {
         "id": "hatter",
@@ -2590,10 +2608,6 @@
       {
         "id": "scarletwoman",
         "reason": "If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again."
-      },
-      {
-        "id": "mastermind",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
       }
     ],
     "urls": {
@@ -2724,7 +2738,7 @@
     "jinxes": [
       {
         "id": "engineer",
-        "reason": "Riot and the Engineer can not both be in play at the start of the game. \nIf the Engineer creates Riot, the evil players become Riot."
+        "reason": "Riot and the Engineer can not both be in play at the start of the game. If the Engineer creates Riot, the evil players become Riot."
       },
       {
         "id": "golem",
@@ -2744,7 +2758,7 @@
       },
       {
         "id": "pithag",
-        "reason": "If the Pit-Hag creates Riot, all evil players become Riot. \nIf the Pit-Hag creates Riot after day 3, the game continues for one more day."
+        "reason": "If the Pit-Hag creates Riot, all evil players become Riot. If the Pit-Hag creates Riot after day 3, the game continues for one more day."
       },
       {
         "id": "mayor",
@@ -3114,6 +3128,17 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Voudon",
       "icon": "https://wiki.bloodontheclocktower.com/images/6/6d/Icon_voudon.png"
+    }
+  },
+  {
+    "id": "alsaahir",
+    "name": "Alsaahir",
+    "team": "townsfolk",
+    "ability": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+    "flavour": "I am here because of you, and you are here because of me.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Alsaahir",
+      "icon": "https://wiki.bloodontheclocktower.com/images/8/8e/Icon_alsaahir.png"
     }
   },
   {

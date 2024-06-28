@@ -9,6 +9,27 @@
     ]
   },
   {
+    "id": "Alsaahir",
+    "jinx": [
+      {
+        "id": "Legion",
+        "reason": "If a player registers as both a Minion and a Demon, the Alsaahir must guess that player as a Demon in order for their guess to be correct."
+      },
+      {
+        "id": "Lil’ Monsta",
+        "reason": "If a player registers as both a Minion and a Demon, the Alsaahir must guess that player as a Demon in order for their guess to be correct."
+      },
+      {
+        "id": "Recluse",
+        "reason": "Yes, but don't. We have yet to encounter a situation where it was fun for the players to have the Spy or Recluse misregister to the Alsaahir's ability."
+      },
+      {
+        "id": "Spy",
+        "reason": "Yes, but don't. We have yet to encounter a situation where it was fun for the players to have the Spy or Recluse misregister to the Alsaahir's ability."
+      }
+    ]
+  },
+  {
     "id": "Apprentice",
     "jinx": [
       {

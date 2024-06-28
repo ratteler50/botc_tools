@@ -366,7 +366,7 @@
       "Is The Demon"
     ],
     "setup": false,
-    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)",
+    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",
     "firstNight": 0,
     "otherNight": 25,
     "jinxes": [
@@ -834,7 +834,13 @@
     "setup": false,
     "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "jinxes": [
+      {
+        "id": "alhadikhia",
+        "reason": "If the Al-Hadikhia dies by execution, and the Mastermind is alive, the Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, evil wins. Otherwise, good wins."
+      }
+    ]
   },
   {
     "id": "zombuul",
@@ -1601,16 +1607,13 @@
     "name": "Balloonist",
     "edition": "",
     "team": "townsfolk",
-    "firstNightReminder": "Show any player :reminder:",
-    "otherNightReminder": "Show a player with a different character type to previously :reminder:",
+    "firstNightReminder": "Show any player. :reminder:",
+    "otherNightReminder": "Show a player with a different character type to previously. :reminder:",
     "reminders": [
-      "Seen Townsfolk",
-      "Seen Outsider",
-      "Seen Minion",
-      "Seen Demon"
+      "Know"
     ],
     "setup": true,
-    "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
+    "ability": "Each night, you learn a player of a different character type than last night. [+0 or +1 Outsider]",
     "firstNight": 55,
     "otherNight": 74
   },
@@ -2159,7 +2162,7 @@
       "Dead"
     ],
     "setup": true,
-    "ability": "Each night, Minions choose who babysits Lil' Monsta's token & \"is the Demon\". A player dies each night*. [+1 Minion]",
+    "ability": "Each night, Minions choose who babysits Lil' Monsta & \"is the Demon\". Each night*, a player might die. [+1 Minion]",
     "special": [
       {
         "type": "ability",
@@ -2181,7 +2184,7 @@
       },
       {
         "id": "magician",
-        "reason": "Only 1 jinxed character can be in play."
+        "reason": "Each night, the Magician chooses a Minion: if that Minion & Lil' Monsta are alive, that Minion babysits Lil’ Monsta."
       },
       {
         "id": "scarletwoman",
@@ -2251,10 +2254,6 @@
       {
         "id": "scarletwoman",
         "reason": "If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again."
-      },
-      {
-        "id": "mastermind",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
       }
     ]
   },
@@ -2282,11 +2281,15 @@
     "jinxes": [
       {
         "id": "engineer",
-        "reason": "Legion and the Engineer can not both be in play at the start of the game.\nIf the Engineer creates Legion, most players (including all evil players) become evil Legion."
+        "reason": "Legion and the Engineer can not both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
       },
       {
         "id": "preacher",
-        "reason": "Only 1 jinxed character can be in play."
+        "reason": "If the Preacher chooses Legion, Legion keeps their ability, but the Preacher might learn they are Legion."
+      },
+      {
+        "id": "minstrel",
+        "reason": "If Legion died by execution today, Legion keeps their ability, but the Minstrel might learn they are Legion."
       },
       {
         "id": "hatter",
@@ -2377,7 +2380,7 @@
     "jinxes": [
       {
         "id": "engineer",
-        "reason": "Riot and the Engineer can not both be in play at the start of the game. \nIf the Engineer creates Riot, the evil players become Riot."
+        "reason": "Riot and the Engineer can not both be in play at the start of the game. If the Engineer creates Riot, the evil players become Riot."
       },
       {
         "id": "golem",
@@ -2397,7 +2400,7 @@
       },
       {
         "id": "pithag",
-        "reason": "If the Pit-Hag creates Riot, all evil players become Riot. \nIf the Pit-Hag creates Riot after day 3, the game continues for one more day."
+        "reason": "If the Pit-Hag creates Riot, all evil players become Riot. If the Pit-Hag creates Riot after day 3, the game continues for one more day."
       },
       {
         "id": "mayor",
@@ -2532,16 +2535,12 @@
         "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
       },
       {
-        "id": "flowergirl",
-        "reason": "If the Organ Grinder is causing eyes-closed voting, the Flowergirl wakes tonight to choose a player: they learn if that player voted today. (instead of their normal ability)"
-      },
-      {
         "id": "minstrel",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+        "reason": "If the Minstrel makes everyone drunk, the Organ Grinder keeps their ability but the Minstrel keeps their eyes open when voting."
       },
       {
         "id": "preacher",
-        "reason": "Only 1 jinxed character can be in play. Evil players start knowing which player and character it is."
+        "reason": "If the Preacher removes the Organ Grinder ability, the Organ Grinder keeps their ability but the Preacher keeps their eyes open when voting."
       }
     ]
   },
@@ -2584,6 +2583,10 @@
       {
         "id": "politician",
         "reason": "The Politician might register as evil to the Vizier."
+      },
+      {
+        "id": "alsaahir",
+        "reason": "If the Vizier is in play, the Alsaahir must also guess which Demon(s) are in play."
       }
     ]
   },
@@ -2641,7 +2644,7 @@
       "2nd"
     ],
     "setup": false,
-    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
+    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or one or both might die.",
     "firstNight": 34,
     "otherNight": 23
   },
@@ -2653,10 +2656,10 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [
-      "Storyteller ability"
+      "Duplicate"
     ],
     "setup": false,
-    "ability": "If you die, the Storyteller gains a not-in-play Minion ability.",
+    "ability": "If you die, the Storyteller gains a Minion ability.",
     "firstNight": 0,
     "otherNight": 0
   },
@@ -2737,6 +2740,10 @@
       {
         "id": "choirboy",
         "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
+      },
+      {
+        "id": "soldier",
+        "reason": "If the Kazali turns the Soldier into a Minion, the Soldier chooses which not-in-play Minion to become."
       }
     ]
   },
@@ -2852,6 +2859,10 @@
       {
         "id": "kazali",
         "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+      },
+      {
+        "id": "preacher",
+        "reason": "If the Preacher chose the Summoner on or before the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
       }
     ]
   },
@@ -2876,7 +2887,9 @@
     "team": "outsider",
     "edition": "",
     "firstNightReminder": "The Ogre points to a player.",
-    "reminders": [],
+    "reminders": [
+      "Friend"
+    ],
     "setup": false,
     "ability": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.",
     "firstNight": 62,
@@ -2887,6 +2900,17 @@
         "reason": "If the Recluse registers as evil to the Ogre, the Ogre learns that they are evil."
       }
     ]
+  },
+  {
+    "id": "alsaahir",
+    "name": "Alsaahir",
+    "team": "townsfolk",
+    "edition": "",
+    "reminders": [],
+    "setup": false,
+    "ability": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+    "firstNight": 0,
+    "otherNight": 0
   },
   {
     "id": "doomsayer",
