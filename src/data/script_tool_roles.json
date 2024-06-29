@@ -351,6 +351,15 @@
     "isDisabled": false
   },
   {
+    "id": "Alsaahir",
+    "name": "Alsaahir",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/Alsaahir_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/Alsaahir_icon.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "Nightwatchman",
     "name": "Nightwatchman",
     "roleType": "townsfolk",
