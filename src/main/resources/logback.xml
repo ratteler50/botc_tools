@@ -19,13 +19,20 @@ All log messages at "info" level and above will be outputted using this appender
   </appender>
 
   <!-- File appender definition -->
-  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-    <file>logs/bot.log</file> <!-- Specify the log file name and path here -->
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>logs/bot.log</file>
     <encoder>
       <pattern>
         %d{dd-MM-yyyy HH:mm:ss.SSS} %highlight(%-5level) %magenta([%thread]) %yellow(%logger{40}.%M\(%class{0}.java:%line\)) - %msg%throwable%n
       </pattern>
     </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <!-- daily rollover, with max file size of 10MB -->
+      <fileNamePattern>logs/archived/bot.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+      <maxFileSize>1MB</maxFileSize>
+      <maxHistory>30</maxHistory> <!-- Keep 30 days of history -->
+      <totalSizeCap>5GB</totalSizeCap> <!-- Total size of all log files -->
+    </rollingPolicy>
   </appender>
 
   <root level="info">
