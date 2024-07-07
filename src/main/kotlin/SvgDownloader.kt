@@ -1,41 +1,54 @@
 
+import io.github.oshai.kotlinlogging.KotlinLogging
 import java.awt.Color
 import java.awt.Graphics2D
 import java.awt.image.BufferedImage
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
-import java.net.URL
+import java.net.URI
 import javax.imageio.ImageIO
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.joinAll
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
+private val logger = KotlinLogging.logger {}
 
 fun main() {
   val urls = getRolesFromJson().mapNotNull { it.urls?.icon }
   val client = OkHttpClient()
-  urls.forEach { urlString ->
-    convertBmpToSvg(convertPngToBmp(downloadPng(client, urlString)))
-
+  runBlocking {
+    val jobs = urls.map { urlString ->
+      launch(Dispatchers.IO) { // Launch each task in its coroutine on the IO dispatcher
+        convertBmpToSvg(convertPngToBmp(downloadPng(client, urlString)))
+      }
+    }
+    jobs.joinAll() // Wait for all tasks to complete
   }
 }
 
 fun downloadPng(client: OkHttpClient, urlString: String): File {
-  val fileName = URL(urlString).file.substringAfterLast("/")
+  val fileName = URI(urlString).toURL().file.substringAfterLast("/")
   val downloadedFile = File("./src/data/images/pngs/$fileName")
 
   if (downloadedFile.exists()) {
-    println("File already exists: $fileName")
+    logger.warn { "File already exists: $fileName" }
     return downloadedFile
   }
 
-  println("Downloading file: $urlString")
+  logger.info { "Downloading file: $urlString" }
+  // Ensure all ancestor directories exist
+  downloadedFile.parentFile.mkdirs()
   val request = Request.Builder().url(urlString).build()
   client.newCall(request).execute().use { response ->
     if (!response.isSuccessful) throw IOException("Failed to download file: $urlString")
 
     val fos = FileOutputStream(downloadedFile)
     fos.use {
+      logger.info { "Writing file: $fileName" }
       response.body?.bytes()?.let(it::write)
     }
   }
@@ -49,9 +62,11 @@ fun convertPngToBmp(pngFile: File): File {
   val pngImage = ImageIO.read(pngFile)
 
   if (bmpFile.exists()) {
-    println("File already exists: ${bmpFile.name}")
+    logger.warn { "File already exists: ${bmpFile.name}" }
     return bmpFile
   }
+  // Ensure all ancestor directories exist
+  bmpFile.parentFile.mkdirs()
 
   // Create a new BufferedImage without alpha channel, fill it with white color, and draw the original image on it
   val rgbImage = BufferedImage(pngImage.width, pngImage.height, BufferedImage.TYPE_INT_RGB)
@@ -63,21 +78,26 @@ fun convertPngToBmp(pngFile: File): File {
 
   val writeSuccessful = ImageIO.write(rgbImage, "BMP", bmpFile)
   if (!writeSuccessful) {
-    println("Failed to write BMP image: ${bmpFile.absolutePath}")
+    logger.warn { "Failed to write BMP image: ${bmpFile.absolutePath}" }
     return bmpFile
   }
 
-  println("Converted PNG to BMP: ${bmpFile.name}")
+  logger.info { "Converted PNG to BMP: ${bmpFile.name}" }
   return bmpFile
 }
 
 fun convertBmpToSvg(bmpFile: File): File {
   // Convert BMP to SVG using potrace
   val svgFile = File("./src/data/images/svgs/${bmpFile.nameWithoutExtension}.svg")
+  // Ensure all ancestor directories exist
+  svgFile.parentFile.mkdirs()
   val process =
     ProcessBuilder("potrace", "-s", bmpFile.absolutePath, "-o", svgFile.absolutePath).start()
   process.waitFor()
-  println(process.errorStream.bufferedReader().readText())
-  println("Converted BMP to SVG: ${svgFile.name}")
+  val errorOutput = process.errorStream.bufferedReader().readText().trim()
+  if (errorOutput.isNotEmpty()) {
+      logger.error { errorOutput }
+  }
+  logger.info { "Converted BMP to SVG: ${svgFile.name}" }
   return svgFile
 }
