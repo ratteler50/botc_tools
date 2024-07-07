@@ -13,3 +13,5 @@ target/
 /dataSources.local.xml
 # Secrets for Discord Bot.
 /src/main/kotlin/discord/Settings.kt
+# Server logs
+/logs/

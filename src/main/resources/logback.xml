@@ -18,7 +18,18 @@ All log messages at "info" level and above will be outputted using this appender
     </encoder>
   </appender>
 
+  <!-- File appender definition -->
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>logs/bot.log</file> <!-- Specify the log file name and path here -->
+    <encoder>
+      <pattern>
+        %d{dd-MM-yyyy HH:mm:ss.SSS} %highlight(%-5level) %magenta([%thread]) %yellow(%logger{40}.%M\(%class{0}.java:%line\)) - %msg%throwable%n
+      </pattern>
+    </encoder>
+  </appender>
+
   <root level="info">
     <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
   </root>
 </configuration>
