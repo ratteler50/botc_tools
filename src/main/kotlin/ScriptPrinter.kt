@@ -47,10 +47,6 @@ class ScriptPrinter(
     }
   }
 
-  fun printScript() {
-    print(textScriptString())
-  }
-
   private fun buildScriptRoles(): String = buildString {
     appendLine(TOWNSFOLK_DIVIDER)
     getTownsfolkRoles().forEach { appendLine("> - ${it.asTextScriptEntry()}") }

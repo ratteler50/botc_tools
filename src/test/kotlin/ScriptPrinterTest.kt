@@ -1,24 +1,15 @@
 
 import com.google.common.collect.ImmutableTable
 import com.google.common.truth.Truth.assertThat
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
 import models.Jinx
 import models.Role
 import models.Script
 import org.junit.After
-import org.junit.Before
 import org.junit.Test
 
 
 class ScriptPrinterTest {
   private val standardOut = System.out
-  private val outputStreamCaptor = ByteArrayOutputStream()
-
-  @Before
-  fun setUp() {
-    System.setOut(PrintStream(outputStreamCaptor))
-  }
 
   @After
   fun tearDown() {
@@ -28,8 +19,7 @@ class ScriptPrinterTest {
   @Test
   fun printScript_empty() {
     val printer = ScriptPrinter(null, listOf(), ImmutableTable.of(), ImmutableTable.of(), mapOf())
-    printer.printScript()
-    assertThat(outputStreamCaptor.toString()).isEqualTo(
+    assertThat(printer.textScriptString()).isEqualTo(
       """
         **__INSERT SCRIPT TITLE HERE__**
 
@@ -61,8 +51,7 @@ class ScriptPrinterTest {
       getClarificationTable(),
       roleMap
     )
-    printer.printScript()
-    assertThat(outputStreamCaptor.toString()).isEqualTo(
+    assertThat(printer.textScriptString()).isEqualTo(
       """
     **__EXAMPLE_SCRIPT_NAME__** by somebody
     

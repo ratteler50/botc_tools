@@ -3,6 +3,7 @@ import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
+import io.github.oshai.kotlinlogging.KotlinLogging
 import java.io.File
 import kotlin.system.measureTimeMillis
 import kotlinx.coroutines.Dispatchers
@@ -14,12 +15,14 @@ import models.NightSheet
 import models.Role
 import models.ScriptToolRole
 
+private val logger = KotlinLogging.logger {}
+
 suspend fun main() {
-  measureTimeMillis { updateRoleJinxes() }.also { println("Updated role jinxes in $it ms") }
-  measureTimeMillis { updateRolesFromGrimToolRoles() }.also { println("Updated roles in $it ms") }
-  measureTimeMillis { updateRolesFromWiki() }.also { println("Updated roles from wiki in $it ms") }
-  measureTimeMillis { updateNightOrder() }.also { println("Updated night order in $it ms") }
-  measureTimeMillis { updateSaoFromScriptToolRoles() }.also { println("Updated SAO in $it ms") }
+  measureTimeMillis { updateRoleJinxes() }.also { logger.info { "Updated role jinxes in $it ms" } }
+  measureTimeMillis { updateRolesFromGrimToolRoles() }.also { logger.info { "Updated roles in $it ms" } }
+  measureTimeMillis { updateRolesFromWiki() }.also { logger.info { "Updated roles from wiki in $it ms" } }
+  measureTimeMillis { updateNightOrder() }.also { logger.info { "Updated night order in $it ms" } }
+  measureTimeMillis { updateSaoFromScriptToolRoles() }.also { logger.info { "Updated SAO in $it ms" } }
 }
 
 private fun updateRoleJinxes() {
@@ -37,8 +40,7 @@ private fun updateRoleJinxes() {
 private fun updateRolesFromGrimToolRoles() {
   val rawRoles = Role.listFromJson(gson, File(GRIM_TOOL_ROLES).readText()).associateBy(Role::id)
   val roles = getRolesFromJson()
-  roles.map { role -> rawRoles[role.id]?.let { rawRole -> role.copyFrom(rawRole) } ?: role }
-    .run {
+  roles.map { role -> rawRoles[role.id]?.let { rawRole -> role.copyFrom(rawRole) } ?: role }.run {
       File(ROLES_JSON).writeText(gson.toJson(this))
     }
 }
@@ -71,14 +73,14 @@ private suspend fun updateRolesFromWiki() {
       async {
         var updatedRole: Role
         val elapsedTimeMillis = measureTimeMillis {
-          println("Updating ${role.name}")
+          logger.info { "Updating ${role.name}" }
           updatedRole =
             runCatching { role.copyFrom(wikiReader.getRole(role.name ?: "")) }.getOrElse {
-              println("Couldn't update ${role.name}: ${it.message}")
+              logger.warn { "Couldn't update ${role.name}: ${it.message}" }
               role
             }
         }
-        println("Update complete for ${role.name}: $elapsedTimeMillis ms")
+        logger.info { "Update complete for ${role.name}: $elapsedTimeMillis ms" }
         updatedRole
       }
     }.awaitAll()

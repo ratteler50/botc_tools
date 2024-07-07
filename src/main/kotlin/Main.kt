@@ -7,12 +7,14 @@ import AppConfig.ROLES_JSON
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import io.github.oshai.kotlinlogging.KotlinLogging
 import java.io.File
 import kotlin.system.measureTimeMillis
 import models.Jinx
 import models.Role
 import models.Script
 
+private val logger = KotlinLogging.logger {}
 
 object AppConfig {
   const val INPUT_SCRIPT_JSON = "./src/data/input_script.json"
@@ -39,10 +41,11 @@ suspend fun main() {
         inputScriptJson
       )
     )
-  }.also { println("Generated script in $it ms") }
+  }.also { logger.info { "Generated script in $it ms" } }
 }
 
 fun generateTextScript(scriptMetadata: Script?, inputScriptJson: String): String {
+  logger.info { "Generating text script from $inputScriptJson" }
   val roleMap = getRolesFromJson().associateBy(Role::id)
   return ScriptPrinter(
     scriptMetadata,

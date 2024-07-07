@@ -1,11 +1,14 @@
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
+import io.github.oshai.kotlinlogging.KotlinLogging
 import java.io.IOException
 import java.net.URLEncoder
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
+
+private val logger = KotlinLogging.logger {}
 
 private fun String.encodeUrl() = URLEncoder.encode(this, "UTF-8")
 
@@ -122,12 +125,14 @@ class BotcRoleLoader {
       val content = revisions.firstOrNull()?.slots?.main?.content ?: ""
       val doc = Jsoup.parse(content)
       val summarySectionText = extractSectionText(doc, "Summary").lines()
-      val quoteRegex = "^[\u201C\u201D\u201E\u201F\u2033\u2036\"']+|[\u201C\u201D\u201E\u201F\u2033\u2036\"']+$".toRegex()
+      val quoteRegex =
+        "^[\u201C\u201D\u201E\u201F\u2033\u2036\"']+|[\u201C\u201D\u201E\u201F\u2033\u2036\"']+$".toRegex()
 
       return RoleContent(
         rawText = content,
         flavourText = doc.select("p.flavour").text().trim().replace(quoteRegex, "").trim(),
-        abilityText = summarySectionText.firstOrNull()?.trim()?.replace(quoteRegex, "")?.trim() ?: "",
+        abilityText = summarySectionText.firstOrNull()?.trim()?.replace(quoteRegex, "")?.trim()
+          ?: "",
         summary = summarySectionText.drop(1).joinToString("\n"),
         examples = extractSectionText(doc, "Examples").lines(),
         howToRun = extractSectionText(doc, "How to Run"),
@@ -166,14 +171,14 @@ fun main() {
   val loader = BotcRoleLoader()
   val role = loader.getRole("kazali")
 
-  println("Title: ${role.title}")
-  println("wiki URL: ${role.wikiUrl}")
-  println("Image URL: ${role.imageUrl}")
-  println("CotC URL: ${role.cotcUrl}")
-  println("Flavour Text: ${role.roleContent.flavourText}")
-  println("Ability Text: ${role.roleContent.abilityText}")
-  println("Summary: ${role.roleContent.summary}")
-  println("Examples: ${role.roleContent.examples}")
-  println("How To Run: ${role.roleContent.howToRun}")
-  println("Raw Text: ${role.roleContent.rawText}")
+  logger.info { "Title: ${role.title}" }
+  logger.info { "wiki URL: ${role.wikiUrl}" }
+  logger.info { "Image URL: ${role.imageUrl}" }
+  logger.info { "CotC URL: ${role.cotcUrl}" }
+  logger.info { "Flavour Text: ${role.roleContent.flavourText}" }
+  logger.info { "Ability Text: ${role.roleContent.abilityText}" }
+  logger.info { "Summary: ${role.roleContent.summary}" }
+  logger.info { "Examples: ${role.roleContent.examples}" }
+  logger.info { "How To Run: ${role.roleContent.howToRun}" }
+  logger.info { "Raw Text: ${role.roleContent.rawText}" }
 }
