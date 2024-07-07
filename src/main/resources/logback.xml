@@ -1,0 +1,24 @@
+<!--
+This logback configuration defines a single appender named "STDOUT" which outputs to the console.
+The pattern for logging messages includes:
+- Timestamp in dd-MM-yyyy HH:mm:ss.SSS format
+- Log level with color highlighting
+- Thread name in magenta
+- Logger name (truncated to 40 characters) and method name in yellow, followed by the class name (without package) and line number from where the log was called
+- The actual log message
+- Any throwable associated with the log message, including its stack trace
+All log messages at "info" level and above will be outputted using this appender.
+-->
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>
+        %d{dd-MM-yyyy HH:mm:ss.SSS} %highlight(%-5level) %magenta([%thread]) %yellow(%logger{40}.%M\(%class{0}.java:%line\)) - %msg%throwable%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

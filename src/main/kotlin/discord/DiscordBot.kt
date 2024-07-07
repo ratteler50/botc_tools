@@ -3,6 +3,7 @@ package discord
 import generateTextScript
 import getRolesFromJson
 import getScriptMetadata
+import io.github.oshai.kotlinlogging.KotlinLogging
 import java.awt.Color
 import models.Role
 import models.Role.Type.DEMON
@@ -22,6 +23,8 @@ import net.dv8tion.jda.api.interactions.commands.build.Commands
 import net.dv8tion.jda.api.utils.FileUpload
 import normalize
 
+private val logger = KotlinLogging.logger {}
+
 class DiscordBot(private val token: String) : ListenerAdapter() {
 
   private val roles by lazy { getRolesFromJson().associateBy { it.id.normalize() } }
@@ -39,11 +42,13 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
       ).addOption(STRING, "name", "The name of the role to look for", true)
     ).queue()
     jda.retrieveCommands().queue { commands ->
-      commands.forEach { println("name: ${it.name}; id: ${it.id}") }
+      commands.forEach {
+        logger.info { "name: ${it.name}; id: ${it.id}" }
+      }
     }
     jda.awaitReady()
     jda.presence.activity = Activity.playing("with her string!")
-    println("Bot is ready!")
+    logger.info { "Bot is ready!" }
   }
 
   override fun onSlashCommandInteraction(event: SlashCommandInteractionEvent) {
