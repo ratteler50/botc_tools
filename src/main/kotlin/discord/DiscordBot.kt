@@ -58,7 +58,6 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
     }
   }
 
-
   private fun handleRole(event: SlashCommandInteractionEvent) {
     event.deferReply().queue()
     val roleName = event.options[0].asString
@@ -104,6 +103,7 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
       ).queue()
       event.hook.sendMessage("`$scriptJson`").queue()
     } catch (e: Exception) {
+      logger.warn(e) { "Error generating script from $scriptJson" }
       event.hook.sendMessage("Invalid JSON: $scriptJson").queue()
     }
   }
