@@ -27,8 +27,6 @@ private val logger = KotlinLogging.logger {}
 
 class DiscordBot(private val token: String) : ListenerAdapter() {
 
-  private val roles by lazy { getRolesFromJson().associateBy { it.id.normalize() } }
-
   fun start() {
     val jda = JDABuilder.createDefault(token).addEventListeners(this).build()
     jda.upsertCommand(
@@ -61,6 +59,7 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
   private fun handleRole(event: SlashCommandInteractionEvent) {
     event.deferReply().queue()
     val roleName = event.options[0].asString
+    val roles = getRolesFromJson().associateBy { it.id.normalize() }
     roles[roleName.normalize()]?.let { role ->
       event.hook.sendMessageEmbeds(buildEmbed(role)).queue()
     } ?: run {

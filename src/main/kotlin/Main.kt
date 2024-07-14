@@ -17,13 +17,13 @@ import models.Script
 private val logger = KotlinLogging.logger {}
 
 object AppConfig {
-  const val INPUT_SCRIPT_JSON = "./src/data/input_script.json"
-  const val ROLES_JSON = "./src/data/roles.json"
-  const val GRIM_TOOL_ROLES = "./src/data/grim_tool_roles.json"
-  const val NIGHTSHEET_JSON = "./src/data/nightsheet.json"
-  const val INTERACTIONS_JSON = "./src/data/interactions.json"
-  const val JINXES_JSON = "./src/data/jinxes.json"
-  const val SCRIPT_TOOL_ROLES = "./src/data/script_tool_roles.json"
+  const val INPUT_SCRIPT_JSON = "./data/input_script.json"
+  const val ROLES_JSON = "./data/roles.json"
+  const val GRIM_TOOL_ROLES = "./data/grim_tool_roles.json"
+  const val NIGHTSHEET_JSON = "./data/nightsheet.json"
+  const val INTERACTIONS_JSON = "./data/interactions.json"
+  const val JINXES_JSON = "./data/jinxes.json"
+  const val SCRIPT_TOOL_ROLES = "./data/script_tool_roles.json"
 }
 
 val gson: Gson by lazy { GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create() }
