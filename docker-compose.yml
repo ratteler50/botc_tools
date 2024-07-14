@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  kaylee:
+    image: kaylee
+    volumes:
+    - ./data:/app/data
