@@ -697,7 +697,7 @@
       "wiki": "https://wiki.bloodontheclocktower.com/Amnesiac",
       "icon": "https://wiki.bloodontheclocktower.com/images/2/26/Icon_amnesiac.png"
     },
-    "textGameClarification": "Amnesiac may continue to guess once per day while dead. Guesses are always sober and healthy."
+    "textGameClarification": "Amnesiac guesses yield true info.  An Amnesiac may continue to guess even when dead."
   },
   {
     "id": "juggler",
