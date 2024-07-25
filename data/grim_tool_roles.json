@@ -239,6 +239,13 @@
     "otherNight": 80
   },
   {
+    "id": "zealot",
+    "name": "Zealot",
+    "team": "outsider",
+    "setup": false,
+    "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too."
+  },
+  {
     "id": "drunk",
     "name": "Drunk",
     "edition": "tb",

@@ -27,6 +27,10 @@
       {
         "id": "Juggler",
         "reason": "If the Juggler guesses on their first day and dies by execution, tonight the living Cannibal learns how many guesses the Juggler got correct."
+      },
+      {
+        "id": "Zealot",
+        "reason": "If the Cannibal gains the Zealot ability, the Cannibal learns this."
       }
     ]
   },
@@ -191,6 +195,10 @@
       {
         "id": "Hatter",
         "reason": "If the Hatter dies and Legion is in play, nothing happens. If the Hatter dies and an evil player chooses Legion, all current evil players become Legion."
+      },
+      {
+        "id": "Zealot",
+        "reason": "The Zealot might register as evil to Legion’s ability."
       }
     ]
   },
@@ -577,6 +585,10 @@
       {
         "id": "Hatter",
         "reason": "If the Hatter dies, Riot is in play and a Riot chooses a different Demon, a normal evil team is created from the Riot players. If the Hatter dies and the Demon chooses Riot, Minions become Riot too."
+      },
+      {
+        "id": "Zealot",
+        "reason": "If you are nominated, you must nominate again, even if dead."
       }
     ]
   },
@@ -616,6 +628,10 @@
       {
         "id": "Preacher",
         "reason": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins."
+      },
+      {
+        "id": "Zealot",
+        "reason": "The Zealot might register as evil to the Vizier."
       },
       {
         "id": "Courtier",

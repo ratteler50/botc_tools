@@ -1221,6 +1221,35 @@
     ]
   },
   {
+    "id": "Zealot",
+    "jinx": [
+      {
+        "id": "Barber",
+        "reason": "If the Zealot becomes a new character, they no longer have the Zealot ability and are no longer required to vote on every nomination."
+      },
+      {
+        "id": "Cerenovus",
+        "reason": "If a player is made mad as the Zealot, they are expected to vote on every nomination."
+      },
+      {
+        "id": "Farmer",
+        "reason": "If the Zealot becomes a new character, they no longer have the Zealot ability and are no longer required to vote on every nomination."
+      },
+      {
+        "id": "Marionette",
+        "reason": "If the Marionette thinks they are the Zealot, they should always vote on every nomination."
+      },
+      {
+        "id": "Mezepheles",
+        "reason": "The Zealot might be a great person to have on your side, since they have to vote on every good player! But they also have to vote on every evil player, so be careful what you wish for..."
+      },
+      {
+        "id": "Pit Hag",
+        "reason": "If the Zealot becomes a new character, they no longer have the Zealot ability and are no longer required to vote on every nomination."
+      }
+    ]
+  },
+  {
     "id": "Zombuul",
     "jinx": [
       {

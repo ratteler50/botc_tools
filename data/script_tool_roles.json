@@ -720,6 +720,12 @@
     "isDisabled": false
   },
   {
+    "id": "Zealot",
+    "name": "Zealot",
+    "roleType": "outsider",
+    "isDisabled": false
+  },
+  {
     "id": "Damsel",
     "name": "Damsel",
     "roleType": "outsider",

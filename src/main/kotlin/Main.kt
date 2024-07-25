@@ -33,7 +33,7 @@ val wikiReader by lazy { BotcRoleLoader() }
 suspend fun main() {
   val inputScriptJson = File(INPUT_SCRIPT_JSON).readText()
   val scriptMetadata = getScriptMetadata(inputScriptJson)
-  val outputFilename = "./src/data/${scriptMetadata?.name ?: "output"}.md"
+  val outputFilename = "./data/${scriptMetadata?.name ?: "output"}.md"
   measureTimeMillis {
     File(outputFilename).writeText(
       generateTextScript(
