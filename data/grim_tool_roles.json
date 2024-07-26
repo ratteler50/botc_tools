@@ -239,13 +239,6 @@
     "otherNight": 80
   },
   {
-    "id": "zealot",
-    "name": "Zealot",
-    "team": "outsider",
-    "setup": false,
-    "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too."
-  },
-  {
     "id": "drunk",
     "name": "Drunk",
     "edition": "tb",
@@ -1853,6 +1846,10 @@
       {
         "id": "juggler",
         "reason": "If the Juggler guesses on their first day and dies by execution, tonight the living Cannibal learns how many guesses the Juggler got correct."
+      },
+      {
+        "id": "zealot",
+        "reason": "If the Cannibal gains the Zealot ability, the Cannibal learns this."
       }
     ]
   },
@@ -2223,7 +2220,7 @@
       "Poisoned"
     ],
     "setup": false,
-    "ability": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if & only if they die.",
+    "ability": "Each night*, choose a player: they die. You start by choosing a player: they are poisoned. You die if & only if they are dead.",
     "firstNight": 23,
     "otherNight": 42,
     "jinxes": [
@@ -2301,6 +2298,10 @@
       {
         "id": "hatter",
         "reason": "If the Hatter dies and Legion is in play, nothing happens. If the Hatter dies and an evil player chooses Legion, all current evil players become Legion."
+      },
+      {
+        "id": "zealot",
+        "reason": "The Zealot might register as evil to Legion's ability."
       }
     ]
   },
@@ -2500,6 +2501,10 @@
       {
         "id": "hatter",
         "reason": "If the Hatter dies, Riot is in play and a Riot chooses a different Demon, a normal evil team is created from the Riot players. If the Hatter dies and the Demon chooses Riot, Minions become Riot too."
+      },
+      {
+        "id": "zealot",
+        "reason": "If you are nominated, you must nominate again, even if dead."
       }
     ]
   },
@@ -2594,6 +2599,10 @@
       {
         "id": "alsaahir",
         "reason": "If the Vizier is in play, the Alsaahir must also guess which Demon(s) are in play."
+      },
+      {
+        "id": "zealot",
+        "reason": "The Zealot might register as evil to the Vizier."
       }
     ]
   },
@@ -2916,6 +2925,17 @@
     "reminders": [],
     "setup": false,
     "ability": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+    "firstNight": 0,
+    "otherNight": 0
+  },
+  {
+    "id": "zealot",
+    "name": "Zealot",
+    "team": "outsider",
+    "edition": "",
+    "reminders": [],
+    "setup": false,
+    "ability": "If 5 or more players are alive, you must vote for every nomination.",
     "firstNight": 0,
     "otherNight": 0
   },
