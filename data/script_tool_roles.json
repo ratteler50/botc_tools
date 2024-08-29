@@ -1,6 +1,6 @@
 [
   {
-    "id": "Steward",
+    "id": "steward",
     "name": "Steward",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Steward_print.webp",
@@ -9,7 +9,7 @@
     "isDisabled": false
   },
   {
-    "id": "Knight",
+    "id": "knight",
     "name": "Knight",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Knight_print.webp",
@@ -18,7 +18,7 @@
     "isDisabled": false
   },
   {
-    "id": "Noble",
+    "id": "noble",
     "name": "Noble",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Noble_print.webp",
@@ -27,7 +27,7 @@
     "isDisabled": false
   },
   {
-    "id": "Chef",
+    "id": "chef",
     "name": "Chef",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Chef_print.webp",
@@ -36,7 +36,7 @@
     "isDisabled": false
   },
   {
-    "id": "Investigator",
+    "id": "investigator",
     "name": "Investigator",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Investigator_print.webp",
@@ -45,7 +45,7 @@
     "isDisabled": false
   },
   {
-    "id": "Washerwoman",
+    "id": "washerwoman",
     "name": "Washerwoman",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Washerwoman_print.webp",
@@ -54,7 +54,7 @@
     "isDisabled": false
   },
   {
-    "id": "Clockmaker",
+    "id": "clockmaker",
     "name": "Clockmaker",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Clockmaker_print.webp",
@@ -63,7 +63,7 @@
     "isDisabled": false
   },
   {
-    "id": "Librarian",
+    "id": "librarian",
     "name": "Librarian",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Librarian_print.webp",
@@ -72,7 +72,7 @@
     "isDisabled": false
   },
   {
-    "id": "Grandmother",
+    "id": "grandmother",
     "name": "Grandmother",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Grandmother_print.webp",
@@ -81,7 +81,7 @@
     "isDisabled": false
   },
   {
-    "id": "Bounty Hunter",
+    "id": "bountyhunter",
     "name": "Bounty Hunter",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Bounty Hunter_print.webp",
@@ -90,7 +90,7 @@
     "isDisabled": false
   },
   {
-    "id": "Shugenja",
+    "id": "shugenja",
     "name": "Shugenja",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Shugenja_print.webp",
@@ -99,7 +99,7 @@
     "isDisabled": false
   },
   {
-    "id": "Pixie",
+    "id": "pixie",
     "name": "Pixie",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Pixie_print.webp",
@@ -108,7 +108,7 @@
     "isDisabled": false
   },
   {
-    "id": "Empath",
+    "id": "empath",
     "name": "Empath",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Empath_print.webp",
@@ -117,7 +117,7 @@
     "isDisabled": false
   },
   {
-    "id": "High Priestess",
+    "id": "highpriestess",
     "name": "High Priestess",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/High Priestess_print.webp",
@@ -126,7 +126,7 @@
     "isDisabled": false
   },
   {
-    "id": "Sailor",
+    "id": "sailor",
     "name": "Sailor",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Sailor_print.webp",
@@ -135,7 +135,7 @@
     "isDisabled": false
   },
   {
-    "id": "General",
+    "id": "general",
     "name": "General",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/General_print.webp",
@@ -144,7 +144,7 @@
     "isDisabled": false
   },
   {
-    "id": "Preacher",
+    "id": "preacher",
     "name": "Preacher",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Preacher_print.webp",
@@ -153,7 +153,7 @@
     "isDisabled": false
   },
   {
-    "id": "Chambermaid",
+    "id": "chambermaid",
     "name": "Chambermaid",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Chambermaid_print.webp",
@@ -162,7 +162,7 @@
     "isDisabled": false
   },
   {
-    "id": "Dreamer",
+    "id": "dreamer",
     "name": "Dreamer",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Dreamer_print.webp",
@@ -171,7 +171,7 @@
     "isDisabled": false
   },
   {
-    "id": "Village Idiot",
+    "id": "villageidiot",
     "name": "Village Idiot",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Village Idiot_Print.webp",
@@ -180,7 +180,7 @@
     "isDisabled": false
   },
   {
-    "id": "Snake Charmer",
+    "id": "snakecharmer",
     "name": "Snake Charmer",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Snake Charmer_print.webp",
@@ -189,7 +189,7 @@
     "isDisabled": false
   },
   {
-    "id": "Balloonist",
+    "id": "balloonist",
     "name": "Balloonist",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Balloonist_print.webp",
@@ -198,7 +198,7 @@
     "isDisabled": false
   },
   {
-    "id": "Mathematician",
+    "id": "mathematician",
     "name": "Mathematician",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Mathematician_print.webp",
@@ -207,7 +207,7 @@
     "isDisabled": false
   },
   {
-    "id": "Cult Leader",
+    "id": "cultleader",
     "name": "Cult Leader",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Cult Leader_print.webp",
@@ -216,7 +216,7 @@
     "isDisabled": false
   },
   {
-    "id": "Fortune Teller",
+    "id": "fortuneteller",
     "name": "Fortune Teller",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Fortune Teller_print.webp",
@@ -225,7 +225,7 @@
     "isDisabled": false
   },
   {
-    "id": "King",
+    "id": "king",
     "name": "King",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/King_print.webp",
@@ -234,7 +234,7 @@
     "isDisabled": false
   },
   {
-    "id": "Flowergirl",
+    "id": "flowergirl",
     "name": "Flowergirl",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Flowergirl_print.webp",
@@ -243,7 +243,7 @@
     "isDisabled": false
   },
   {
-    "id": "Town Crier",
+    "id": "towncrier",
     "name": "Town Crier",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Town Crier_print.webp",
@@ -252,7 +252,7 @@
     "isDisabled": false
   },
   {
-    "id": "Oracle",
+    "id": "oracle",
     "name": "Oracle",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Oracle_print.webp",
@@ -261,7 +261,7 @@
     "isDisabled": false
   },
   {
-    "id": "Undertaker",
+    "id": "undertaker",
     "name": "Undertaker",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Undertaker_print.webp",
@@ -270,7 +270,7 @@
     "isDisabled": false
   },
   {
-    "id": "Innkeeper",
+    "id": "innkeeper",
     "name": "Innkeeper",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Innkeeper_print.webp",
@@ -279,7 +279,7 @@
     "isDisabled": false
   },
   {
-    "id": "Gambler",
+    "id": "gambler",
     "name": "Gambler",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Gambler_print.webp",
@@ -288,7 +288,7 @@
     "isDisabled": false
   },
   {
-    "id": "Monk",
+    "id": "monk",
     "name": "Monk",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Monk_print.webp",
@@ -297,7 +297,7 @@
     "isDisabled": false
   },
   {
-    "id": "Lycanthrope",
+    "id": "lycanthrope",
     "name": "Lycanthrope",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Lycanthrope_print.webp",
@@ -306,7 +306,7 @@
     "isDisabled": false
   },
   {
-    "id": "Exorcist",
+    "id": "exorcist",
     "name": "Exorcist",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Exorcist_print.webp",
@@ -315,7 +315,7 @@
     "isDisabled": false
   },
   {
-    "id": "Gossip",
+    "id": "gossip",
     "name": "Gossip",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Gossip_print.webp",
@@ -324,7 +324,7 @@
     "isDisabled": false
   },
   {
-    "id": "Savant",
+    "id": "savant",
     "name": "Savant",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Savant_print.webp",
@@ -333,7 +333,7 @@
     "isDisabled": false
   },
   {
-    "id": "Amnesiac",
+    "id": "amnesiac",
     "name": "Amnesiac",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Amnesiac_print.webp",
@@ -342,7 +342,7 @@
     "isDisabled": false
   },
   {
-    "id": "Juggler",
+    "id": "juggler",
     "name": "Juggler",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Juggler_print.webp",
@@ -351,7 +351,7 @@
     "isDisabled": false
   },
   {
-    "id": "Alsaahir",
+    "id": "alsaahir",
     "name": "Alsaahir",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Alsaahir_print.webp",
@@ -360,7 +360,7 @@
     "isDisabled": false
   },
   {
-    "id": "Nightwatchman",
+    "id": "nightwatchman",
     "name": "Nightwatchman",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Nightwatchman_print.webp",
@@ -369,7 +369,7 @@
     "isDisabled": false
   },
   {
-    "id": "Engineer",
+    "id": "engineer",
     "name": "Engineer",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Engineer_print.webp",
@@ -378,7 +378,7 @@
     "isDisabled": false
   },
   {
-    "id": "Artist",
+    "id": "artist",
     "name": "Artist",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Artist_print.webp",
@@ -387,7 +387,7 @@
     "isDisabled": false
   },
   {
-    "id": "Courtier",
+    "id": "courtier",
     "name": "Courtier",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Courtier_print.webp",
@@ -396,7 +396,7 @@
     "isDisabled": false
   },
   {
-    "id": "Slayer",
+    "id": "slayer",
     "name": "Slayer",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Slayer_print.webp",
@@ -405,7 +405,7 @@
     "isDisabled": false
   },
   {
-    "id": "Fisherman",
+    "id": "fisherman",
     "name": "Fisherman",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Fisherman_print.webp",
@@ -414,7 +414,7 @@
     "isDisabled": false
   },
   {
-    "id": "Professor",
+    "id": "professor",
     "name": "Professor",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Professor_print.webp",
@@ -423,7 +423,7 @@
     "isDisabled": false
   },
   {
-    "id": "Seamstress",
+    "id": "seamstress",
     "name": "Seamstress",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Seamstress_print.webp",
@@ -432,7 +432,7 @@
     "isDisabled": false
   },
   {
-    "id": "Philosopher",
+    "id": "philosopher",
     "name": "Philosopher",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Philosopher_print.webp",
@@ -441,7 +441,7 @@
     "isDisabled": false
   },
   {
-    "id": "Huntsman",
+    "id": "huntsman",
     "name": "Huntsman",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Huntsman_print.webp",
@@ -450,7 +450,7 @@
     "isDisabled": false
   },
   {
-    "id": "Soldier",
+    "id": "soldier",
     "name": "Soldier",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Soldier_print.webp",
@@ -459,7 +459,7 @@
     "isDisabled": false
   },
   {
-    "id": "Fool",
+    "id": "fool",
     "name": "Fool",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Fool_print.webp",
@@ -468,7 +468,7 @@
     "isDisabled": false
   },
   {
-    "id": "Alchemist",
+    "id": "alchemist",
     "name": "Alchemist",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Alchemist_print.webp",
@@ -477,7 +477,7 @@
     "isDisabled": false
   },
   {
-    "id": "Pacifist",
+    "id": "pacifist",
     "name": "Pacifist",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Pacifist_print.webp",
@@ -486,7 +486,7 @@
     "isDisabled": false
   },
   {
-    "id": "Tea Lady",
+    "id": "tealady",
     "name": "Tea Lady",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Tea Lady_print.webp",
@@ -495,7 +495,7 @@
     "isDisabled": false
   },
   {
-    "id": "Sage",
+    "id": "sage",
     "name": "Sage",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Sage_print.webp",
@@ -504,7 +504,7 @@
     "isDisabled": false
   },
   {
-    "id": "Farmer",
+    "id": "farmer",
     "name": "Farmer",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Farmer_print.webp",
@@ -513,7 +513,7 @@
     "isDisabled": false
   },
   {
-    "id": "Magician",
+    "id": "magician",
     "name": "Magician",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Magician_print.webp",
@@ -522,7 +522,7 @@
     "isDisabled": false
   },
   {
-    "id": "Choirboy",
+    "id": "choirboy",
     "name": "Choirboy",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Choirboy_print.webp",
@@ -531,7 +531,7 @@
     "isDisabled": false
   },
   {
-    "id": "Ravenkeeper",
+    "id": "ravenkeeper",
     "name": "Ravenkeeper",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Ravenkeeper_print.webp",
@@ -540,7 +540,7 @@
     "isDisabled": false
   },
   {
-    "id": "Poppy Grower",
+    "id": "poppygrower",
     "name": "Poppy Grower",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Poppy Grower_print.webp",
@@ -549,7 +549,7 @@
     "isDisabled": false
   },
   {
-    "id": "Virgin",
+    "id": "virgin",
     "name": "Virgin",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Virgin_print.webp",
@@ -558,7 +558,7 @@
     "isDisabled": false
   },
   {
-    "id": "Minstrel",
+    "id": "minstrel",
     "name": "Minstrel",
     "roleType": "townsfolk",
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Minstrel_print.webp",
@@ -567,7 +567,7 @@
     "isDisabled": false
   },
   {
-    "id": "Cannibal",
+    "id": "cannibal",
     "name": "Cannibal",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Cannibal_print.webp",
@@ -576,7 +576,7 @@
     "isDisabled": false
   },
   {
-    "id": "Atheist",
+    "id": "atheist",
     "name": "Atheist",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Atheist_print.webp",
@@ -585,7 +585,7 @@
     "isDisabled": false
   },
   {
-    "id": "Mayor",
+    "id": "mayor",
     "name": "Mayor",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Mayor_print.webp",
@@ -594,7 +594,7 @@
     "isDisabled": false
   },
   {
-    "id": "Banshee",
+    "id": "banshee",
     "name": "Banshee",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Banshee_print.webp",
@@ -603,7 +603,7 @@
     "isDisabled": false
   },
   {
-    "id": "Snitch",
+    "id": "snitch",
     "name": "Snitch",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Snitch_print.webp",
@@ -612,7 +612,7 @@
     "isDisabled": false
   },
   {
-    "id": "Ogre",
+    "id": "ogre",
     "name": "Ogre",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Ogre_print.webp",
@@ -621,7 +621,7 @@
     "isDisabled": false
   },
   {
-    "id": "Butler",
+    "id": "butler",
     "name": "Butler",
     "roleType": "outsider",
     "print": "./images/print/1 - Trouble Brewing/outsider/Butler_print.webp",
@@ -630,7 +630,7 @@
     "isDisabled": false
   },
   {
-    "id": "Goon",
+    "id": "goon",
     "name": "Goon",
     "roleType": "outsider",
     "print": "./images/print/2 - Bad Moon Rising/outsider/Goon_print.webp",
@@ -639,7 +639,7 @@
     "isDisabled": false
   },
   {
-    "id": "Acrobat",
+    "id": "acrobat",
     "name": "Acrobat",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Acrobat_print.webp",
@@ -648,7 +648,7 @@
     "isDisabled": false
   },
   {
-    "id": "Puzzlemaster",
+    "id": "puzzlemaster",
     "name": "Puzzlemaster",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Puzzlemaster_print.webp",
@@ -657,7 +657,7 @@
     "isDisabled": false
   },
   {
-    "id": "Tinker",
+    "id": "tinker",
     "name": "Tinker",
     "roleType": "outsider",
     "print": "./images/print/2 - Bad Moon Rising/outsider/Tinker_print.webp",
@@ -666,7 +666,7 @@
     "isDisabled": false
   },
   {
-    "id": "Saint",
+    "id": "saint",
     "name": "Saint",
     "roleType": "outsider",
     "print": "./images/print/1 - Trouble Brewing/outsider/Saint_print.webp",
@@ -675,7 +675,7 @@
     "isDisabled": false
   },
   {
-    "id": "Sweetheart",
+    "id": "sweetheart",
     "name": "Sweetheart",
     "roleType": "outsider",
     "print": "./images/print/3 - Sects and Violets/outsider/Sweetheart_print.webp",
@@ -684,7 +684,7 @@
     "isDisabled": false
   },
   {
-    "id": "Plague Doctor",
+    "id": "plaguedoctor",
     "name": "Plague Doctor",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Plague Doctor_print.webp",
@@ -693,7 +693,7 @@
     "isDisabled": false
   },
   {
-    "id": "Recluse",
+    "id": "recluse",
     "name": "Recluse",
     "roleType": "outsider",
     "print": "./images/print/1 - Trouble Brewing/outsider/Recluse_print.webp",
@@ -702,7 +702,7 @@
     "isDisabled": false
   },
   {
-    "id": "Heretic",
+    "id": "heretic",
     "name": "Heretic",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Heretic_print.webp",
@@ -711,7 +711,7 @@
     "isDisabled": false
   },
   {
-    "id": "Mutant",
+    "id": "mutant",
     "name": "Mutant",
     "roleType": "outsider",
     "print": "./images/print/3 - Sects and Violets/outsider/Mutant_print.webp",
@@ -720,13 +720,16 @@
     "isDisabled": false
   },
   {
-    "id": "Zealot",
+    "id": "zealot",
     "name": "Zealot",
     "roleType": "outsider",
+    "print": "./images/print/4 - Experimental/outsider/Zealot_print.webp",
+    "icon": "./images/icon/4 - Experimental/outsider/Zealot_icon.webp",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
-    "id": "Damsel",
+    "id": "damsel",
     "name": "Damsel",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Damsel_print.webp",
@@ -735,7 +738,7 @@
     "isDisabled": false
   },
   {
-    "id": "Klutz",
+    "id": "klutz",
     "name": "Klutz",
     "roleType": "outsider",
     "print": "./images/print/3 - Sects and Violets/outsider/Klutz_print.webp",
@@ -744,7 +747,7 @@
     "isDisabled": false
   },
   {
-    "id": "Drunk",
+    "id": "drunk",
     "name": "Drunk",
     "roleType": "outsider",
     "print": "./images/print/1 - Trouble Brewing/outsider/Drunk_print.webp",
@@ -753,7 +756,7 @@
     "isDisabled": false
   },
   {
-    "id": "Golem",
+    "id": "golem",
     "name": "Golem",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Golem_print.webp",
@@ -762,7 +765,7 @@
     "isDisabled": false
   },
   {
-    "id": "Moonchild",
+    "id": "moonchild",
     "name": "Moonchild",
     "roleType": "outsider",
     "print": "./images/print/2 - Bad Moon Rising/outsider/Moonchild_print.webp",
@@ -771,7 +774,7 @@
     "isDisabled": false
   },
   {
-    "id": "Politician",
+    "id": "politician",
     "name": "Politician",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Politician_print.webp",
@@ -780,7 +783,7 @@
     "isDisabled": false
   },
   {
-    "id": "Lunatic",
+    "id": "lunatic",
     "name": "Lunatic",
     "roleType": "outsider",
     "print": "./images/print/2 - Bad Moon Rising/outsider/Lunatic_print.webp",
@@ -789,7 +792,7 @@
     "isDisabled": false
   },
   {
-    "id": "Barber",
+    "id": "barber",
     "name": "Barber",
     "roleType": "outsider",
     "print": "./images/print/3 - Sects and Violets/outsider/Barber_print.webp",
@@ -798,7 +801,7 @@
     "isDisabled": false
   },
   {
-    "id": "Hatter",
+    "id": "hatter",
     "name": "Hatter",
     "roleType": "outsider",
     "print": "./images/print/4 - Experimental/outsider/Hatter_print.webp",
@@ -807,7 +810,7 @@
     "isDisabled": false
   },
   {
-    "id": "Widow",
+    "id": "widow",
     "name": "Widow",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Widow_print.webp",
@@ -816,7 +819,7 @@
     "isDisabled": false
   },
   {
-    "id": "Godfather",
+    "id": "godfather",
     "name": "Godfather",
     "roleType": "minion",
     "print": "./images/print/2 - Bad Moon Rising/minion/Godfather_print.webp",
@@ -825,7 +828,7 @@
     "isDisabled": false
   },
   {
-    "id": "Poisoner",
+    "id": "poisoner",
     "name": "Poisoner",
     "roleType": "minion",
     "print": "./images/print/1 - Trouble Brewing/minion/Poisoner_print.webp",
@@ -834,7 +837,7 @@
     "isDisabled": false
   },
   {
-    "id": "Devil's Advocate",
+    "id": "devilsadvocate",
     "name": "Devil's Advocate",
     "roleType": "minion",
     "print": "./images/print/2 - Bad Moon Rising/minion/Devil's Advocate_print.webp",
@@ -843,7 +846,7 @@
     "isDisabled": false
   },
   {
-    "id": "Harpy",
+    "id": "harpy",
     "name": "Harpy",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Harpy_print.webp",
@@ -852,7 +855,7 @@
     "isDisabled": false
   },
   {
-    "id": "Spy",
+    "id": "spy",
     "name": "Spy",
     "roleType": "minion",
     "print": "./images/print/1 - Trouble Brewing/minion/Spy_print.webp",
@@ -861,7 +864,7 @@
     "isDisabled": false
   },
   {
-    "id": "Summoner",
+    "id": "summoner",
     "name": "Summoner",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Summoner_print.webp",
@@ -870,7 +873,7 @@
     "isDisabled": false
   },
   {
-    "id": "Witch",
+    "id": "witch",
     "name": "Witch",
     "roleType": "minion",
     "print": "./images/print/3 - Sects and Violets/minion/Witch_print.webp",
@@ -879,7 +882,7 @@
     "isDisabled": false
   },
   {
-    "id": "Cerenovus",
+    "id": "cerenovus",
     "name": "Cerenovus",
     "roleType": "minion",
     "print": "./images/print/3 - Sects and Violets/minion/Cerenovus_print.webp",
@@ -888,7 +891,7 @@
     "isDisabled": false
   },
   {
-    "id": "Fearmonger",
+    "id": "fearmonger",
     "name": "Fearmonger",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Fearmonger_print.webp",
@@ -897,7 +900,7 @@
     "isDisabled": false
   },
   {
-    "id": "Pit-Hag",
+    "id": "pithag",
     "name": "Pit-Hag",
     "roleType": "minion",
     "print": "./images/print/3 - Sects and Violets/minion/Pit-Hag_print.webp",
@@ -906,7 +909,7 @@
     "isDisabled": false
   },
   {
-    "id": "Psychopath",
+    "id": "psychopath",
     "name": "Psychopath",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Psychopath_print.webp",
@@ -915,7 +918,7 @@
     "isDisabled": false
   },
   {
-    "id": "Assassin",
+    "id": "assassin",
     "name": "Assassin",
     "roleType": "minion",
     "print": "./images/print/2 - Bad Moon Rising/minion/Assassin_print.webp",
@@ -924,7 +927,7 @@
     "isDisabled": false
   },
   {
-    "id": "Baron",
+    "id": "baron",
     "name": "Baron",
     "roleType": "minion",
     "print": "./images/print/1 - Trouble Brewing/minion/Baron_print.webp",
@@ -933,7 +936,7 @@
     "isDisabled": false
   },
   {
-    "id": "Mezepheles",
+    "id": "mezepheles",
     "name": "Mezepheles",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Mezepheles_print.webp",
@@ -942,7 +945,7 @@
     "isDisabled": false
   },
   {
-    "id": "Goblin",
+    "id": "goblin",
     "name": "Goblin",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Goblin_print.webp",
@@ -951,7 +954,7 @@
     "isDisabled": false
   },
   {
-    "id": "Scarlet Woman",
+    "id": "scarletwoman",
     "name": "Scarlet Woman",
     "roleType": "minion",
     "print": "./images/print/1 - Trouble Brewing/minion/Scarlet Woman_print.webp",
@@ -960,7 +963,7 @@
     "isDisabled": false
   },
   {
-    "id": "Evil Twin",
+    "id": "eviltwin",
     "name": "Evil Twin",
     "roleType": "minion",
     "print": "./images/print/3 - Sects and Violets/minion/Evil Twin_print.webp",
@@ -969,7 +972,7 @@
     "isDisabled": false
   },
   {
-    "id": "Organ Grinder",
+    "id": "organgrinder",
     "name": "Organ Grinder",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Organ Grinder_print.webp",
@@ -978,7 +981,7 @@
     "isDisabled": false
   },
   {
-    "id": "Vizier",
+    "id": "vizier",
     "name": "Vizier",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Vizier_print.webp",
@@ -987,7 +990,7 @@
     "isDisabled": false
   },
   {
-    "id": "Mastermind",
+    "id": "mastermind",
     "name": "Mastermind",
     "roleType": "minion",
     "print": "./images/print/2 - Bad Moon Rising/minion/Mastermind_print.webp",
@@ -996,7 +999,7 @@
     "isDisabled": false
   },
   {
-    "id": "Boomdandy",
+    "id": "boomdandy",
     "name": "Boomdandy",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Boomdandy_print.webp",
@@ -1005,7 +1008,7 @@
     "isDisabled": false
   },
   {
-    "id": "Marionette",
+    "id": "marionette",
     "name": "Marionette",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Marionette_print.webp",
@@ -1014,7 +1017,7 @@
     "isDisabled": false
   },
   {
-    "id": "Yaggababble",
+    "id": "yaggababble",
     "name": "Yaggababble",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Yaggababble_print.webp",
@@ -1023,7 +1026,7 @@
     "isDisabled": false
   },
   {
-    "id": "Kazali",
+    "id": "kazali",
     "name": "Kazali",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Kazali_print.webp",
@@ -1032,7 +1035,7 @@
     "isDisabled": false
   },
   {
-    "id": "Pukka",
+    "id": "pukka",
     "name": "Pukka",
     "roleType": "demon",
     "print": "./images/print/2 - Bad Moon Rising/demon/Pukka_print.webp",
@@ -1041,7 +1044,7 @@
     "isDisabled": false
   },
   {
-    "id": "Lil' Monsta",
+    "id": "lilmonsta",
     "name": "Lil' Monsta",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Lil' Monsta_print.webp",
@@ -1050,7 +1053,7 @@
     "isDisabled": false
   },
   {
-    "id": "Lleech",
+    "id": "lleech",
     "name": "Lleech",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Lleech_print.webp",
@@ -1059,7 +1062,7 @@
     "isDisabled": false
   },
   {
-    "id": "No Dashii",
+    "id": "nodashii",
     "name": "No Dashii",
     "roleType": "demon",
     "print": "./images/print/3 - Sects and Violets/demon/No Dashii_print.webp",
@@ -1068,7 +1071,7 @@
     "isDisabled": false
   },
   {
-    "id": "Imp",
+    "id": "imp",
     "name": "Imp",
     "roleType": "demon",
     "print": "./images/print/1 - Trouble Brewing/demon/Imp_print.webp",
@@ -1077,7 +1080,7 @@
     "isDisabled": false
   },
   {
-    "id": "Ojo",
+    "id": "ojo",
     "name": "Ojo",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Ojo_print.webp",
@@ -1086,7 +1089,7 @@
     "isDisabled": false
   },
   {
-    "id": "Shabaloth",
+    "id": "shabaloth",
     "name": "Shabaloth",
     "roleType": "demon",
     "print": "./images/print/2 - Bad Moon Rising/demon/Shabaloth_print.webp",
@@ -1095,7 +1098,7 @@
     "isDisabled": false
   },
   {
-    "id": "Po",
+    "id": "po",
     "name": "Po",
     "roleType": "demon",
     "print": "./images/print/2 - Bad Moon Rising/demon/Po_print.webp",
@@ -1104,7 +1107,7 @@
     "isDisabled": false
   },
   {
-    "id": "Vortox",
+    "id": "vortox",
     "name": "Vortox",
     "roleType": "demon",
     "print": "./images/print/3 - Sects and Violets/demon/Vortox_print.webp",
@@ -1113,7 +1116,7 @@
     "isDisabled": false
   },
   {
-    "id": "Vigormortis",
+    "id": "vigormortis",
     "name": "Vigormortis",
     "roleType": "demon",
     "print": "./images/print/3 - Sects and Violets/demon/Vigormortis_print.webp",
@@ -1122,7 +1125,7 @@
     "isDisabled": false
   },
   {
-    "id": "Legion",
+    "id": "legion",
     "name": "Legion",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Legion_print.webp",
@@ -1131,7 +1134,7 @@
     "isDisabled": false
   },
   {
-    "id": "Al-Hadikhia",
+    "id": "alhadikhia",
     "name": "Al-Hadikhia",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Al-Hadikhia_print.webp",
@@ -1140,7 +1143,7 @@
     "isDisabled": false
   },
   {
-    "id": "Zombuul",
+    "id": "zombuul",
     "name": "Zombuul",
     "roleType": "demon",
     "print": "./images/print/2 - Bad Moon Rising/demon/Zombuul_print.webp",
@@ -1149,7 +1152,7 @@
     "isDisabled": false
   },
   {
-    "id": "Fang Gu",
+    "id": "fanggu",
     "name": "Fang Gu",
     "roleType": "demon",
     "print": "./images/print/3 - Sects and Violets/demon/Fang Gu_print.webp",
@@ -1158,7 +1161,7 @@
     "isDisabled": false
   },
   {
-    "id": "Leviathan",
+    "id": "leviathan",
     "name": "Leviathan",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Leviathan_print.webp",
@@ -1167,7 +1170,7 @@
     "isDisabled": false
   },
   {
-    "id": "Riot",
+    "id": "riot",
     "name": "Riot",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Riot_print.webp",
@@ -1176,7 +1179,7 @@
     "isDisabled": false
   },
   {
-    "id": "Angel",
+    "id": "angel",
     "name": "Angel",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Angel_print.webp",
@@ -1185,7 +1188,7 @@
     "isDisabled": false
   },
   {
-    "id": "Bootlegger",
+    "id": "bootlegger",
     "name": "Bootlegger",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Bootlegger_print.webp",
@@ -1194,7 +1197,7 @@
     "isDisabled": false
   },
   {
-    "id": "Buddhist",
+    "id": "buddhist",
     "name": "Buddhist",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Buddhist_print.webp",
@@ -1203,7 +1206,7 @@
     "isDisabled": false
   },
   {
-    "id": "Djinn",
+    "id": "djinn",
     "name": "Djinn",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Djinn_print.webp",
@@ -1212,7 +1215,7 @@
     "isDisabled": false
   },
   {
-    "id": "Doomsayer",
+    "id": "doomsayer",
     "name": "Doomsayer",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Doomsayer_print.webp",
@@ -1221,7 +1224,7 @@
     "isDisabled": false
   },
   {
-    "id": "Duchess",
+    "id": "duchess",
     "name": "Duchess",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Duchess_print.webp",
@@ -1230,7 +1233,7 @@
     "isDisabled": false
   },
   {
-    "id": "Ferryman",
+    "id": "ferryman",
     "name": "Ferryman",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Ferryman_print.webp",
@@ -1239,7 +1242,7 @@
     "isDisabled": false
   },
   {
-    "id": "Fibbin",
+    "id": "fibbin",
     "name": "Fibbin",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Fibbin_print.webp",
@@ -1248,7 +1251,7 @@
     "isDisabled": false
   },
   {
-    "id": "Fiddler",
+    "id": "fiddler",
     "name": "Fiddler",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Fiddler_print.webp",
@@ -1257,7 +1260,7 @@
     "isDisabled": false
   },
   {
-    "id": "Gardener",
+    "id": "gardener",
     "name": "Gardener",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Gardener_print.webp",
@@ -1266,7 +1269,7 @@
     "isDisabled": false
   },
   {
-    "id": "Hell's Librarian",
+    "id": "hellslibrarian",
     "name": "Hell's Librarian",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Hell's Librarian_print.webp",
@@ -1275,7 +1278,7 @@
     "isDisabled": false
   },
   {
-    "id": "Revolutionary",
+    "id": "revolutionary",
     "name": "Revolutionary",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Revolutionary_print.webp",
@@ -1284,7 +1287,7 @@
     "isDisabled": false
   },
   {
-    "id": "Sentinel",
+    "id": "sentinel",
     "name": "Sentinel",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Sentinel_print.webp",
@@ -1293,7 +1296,7 @@
     "isDisabled": false
   },
   {
-    "id": "Spirit Of Ivory",
+    "id": "spiritofivory",
     "name": "Spirit Of Ivory",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Spirit Of Ivory_print.webp",
@@ -1302,7 +1305,7 @@
     "isDisabled": false
   },
   {
-    "id": "Storm Catcher",
+    "id": "stormcatcher",
     "name": "Storm Catcher",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Storm Catcher_print.webp",
@@ -1311,7 +1314,7 @@
     "isDisabled": false
   },
   {
-    "id": "Toymaker",
+    "id": "toymaker",
     "name": "Toymaker",
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Toymaker_print.webp",
@@ -1320,7 +1323,7 @@
     "isDisabled": false
   },
   {
-    "id": "Apprentice",
+    "id": "apprentice",
     "name": "Apprentice",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Apprentice_print.webp",
@@ -1329,7 +1332,7 @@
     "isDisabled": false
   },
   {
-    "id": "Barista",
+    "id": "barista",
     "name": "Barista",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Barista_print.webp",
@@ -1338,7 +1341,7 @@
     "isDisabled": false
   },
   {
-    "id": "Beggar",
+    "id": "beggar",
     "name": "Beggar",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Beggar_print.webp",
@@ -1347,7 +1350,7 @@
     "isDisabled": false
   },
   {
-    "id": "Bishop",
+    "id": "bishop",
     "name": "Bishop",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Bishop_print.webp",
@@ -1356,7 +1359,7 @@
     "isDisabled": false
   },
   {
-    "id": "Bone Collector",
+    "id": "bonecollector",
     "name": "Bone Collector",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Bone Collector_print.webp",
@@ -1365,7 +1368,7 @@
     "isDisabled": false
   },
   {
-    "id": "Bureaucrat",
+    "id": "bureaucrat",
     "name": "Bureaucrat",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Bureaucrat_print.webp",
@@ -1374,7 +1377,7 @@
     "isDisabled": false
   },
   {
-    "id": "Butcher",
+    "id": "butcher",
     "name": "Butcher",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Butcher_print.webp",
@@ -1383,7 +1386,7 @@
     "isDisabled": false
   },
   {
-    "id": "Deviant",
+    "id": "deviant",
     "name": "Deviant",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Deviant_print.webp",
@@ -1392,7 +1395,7 @@
     "isDisabled": false
   },
   {
-    "id": "Gangster",
+    "id": "gangster",
     "name": "Gangster",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Gangster_print.webp",
@@ -1401,7 +1404,7 @@
     "isDisabled": false
   },
   {
-    "id": "Gunslinger",
+    "id": "gunslinger",
     "name": "Gunslinger",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Gunslinger_print.webp",
@@ -1410,7 +1413,7 @@
     "isDisabled": false
   },
   {
-    "id": "Harlot",
+    "id": "harlot",
     "name": "Harlot",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Harlot_print.webp",
@@ -1419,7 +1422,7 @@
     "isDisabled": false
   },
   {
-    "id": "Judge",
+    "id": "judge",
     "name": "Judge",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Judge_print.webp",
@@ -1428,7 +1431,7 @@
     "isDisabled": false
   },
   {
-    "id": "Matron",
+    "id": "matron",
     "name": "Matron",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Matron_print.webp",
@@ -1437,7 +1440,7 @@
     "isDisabled": false
   },
   {
-    "id": "Scapegoat",
+    "id": "scapegoat",
     "name": "Scapegoat",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Scapegoat_print.webp",
@@ -1446,7 +1449,7 @@
     "isDisabled": false
   },
   {
-    "id": "Thief",
+    "id": "thief",
     "name": "Thief",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Thief_print.webp",
@@ -1455,7 +1458,7 @@
     "isDisabled": false
   },
   {
-    "id": "Voudon",
+    "id": "voudon",
     "name": "Voudon",
     "roleType": "travellers",
     "print": "./images/print/Extras/travellers/Voudon_print.webp",

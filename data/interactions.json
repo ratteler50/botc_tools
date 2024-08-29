@@ -1,1263 +1,1263 @@
 [
   {
-    "id": "Acrobat",
+    "id": "acrobat",
     "jinx": [
       {
-        "id": "Minstrel",
+        "id": "minstrel",
         "reason": "The Acrobat does not die on a Minstrel night."
       }
     ]
   },
   {
-    "id": "Alsaahir",
+    "id": "alsaahir",
     "jinx": [
       {
-        "id": "Legion",
+        "id": "legion",
         "reason": "If a player registers as both a Minion and a Demon, the Alsaahir must guess that player as a Demon in order for their guess to be correct."
       },
       {
-        "id": "Lil’ Monsta",
+        "id": "lilmonsta",
         "reason": "If a player registers as both a Minion and a Demon, the Alsaahir must guess that player as a Demon in order for their guess to be correct."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "Yes, but don't. We have yet to encounter a situation where it was fun for the players to have the Spy or Recluse misregister to the Alsaahir's ability."
       },
       {
-        "id": "Spy",
+        "id": "spy",
         "reason": "Yes, but don't. We have yet to encounter a situation where it was fun for the players to have the Spy or Recluse misregister to the Alsaahir's ability."
       }
     ]
   },
   {
-    "id": "Apprentice",
+    "id": "apprentice",
     "jinx": [
       {
-        "id": "Vortox",
+        "id": "vortox",
         "reason": "Apprentice with a Townsfolk ability gets false information."
       }
     ]
   },
   {
-    "id": "Assassin",
+    "id": "assassin",
     "jinx": [
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "The sober Assassin will kill the Goon even if they are made drunk due to the effect of the Goon."
       },
       {
-        "id": "Lycanthrope",
+        "id": "lycanthrope",
         "reason": "Assassin can kill a player if the Lycanthrope successfully kills a player."
       }
     ]
   },
   {
-    "id": "Barber",
+    "id": "barber",
     "jinx": [
       {
-        "id": "Klutz",
+        "id": "klutz",
         "reason": "The Barber that dies, then turned into the Klutz would still need to choose a player."
       }
     ]
   },
   {
-    "id": "Barista",
+    "id": "barista",
     "jinx": [
       {
-        "id": "Drunk",
+        "id": "drunk",
         "reason": "If the Drunk thinks they are a role that would learn information & are targeted by the Barista ability, then they get correct information."
       },
       {
-        "id": "Fortune Teller",
+        "id": "fortuneteller",
         "reason": "The Barista would cause a Fortune Teller to not register the red herring as the Demon."
       },
       {
-        "id": "Lycanthrope",
+        "id": "lycanthrope",
         "reason": "Only the first player chosen by the Lycanthrope would die."
       },
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "The Barista on the first night can have the Pixie learn 2 roles & if they are mad about those characters can gain both abilities."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "The Barista would cause a character to not register the Recluse as Evil, a Minion or a Demon."
       },
       {
-        "id": "Spy",
+        "id": "spy",
         "reason": "The Barista would cause a character to not register the Spy as Good, a Townsfolk or an Outsider."
       }
     ]
   },
   {
-    "id": "Baron",
+    "id": "baron",
     "jinx": [
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "Creating a Baron does not create 2 more Outsiders."
       }
     ]
   },
   {
-    "id": "Bone Collector",
+    "id": "bonecollector",
     "jinx": [
       {
-        "id": "Juggler",
+        "id": "juggler",
         "reason": "Juggler targeted by the Bone-Collector does allows to get information if they Juggled during the day."
       }
     ]
   },
   {
-    "id": "Cannibal",
+    "id": "cannibal",
     "jinx": [
       {
-        "id": "Chef",
+        "id": "chef",
         "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
       },
       {
-        "id": "Grandmother",
+        "id": "grandmother",
         "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
       },
       {
-        "id": "Investigator",
+        "id": "investigator",
         "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
       },
       {
-        "id": "Librarian",
+        "id": "librarian",
         "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
       },
       {
-        "id": "Washerwoman",
+        "id": "washerwoman",
         "reason": "The cannibal wakes to learn their information after all poisoning and killing occurs, so might die before they would be woken up with information."
       }
     ]
   },
   {
-    "id": "Courtier",
+    "id": "courtier",
     "jinx": [
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       }
     ]
   },
   {
-    "id": "Drunk",
+    "id": "drunk",
     "jinx": [
       {
-        "id": "Acrobat",
+        "id": "acrobat",
         "reason": "The Acrobat dies if the Drunk is an alive living neighbour."
       },
       {
-        "id": "Chambermaid",
+        "id": "chambermaid",
         "reason": "Chambermaid learns of the 'Drunk' waking as the role they think they."
       },
       {
-        "id": "Choirboy",
+        "id": "choirboy",
         "reason": "Chiorboy can be Drunk regardless of if King is in play or not."
       },
       {
-        "id": "Fortune Teller",
+        "id": "fortuneteller",
         "reason": "A Drunk Fortune Teller does not have a red herring."
       },
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "The Drunk who thinks they are a Townsfolk who selects the Goon with their 'ability' does trigger the Goon & becomes drunk."
       },
       {
-        "id": "King",
+        "id": "king",
         "reason": "The King cannot be made the Drunk if the Choirboy is in play"
       },
       {
-        "id": "Ravenkeeper",
+        "id": "ravenkeeper",
         "reason": "A Drunk who believes they are the Ravenkeeper is woken & given information."
       },
       {
-        "id": "Sage",
+        "id": "sage",
         "reason": "A Drunk who believes they are the Sage is woken & given information."
       }
     ]
   },
   {
-    "id": "Evil Twin",
+    "id": "eviltwin",
     "jinx": [
       {
-        "id": "Mezepheles",
+        "id": "mezepheles",
         "reason": "If the Good Twin is turned Evil by the Mezepheles, then a new twin must be assigned & both players are told."
       }
     ]
   },
   {
-    "id": "Fang Gu",
+    "id": "fanggu",
     "jinx": [
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "An Outsider chosen by the Monk cannot be jumped to."
       },
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "The Pit-Hag's arbitrary deaths can protect & kill the same player to stop a Fang-Gu jump."
       }
     ]
   },
   {
-    "id": "Fool",
+    "id": "fool",
     "jinx": [
       {
-        "id": "Gossip",
+        "id": "gossip",
         "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Fool."
       },
       {
-        "id": "Lycanthrope",
+        "id": "lycanthrope",
         "reason": "If the Lycanthrope's target does not die the protection due to the Lycanthrope's ability does not activate."
       },
       {
-        "id": "Mayor",
+        "id": "mayor",
         "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Fool."
       }
     ]
   },
   {
-    "id": "Godfather",
+    "id": "godfather",
     "jinx": [
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "If a Godfather is created the night after an Outsider dies during the day, the Godfather can kill."
       }
     ]
   },
   {
-    "id": "Goon",
+    "id": "goon",
     "jinx": [
       {
-        "id": "Lunatic",
+        "id": "lunatic",
         "reason": "The Lunatic who thinks they are a Demon who selects the Goon with their 'ability' does trigger the Goon & becomes drunk."
       },
       {
-        "id": "Lycanthrope",
+        "id": "lycanthrope",
         "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
       },
       {
-        "id": "Moonchild",
+        "id": "moonchild",
         "reason": "The Goon only changes alignment if chosen at night, so the Moonchild can kill the Goon."
       }
     ]
   },
   {
-    "id": "Gossip",
+    "id": "gossip",
     "jinx": [
       {
-        "id": "Innkeeper",
+        "id": "innkeeper",
         "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Innkeeper."
       },
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Monk."
       },
       {
-        "id": "Sailor",
+        "id": "sailor",
         "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Sailor."
       },
       {
-        "id": "Soldier",
+        "id": "soldier",
         "reason": "The Gossip can add their 'Kill' token to any player, even if they are protected due to another ability such as the Soldier."
       }
     ]
   },
   {
-    "id": "Hatter",
+    "id": "hatter",
     "jinx": [
       {
-        "id": "Alchemist",
+        "id": "alchemist",
         "reason": "If the Minion whose ability the Alchemist has comes into play, the Alchemist gains a new ability instead."
       },
       {
-        "id": "Apprentice",
+        "id": "apprentice",
         "reason": "An Apprentice with a Minion ability is not a Minion and is not affected by the Hatter ability"
       },
       {
-        "id": "Bounty Hunter",
+        "id": "bounty hunter",
         "reason": "The Bounty Hunter evil Townsfolk is not a Minion or Demon, so does not choose a new character."
       },
       {
-        "id": "Chambermaid",
+        "id": "chambermaid",
         "reason": "A player waking to make only a Hatter choice and nothing else does not count as waking to the Chambermaid - it's not their own ability."
       },
       {
-        "id": "Cult Leader",
+        "id": "cult leader",
         "reason": "An evil Cult Leader is not a Minion or Demon, so does not choose a new character."
       },
       {
-        "id": "Damsel",
+        "id": "damsel",
         "reason": "Even if the Minions have changed characters, a used guess is still used."
       },
       {
-        "id": "Evil Twin",
+        "id": "eviltwin",
         "reason": "If an Evil Twin ability comes into play through the Hatter, you should wake each twin individually to show them who their twin is and what character it is. Remember that the good twin doesn't have to be alive and generally shouldn't be if this happens in late game as this can mean the good team cannot win."
       },
       {
-        "id": "Fearmonger",
+        "id": "fearmonger",
         "reason": "If a player becomes a Fearmonger, their choices as their previous character aren’t relevant to the Fearmonger announcement, their first pick will cause an announcement regardless of who it is."
       },
       {
-        "id": "Godfather",
+        "id": "godfather",
         "reason": "If a Godfather comes into play, they'd immediately learn the in-play Outsiders, whether those Outsiders are dead or alive."
       },
       {
-        "id": "Lil’ Monsta",
+        "id": "lilmonsta",
         "reason": "A Lil’ Monsta holder would be able to choose another Demon, as usual for Demons."
       },
       {
-        "id": "Lleech",
+        "id": "lleech",
         "reason": "A Lleech coming into play would immediately select a host, then follow that by choosing a kill."
       },
       {
-        "id": "Lunatic",
+        "id": "lunatic",
         "reason": "A Lunatic can be given the choice to change characters as if they were the real Demon and a Hatter had died, regardless of whether the actual Hatter died or not."
       },
       {
-        "id": "Marionette",
+        "id": "marionette",
         "reason": "If a player chooses Marionette with the Hatter ability, you should tell them they're a good character and tell the Demon they are the Marionette. There may also be a future jinx for the Marionette."
       },
       {
-        "id": "Plague Doctor",
+        "id": "plague doctor",
         "reason": "If the in-play Minion abilities change due to the Hatter, this does not affect a Plague Doctor granted Storyteller ability."
       },
       {
-        "id": "Po",
+        "id": "po",
         "reason": "A Po that comes into play would have the choice to kill no-one or 1 player - choices as a previous character are not relevant for the Po ability."
       },
       {
-        "id": "Preacher",
+        "id": "preacher",
         "reason": "A Minion chosen by the Preacher that changes character is still affected by the Preacher ability."
       },
       {
-        "id": "Pukka",
+        "id": "pukka",
         "reason": "If the Demon changes away from being a Pukka, the previously poisoned player immediately sobers and will not die tonight."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "It's possible to wake the Recluse as if they were a Minion or Demon to allow them to change characters, but this is very rarely fun, so recommended against."
       },
       {
-        "id": "Undertaker",
+        "id": "undertaker",
         "reason": "The Undertaker learns the information that was true at the time of execution, regardless of whether the executed player's character changes afterwards."
       },
       {
-        "id": "Vigormortis",
+        "id": "vigormortis",
         "reason": "A Demon that changes from a Vigormortis to something else while having killed Minions to maintain their abiities in death will cause those abilities to immediately be lost. However, if the Vigor stays in play, a Vigor-killed Minion can change character and continue to use their new ability."
       },
       {
-        "id": "Zombuul",
+        "id": "zombuul",
         "reason": "An already-dead player that chooses to become a Zombuul does not return to life as a once-killed Zombuul, they are already dead."
       }
     ]
   },
   {
-    "id": "High Priestess",
+    "id": "high priestess",
     "jinx": [
       {
-        "id": "Vortox",
+        "id": "vortox",
         "reason": "The only restriction is not to give the one player you would have given if it was not a Vortox game. It does not have to be the least helpful player to talk to."
       }
     ]
   },
   {
-    "id": "Imp",
+    "id": "imp",
     "jinx": [
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "A protected Imp cannot kill themself & pass on the Imp to a Minion."
       },
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "The Pit-Hag's arbitrary death can protect & kill the same player to stop an Imp passing."
       }
     ]
   },
   {
-    "id": "Innkeeper",
+    "id": "innkeeper",
     "jinx": [
       {
-        "id": "Lycanthrope",
+        "id": "lycanthrope",
         "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
       },
       {
-        "id": "Mayor",
+        "id": "mayor",
         "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Innkeeper."
       },
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
       }
     ]
   },
   {
-    "id": "Juggler",
+    "id": "juggler",
     "jinx": [
       {
-        "id": "Philosopher",
+        "id": "philosopher",
         "reason": "The Philosopher with the Juggler's ability, their first day is the day after they turn thus they do not get information the night they turn, even if they juggled that day."
       },
       {
-        "id": "Professor",
+        "id": "professor",
         "reason": "A Juggler brought back to life's first day is the next day thus they do not get information the night they are resurrected, even if they juggled that day."
       }
     ]
   },
   {
-    "id": "Kazali",
+    "id": "kazali",
     "jinx": [
       {
-        "id": "Alchemist",
+        "id": "alchemist",
         "reason": "The Kazali has to choose their Minions so that the Storyteller knows what's in play in order to give the Alchemist their ability."
       },
       {
-        "id": "Balloonist",
+        "id": "balloonist",
         "reason": "A Balloonist could be replaced by the Kazali, but because their setup effect can be duplicated by the Kazali's setup effect, this is legitimate."
       },
       {
-        "id": "Chambermaid",
+        "id": "chambermaid",
         "reason": "Minions waking to learn they have become Minions are not waking due to their own ability, but the Kazali's."
       },
       {
-        "id": "Damsel",
+        "id": "damsel",
         "reason": "Minions are informed about the Damsel after the Kazali has made all their choices. So if the Damsel is chosen by the Kazali to become a Minion, the Minions do not learn there was a Damsel in play."
       },
       {
-        "id": "Lunatic",
+        "id": "lunatic",
         "reason": "While the Lunatic ability technically requires any Demon to learn which players a Lunatikazali picked to become Minions, the Storyteller might choose not to do so."
       },
       {
-        "id": "Magician",
+        "id": "magician",
         "reason": "If the Magician is in play, the Storyteller should put the Kazali to sleep when waking each Minion to tell them their character has changed, then show both the Demon and the Magician during the Minion info step."
       },
       {
-        "id": "Poppy Grower",
+        "id": "poppygrower",
         "reason": "If the Poppy Grower is in play, the Storyteller should put the Kazali to sleep when waking each Minion to tell them their character has changed and then run the Poppy Grower as normal."
       },
       {
-        "id": "Soldier",
+        "id": "soldier",
         "reason": "Unlucky Kazali! You might be one Minion down now 😉 Better pay attention during Demon Info to make sure you get told all the players you picked!"
       }
     ]
   },
   {
-    "id": "Knight",
+    "id": "knight",
     "jinx": [
       {
-        "id": "Atheist",
+        "id": "atheist",
         "reason": "The Storyteller is not a player and thus cannot be shown to the Knight, even if the Atheist is on the script. If the Atheist is in play, however, the Storyteller can be shown, because the Storyteller may break game rules."
       },
       {
-        "id": "Legion",
+        "id": "legion",
         "reason": "A Knight cannot see any Legion player in their info, regardless of if they're registering as a Minion."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "The Recluse may or may not be able to be shown to the Knight - it's the Storyteller's choice of how they register the Recluse."
       },
       {
-        "id": "Vortox",
+        "id": "vortox",
         "reason": "A Knight in a Vortox game learns 2 players, one of which is the Demon - very powerful stuff! If you can confirm it's a Vortox game…"
       }
     ]
   },
   {
-    "id": "Lil' Monsta",
+    "id": "lil' monsta",
     "jinx": [
       {
-        "id": "Evil Twin",
+        "id": "eviltwin",
         "reason": "The Good Twin holding Lil' Monsta that is executed & killed will cause Evil to win."
       },
       {
-        "id": "Exorcist",
+        "id": "exorcist",
         "reason": "The Lil' Monsta will still kill, but the player holding the token does not."
       },
       {
-        "id": "Goblin",
+        "id": "goblin",
         "reason": "The Goblin holding Lil' Monsta that is executed & killed will cause Good to win."
       },
       {
-        "id": "Saint",
+        "id": "saint",
         "reason": "The Saint holding Lil' Monsta that is executed & killed will cause Good to win."
       }
     ]
   },
   {
-    "id": "Lunatic",
+    "id": "lunatic",
     "jinx": [
       {
-        "id": "Chambermaid",
+        "id": "chambermaid",
         "reason": "The Chambermaid learns of the Lunatic waking, even on the first night as this is due to their ability."
       },
       {
-        "id": "Exorcist",
+        "id": "exorcist",
         "reason": "The Lunatic can be told they were selected by the Exorcist."
       }
     ]
   },
   {
-    "id": "Lycanthrope",
+    "id": "lycanthrope",
     "jinx": [
       {
-        "id": "Mathematician",
+        "id": "mathematician",
         "reason": "Any kills that are prevented due to the Lycanthrope's protection register as an abnormality to the Mathematician."
       },
       {
-        "id": "Mayor",
+        "id": "mayor",
         "reason": "The Mayor can bounce the Lycanthrope kill & it still continue to prevent other players from dying."
       },
       {
-        "id": "Sailor",
+        "id": "sailor",
         "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
       },
       {
-        "id": "Tea Lady",
+        "id": "tea lady",
         "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
       }
     ]
   },
   {
-    "id": "Marionette",
+    "id": "marionette",
     "jinx": [
       {
-        "id": "Choirboy",
+        "id": "choirboy",
         "reason": "Chiorboy can be Marionette regardless of if King is in play or not."
       },
       {
-        "id": "King",
+        "id": "king",
         "reason": "The King cannot be made the Marionette if the Choirboy is in play"
       }
     ]
   },
   {
-    "id": "Mathematician",
+    "id": "mathematician",
     "jinx": [
       {
-        "id": "Snake Charmer",
+        "id": "snake charmer",
         "reason": "The Snake Charmer poisoning themselves does not register as abnormal to the Mathematician"
       }
     ]
   },
   {
-    "id": "Mayor",
+    "id": "mayor",
     "jinx": [
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Monk."
       },
       {
-        "id": "Soldier",
+        "id": "soldier",
         "reason": "The Mayor can redirect the death to another player, even if they are protected by another ability such as the Soldier."
       }
     ]
   },
   {
-    "id": "Mezepheles",
+    "id": "mezepheles",
     "jinx": [
       {
-        "id": "Cannibal",
+        "id": "cannibal",
         "reason": "If a player turned by the Mezepheles is executed the Cannibal is drunk."
       },
       {
-        "id": "Fortune Teller",
+        "id": "fortuneteller",
         "reason": "If the player turned by the Mezepheles was the red herring, the token is moved to a good player."
       },
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "The Goon can revert back to Good the same night they are turned by the Mezepheles. The Goon would not make the Mezepheles drunk."
       },
       {
-        "id": "Grandmother",
+        "id": "grandmother",
         "reason": "If the grandchild is turned Evil by the Mezepheles, then they remain the grandchild."
       },
       {
-        "id": "Widow",
+        "id": "widow",
         "reason": "If the Good player who knows about the Widow is turned by the Mezepheles, then a new player is informed."
       }
     ]
   },
   {
-    "id": "Minstrel",
+    "id": "minstrel",
     "jinx": [
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability"
       }
     ]
   },
   {
-    "id": "Mutant",
+    "id": "mutant",
     "jinx": [
       {
-        "id": "Undertaker",
+        "id": "undertaker",
         "reason": "If the Mutant causes a second execution, then the Storyteller may show 1, or both, of the executed roles."
       }
     ]
   },
   {
-    "id": "No Dashii",
+    "id": "no dashii",
     "jinx": [
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "A player protected by the Monk is not poisoned from No Dashii."
       },
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
       },
       {
-        "id": "Soldier",
+        "id": "soldier",
         "reason": "The Soldier cannot poisoned from No Dashii whilst sober and healthy."
       }
     ]
   },
   {
-    "id": "Ogre",
+    "id": "ogre",
     "jinx": [
       {
-        "id": "Bounty Hunter",
+        "id": "bounty hunter",
         "reason": "A sober Bounty Hunter can be shown an evil Ogre."
       },
       {
-        "id": "Cannibal",
+        "id": "cannibal",
         "reason": "If a good Ogre is executed, the Cannibal gains the Ogre ability, wakes to pick a player, and becomes the alignment of that player. They are not told their alignment. The next time a player dies to execution, the Cannibal loses the Ogre ability but stays the alignment of the player they chose for the rest of the game. If an evil Ogre is executed, the Cannibal is poisoned due to the Cannibal’s ability."
       },
       {
-        "id": "Mezepheles",
+        "id": "mezepheles",
         "reason": "If a good Ogre says the Mez word, they turn evil and learn that they are now evil. If an evil Ogre says the Mez word, nothing happens, and a good player may still say the word and turn evil."
       },
       {
-        "id": "Spy",
+        "id": "spy",
         "reason": "The Spy does not see which player the Ogre selected, but may see the Ogre’s alignment."
       },
       {
-        "id": "Widow",
+        "id": "widow",
         "reason": "The Widow does not see which player the Ogre selected, but may see the Ogre’s alignment."
       }
     ]
   },
   {
-    "id": "Ojo",
+    "id": "ojo",
     "jinx": [
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "If the Ojo chooses Goon and is the first player to do so tonight, they are made drunk and change the Goon's alignment."
       },
       {
-        "id": "Lunatic",
+        "id": "lunatic",
         "reason": "The Demon learns the player a Lunatic-Ojo chose, not the character they chose."
       },
       {
-        "id": "Mathematician",
+        "id": "mathematician",
         "reason": "The Ojo killing a different character to the one they chose is not a malfunction, it's part of the Ojo's own ability."
       },
       {
-        "id": "Mayor",
+        "id": "mayor",
         "reason": "If the Ojo chooses Mayor, it's still possible to bounce it to another player."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "If the Ojo chooses Recluse, the Recluse might register as something else and cause a Storyteller-choice death."
       },
       {
-        "id": "Spy",
+        "id": "spy",
         "reason": "The Spy might register as a good character the Ojo chose and die instead… You should think very carefully about whether this is a good idea."
       }
     ]
   },
   {
-    "id": "Organ Grinder",
+    "id": "organgrinder",
     "jinx": [
       {
-        "id": "Barista",
+        "id": "barista",
         "reason": "Has no effect on Organ Grinder with Barista 2. Barista 1 just ensures they are sober and healthy and always affect voting."
       },
       {
-        "id": "Beggar",
+        "id": "beggar",
         "reason": "The Beggar is still bound by their voting restriction, even though their eyes are closed."
       },
       {
-        "id": "Bishop",
+        "id": "bishop",
         "reason": "The votes on their nominations are still affected by the Organ Grinder."
       },
       {
-        "id": "Butcher",
+        "id": "butcher",
         "reason": "The votes on their nominations are still affected by the Organ Grinder."
       },
       {
-        "id": "Cult Leader",
+        "id": "cult leader",
         "reason": "Cults are not votes, so the Organ Grinder does not interact with calls for cults."
       },
       {
-        "id": "Damsel",
+        "id": "damsel",
         "reason": "Public actions can be taken while players have their eyes closed to vote."
       },
       {
-        "id": "Devil’s Advocate",
+        "id": "devil’s advocate",
         "reason": "The death prevention happens when players are executed, so only matters at the point of execution, not during voting."
       },
       {
-        "id": "Doomsayer",
+        "id": "doomsayer",
         "reason": "Public actions can be taken while players have their eyes closed to vote."
       },
       {
-        "id": "Fool",
+        "id": "fool",
         "reason": "The death prevention happens when players are executed, so only matters at the point of execution, not during voting."
       },
       {
-        "id": "Golem",
+        "id": "golem",
         "reason": "Can confirm who the Organ Grinder is by nominating them after a blind vote has already happened that day and the consequent vote happening with eyes open. If the OG is killed between votes, this does not mean the town would learn who is on the block and with how many votes. Future nominations would simply be run open-eyed and results announced - \"X votes is/is not enough and player B is/is not on the block\" and the town would be able to work out the prior votes based on this information."
       },
       {
-        "id": "Gunslinger",
+        "id": "gunslinger",
         "reason": "Doesn’t work with the Organ Grinder. I’d recommend Storytellers don’t use the Gunslinger with an Organ Grinder on the script."
       },
       {
-        "id": "Imp",
+        "id": "imp",
         "reason": "An Imp that starpasses to an Organ Grinder will probably be found out pretty quick when there’s no Organ Grinder ability the next day!"
       },
       {
-        "id": "Judge",
+        "id": "judge",
         "reason": "A Judge forces a nomination to pass or fail, which is completely independent of the vote count, so the Judge can force a vote on an Organ Grinder to pass even if the Organ Grinder did not vote."
       },
       {
-        "id": "Lleech",
+        "id": "lleech",
         "reason": "The death prevention happens when players are executed, so only matters at the point of execution, not during voting."
       },
       {
-        "id": "Pacifist",
+        "id": "pacifist",
         "reason": "The death prevention happens when players are executed, so only matters at the point of execution, not during voting."
       },
       {
-        "id": "Sailor",
+        "id": "sailor",
         "reason": "The death prevention happens when players are executed, so only matters at the point of execution, not during voting."
       },
       {
-        "id": "Slayer",
+        "id": "slayer",
         "reason": "Public actions can be taken while players have their eyes closed to vote."
       },
       {
-        "id": "Tea Lady",
+        "id": "tea lady",
         "reason": "The death prevention happens when players are executed, so only matters at the point of execution, not during voting."
       }
     ]
   },
   {
-    "id": "Philosopher",
+    "id": "philosopher",
     "jinx": [
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If the Pixie is drunk on the first night you can show them any role. If they are drunk on the night they would gain then they never gain an ability."
       }
     ]
   },
   {
-    "id": "Pit-Hag",
+    "id": "pithag",
     "jinx": [
       {
-        "id": "Fool",
+        "id": "fool",
         "reason": "The Pit-Hag's arbitrary deaths can kill the Zombuul twice in order for them to be dead."
       },
       {
-        "id": "Gambler",
+        "id": "gambler",
         "reason": "If the Gambler gambles incorrectly & the Pit-hag creates a new Demon, then the Gambler can be prevented from dying."
       },
       {
-        "id": "Gossip",
+        "id": "gossip",
         "reason": "If a Gossip is created, their previous day's Gossip can kill a player."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "The Recluse can stop the Pit-Hag from creating an Evil character."
       },
       {
-        "id": "Sage",
+        "id": "sage",
         "reason": "The Pit-Hag's arbitrary deaths can protect & kill the same player to stop an a Sage, that would be killed by the Demon, from learning information."
       },
       {
-        "id": "Spy",
+        "id": "spy",
         "reason": "The Pit-Hag can be prevented from creating a Good character due to the Spy's ability."
       }
     ]
   },
   {
-    "id": "Pixie",
+    "id": "pixie",
     "jinx": [
       {
-        "id": "Pukka",
+        "id": "pukka",
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       },
       {
-        "id": "Sailor",
+        "id": "sailor",
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       }
     ]
   },
   {
-    "id": "Plague Doctor",
+    "id": "plague doctor",
     "jinx": [
       {
-        "id": "Alchemist",
+        "id": "alchemist",
         "reason": "The Alchemist ability counts as being in play when the Storyteller is choosing which ability to gain."
       },
       {
-        "id": "Balloonist",
+        "id": "balloonist",
         "reason": "The Storyteller is not a Minion even if they have a Minion ability and therefore cannot be seen by the Balloonist."
       },
       {
-        "id": "Barista",
+        "id": "barista",
         "reason": "The Storyteller is not a player and cannot be affected by the Barista."
       },
       {
-        "id": "Bounty Hunter",
+        "id": "bounty hunter",
         "reason": "The Storyteller is not evil even if they have a Minion ability and therefore cannot be seen by the Bounty Hunter."
       },
       {
-        "id": "Damsel",
+        "id": "damsel",
         "reason": "The Storyteller is not a Minion, so cannot guess the Damsel."
       },
       {
-        "id": "Engineer",
+        "id": "engineer",
         "reason": "The Engineer does not affect the Storyteller as they are not themselves a Minion."
       },
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "The Storyteller isn't a player and doesn't have an alignment, so they cannot affect the Goon's alignment or be made drunk by the Goon."
       },
       {
-        "id": "Imp",
+        "id": "imp",
         "reason": "The Storyteller might gain a Minion ability, but they will not be a Minion, so they cannot become an Imp through the Imp ability."
       },
       {
-        "id": "King",
+        "id": "king",
         "reason": "The King cannot learn the character whose ability the Storyteller has."
       },
       {
-        "id": "Legion",
+        "id": "legion",
         "reason": "A Plague Doctor death can result in a Minion ability in a Legion game."
       },
       {
-        "id": "Minstrel",
+        "id": "minstrel",
         "reason": "The Storyteller is not drunked by the Minstrel, so a Plague-Doctor-granted Minion ability would still be functioning on a Minstrel night."
       },
       {
-        "id": "Preacher",
+        "id": "preacher",
         "reason": "The Preacher cannot select the Storyteller and therefore cannot remove their Minion ability."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "The Recluse might affect the ability the Storyteller gains by registering as a Minion being in play."
       },
       {
-        "id": "Riot",
+        "id": "riot",
         "reason": "A Plague Doctor death can result in a Minion ability in a Riot game."
       }
     ]
   },
   {
-    "id": "Poisoner",
+    "id": "poisoner",
     "jinx": [
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       }
     ]
   },
   {
-    "id": "Politician",
+    "id": "politician",
     "jinx": [
       {
-        "id": "Atheist",
+        "id": "atheist",
         "reason": "A Politician who successfully makes the entire good team believe that the Atheist is evil and manages to get them to execute down to final 2 can be the only player that wins in an Atheist game."
       },
       {
-        "id": "Cannibal",
+        "id": "cannibal",
         "reason": "With multiple Politician abilities in play, there can be multiple players playing for the evil team. However, only the most responsible player can change teams, so they’re in direct competition with one another. If any of these die while they have the Politician ability, they maintain the ability even if dead and can change alignments to win at the end of the game."
       },
       {
-        "id": "Evil Twin",
+        "id": "eviltwin",
         "reason": "It’s very rarely fun to make the Politician the good twin as they can campaign for their own execution, never mentioning that they’re a twin, then win the game with evil as a result (it’s pretty hard to argue they weren’t most responsible in that situation!)"
       },
       {
-        "id": "Fearmonger",
+        "id": "fearmonger",
         "reason": "If the game ends due to the Fearmonger ability targeting the Politician or the Politician being executed second in a Leviathan game or on a Mastermind day, the good team loses. If you think that the Politician was nonetheless the main influence in causing this to happen, the Politician can change alignments and win with the evil team, this does not then cause the evil team to lose instead, the game end condition was already evaluated."
       },
       {
-        "id": "Heretic",
+        "id": "heretic",
         "reason": "The Politician’s changing alignments is decided after the Heretic impacts the result of who actually won the game."
       },
       {
-        "id": "Legion",
+        "id": "legion",
         "reason": "Politician/Legion is not a fun combination – the Politician is incentivised to vote on literally any execution but their own and be the single good vote Legion needs to pass every vote – again it’s difficult to claim they weren’t most responsible here.,"
       },
       {
-        "id": "Leviathan",
+        "id": "leviathan",
         "reason": "If the game ends due to the Fearmonger ability targeting the Politician or the Politician being executed second in a Leviathan game or on a Mastermind day, the good team loses. If you think that the Politician was nonetheless the main influence in causing this to happen, the Politician can change alignments and win with the evil team, this does not then cause the evil team to lose instead, the game end condition was already evaluated."
       },
       {
-        "id": "Mastermind",
+        "id": "mastermind",
         "reason": "If the game ends due to the Fearmonger ability targeting the Politician or the Politician being executed second in a Leviathan game or on a Mastermind day, the good team loses. If you think that the Politician was nonetheless the main influence in causing this to happen, the Politician can change alignments and win with the evil team, this does not then cause the evil team to lose instead, the game end condition was already evaluated."
       },
       {
-        "id": "Mezepheles",
+        "id": "mezepheles",
         "reason": "The Politician can say the Mezepheles word and then betray the evil team to win with good – they’re not restricted to only switching from good to evil at the end of the game, it’s also legitimate for them to switch the other way."
       },
       {
-        "id": "Philosopher",
+        "id": "philosopher",
         "reason": "With multiple Politician abilities in play, there can be multiple players playing for the evil team. However, only the most responsible player can change teams, so they’re in direct competition with one another. If any of these die while they have the Politician ability, they maintain the ability even if dead and can change alignments to win at the end of the game."
       },
       {
-        "id": "Revolutionary",
+        "id": "revolutionary",
         "reason": "If a Politician is in a Revolutionary pair, it’s the Politician who must be most responsible for the game end in order to potentially flip both players’ alignments, not the pair as a duo."
       }
     ]
   },
   {
-    "id": "Pukka",
+    "id": "pukka",
     "jinx": [
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "A player protected by the Monk is not poisoned by the Pukka."
       },
       {
-        "id": "Ravenkeeper",
+        "id": "ravenkeeper",
         "reason": "If the Ravenkeeper dies to the Pukka, they receive poisoned information."
       },
       {
-        "id": "Soldier",
+        "id": "soldier",
         "reason": "The Soldier cannot be poisoned by the Pukka whilst sober and healthy."
       }
     ]
   },
   {
-    "id": "Recluse",
+    "id": "recluse",
     "jinx": [
       {
-        "id": "Cannibal",
+        "id": "cannibal",
         "reason": "If the Cannibal has an “even if dead” ability, such as the Recluse, the Cannibal keeps that ability when they die (but loses their Cannibal ability)."
       },
       {
-        "id": "Chef",
+        "id": "chef",
         "reason": "Evil / Recluse / Evil seating pattern can register as a Chef 1."
       },
       {
-        "id": "Clockmaker",
+        "id": "clockmaker",
         "reason": "The Recluse cannot produce a Clockmaker 0."
       },
       {
-        "id": "Lycanthrope",
+        "id": "lycanthrope",
         "reason": "If the Lycanthrope's target does not die, the protection due to the Lycanthrope's ability does not activate."
       },
       {
-        "id": "Snake Charmer",
+        "id": "snake charmer",
         "reason": "If you have the Recluse register as a Demon, the original Snake Charmer becomes a Good Recluse."
       }
     ]
   },
   {
-    "id": "Spy",
+    "id": "spy",
     "jinx": [
       {
-        "id": "Cannibal",
+        "id": "cannibal",
         "reason": "The Cannibal can gain any ability that the Spy registers as."
       },
       {
-        "id": "Fortune Teller",
+        "id": "fortuneteller",
         "reason": "Red herring check is not ongoing & therefore can be on the Spy"
       },
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "The Spy can register as any Townsfolk for the Pixie & the Pixie will gain that ability when the Spy dies"
       }
     ]
   },
   {
-    "id": "Steward",
+    "id": "steward",
     "jinx": [
       {
-        "id": "Atheist",
+        "id": "atheist",
         "reason": "The Storyteller is not a player and thus cannot be shown to the Steward, even if the Atheist is on the script. If the Atheist is in play, however, the Storyteller can be shown, because the Storyteller may break game rules."
       },
       {
-        "id": "Cult Leader",
+        "id": "cult leader",
         "reason": "The Cult Leader is always a valid target for the Steward as they don't change alignment until later in the first night."
       },
       {
-        "id": "Evil Twin",
+        "id": "eviltwin",
         "reason": "The Steward can learn the good twin, but this might not be fun depending on the players and other info involved."
       },
       {
-        "id": "Marionette",
+        "id": "marionette",
         "reason": "Despite having drawn a blue token, the Marionette is not a valid player for the Steward to learn."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "The Recluse may or may not be able to be shown to the Steward - it's the Storyteller's choice of how they register the Recluse."
       },
       {
-        "id": "Spy",
+        "id": "spy",
         "reason": "The Spy may or may not be able to be shown to the Steward - it's the Storyteller's choice of how they register the Spy."
       },
       {
-        "id": "Vortox",
+        "id": "vortox",
         "reason": "The Steward learns an evil player in a Vortox game."
       }
     ]
   },
   {
-    "id": "Summoner",
+    "id": "summoner",
     "jinx": [
       {
-        "id": "Barber",
+        "id": "barber",
         "reason": "If the Barber dies while there is no Demon, nothing happens."
       },
       {
-        "id": "Engineer",
+        "id": "engineer",
         "reason": "If the Engineer chooses to change the Demon while there is no Demon in play, there is no effect."
       },
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "Ouch. That’s not a good time. That’s a drunk Summoner, a Goon that turns evil and an evil team, including that Goon, that immediately loses (all assuming the Summoner is the first to select the Goon that night)."
       },
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "This is a potentially massively unfun combination, so think incredibly carefully before putting these both on a script together."
       },
       {
-        "id": "Revolutionary",
+        "id": "revolutionary",
         "reason": " It’s worth thinking carefully before putting Summoner in a Revolutionary game that’s being played for accessibility reasons."
       },
       {
-        "id": "Zombuul",
+        "id": "zombuul",
         "reason": "If the Summoner chooses a dead player to be the Zombuul, they’re already dead and do not become a registering-as-dead Zombuul, they are just dead and the good team wins."
       }
     ]
   },
   {
-    "id": "Sweetheart",
+    "id": "sweetheart",
     "jinx": [
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       }
     ]
   },
   {
-    "id": "Vigormortis",
+    "id": "vigormortis",
     "jinx": [
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "A player protected by the Monk is not poisoned by the Vigormortis."
       },
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "The Pit-Hag's arbitrary deaths can protect & kill the same player to stop a Minion retaining their ability & poisoning a Townsfolk."
       },
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       },
       {
-        "id": "Soldier",
+        "id": "soldier",
         "reason": "The Soldier cannot poisoned by the Vigormortis whilst sober and healthy."
       }
     ]
   },
   {
-    "id": "Vizier",
+    "id": "vizier",
     "jinx": [
       {
-        "id": "Apprentice",
+        "id": "apprentice",
         "reason": "An Apprentice Vizier acts just like a regular one, including the fact they do not die if exiled."
       },
       {
-        "id": "Atheist",
+        "id": "atheist",
         "reason": "The Storyteller can simulate a Vizier in an Atheist game, but the Vizier player hasn't got much incentive to play along as this confirms to them that it's an Atheist game, so it's best to choose the Atheist themselves for this purpose. This is because being announced as Vizier makes it less likely for them to be believed as Atheist right away, so many players will wait a day or two to try and point out other abnormalities from the Atheist ability."
       },
       {
-        "id": "Barber",
+        "id": "barber",
         "reason": "If the Vizier character is swapped, all players immediately learn who the new Vizier is, if they are alive."
       },
       {
-        "id": "Barista",
+        "id": "barista",
         "reason": "The Barista double has no effect on the Vizier."
       },
       {
-        "id": "Butcher",
+        "id": "butcher",
         "reason": "A Vizier can force a Butcher nomination in the same way as they can force a standard one."
       },
       {
-        "id": "Clockmaker",
+        "id": "clockmaker",
         "reason": "The Clockmaker can be game-solving in single Minion games if the Vizier is in play. Script writers should consider this with care."
       },
       {
-        "id": "Cult Leader",
+        "id": "cult leader",
         "reason": "A good Cult Leader can vote for everything the Vizier wants then be turned late in the game. Ditto Outsiders in a Fang Gu script (it doesn’t even have to be in play for the Vizier to promise it to an Outsider) or the Goon or Politician or a player that negotiates with the Mezepheles to keep the word until later. These plays are very rarely fun, even for the players directly involved, so it’s probably just worth agreeing in your group not to do so."
       },
       {
-        "id": "Doomsayer",
+        "id": "doomsayer",
         "reason": "A Vizier cannot die to the Doomsayer, so evil players must be careful when Doomsaying with a Vizier in play lest they either kill their own Demon as the only remaining evil option to die or have no-one die because the ST targets the Vizier with the Doomsayer ability."
       },
       {
-        "id": "Evil Twin",
+        "id": "eviltwin",
         "reason": "Better be careful with your voting as good players!,"
       },
       {
-        "id": "Fang Gu",
+        "id": "fanggu",
         "reason": "A good Cult Leader can vote for everything the Vizier wants then be turned late in the game. Ditto Outsiders in a Fang Gu script (it doesn’t even have to be in play for the Vizier to promise it to an Outsider) or the Goon or Politician or a player that negotiates with the Mezepheles to keep the word until later. These plays are very rarely fun, even for the players directly involved, so it’s probably just worth agreeing in your group not to do so."
       },
       {
-        "id": "Goblin",
+        "id": "goblin",
         "reason": "Better be careful with your voting as good players!,"
       },
       {
-        "id": "Goon",
+        "id": "goon",
         "reason": "A good Cult Leader can vote for everything the Vizier wants then be turned late in the game. Ditto Outsiders in a Fang Gu script (it doesn’t even have to be in play for the Vizier to promise it to an Outsider) or the Goon or Politician or a player that negotiates with the Mezepheles to keep the word until later. These plays are very rarely fun, even for the players directly involved, so it’s probably just worth agreeing in your group not to do so."
       },
       {
-        "id": "Gunslinger",
+        "id": "gunslinger",
         "reason": "If the Vizier chooses to execute before the Gunslinger has a chance to shoot, the Gunslinger gets no chance."
       },
       {
-        "id": "Judge",
+        "id": "judge",
         "reason": "The Judge can use their ability during or after votes, so might force a success before the Vizier can, but cannot force a failure if the Vizier has already forced a success."
       },
       {
-        "id": "Leviathan",
+        "id": "leviathan",
         "reason": "Better be careful with your voting as good players!,"
       },
       {
-        "id": "Mastermind",
+        "id": "mastermind",
         "reason": "Better be careful with your voting as good players!,"
       },
       {
-        "id": "Mezepheles",
+        "id": "mezepheles",
         "reason": "A good Cult Leader can vote for everything the Vizier wants then be turned late in the game. Ditto Outsiders in a Fang Gu script (it doesn’t even have to be in play for the Vizier to promise it to an Outsider) or the Goon or Politician or a player that negotiates with the Mezepheles to keep the word until later. These plays are very rarely fun, even for the players directly involved, so it’s probably just worth agreeing in your group not to do so."
       },
       {
-        "id": "Minstrel",
+        "id": "minstrel",
         "reason": "Viziers should be wary if they know they've allowed their fellow Minion to die by execution - they can be killed the next day if a Minstrel is in effect!"
       },
       {
-        "id": "Organ Grinder",
+        "id": "organgrinder",
         "reason": "The Vizier doesn't necessarily know if good has voted and therefore doesn't know if they can force the execution, so if they try it might fail."
       },
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "If a Vizier is created, all players immediately learn who the new Vizier is. If an extant Vizier is made into another character, there is no public indication of this."
       },
       {
-        "id": "Politician",
+        "id": "politician",
         "reason": "A good Cult Leader can vote for everything the Vizier wants then be turned late in the game. Ditto Outsiders in a Fang Gu script (it doesn’t even have to be in play for the Vizier to promise it to an Outsider) or the Goon or Politician or a player that negotiates with the Mezepheles to keep the word until later. These plays are very rarely fun, even for the players directly involved, so it’s probably just worth agreeing in your group not to do so."
       },
       {
-        "id": "Poppy Grower",
+        "id": "poppygrower",
         "reason": "The Vizier doesn't necessarily know if good has voted and therefore doesn't know if they can force the execution, so if they try it might fail."
       },
       {
-        "id": "Recluse",
+        "id": "recluse",
         "reason": "The Recluse can register as evil when the Vizier chooses to execute immediately and therefore for nothing to happen. This is rarely fun as it publicly confirms the Recluse."
       },
       {
-        "id": "Saint",
+        "id": "saint",
         "reason": "Better be careful with your voting as good players!,"
       },
       {
-        "id": "Scapegoat",
+        "id": "scapegoat",
         "reason": "A Scapegoat can take an execution that the Vizier forced through."
       },
       {
-        "id": "Spy",
+        "id": "spy",
         "reason": "The Spy can be the good vote that allows the Vizier to execute, but the Vizier cannot know if the Storyteller is going to allow the Spy to register as good, so cannot afford to try and force the execution based on the Spy's vote alone or they risk outing the Spy if the execution doesn't happen."
       },
       {
-        "id": "Thief",
+        "id": "thief",
         "reason": "A negative vote is still a vote and, if good, can allow the Vizier to force the execution."
       },
       {
-        "id": "Town Crier",
+        "id": "towncrier",
         "reason": "The Vizier can completely pollute Town Crier information by nominating freely every day – script writers should consider carefully before putting both on a script."
       },
       {
-        "id": "Vortox",
+        "id": "vortox",
         "reason": "The knowledge that the Vizier is in play is not made false."
       }
     ]
   },
   {
-    "id": "Vortox",
+    "id": "vortox",
     "jinx": [
       {
-        "id": "Evil Twin",
+        "id": "eviltwin",
         "reason": "A Good Evil Twin in a Vortox game is given correct information."
       },
       {
-        "id": "Fortune Teller",
+        "id": "fortuneteller",
         "reason": "The red herring will give a 'no', as Register as is considered true."
       },
       {
-        "id": "Grandmother",
+        "id": "grandmother",
         "reason": "The Grandmother learns an Evil player & a character they are not. A 'grandchild' token is placed next to a Good player & if they die at night, so does the Grandmother"
       },
       {
-        "id": "Monk",
+        "id": "monk",
         "reason": "A player protected by the Monk would get correct information in a Vortox game."
       },
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "The Pixie is shown a not-in-play role. An arbitrary player is marked, when that player dies, they gain the shown abilities."
       }
     ]
   },
   {
-    "id": "Widow",
+    "id": "widow",
     "jinx": [
       {
-        "id": "Pixie",
+        "id": "pixie",
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       }
     ]
   },
   {
-    "id": "Zealot",
+    "id": "zealot",
     "jinx": [
       {
-        "id": "Barber",
+        "id": "barber",
         "reason": "If the Zealot becomes a new character, they no longer have the Zealot ability and are no longer required to vote on every nomination."
       },
       {
-        "id": "Cerenovus",
+        "id": "cerenovus",
         "reason": "If a player is made mad as the Zealot, they are expected to vote on every nomination."
       },
       {
-        "id": "Farmer",
+        "id": "farmer",
         "reason": "If the Zealot becomes a new character, they no longer have the Zealot ability and are no longer required to vote on every nomination."
       },
       {
-        "id": "Marionette",
+        "id": "marionette",
         "reason": "If the Marionette thinks they are the Zealot, they should always vote on every nomination."
       },
       {
-        "id": "Mezepheles",
+        "id": "mezepheles",
         "reason": "The Zealot might be a great person to have on your side, since they have to vote on every good player! But they also have to vote on every evil player, so be careful what you wish for..."
       },
       {
-        "id": "Pit Hag",
+        "id": "pithag",
         "reason": "If the Zealot becomes a new character, they no longer have the Zealot ability and are no longer required to vote on every nomination."
       }
     ]
   },
   {
-    "id": "Zombuul",
+    "id": "zombuul",
     "jinx": [
       {
-        "id": "Lunatic",
+        "id": "lunatic",
         "reason": "A Lunatic who thinks they are the Zombuul is not woken up after they die, as they no longer have an ability."
       },
       {
-        "id": "Pit-Hag",
+        "id": "pithag",
         "reason": "The Pit-Hag's arbitrary deaths can kill the Zombuul twice in order for them to be dead."
       }
     ]
