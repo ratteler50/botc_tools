@@ -5,8 +5,8 @@
     "name": "Dusk",
     "firstNightReminder": "Start the Night Phase.",
     "otherNightReminder": "Start the Night Phase.",
-    "firstNight": 0,
-    "otherNight": 0
+    "firstNight": 1,
+    "otherNight": 1
   },
   {
     "id": "dawn",
@@ -14,8 +14,8 @@
     "name": "Dawn",
     "firstNightReminder": "Wait for a few seconds. End the Night Phase.",
     "otherNightReminder": "Wait for a few seconds. End the Night Phase.",
-    "firstNight": 0,
-    "otherNight": 0
+    "firstNight": 68,
+    "otherNight": 82
   },
   {
     "id": "minioninfo",
@@ -23,7 +23,7 @@
     "name": "Minion Info",
     "team": "minion",
     "firstNightReminder": "If there are 7 or more players, wake all Minions:\n\tShow the *THIS IS THE DEMON* token. Point to the Demon.\n\tShow the *THESE ARE YOUR MINIONS* token. Point to the other Minions.",
-    "firstNight": 0,
+    "firstNight": 13,
     "otherNight": 0
   },
   {
@@ -32,7 +32,7 @@
     "name": "Demon Info",
     "team": "demon",
     "firstNightReminder": "If there are 7 or more players, wake the Demon:\n\tShow the *THESE ARE YOUR MINIONS* token. Point to all Minions.\n\tShow the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",
-    "firstNight": 0,
+    "firstNight": 17,
     "otherNight": 0
   },
   {

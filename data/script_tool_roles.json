@@ -1035,15 +1035,6 @@
     "isDisabled": false
   },
   {
-    "id": "lordoftyphon",
-    "name": "Lord of Typhon",
-    "roleType": "demon",
-    "print": "",
-    "icon": "",
-    "version": "4b - Unreleased Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "pukka",
     "name": "Pukka",
     "roleType": "demon",
@@ -1086,6 +1077,15 @@
     "print": "./images/print/1 - Trouble Brewing/demon/Imp_print.webp",
     "icon": "./images/icon/1 - Trouble Brewing/demon/Imp_icon.webp",
     "version": "1 - Trouble Brewing",
+    "isDisabled": false
+  },
+  {
+    "id": "lordoftyphon",
+    "name": "Lord Of Typhon",
+    "roleType": "demon",
+    "print": "./images/print/4 - Experimental/demon/lordoftyphon_print.webp",
+    "icon": "./images/icon/4 - Experimental/demon/lordoftyphon_icon.webp",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {

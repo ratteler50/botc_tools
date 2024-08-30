@@ -372,6 +372,10 @@
       {
         "id": "preacher",
         "reason": "If the Preacher chose the Summoner on or before the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
+      },
+      {
+        "id": "lordoftyphon",
+        "reason": "If the Summoner creates a Lord Of Typhon, the Lord Of Typhon must neighbor a Minion. The other neighbor becomes a not-in-play evil Minion."
       }
     ]
   },
@@ -405,7 +409,7 @@
       },
       {
         "id": "balloonist",
-        "reason": "If the Marionette thinks that they are the Balloonist, +1 Outsider was added."
+        "reason": "If the Marionette thinks that they are the Balloonist, +1 Outsider might have been added."
       },
       {
         "id": "damsel",

@@ -485,6 +485,55 @@
     ]
   },
   {
+    "id": "lordoftyphon",
+    "jinx": [
+      {
+        "id": "Alsaahir",
+        "reason": "Needs to remember to guess an extra Minion if they think it’s a Lord Of Typhon game!"
+      },
+      {
+        "id": "Balloonist",
+        "reason": "If the Balloonist becomes a Minion during setup, the Outsider count is not impacted, because the Lord Of Typhon allows for any number of Outsiders to be in play."
+      },
+      {
+        "id": "Baron",
+        "reason": "Still adds 2 Outsiders at setup, but the Lord Of Typhon’s setup ability means any number of Outsiders count may be in play. However, taking away all the Outsiders the Baron would have added is real sucky for the Baron, so please don’t do that."
+      },
+      {
+        "id": "Bounty Hunter",
+        "reason": "The Evil Townsfolk must be in the line at setup, and the Lord Of Typhon does not necessarily have to neighbor two Minions if there is an Evil Townsfolk in play at the start of the game. However, Evil Townsfolk who enter play after setup (due to a Mez word, Philo-Bounty Hunter, etc.) do not have to be in the line, as the line itself is a setup ability."
+      },
+      {
+        "id": "Chambermaid",
+        "reason": "The Lord Of Typhon does not wake to their own ability on the first night. Minions learning that they are Minions is part of setup & also do not register to the Chambermaid (though they would register if they woke due to their own Minion ability)."
+      },
+      {
+        "id": "Magician",
+        "reason": "The Minions see the Magician as the Demon, and the Demon sees the Magician as a Minion. In a Lord of Typhon game, if the Magician isn’t next to the line of evil characters, this may make the Magician obvious to the evil team. However, this can be useful - if the Magician senses that the evil team is coordinated, they’ll realize it’s a Lord of Typhon game, which can be exceptionally useful information for world-building."
+      },
+      {
+        "id": "Poppy Grower",
+        "reason": "The Demon does not learn the Minions, but the Lord of Typhon knows that at least both of their neighbors are Minions, and can coordinate with the two players sitting directly next to them."
+      },
+      {
+        "id": "Recluse",
+        "reason": "The intent of misregistration abilities is that they do not begin until after setup. In playtest, we found that it was never fun for the players to have the Spy or Recluse misregister at setup to be out of or in the line (respectively),"
+      },
+      {
+        "id": "Spy",
+        "reason": "The intent of misregistration abilities is that they do not begin until after setup. In playtest, we found that it was never fun for the players to have the Spy or Recluse misregister at setup to be out of or in the line (respectively),"
+      },
+      {
+        "id": "Snake Charmer",
+        "reason": "I shouldn’t have to say this, but because it’s been asked multiple times… If the Snake Charmer hits the Lord Of Typhon, no, their neighbors do not become evil Minions."
+      },
+      {
+        "id": "Soldier",
+        "reason": "The Soldier doesn’t have an active ability during setup, so they are not safe from becoming a Minion to the Lord Of Typhon."
+      }
+    ]
+  },
+  {
     "id": "lunatic",
     "jinx": [
       {
