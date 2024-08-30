@@ -1035,6 +1035,15 @@
     "isDisabled": false
   },
   {
+    "id": "lordoftyphon",
+    "name": "Lord of Typhon",
+    "roleType": "demon",
+    "print": "",
+    "icon": "",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "pukka",
     "name": "Pukka",
     "roleType": "demon",
