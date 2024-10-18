@@ -189,21 +189,21 @@
     "isDisabled": false
   },
   {
-    "id": "king",
-    "name": "King",
-    "roleType": "townsfolk",
-    "print": "./images/print/4 - Experimental/townsfolk/King_print.webp",
-    "icon": "./images/icon/4 - Experimental/townsfolk/King_icon.webp",
-    "version": "4a - Kickstarter Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "mathematician",
     "name": "Mathematician",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Mathematician_print.webp",
     "icon": "./images/icon/3 - Sects and Violets/townsfolk/Mathematician_icon.webp",
     "version": "3 - Sects and Violets",
+    "isDisabled": false
+  },
+  {
+    "id": "king",
+    "name": "King",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/King_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/King_icon.webp",
+    "version": "4a - Kickstarter Experimental",
     "isDisabled": false
   },
   {
@@ -222,6 +222,15 @@
     "print": "./images/print/3 - Sects and Violets/townsfolk/Dreamer_print.webp",
     "icon": "./images/icon/3 - Sects and Violets/townsfolk/Dreamer_icon.webp",
     "version": "3 - Sects and Violets",
+    "isDisabled": false
+  },
+  {
+    "id": "cultleader",
+    "name": "Cult Leader",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/Cult Leader_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/Cult Leader_icon.webp",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -290,28 +299,10 @@
   {
     "id": "acrobat",
     "name": "Acrobat",
-    "roleType": "outsider",
-    "print": "./images/print/4 - Experimental/outsider/Acrobat_print.webp",
-    "icon": "./images/icon/4 - Experimental/outsider/Acrobat_icon.webp",
-    "version": "4b - Unreleased Experimental",
-    "isDisabled": false
-  },
-  {
-    "id": "cultleader",
-    "name": "Cult Leader",
     "roleType": "townsfolk",
-    "print": "./images/print/4 - Experimental/townsfolk/Cult Leader_print.webp",
-    "icon": "./images/icon/4 - Experimental/townsfolk/Cult Leader_icon.webp",
+    "print": "./images/print/4 - Experimental/townsfolk/Acrobat_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/Acrobat_icon.webp",
     "version": "4b - Unreleased Experimental",
-    "isDisabled": false
-  },
-  {
-    "id": "exorcist",
-    "name": "Exorcist",
-    "roleType": "townsfolk",
-    "print": "./images/print/2 - Bad Moon Rising/townsfolk/Exorcist_print.webp",
-    "icon": "./images/icon/2 - Bad Moon Rising/townsfolk/Exorcist_icon.webp",
-    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -321,6 +312,15 @@
     "print": "./images/print/4 - Experimental/townsfolk/Lycanthrope_print.webp",
     "icon": "./images/icon/4 - Experimental/townsfolk/Lycanthrope_icon.webp",
     "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "exorcist",
+    "name": "Exorcist",
+    "roleType": "townsfolk",
+    "print": "./images/print/2 - Bad Moon Rising/townsfolk/Exorcist_print.webp",
+    "icon": "./images/icon/2 - Bad Moon Rising/townsfolk/Exorcist_icon.webp",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -423,21 +423,21 @@
     "isDisabled": false
   },
   {
-    "id": "fisherman",
-    "name": "Fisherman",
-    "roleType": "townsfolk",
-    "print": "./images/print/4 - Experimental/townsfolk/Fisherman_print.webp",
-    "icon": "./images/icon/4 - Experimental/townsfolk/Fisherman_icon.webp",
-    "version": "4b - Unreleased Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "slayer",
     "name": "Slayer",
     "roleType": "townsfolk",
     "print": "./images/print/1 - Trouble Brewing/townsfolk/Slayer_print.webp",
     "icon": "./images/icon/1 - Trouble Brewing/townsfolk/Slayer_icon.webp",
     "version": "1 - Trouble Brewing",
+    "isDisabled": false
+  },
+  {
+    "id": "fisherman",
+    "name": "Fisherman",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/Fisherman_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/Fisherman_icon.webp",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -486,21 +486,21 @@
     "isDisabled": false
   },
   {
-    "id": "minstrel",
-    "name": "Minstrel",
-    "roleType": "townsfolk",
-    "print": "./images/print/2 - Bad Moon Rising/townsfolk/Minstrel_print.webp",
-    "icon": "./images/icon/2 - Bad Moon Rising/townsfolk/Minstrel_icon.webp",
-    "version": "2 - Bad Moon Rising",
-    "isDisabled": false
-  },
-  {
     "id": "farmer",
     "name": "Farmer",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Farmer_print.webp",
     "icon": "./images/icon/4 - Experimental/townsfolk/Farmer_icon.webp",
     "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "minstrel",
+    "name": "Minstrel",
+    "roleType": "townsfolk",
+    "print": "./images/print/2 - Bad Moon Rising/townsfolk/Minstrel_print.webp",
+    "icon": "./images/icon/2 - Bad Moon Rising/townsfolk/Minstrel_icon.webp",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -693,6 +693,15 @@
     "isDisabled": false
   },
   {
+    "id": "plaguedoctor",
+    "name": "Plague Doctor",
+    "roleType": "outsider",
+    "print": "./images/print/4 - Experimental/outsider/Plague Doctor_print.webp",
+    "icon": "./images/icon/4 - Experimental/outsider/Plague Doctor_icon.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "klutz",
     "name": "Klutz",
     "roleType": "outsider",
@@ -717,15 +726,6 @@
     "print": "./images/print/1 - Trouble Brewing/outsider/Saint_print.webp",
     "icon": "./images/icon/1 - Trouble Brewing/outsider/Saint_icon.webp",
     "version": "1 - Trouble Brewing",
-    "isDisabled": false
-  },
-  {
-    "id": "plaguedoctor",
-    "name": "Plague Doctor",
-    "roleType": "outsider",
-    "print": "./images/print/4 - Experimental/outsider/Plague Doctor_print.webp",
-    "icon": "./images/icon/4 - Experimental/outsider/Plague Doctor_icon.webp",
-    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -1197,6 +1197,42 @@
     "isDisabled": false
   },
   {
+    "id": "thief",
+    "name": "Thief",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/Thief_print.webp",
+    "icon": "./images/icon/Extras/travellers/Thief_icon.webp",
+    "version": "1 - Trouble Brewing",
+    "isDisabled": false
+  },
+  {
+    "id": "bureaucrat",
+    "name": "Bureaucrat",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/Bureaucrat_print.webp",
+    "icon": "./images/icon/Extras/travellers/Bureaucrat_icon.webp",
+    "version": "1 - Trouble Brewing",
+    "isDisabled": false
+  },
+  {
+    "id": "barista",
+    "name": "Barista",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/Barista_print.webp",
+    "icon": "./images/icon/Extras/travellers/Barista_icon.webp",
+    "version": "3 - Sects and Violets",
+    "isDisabled": false
+  },
+  {
+    "id": "harlot",
+    "name": "Harlot",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/Harlot_print.webp",
+    "icon": "./images/icon/Extras/travellers/Harlot_icon.webp",
+    "version": "3 - Sects and Violets",
+    "isDisabled": false
+  },
+  {
     "id": "butcher",
     "name": "Butcher",
     "roleType": "travellers",
@@ -1206,11 +1242,38 @@
     "isDisabled": false
   },
   {
-    "id": "deviant",
-    "name": "Deviant",
+    "id": "gunslinger",
+    "name": "Gunslinger",
     "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Deviant_print.webp",
-    "icon": "./images/icon/Extras/travellers/Deviant_icon.webp",
+    "print": "./images/print/Extras/travellers/Gunslinger_print.webp",
+    "icon": "./images/icon/Extras/travellers/Gunslinger_icon.webp",
+    "version": "1 - Trouble Brewing",
+    "isDisabled": false
+  },
+  {
+    "id": "matron",
+    "name": "Matron",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/Matron_print.webp",
+    "icon": "./images/icon/Extras/travellers/Matron_icon.webp",
+    "version": "2 - Bad Moon Rising",
+    "isDisabled": false
+  },
+  {
+    "id": "gangster",
+    "name": "Gangster",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/Gangster_print.webp",
+    "icon": "./images/icon/Extras/travellers/Gangster_icon.webp",
+    "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "bonecollector",
+    "name": "Bone Collector",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/Bone Collector_print.webp",
+    "icon": "./images/icon/Extras/travellers/Bone Collector_icon.webp",
     "version": "3 - Sects and Violets",
     "isDisabled": false
   },
@@ -1233,15 +1296,6 @@
     "isDisabled": false
   },
   {
-    "id": "barista",
-    "name": "Barista",
-    "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Barista_print.webp",
-    "icon": "./images/icon/Extras/travellers/Barista_icon.webp",
-    "version": "3 - Sects and Violets",
-    "isDisabled": false
-  },
-  {
     "id": "beggar",
     "name": "Beggar",
     "roleType": "travellers",
@@ -1251,66 +1305,12 @@
     "isDisabled": false
   },
   {
-    "id": "bishop",
-    "name": "Bishop",
+    "id": "deviant",
+    "name": "Deviant",
     "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Bishop_print.webp",
-    "icon": "./images/icon/Extras/travellers/Bishop_icon.webp",
-    "version": "2 - Bad Moon Rising",
-    "isDisabled": false
-  },
-  {
-    "id": "bonecollector",
-    "name": "Bone Collector",
-    "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Bone Collector_print.webp",
-    "icon": "./images/icon/Extras/travellers/Bone Collector_icon.webp",
+    "print": "./images/print/Extras/travellers/Deviant_print.webp",
+    "icon": "./images/icon/Extras/travellers/Deviant_icon.webp",
     "version": "3 - Sects and Violets",
-    "isDisabled": false
-  },
-  {
-    "id": "bureaucrat",
-    "name": "Bureaucrat",
-    "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Bureaucrat_print.webp",
-    "icon": "./images/icon/Extras/travellers/Bureaucrat_icon.webp",
-    "version": "1 - Trouble Brewing",
-    "isDisabled": false
-  },
-  {
-    "id": "gangster",
-    "name": "Gangster",
-    "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Gangster_print.webp",
-    "icon": "./images/icon/Extras/travellers/Gangster_icon.webp",
-    "version": "4a - Kickstarter Experimental",
-    "isDisabled": false
-  },
-  {
-    "id": "gunslinger",
-    "name": "Gunslinger",
-    "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Gunslinger_print.webp",
-    "icon": "./images/icon/Extras/travellers/Gunslinger_icon.webp",
-    "version": "1 - Trouble Brewing",
-    "isDisabled": false
-  },
-  {
-    "id": "harlot",
-    "name": "Harlot",
-    "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Harlot_print.webp",
-    "icon": "./images/icon/Extras/travellers/Harlot_icon.webp",
-    "version": "3 - Sects and Violets",
-    "isDisabled": false
-  },
-  {
-    "id": "matron",
-    "name": "Matron",
-    "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Matron_print.webp",
-    "icon": "./images/icon/Extras/travellers/Matron_icon.webp",
-    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -1323,12 +1323,12 @@
     "isDisabled": false
   },
   {
-    "id": "thief",
-    "name": "Thief",
+    "id": "bishop",
+    "name": "Bishop",
     "roleType": "travellers",
-    "print": "./images/print/Extras/travellers/Thief_print.webp",
-    "icon": "./images/icon/Extras/travellers/Thief_icon.webp",
-    "version": "1 - Trouble Brewing",
+    "print": "./images/print/Extras/travellers/Bishop_print.webp",
+    "icon": "./images/icon/Extras/travellers/Bishop_icon.webp",
+    "version": "2 - Bad Moon Rising",
     "isDisabled": false
   },
   {
@@ -1346,6 +1346,15 @@
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Angel_print.webp",
     "icon": "./images/icon/Extras/fabled/Angel_icon.webp",
+    "version": "Extras",
+    "isDisabled": false
+  },
+  {
+    "id": "bootlegger",
+    "name": "Bootlegger",
+    "roleType": "fabled",
+    "print": "./images/print/Extras/fabled/Bootlegger_print.webp",
+    "icon": "./images/icon/Extras/fabled/Bootlegger_icon.webp",
     "version": "Extras",
     "isDisabled": false
   },
@@ -1413,6 +1422,15 @@
     "isDisabled": false
   },
   {
+    "id": "gardener",
+    "name": "Gardener",
+    "roleType": "fabled",
+    "print": "./images/print/Extras/fabled/Gardener_print.webp",
+    "icon": "./images/icon/Extras/fabled/Gardener_icon.webp",
+    "version": "Extras",
+    "isDisabled": false
+  },
+  {
     "id": "hellslibrarian",
     "name": "Hell's Librarian",
     "roleType": "fabled",
@@ -1463,24 +1481,6 @@
     "roleType": "fabled",
     "print": "./images/print/Extras/fabled/Toymaker_print.webp",
     "icon": "./images/icon/Extras/fabled/Toymaker_icon.webp",
-    "version": "Extras",
-    "isDisabled": false
-  },
-  {
-    "id": "bootlegger",
-    "name": "Bootlegger",
-    "roleType": "fabled",
-    "print": "./images/print/Extras/fabled/Bootlegger_print.webp",
-    "icon": "./images/icon/Extras/fabled/Bootlegger_icon.webp",
-    "version": "Extras",
-    "isDisabled": false
-  },
-  {
-    "id": "gardener",
-    "name": "Gardener",
-    "roleType": "fabled",
-    "print": "./images/print/Extras/fabled/Gardener_print.webp",
-    "icon": "./images/icon/Extras/fabled/Gardener_icon.webp",
     "version": "Extras",
     "isDisabled": false
   }
