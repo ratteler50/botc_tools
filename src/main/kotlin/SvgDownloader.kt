@@ -32,7 +32,7 @@ fun main() {
 
 fun downloadPng(client: OkHttpClient, urlString: String): File {
   val fileName = URI(urlString).toURL().file.substringAfterLast("/")
-  val downloadedFile = File("./src/data/images/pngs/$fileName")
+  val downloadedFile = File("./data/images/pngs/$fileName")
 
   if (downloadedFile.exists()) {
     logger.warn { "File already exists: $fileName" }
@@ -58,7 +58,7 @@ fun downloadPng(client: OkHttpClient, urlString: String): File {
 
 fun convertPngToBmp(pngFile: File): File {
   // Convert PNG to BMP
-  val bmpFile = File("./src/data/images/bmps/${pngFile.nameWithoutExtension}.bmp")
+  val bmpFile = File("./data/images/bmps/${pngFile.nameWithoutExtension}.bmp")
   val pngImage = ImageIO.read(pngFile)
 
   if (bmpFile.exists()) {
@@ -88,7 +88,7 @@ fun convertPngToBmp(pngFile: File): File {
 
 fun convertBmpToSvg(bmpFile: File): File {
   // Convert BMP to SVG using potrace
-  val svgFile = File("./src/data/images/svgs/${bmpFile.nameWithoutExtension}.svg")
+  val svgFile = File("./data/images/svgs/${bmpFile.nameWithoutExtension}.svg")
   // Ensure all ancestor directories exist
   svgFile.parentFile.mkdirs()
   val process =
