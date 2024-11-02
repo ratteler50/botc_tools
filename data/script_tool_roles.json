@@ -1323,6 +1323,15 @@
     "isDisabled": false
   },
   {
+    "id": "gnome",
+    "name": "Gnome",
+    "roleType": "travellers",
+    "print": "./images/print/Extras/travellers/gnome_print.webp",
+    "icon": "./images/icon/Extras/travellers/gnome_icon.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "bishop",
     "name": "Bishop",
     "roleType": "travellers",

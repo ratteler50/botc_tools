@@ -472,7 +472,7 @@
     "firstNightReminder": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token and a thumbs up or down for their new alignment.",
     "otherNight": 82,
     "otherNightReminder": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token and a thumbs up or down for their new alignment.",
-    "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins.",
+    "ability": "Each night, you become the alignment of an alive neighbor. If all good players choose to join your cult, your team wins.",
     "flavour": "Thinking themselves wise, they became fools.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Cult_Leader",
@@ -633,6 +633,7 @@
     "otherNight": 32,
     "otherNightReminder": "The Lycanthrope chooses a player :reminder:",
     "reminders": [
+      "Appears Evil",
       "Dead"
     ],
     "ability": "Each night*, choose an alive player: if good, they die, but they are the only player that can die tonight.",
@@ -2393,10 +2394,6 @@
         "reason": "If there are 5 or more players alive and the player holding the Lil' Monsta token dies, the Scarlet Woman is given the Lil' Monsta token tonight."
       },
       {
-        "id": "organgrinder",
-        "reason": "Votes for the Organ Grinder count if the Organ Grinder is babysitting Lil' Monsta."
-      },
-      {
         "id": "vizier",
         "reason": "The Vizier can die by execution if they are babysitting Lil' Monsta."
       },
@@ -2543,7 +2540,7 @@
       "Dead",
       "Dead",
       "Dead",
-      "3 attacks"
+      "3 Attacks"
     ],
     "ability": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.",
     "flavour": "Would you like a flower? I'm so lonely.",
@@ -2633,7 +2630,7 @@
     "reminders": [
       "Dead"
     ],
-    "ability": "Each night*, choose a player; they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
+    "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
     "flavour": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",
     "jinxes": [
       {
@@ -3112,7 +3109,7 @@
       "No Ability",
       "Has Ability"
     ],
-    "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
+    "ability": "Once per game, at night*, choose a dead player: they regain their ability until dusk.",
     "flavour": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Bone_Collector",
@@ -3193,11 +3190,26 @@
     }
   },
   {
+    "id": "gnome",
+    "name": "Gnome",
+    "team": "traveller",
+    "standardAmyOrder": 148,
+    "reminders": [
+      "Amigo"
+    ],
+    "ability": "All players start knowing a player of your alignment. You may choose to kill anyone who nominates them.",
+    "flavour": "Four the score or seven beers, no shows are goes for me and my. A prank to crack the cranks and planks o' the floor foundation length, so incontravertabubbilly mini. The large essays down streams of joyce, no greater than is scene, not inherdt, Ha-urrumph.o.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Gnome",
+      "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_gnome.png"
+    }
+  },
+  {
     "id": "bishop",
     "name": "Bishop",
     "edition": "bmr",
     "team": "traveller",
-    "standardAmyOrder": 148,
+    "standardAmyOrder": 149,
     "reminders": [
       "Nominate Good",
       "Nominate Evil"
@@ -3214,7 +3226,7 @@
     "name": "Voudon",
     "edition": "bmr",
     "team": "traveller",
-    "standardAmyOrder": 149,
+    "standardAmyOrder": 150,
     "ability": "Only you & the dead can vote. They don't need a vote token to do so. A 50% majority isn't required.",
     "flavour": "Bien venu. Sit down. Breathe deep. Enter the land of the dead. See with their eyes. Speak with their voice. Yon sel lang se janm ase.",
     "urls": {
@@ -3227,7 +3239,7 @@
     "name": "Storm Catcher",
     "edition": "fabled",
     "team": "fabled",
-    "standardAmyOrder": 150,
+    "standardAmyOrder": 151,
     "firstNight": 2,
     "firstNightReminder": "At the start of the night, announce which character is favoured by the Storm Catcher. If that character is in play, mark that player as \"Safe\". Wake each evil player and show them the character token, then the marked player.\n If not in play, wake each evil player, show them the \"These Characters Are Not In Play\" info token and the relevant character token.",
     "reminders": [
