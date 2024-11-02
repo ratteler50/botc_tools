@@ -24,6 +24,7 @@ object AppConfig {
   const val INTERACTIONS_JSON = "./data/interactions.json"
   const val JINXES_JSON = "./data/jinxes.json"
   const val SCRIPT_TOOL_ROLES = "./data/script_tool_roles.json"
+  const val SAO_JSON = "./data/sao.json"
 }
 
 val gson: Gson by lazy { GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create() }
@@ -62,8 +63,7 @@ fun getScriptMetadata(json: String): Script? = Script.getScriptMetadata(gson, js
 
 fun getScriptRoles(roleMap: Map<String, Role>, scriptJson: String): List<Role> {
   val charList = Script.getRolesOnScript(gson, scriptJson)
-  return charList.map { char -> roleMap[char.id.normalize()] ?: char }
-    .sortedBy { it.standardAmyOrder }
+  return charList.map { char -> roleMap[char.id.normalize()] ?: char }.sortedBy { it.sao }
 }
 
 fun getJinxTable(inputJson: String): ImmutableTable<String, String, Jinx> {

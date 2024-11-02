@@ -11,7 +11,7 @@ data class Role(
   val name: String? = null,
   val edition: Edition? = null,
   @SerializedName("team", alternate = ["type"]) val type: Type? = null,
-  val standardAmyOrder: Int? = null,
+  val sao: Int? = null,
   val firstNight: Int? = null,
   val firstNightReminder: String? = null,
   val otherNight: Int? = null,

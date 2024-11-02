@@ -154,7 +154,7 @@ class ScriptPrinterTest {
           "name": "Monk",
           "edition": "tb",
           "team": "townsfolk",
-          "standardAmyOrder": 32,
+          "sao": 32,
           "otherNight": 12,
           "otherNightReminder": "The previously protected player is no longer protected. The Monk points to a player not themself. Mark that player 'Protected'.",
           "reminders": [
@@ -168,7 +168,7 @@ class ScriptPrinterTest {
           "name":"Snake Charmer",
           "edition":"snv",
           "team":"townsfolk",
-          "standardAmyOrder":20,
+          "sao":20,
           "firstNight":20,
           "firstNightReminder":"The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
           "otherNight":12,
@@ -184,7 +184,7 @@ class ScriptPrinterTest {
           "id":"amnesiac",
           "name":"Amnesiac",
           "team":"townsfolk",
-          "standardAmyOrder":33,
+          "sao":33,
           "firstNight":32,
           "firstNightReminder":"Decide the Amnesiac's entire ability. If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
           "otherNight":48,
@@ -199,7 +199,7 @@ class ScriptPrinterTest {
           "id":"magician",
           "name":"Magician",
           "team":"townsfolk",
-          "standardAmyOrder":52,
+          "sao":52,
           "firstNight":5,
           "setup":false,
           "ability":"The Demon thinks you are a Minion. Minions think you are a Demon."
@@ -208,7 +208,7 @@ class ScriptPrinterTest {
           "id":"damsel",
           "name":"Damsel",
           "team":"outsider",
-          "standardAmyOrder":72,
+          "sao":72,
           "firstNight":31,
           "firstNightReminder":"Wake all the Minions, show them the 'This character selected you' card and the Damsel token.",
           "otherNight":47,
@@ -224,7 +224,7 @@ class ScriptPrinterTest {
           "name":"Barber",
           "edition":"snv",
           "team":"outsider",
-          "standardAmyOrder":77,
+          "sao":77,
           "otherNight":41,
           "otherNightReminder":"If the Barber died today: Wake the Demon. Show the 'This character selected you' card, then Barber token. The Demon either shows a 'no' head signal, or points to 2 players. If they chose players: Swap the character tokens. Wake each player. Show 'You are', then their new character token.",
           "reminders":[
@@ -238,7 +238,7 @@ class ScriptPrinterTest {
           "name":"Witch",
           "edition":"snv",
           "team":"minion",
-          "standardAmyOrder":84,
+          "sao":84,
           "firstNight":24,
           "firstNightReminder":"The Witch points to a player. If that player nominates tomorrow they die immediately.",
           "otherNight":15,
@@ -253,7 +253,7 @@ class ScriptPrinterTest {
           "id":"boomdandy",
           "name":"Boomdandy",
           "team":"minion",
-          "standardAmyOrder":97,
+          "sao":97,
           "setup":false,
           "ability":"If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them dies."
         },
@@ -262,7 +262,7 @@ class ScriptPrinterTest {
           "name":"Fang Gu",
           "edition":"snv",
           "team":"demon",
-          "standardAmyOrder":109,
+          "sao":109,
           "otherNight":30,
           "otherNightReminder":"The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
           "reminders":[
@@ -277,7 +277,7 @@ class ScriptPrinterTest {
           "name":"Vortox",
           "edition":"snv",
           "team":"demon",
-          "standardAmyOrder":110,
+          "sao":110,
           "otherNight":32,
           "otherNightReminder":"The Vortox points to a player. That player dies.",
           "reminders":[
@@ -291,7 +291,7 @@ class ScriptPrinterTest {
           "name": "Spy",
           "edition": "tb",
           "team": "minion",
-          "standardAmyOrder": 85,
+          "sao": 85,
           "firstNight": 49,
           "firstNightReminder": "Show the Grimoire to the Spy for as long as they need.",
           "otherNight": 69,
@@ -304,7 +304,7 @@ class ScriptPrinterTest {
           "name": "Scarlet Woman",
           "edition": "tb",
           "team": "minion",
-          "standardAmyOrder": 94,
+          "sao": 94,
           "otherNight": 20,
           "otherNightReminder": "If the Scarlet Woman became the Demon today: Show the 'You are' card, then the demon token.",
           "reminders": [
@@ -343,7 +343,7 @@ class ScriptPrinterTest {
       """[{"id": "spiritofivory"}, "gangster", {"id":"vortox"},{"id":"amnesiac"},{"id":"snake_charmer"},{"id":"spy"},{"id":"damsel"},{"id":"barber"},{"id":"boomdandy"},{"id":"witch"},{"id":"magician"},{"id":"scarlet_woman"},{"id":"fang_gu"},"monk"]"""
     val charList = Script.getRolesOnScript(gson, json)
     return charList.map { roleMap[it.id.normalize()] ?: it }
-      .sortedBy { it.standardAmyOrder }
+      .sortedBy { it.sao }
   }
 
   private fun getJinxTable(): ImmutableTable<String, String, Jinx> {

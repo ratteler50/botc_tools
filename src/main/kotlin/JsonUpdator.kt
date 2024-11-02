@@ -2,6 +2,7 @@ import AppConfig.GRIM_TOOL_ROLES
 import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
+import AppConfig.SAO_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
 import io.github.oshai.kotlinlogging.KotlinLogging
 import java.io.File
@@ -23,6 +24,7 @@ suspend fun main() {
   measureTimeMillis { updateRolesFromWiki() }.also { logger.info { "Updated roles from wiki in $it ms" } }
   measureTimeMillis { updateNightOrder() }.also { logger.info { "Updated night order in $it ms" } }
   measureTimeMillis { updateSaoFromScriptToolRoles() }.also { logger.info { "Updated SAO in $it ms" } }
+  measureTimeMillis { writeUpdatedSaoFileFromScriptToolRoles() }.also { logger.info { "Wrote updated SAO in $it ms" } }
 }
 
 private fun updateRoleJinxes() {
@@ -41,8 +43,8 @@ private fun updateRolesFromGrimToolRoles() {
   val rawRoles = Role.listFromJson(gson, File(GRIM_TOOL_ROLES).readText()).associateBy(Role::id)
   val roles = getRolesFromJson()
   roles.map { role -> rawRoles[role.id]?.let { rawRole -> role.copyFrom(rawRole) } ?: role }.run {
-      File(ROLES_JSON).writeText(gson.toJson(this))
-    }
+    File(ROLES_JSON).writeText(gson.toJson(this))
+  }
 }
 
 private fun Role.copyFrom(otherRole: Role): Role = copy(
@@ -128,15 +130,23 @@ private fun updatedNightOrder(
 
 
 private fun updateSaoFromScriptToolRoles() {
-  val rolesSortedBySao = ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText())
-    .filter { it.version != ScriptToolRole.Version.EXTRAS }.map { it.id.normalize() }
+  val rolesSortedBySao =
+    ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText()).map { it.id.normalize() }
 
   val updatedRoles = getRolesFromJson().map { role ->
     val index = rolesSortedBySao.indexOf(role.id.normalize())
-    if (index == -1) role.copy(standardAmyOrder = null) else role.copy(standardAmyOrder = index + 1)
+    if (index == -1) role.copy(sao = null) else role.copy(sao = index + 1)
   }
-    .sortedWith(compareBy<Role> { it.edition == Role.Edition.SPECIAL }.thenBy(nullsLast()) { it.standardAmyOrder }
+    .sortedWith(compareBy<Role> { it.edition == Role.Edition.SPECIAL }.thenBy(nullsLast()) { it.sao }
                   .thenBy { it.type }.thenBy { it.edition }.thenBy { it.name })
 
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
+}
+
+private fun writeUpdatedSaoFileFromScriptToolRoles() {
+  val rolesSortedBySao =
+    ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText()).map { it.id.normalize() }
+
+  println(rolesSortedBySao)
+  File(SAO_JSON).writeText(gson.toJson(rolesSortedBySao))
 }
