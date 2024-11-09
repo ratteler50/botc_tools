@@ -115,7 +115,7 @@
     "firstNight": 53,
     "firstNightReminder": "Give a finger signal.",
     "ability": "You start knowing how many steps from the Demon to its nearest Minion.",
-    "flavour": "Do not disturb me. The tick must continue, for the circle is a symbol of life and contains all things - all answers - in it's divine machinery. I must work.",
+    "flavour": "Do not disturb me. The tick must continue, for the circle is a symbol of life and contains all things - all answers - in its divine machinery. I must work.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Clockmaker",
       "icon": "https://wiki.bloodontheclocktower.com/images/3/3d/Icon_clockmaker.png"
@@ -403,7 +403,7 @@
       "Abnormal",
       "Abnormal"
     ],
-    "ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
+    "ability": "Each night, you learn how many players' abilities worked abnormally (since dawn) due to another character's ability.",
     "flavour": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; that is, there are statements of the language of x which can neither be proved nor disproved in x. Ergo, you are drunk.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Mathematician",
@@ -456,7 +456,7 @@
     "firstNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
     "otherNight": 71,
     "otherNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
-    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
+    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good & 1 evil character, 1 of which is correct.",
     "flavour": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Dreamer",
@@ -638,12 +638,6 @@
     ],
     "ability": "Each night*, choose an alive player. If good, they die & the Demon doesn’t kill tonight. One good player registers as evil.",
     "flavour": "Beneath the thin veneer of civilisation lies a howling madness.",
-    "jinxes": [
-      {
-        "id": "gambler",
-        "reason": "If the Lycanthrope is alive and the Gambler kills themself at night, no other players can die tonight."
-      }
-    ],
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Lycanthrope",
       "icon": "https://wiki.bloodontheclocktower.com/images/9/92/Icon_lycanthrope.png"
@@ -979,6 +973,10 @@
       {
         "id": "zealot",
         "reason": "If the Cannibal gains the Zealot ability, the Cannibal learns this."
+      },
+      {
+        "id": "poppygrower",
+        "reason": "If the Cannibal eats the Poppy Grower, then dies or loses the Poppy Grower ability, the Demon and Minions learn each other that night."
       }
     ],
     "urls": {
@@ -1166,7 +1164,7 @@
     "team": "townsfolk",
     "sao": 65,
     "setup": true,
-    "ability": "The Storyteller can break the game rules & if executed, good wins, even if you are dead. [No evil characters]",
+    "ability": "The Storyteller can break the game rules, and if executed, good wins, even if you are dead. [No evil characters]",
     "flavour": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Atheist",
@@ -1488,7 +1486,7 @@
     "edition": "snv",
     "team": "outsider",
     "sao": 84,
-    "ability": "If you are “mad” about being an Outsider, you might be executed.",
+    "ability": "If you are \"mad\" about being an Outsider, you might be executed.",
     "flavour": "I am not a freak! I am a human being! Have mercy!",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Mutant",
@@ -1768,7 +1766,7 @@
     "reminders": [
       "Mad"
     ],
-    "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
+    "ability": "Each night, choose a player & a good character: they are \"mad\" they are this character tomorrow, or might be executed.",
     "flavour": "Reality is merely an opinion. Specifically, my opinion.",
     "jinxes": [
       {
@@ -1793,7 +1791,7 @@
     "reminders": [
       "Fear"
     ],
-    "ability": "Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player.",
+    "ability": "Each night, choose a player: if you nominate & execute them, their team loses. All players know if you choose a new player.",
     "flavour": "Beware of gazing long into the Abyss, lest the Abyss also gaze into you.",
     "jinxes": [
       {
@@ -1814,7 +1812,7 @@
     "sao": 100,
     "otherNight": 24,
     "otherNightReminder": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the *YOU ARE* token & their new character token.",
-    "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
+    "ability": "Each night*, choose a player & a character they become (if not in play). If a Demon is made, deaths tonight are arbitrary.",
     "flavour": "Round about the cauldron go; In the poison'd entrails throw; Toad, that under cold stone; Days and nights has thirty-one; Sweated venom sleeping got; Boil thou first in the charmed pot.",
     "jinxes": [
       {
@@ -1896,7 +1894,7 @@
     "remindersGlobal": [
       "Knows"
     ],
-    "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
+    "ability": "On your first night, look at the Grimoire & choose a player: they are poisoned. 1 good player knows a Widow is in play.",
     "flavour": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",
     "jinxes": [
       {
@@ -2152,7 +2150,7 @@
     "reminders": [
       "Is The Demon"
     ],
-    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",
+    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count)",
     "flavour": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
     "jinxes": [
       {
@@ -2230,7 +2228,7 @@
       "About To Die",
       "Drunk"
     ],
-    "ability": "All players keep their eyes closed when voting and the vote tally is secret. Each night, choose if you are drunk or not.",
+    "ability": "All players keep their eyes closed when voting & the vote tally is secret. Each night, choose if you are drunk or not.",
     "flavour": "Round and round the handles go. The more you dance the less you know.",
     "jinxes": [
       {
@@ -2250,7 +2248,7 @@
     "sao": 113,
     "firstNight": 9,
     "firstNightReminder": "Wake the Boffin and the Demon. Show the not-in-play good character token. Put the Boffin and the Demon to sleep.",
-    "ability": "The Demon (even if drunk or poisoned) has a not-in-play good character’s ability. You both know which.",
+    "ability": "The Demon (even if drunk or poisoned) has a not-in-play good character's ability. You both know which.",
     "flavour": "Stellar hydrogen, vast, inert; carbon, oxygen, neon gases, all ruined. Molecular chaos, entropy, yields new cosmic phenomena, rebirth from atomic chaos, dense matter collapsing. All in a teeny little bottle.",
     "jinxes": [
       {
@@ -2378,7 +2376,7 @@
       "Dead"
     ],
     "setup": true,
-    "ability": "Each night, Minions choose who babysits Lil' Monsta & \"is the Demon\". Each night*, a player might die. [+1 Minion]",
+    "ability": "Each night, Minions choose who babysits Lil' Monsta & 'is the Demon'. Each night*, a player might die. [+1 Minion]",
     "flavour": "Step 1: Be cute. Step 2: World domination. Step 3: Bweakfast.",
     "jinxes": [
       {
@@ -3020,7 +3018,7 @@
       "Acts Twice",
       "?"
     ],
-    "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.",
+    "ability": "Each night, until dusk, 1) a player becomes sober, healthy & gets true info, or 2) their ability works twice. They learn which.",
     "flavour": "A cup of coffee with no cream, Monsieur? I’m terribly sorry, but we’re fresh out of cream — how about with no milk?",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Barista",
@@ -3143,7 +3141,7 @@
     "reminders": [
       "Is The Apprentice"
     ],
-    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
+    "ability": "On your 1st night, you gain a Townsfolk ability (if good) or a Minion ability (if evil).",
     "flavour": "For years have I traveled, studying the ways of The Craft. Which craft, you ask? Simply that of the simple folk. Nothing to worry about. Not yet.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Apprentice",
@@ -3156,7 +3154,7 @@
     "edition": "tb",
     "team": "traveller",
     "sao": 145,
-    "ability": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober & healthy.",
+    "ability": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober and healthy.",
     "flavour": "Alms for the poor, good Sir? Spare a coin, Madam? Thank you. God bless! You're a right kind soul and no mistake! I'll have some swanky nosh tonight, I will!",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Beggar",
@@ -3227,7 +3225,7 @@
     "edition": "bmr",
     "team": "traveller",
     "sao": 150,
-    "ability": "Only you and the dead can vote. They don't need a vote token to do so. A 50% majority is not required.",
+    "ability": "Only you & the dead can vote. They don't need a vote token to do so. A 50% majority isn't required.",
     "flavour": "Bien venu. Sit down. Breathe deep. Enter the land of the dead. See with their eyes. Speak with their voice. Yon sel lang se janm ase.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Voudon",
