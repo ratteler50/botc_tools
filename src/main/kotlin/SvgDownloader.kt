@@ -1,4 +1,3 @@
-
 import io.github.oshai.kotlinlogging.KotlinLogging
 import java.awt.Color
 import java.awt.Graphics2D
@@ -18,6 +17,24 @@ import okhttp3.Request
 private val logger = KotlinLogging.logger {}
 
 fun main() {
+  allRolesToSvg()
+  // allPngsToSvg()
+}
+
+private fun allPngsToSvg() {
+  // Read all files from the pngs directory as a list of Files
+  val pngs = File("./data/images/pngs").listFiles()
+  runBlocking {
+    val jobs = pngs?.map { png ->
+      launch(Dispatchers.IO) { // Launch each task in its coroutine on the IO dispatcher
+        convertBmpToSvg(convertPngToBmp(png))
+      }
+    }
+    jobs?.joinAll() // Wait for all tasks to complete
+  }
+}
+
+private fun allRolesToSvg() {
   val urls = getRolesFromJson().mapNotNull { it.urls?.icon }
   val client = OkHttpClient()
   runBlocking {
@@ -96,7 +113,7 @@ fun convertBmpToSvg(bmpFile: File): File {
   process.waitFor()
   val errorOutput = process.errorStream.bufferedReader().readText().trim()
   if (errorOutput.isNotEmpty()) {
-      logger.error { errorOutput }
+    logger.error { errorOutput }
   }
   logger.info { "Converted BMP to SVG: ${svgFile.name}" }
   return svgFile
