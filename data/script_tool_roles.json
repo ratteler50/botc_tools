@@ -576,15 +576,6 @@
     "isDisabled": false
   },
   {
-    "id": "atheist",
-    "name": "Atheist",
-    "roleType": "townsfolk",
-    "print": "./images/print/4 - Experimental/townsfolk/Atheist_print.webp",
-    "icon": "./images/icon/4 - Experimental/townsfolk/Atheist_icon.webp",
-    "version": "4a - Kickstarter Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "magician",
     "name": "Magician",
     "roleType": "townsfolk",
@@ -609,6 +600,15 @@
     "print": "./images/print/2 - Bad Moon Rising/townsfolk/Pacifist_print.webp",
     "icon": "./images/icon/2 - Bad Moon Rising/townsfolk/Pacifist_icon.webp",
     "version": "2 - Bad Moon Rising",
+    "isDisabled": false
+  },
+  {
+    "id": "atheist",
+    "name": "Atheist",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/Atheist_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/Atheist_icon.webp",
+    "version": "4a - Kickstarter Experimental",
     "isDisabled": false
   },
   {

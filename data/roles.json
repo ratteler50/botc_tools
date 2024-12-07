@@ -1167,23 +1167,10 @@
     }
   },
   {
-    "id": "atheist",
-    "name": "Atheist",
-    "team": "townsfolk",
-    "sao": 65,
-    "setup": true,
-    "ability": "The Storyteller can break the game rules, and if executed, good wins, even if you are dead. [No evil characters]",
-    "flavour": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Atheist",
-      "icon": "https://wiki.bloodontheclocktower.com/images/4/43/Icon_atheist.png"
-    }
-  },
-  {
     "id": "magician",
     "name": "Magician",
     "team": "townsfolk",
-    "sao": 66,
+    "sao": 65,
     "firstNight": 14,
     "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
     "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
@@ -1197,7 +1184,7 @@
     "id": "poppygrower",
     "name": "Poppy Grower",
     "team": "townsfolk",
-    "sao": 67,
+    "sao": 66,
     "firstNight": 12,
     "firstNightReminder": "Do not do the Minion Info and Demon Info steps. Wake the Demon, show the *THESE CHARACTERS ARE NOT IN PLAY* info token and any three good character tokens that are not in play.",
     "otherNight": 9,
@@ -1218,12 +1205,25 @@
     "name": "Pacifist",
     "edition": "bmr",
     "team": "townsfolk",
-    "sao": 68,
+    "sao": 67,
     "ability": "Executed good players might not die.",
     "flavour": "Distrust all in whom the impulse to punish is powerful.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Pacifist",
       "icon": "https://wiki.bloodontheclocktower.com/images/5/5d/Icon_pacifist.png"
+    }
+  },
+  {
+    "id": "atheist",
+    "name": "Atheist",
+    "team": "townsfolk",
+    "sao": 68,
+    "setup": true,
+    "ability": "The Storyteller can break the game rules, and if executed, good wins, even if you are dead. [No evil characters]",
+    "flavour": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Atheist",
+      "icon": "https://wiki.bloodontheclocktower.com/images/4/43/Icon_atheist.png"
     }
   },
   {
