@@ -1311,7 +1311,8 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Lunatic",
       "icon": "https://wiki.bloodontheclocktower.com/images/6/64/Icon_lunatic.png"
-    }
+    },
+    "textGameClarification": "The Demon learns everything the Lunatic is told in \"Demon Info\"."
   },
   {
     "id": "drunk",
