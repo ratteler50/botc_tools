@@ -918,6 +918,15 @@
     "isDisabled": false
   },
   {
+    "id": "wizard",
+    "name": "Wizard",
+    "roleType": "minion",
+    "print": "./images/print/4 - Experimental/minion/wizard.webp",
+    "icon": "./images/icon/4 - Experimental/minion/wizard.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "widow",
     "name": "Widow",
     "roleType": "minion",
