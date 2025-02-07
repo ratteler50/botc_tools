@@ -47,6 +47,8 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
     jda.awaitReady()
     jda.presence.activity = Activity.playing("with her string!")
     logger.info { "Bot is ready!" }
+
+    MessageReader(jda).readMessages()
   }
 
   override fun onSlashCommandInteraction(event: SlashCommandInteractionEvent) {
