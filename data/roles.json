@@ -1946,7 +1946,7 @@
       "?"
     ],
     "ability": "Once per game, choose to make a wish. If granted, it might have a price & leave a clue as to its nature.",
-    "flavour": "Genies are overrated.",
+    "flavour": "Every man and every woman is a star. Love is the law, love under will.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Wizard",
       "icon": "https://wiki.bloodontheclocktower.com/images/b/b5/Icon_wizard.png"
@@ -2238,7 +2238,7 @@
     "sao": 113,
     "firstNight": 75,
     "firstNightReminder": "Announce the Vizier player to the group.",
-    "ability": "All players know you are the Vizier. You can not die during the day. If good voted, you may choose to execute immediately.",
+    "ability": "All players know you are the Vizier. You cannot die during the day. If good voted, you may choose to execute immediately.",
     "flavour": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.",
     "jinxes": [
       {
@@ -2292,7 +2292,7 @@
       "About To Die",
       "Drunk"
     ],
-    "ability": "All players keep their eyes closed when voting & the vote tally is secret. Each night, choose if you are drunk or not.",
+    "ability": "All players keep their eyes closed when voting and the vote tally is secret. Each night, choose if you are drunk until dusk.",
     "flavour": "Round and round the handles go. The more you dance the less you know.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Organ_Grinder",
@@ -2869,7 +2869,11 @@
     "name": "Riot",
     "team": "demon",
     "sao": 135,
-    "setup": true,
+    "reminders": [
+      "Day 1",
+      "Day 2",
+      "Day 3"
+    ],
     "ability": "On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.",
     "flavour": "Larga vida a la revolución! Mi revolucion!",
     "jinxes": [
@@ -2974,7 +2978,7 @@
     "otherNight": 3,
     "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
     "reminders": [
-      "Sober and Healthy",
+      "Sober & Healthy",
       "Acts Twice",
       "?"
     ],
