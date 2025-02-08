@@ -70,6 +70,11 @@ class TranscriptHandler {
         }
       }.mapNotNull { it.await() }
 
+      if(channelPayloads.isEmpty()) {
+        event.hook.sendMessage("No messages found in the specified channels.").queue()
+        return
+      }
+
       val dmChannel = try {
         event.user.openPrivateChannel().submit().await()
       } catch (e: Exception) {
