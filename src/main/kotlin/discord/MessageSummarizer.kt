@@ -1,9 +1,7 @@
 package discord
 
 import com.google.gson.GsonBuilder
-import discord.Settings.GEMINI_KEY
 import io.github.oshai.kotlinlogging.KotlinLogging
-import java.io.File
 import java.util.concurrent.TimeUnit.MINUTES
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.MediaType.Companion.toMediaType
@@ -46,21 +44,6 @@ class MessageSummarizer {
   }
 
   /**
-   * Summarizes a list of messages and writes the raw transcript to a file.
-   *
-   * @param messages The list of messages to summarize.
-   * @return The generated summary or an empty string if the request fails.
-   */
-  fun summarize(messages: List<String>): String {
-    val transcript = messages.joinToString("\n").also {
-      File("./data/transcript.txt").writeText(it)
-      logger.warn { "Transcript written to file." }
-    }
-    return ""
-    // return summarizeText(transcript)
-  }
-
-  /**
    * Sends the message content to the Gemini API for summarization.
    *
    * @param inputText The text input to be summarized.
@@ -68,7 +51,7 @@ class MessageSummarizer {
    */
   private fun summarizeText(inputText: String): String {
     val httpUrl = BASE_URL.toHttpUrl().newBuilder()
-      .addQueryParameter("key", GEMINI_KEY)
+      .addQueryParameter("key", "GEMINI_KEY")
       .build()
 
     val requestPayload =
