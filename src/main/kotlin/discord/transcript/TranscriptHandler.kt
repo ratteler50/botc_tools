@@ -2,6 +2,8 @@ package discord.transcript
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import java.time.OffsetDateTime
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.future.await
 import net.dv8tion.jda.api.Permission.VIEW_CHANNEL
 import net.dv8tion.jda.api.entities.User
@@ -23,13 +25,6 @@ class TranscriptHandler {
     val transcriptCommand = Commands.slash(
       "transcript", "Returns the contents of the input channel between start and end timestamps"
     ).apply {
-      addOption(STRING, "channel_ids", "Comma separated list of channels to read from", true)
-      addOption(
-        STRING,
-        "include_authors",
-        "Include message author in logs.  Comma separated list of t/f that must be the same length as channel_ids",
-        true
-      )
       addOption(
         STRING,
         "start_time",
@@ -42,40 +37,71 @@ class TranscriptHandler {
         "End time (Optional, OffsetDateTime format: `2024-12-31T15:00:00-08:00`)",
         false
       )
+      addOption(
+        STRING,
+        "channel_ids_with_author",
+        "Comma separated list of channels to read from and append author",
+        false
+      )
+      addOption(
+        STRING,
+        "channel_ids_without_author",
+        "Comma separated list of channels to read from and append author",
+        false
+      )
     }
 
     suspend fun handleTranscript(event: SlashCommandInteractionEvent) {
-      event.deferReply().queue()
+      event.deferReply(true).queue() // Defer as ephemeral (visible only to the caller)
 
-
-      val channels= parseChannels(event)
-      val channel = channels.firstOrNull()
-      val includeAuthor = parseAuthorList(event)
       val startTime = parseOffsetDateTime(event, event.getOption("start_time"))
       val endTime = parseOffsetDateTime(event, event.getOption("end_time"))
-
+      val channelsWithAuthor = parseChannels(event, "channel_ids_with_author")
+      val channelsWithoutAuthor = parseChannels(event, "channel_ids_without_author")
 
       val messageReader = ChannelMessages.MessageReader(event.jda, startTime, endTime)
-      val channelPayload = processSingleChannel(event, messageReader, channel, includeAuthor)
-      channelPayload.let { payload ->
-        if (payload != null) {
-          requireNotNull(channel) { "Channel ID not found" }
-          event.channel.sendFiles(
-            FileUpload.fromData(payload.toByteArray(), "${channel.name}.md")
-          ).queue()
-          event.hook.sendMessage("done").queue()
+
+      // In parallel process each channelWithAuthor and each channelWithoutAuthor
+      val channelPayloads = coroutineScope {
+        channelsWithAuthor.map { channel ->
+          async { processSingleChannel(event, messageReader, channel, true) }
+        } + channelsWithoutAuthor.map { channel ->
+          async { processSingleChannel(event, messageReader, channel, false) }
         }
+      }.mapNotNull { it.await() }
+
+      val dmChannel = try {
+        event.user.openPrivateChannel().submit().await()
+      } catch (e: Exception) {
+        logger.warn(e) { "Failed to open DM with ${event.user.id}" }
+        null
+      }
+
+
+      if (dmChannel != null) {
+        dmChannel.sendFiles(channelPayloads.map { it.toFilePayload() })
+          .queue({ event.hook.sendMessage("Transcripts sent via DM! ✅").queue() }, {
+            event.hook.sendMessage("Failed to send DM. Please check your settings. ❌").queue()
+          })
+      } else {
+        event.hook.sendMessage("Could not open a DM with you. Make sure your DMs are enabled. ❌")
+          .queue()
       }
     }
 
-    private fun parseAuthorList(event: SlashCommandInteractionEvent) =
-      event.getOption("include_author")?.asBoolean ?: false
 
-    private fun parseChannels(event: SlashCommandInteractionEvent): List<TextChannel> {
-      val channel: List<TextChannel> =
-        event.getOption("channel_ids")?.asString?.split(",")
-          ?.mapNotNull { event.jda.getTextChannelById(it) } ?: emptyList()
-      return channel
+    private fun parseChannels(
+      event: SlashCommandInteractionEvent,
+      optionName: String,
+    ): List<TextChannel> {
+      val channels: List<TextChannel> = event.getOption(optionName)?.asString?.split(",")
+        ?.mapNotNull { event.jda.getTextChannelById(it) } ?: emptyList()
+      return channels
+    }
+
+    private data class ChannelPayload(val channel: TextChannel, val payload: String) {
+      fun toFilePayload(): FileUpload =
+        FileUpload.fromData(payload.toByteArray(), "${channel.name}.md")
     }
 
     private suspend fun processSingleChannel(
@@ -83,7 +109,7 @@ class TranscriptHandler {
       messageReader: ChannelMessages.MessageReader,
       channel: TextChannel?,
       includeAuthor: Boolean,
-    ): String? {
+    ): ChannelPayload? {
       if (!validateInput(event, channel)) return null
       requireNotNull(channel) { "Channel ID not found" }
 
@@ -96,11 +122,9 @@ class TranscriptHandler {
       }
 
       val payload = messages.allMessages.joinToString("\n") { it.asLogString(includeAuthor) }
-      logger.warn { "Payload: $payload" }
-      return payload
+      return ChannelPayload(channel, payload)
 
     }
-
 
     private suspend fun validateInput(
       event: SlashCommandInteractionEvent,
