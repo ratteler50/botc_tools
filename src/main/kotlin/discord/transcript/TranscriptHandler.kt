@@ -3,124 +3,144 @@ package discord.transcript
 import io.github.oshai.kotlinlogging.KotlinLogging
 import java.time.OffsetDateTime
 import kotlinx.coroutines.future.await
-import kotlinx.coroutines.runBlocking
 import net.dv8tion.jda.api.Permission.VIEW_CHANNEL
 import net.dv8tion.jda.api.entities.User
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
 import net.dv8tion.jda.api.interactions.commands.OptionMapping
-import net.dv8tion.jda.api.interactions.commands.OptionType.BOOLEAN
 import net.dv8tion.jda.api.interactions.commands.OptionType.STRING
 import net.dv8tion.jda.api.interactions.commands.build.Commands
+import net.dv8tion.jda.api.utils.FileUpload
 
+/**
+ * Handles the /transcript command, which retrieves messages from a channel within a specified time range.
+ */
 class TranscriptHandler {
   companion object {
     private val logger = KotlinLogging.logger {}
-    private val allowlistedUsers = setOf(
-      "258476947779092480" // Dae
-    )
+    private val allowlistedUsers = setOf("258476947779092480") // Dae
 
     val transcriptCommand = Commands.slash(
-      "transcript", "Returns the contents of the input channel between start and end timestamp"
-    ).addOption(STRING, "channel_id", "The channel to read from", true).addOption(
-      STRING,
-      "start_time",
-      "The start time to read from in the form of an OffsetDatetime like`2024-12-31T15:00:00-08:00`",
-      true
-    ).addOption(
-      STRING,
-      "end_time",
-      "The end time to read till in the form of an OffsetDatetime like`2024-12-31T15:00:00-08:00`",
-      false
-    ).addOption(BOOLEAN, "include_author", "Include message author name in logs", false)
+      "transcript", "Returns the contents of the input channel between start and end timestamps"
+    ).apply {
+      addOption(STRING, "channel_ids", "Comma separated list of channels to read from", true)
+      addOption(
+        STRING,
+        "include_authors",
+        "Include message author in logs.  Comma separated list of t/f that must be the same length as channel_ids",
+        true
+      )
+      addOption(
+        STRING,
+        "start_time",
+        "Start time (OffsetDateTime format: `2024-12-31T15:00:00-08:00`)",
+        true
+      )
+      addOption(
+        STRING,
+        "end_time",
+        "End time (Optional, OffsetDateTime format: `2024-12-31T15:00:00-08:00`)",
+        false
+      )
+    }
 
-    fun handleTranscript(event: SlashCommandInteractionEvent) {
+    suspend fun handleTranscript(event: SlashCommandInteractionEvent) {
       event.deferReply().queue()
-      val channelId = event.getOption("channel_id")?.asString
-      val channel = channelId?.let { event.jda.getTextChannelById(it) }
-      val startTime = parseOffsetDateTimeOrNow(event, event.getOption("start_time"))
-      val endTime = parseOffsetDateTimeOrNow(event, event.getOption("end_time"))
-      val includeAuthor = event.getOption("include_author")?.asBoolean ?: false
 
-      validateInput(event, channel, startTime, endTime, includeAuthor)
+
+      val channels= parseChannels(event)
+      val channel = channels.firstOrNull()
+      val includeAuthor = parseAuthorList(event)
+      val startTime = parseOffsetDateTime(event, event.getOption("start_time"))
+      val endTime = parseOffsetDateTime(event, event.getOption("end_time"))
+
+
+      val messageReader = ChannelMessages.MessageReader(event.jda, startTime, endTime)
+      val channelPayload = processSingleChannel(event, messageReader, channel, includeAuthor)
+      channelPayload.let { payload ->
+        if (payload != null) {
+          requireNotNull(channel) { "Channel ID not found" }
+          event.channel.sendFiles(
+            FileUpload.fromData(payload.toByteArray(), "${channel.name}.md")
+          ).queue()
+          event.hook.sendMessage("done").queue()
+        }
+      }
+    }
+
+    private fun parseAuthorList(event: SlashCommandInteractionEvent) =
+      event.getOption("include_author")?.asBoolean ?: false
+
+    private fun parseChannels(event: SlashCommandInteractionEvent): List<TextChannel> {
+      val channel: List<TextChannel> =
+        event.getOption("channel_ids")?.asString?.split(",")
+          ?.mapNotNull { event.jda.getTextChannelById(it) } ?: emptyList()
+      return channel
+    }
+
+    private suspend fun processSingleChannel(
+      event: SlashCommandInteractionEvent,
+      messageReader: ChannelMessages.MessageReader,
+      channel: TextChannel?,
+      includeAuthor: Boolean,
+    ): String? {
+      if (!validateInput(event, channel)) return null
+      requireNotNull(channel) { "Channel ID not found" }
+
+      val messages = messageReader.readMessages(channel.id.toLong())
+
+      if (messages.allMessages.isEmpty()) {
+        event.hook.sendMessage("No messages found in channel $channel between ${messages.startTime} and ${messages.endTime}.")
+          .queue()
+        return null
+      }
+
+      val payload = messages.allMessages.joinToString("\n") { it.asLogString(includeAuthor) }
+      logger.warn { "Payload: $payload" }
+      return payload
 
     }
 
-    private fun validateInput(
+
+    private suspend fun validateInput(
       event: SlashCommandInteractionEvent,
       channel: TextChannel?,
-      startTime: OffsetDateTime,
-      endTime: OffsetDateTime,
-      includeAuthor: Boolean,
-    ) {
-      event.hook.sendMessage("Input received: $channel, $startTime, $endTime, $includeAuthor")
-        .queue()
-
-      if (channel == null || startTime.isAfter(endTime)) {
-        event.hook.sendMessage("Invalid input. Please check your parameters.").queue()
-        return
+    ): Boolean {
+      if (channel == null) {
+        event.hook.sendMessage("Invalid channel. Check channel ID.").queue()
+        return false
       }
 
-      event.hook.sendMessage("You are ${event.user}").queue()
-      if (!allowlistedUsers.contains(event.user.id)) {
-        event.hook.sendMessage("User ${event.user} does not have permission to use this command")
-          .queue()
-        return
+      if (event.user.id !in allowlistedUsers) {
+        event.hook.sendMessage("You lack permission to use this command.").queue()
+        return false
       }
-      if (!runBlocking { hasReadAccess(channel, event.user) }) {
-        event.hook.sendMessage(
-          "User ${event.user} does not have permission to view contents of channel ${channel.id}"
-        ).queue()
-        return
+
+      if (!hasReadAccess(channel, event.user)) {
+        event.hook.sendMessage("No permission to view channel ${channel.id}.").queue()
+        return false
       }
+      return true
     }
 
     private suspend fun hasReadAccess(channel: TextChannel, user: User): Boolean {
       val member = channel.guild.retrieveMemberById(user.id).submit().await()
-      logger.info { "Checking read access for $member in $channel" }
       return member?.hasPermission(channel, VIEW_CHANNEL) ?: false
     }
 
-    private fun parseOffsetDateTimeOrNow(
+    private fun parseOffsetDateTime(
       event: SlashCommandInteractionEvent,
       input: OptionMapping?,
     ): OffsetDateTime {
-      if (input == null) {
-        logger.warn { "No timestamp provided, defaulting to now" }
-        return OffsetDateTime.now()
-      }
-      return try {
-        OffsetDateTime.parse(input.asString)
-      } catch (e: Exception) {
-        logger.warn(e) { "Error parsing timestamp: $input" }
-        event.hook.sendMessage("Invalid timestamp: $input").queue()
-        return OffsetDateTime.now()
-      }
+      return input?.asString?.let {
+        try {
+          OffsetDateTime.parse(it)
+        } catch (e: Exception) {
+          logger.warn(e) { "Invalid timestamp format: $it" }
+          event.hook.sendMessage("Invalid timestamp format: $it").queue()
+          OffsetDateTime.now()
+        }
+      } ?: OffsetDateTime.now()
     }
-
-
-    // fun handleTextScript(event: SlashCommandInteractionEvent) {
-    //   event.deferReply().queue()
-    //   val channel: MessageChannel = event.channel
-    //   val scriptJson = event.options[0].asString
-    //
-    //   try {
-    //     // Parse script metadata and generate the script text
-    //     val scriptMetadata = getScriptMetadata(scriptJson)
-    //     val output = generateTextScript(scriptMetadata, scriptJson)
-    //
-    //     // Send the generated script as a file attachment
-    //     channel.sendFiles(
-    //       FileUpload.fromData(
-    //         output.toByteArray(), "${scriptMetadata?.name ?: "output"}.md"
-    //       )
-    //     ).queue()
-    //     event.hook.sendMessage("`$scriptJson`").queue()
-    //   } catch (e: Exception) {
-    //     TextScriptHandler.logger.warn(e) { "Error generating script from $scriptJson" }
-    //     event.hook.sendMessage("Invalid JSON: $scriptJson").queue()
-    //   }
-    // }
   }
-
 }

@@ -4,9 +4,10 @@ import discord.character_info.RoleHandler
 import discord.character_info.RoleHandler.Companion.roleCommand
 import discord.text_script.TextScriptHandler
 import discord.text_script.TextScriptHandler.Companion.textScriptCommand
-import discord.transcript.MessageReader
+import discord.transcript.ChannelMessages
 import discord.transcript.TranscriptHandler
 import discord.transcript.TranscriptHandler.Companion.transcriptCommand
+import discord.transcript.asLogString
 import io.github.oshai.kotlinlogging.KotlinLogging
 import java.time.OffsetDateTime
 import kotlinx.coroutines.runBlocking
@@ -28,10 +29,7 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
    */
   fun start() {
     val jda = setupBot()
-
-    // Run message summarization in a blocking coroutine
-    val summarizedMessages = runBlocking { summarizeMessages(jda) }
-    logger.info { "Summarized messages: $summarizedMessages" }
+    jda.awaitReady()
   }
 
   /**
@@ -60,18 +58,29 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
    * Reads and summarizes messages within a given time range.
    */
   private suspend fun summarizeMessages(jda: JDA): String {
-    val readStartTime = OffsetDateTime.parse("2025-02-05T07:00:00-08:00")
+    val readStartTime = OffsetDateTime.parse("2025-02-07T00:00:00-08:00")
     val readEndTime = OffsetDateTime.now()
 
-    // Retrieve messages using MessageReader
-    val messages = MessageReader(
-      jda, readStartTime, readEndTime
-    ).readMessages()
 
-    messages.logFirstAndLastMessages()
+    val TOWN_SQUARE_CHANNEL_ID = 1164312583088640030L
+    val WHISPER_CHANNEL_ID = 1251899834361712721L
+
+
+    // Retrieve messages using MessageReader
+    val townSquare = ChannelMessages.MessageReader(jda, readStartTime, readEndTime)
+      .readMessages(TOWN_SQUARE_CHANNEL_ID)
+    val whisper = ChannelMessages.MessageReader(jda, readStartTime, readEndTime)
+      .readMessages(WHISPER_CHANNEL_ID)
+
+    logger.info { "TOWN SQUARE" }
+    townSquare.logFirstAndLastMessages(true)
+    logger.info { "WHISPERS" }
+    whisper.logFirstAndLastMessages(false)
+
+    townSquare.allMessages.map { it.asLogString(true) }
 
     // Summarize messages into a structured format
-    return MessageSummarizer().summarize(messages.contentWithHeaders())
+    return MessageSummarizer().summarize(townSquare.allMessages.map { it.asLogString(true) })
   }
 
   /**
@@ -81,7 +90,7 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
     when (event.name) {
       "role" -> RoleHandler.handleRole(event)
       "textscript" -> TextScriptHandler.handleTextScript(event)
-      "transcript" -> TranscriptHandler.handleTranscript(event)
+      "transcript" -> runBlocking { TranscriptHandler.handleTranscript(event) }
     }
   }
 }
