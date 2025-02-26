@@ -2624,7 +2624,7 @@
       "wiki": "https://wiki.bloodontheclocktower.com/Al-Hadikhia",
       "icon": "https://wiki.bloodontheclocktower.com/images/1/18/Icon_alhadikhia.png"
     },
-    "textGameClarification": "At night, after all check ins, if Al-Hadikhia is in play, we will lock the channel. Their first pick will be announced, we will privately message for a response, then second, then third. After all picks and responses from the necessary players, we may require another full check in depending on the script"
+    "textGameClarification": "At night, after sufficient time of receiving the Al-Hadikhia's choices, we will privately ask each picked player weather they live or die. Players later in order learn who was picked ahead of them. Prior to day starting, we will post what 3 players were selected."
   },
   {
     "id": "vigormortis",
