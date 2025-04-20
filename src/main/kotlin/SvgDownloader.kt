@@ -17,33 +17,33 @@ import okhttp3.Request
 private val logger = KotlinLogging.logger {}
 
 fun main() {
-  allRolesToSvg()
-  // allPngsToSvg()
+  // allRolesToStl()
+  allPngsToStl()
 }
 
-private fun allPngsToSvg() {
-  // Read all files from the pngs directory as a list of Files
-  val pngs = File("./data/images/pngs").listFiles()
-  runBlocking {
-    val jobs = pngs?.map { png ->
-      launch(Dispatchers.IO) { // Launch each task in its coroutine on the IO dispatcher
-        convertBmpToSvg(convertPngToBmp(png))
-      }
-    }
-    jobs?.joinAll() // Wait for all tasks to complete
-  }
-}
-
-private fun allRolesToSvg() {
+private fun allRolesToStl() {
   val urls = getRolesFromJson().mapNotNull { it.urls?.icon }
   val client = OkHttpClient()
   runBlocking {
     val jobs = urls.map { urlString ->
       launch(Dispatchers.IO) { // Launch each task in its coroutine on the IO dispatcher
-        convertBmpToSvg(convertPngToBmp(downloadPng(client, urlString)))
+        convertSvgToStl(convertBmpToSvg(convertPngToBmp(downloadPng(client, urlString))))
       }
     }
     jobs.joinAll() // Wait for all tasks to complete
+  }
+}
+
+private fun allPngsToStl() {
+  // Read all files from the pngs directory as a list of Files
+  val pngs = File("./data/images/pngs").listFiles()?.filter { it.extension == "png" }
+  runBlocking {
+    val jobs = pngs?.map { png ->
+      launch(Dispatchers.IO) { // Launch each task in its coroutine on the IO dispatcher
+        convertSvgToStl(convertBmpToSvg(convertPngToBmp(png)))
+      }
+    }
+    jobs?.joinAll() // Wait for all tasks to complete
   }
 }
 
@@ -106,15 +106,78 @@ fun convertPngToBmp(pngFile: File): File {
 fun convertBmpToSvg(bmpFile: File): File {
   // Convert BMP to SVG using potrace
   val svgFile = File("./data/images/svgs/${bmpFile.nameWithoutExtension}.svg")
+
+  if (svgFile.exists()) {
+    logger.warn { "File already exists: ${svgFile.name}" }
+    return svgFile
+  }
+
   // Ensure all ancestor directories exist
   svgFile.parentFile.mkdirs()
-  val process =
-    ProcessBuilder("potrace", "-s", bmpFile.absolutePath, "-o", svgFile.absolutePath).start()
-  process.waitFor()
+
+  val process = ProcessBuilder(
+    "potrace",
+    "-s",
+    "--turdsize",
+    "10",
+    "--alphamax",
+    "1",
+    bmpFile.absolutePath,
+    "-o",
+    svgFile.absolutePath
+  ).start()
+  val exitCode = process.waitFor()
+
   val errorOutput = process.errorStream.bufferedReader().readText().trim()
-  if (errorOutput.isNotEmpty()) {
-    logger.error { errorOutput }
+
+  if (exitCode == 0 && errorOutput.isNotEmpty()) {
+    logger.warn { "Potrace completed with warnings: $errorOutput" }
+  } else if (exitCode != 0) {
+    logger.error { "Potrace failed with code $exitCode: $errorOutput" }
+    throw IOException("Failed to convert BMP to SVG: ${bmpFile.name}")
   }
+
   logger.info { "Converted BMP to SVG: ${svgFile.name}" }
   return svgFile
+}
+
+fun convertSvgToStl(svgFile: File): File {
+  val stlFile = File("./data/images/stls/${svgFile.nameWithoutExtension}.stl")
+  stlFile.parentFile.mkdirs()
+
+  if (stlFile.exists()) {
+    logger.warn { "File already exists: ${stlFile.name}" }
+    return stlFile
+  }
+
+  val scadScript = """
+        linear_extrude(height = 2)
+            import(file = "${svgFile.absolutePath}");
+    """.trimIndent()
+
+  val scadFile = File.createTempFile("temp_extrude", ".scad").apply {
+    writeText(scadScript)
+    deleteOnExit()
+  }
+
+  val process =
+    ProcessBuilder("openscad", "-o", stlFile.absolutePath, scadFile.absolutePath).start()
+  val exitCode = process.waitFor()
+
+  val errorOutput = process.errorStream.bufferedReader().readText().trim()
+
+  if (exitCode == 0 && errorOutput.isNotEmpty()) {
+    logger.warn { "OpenSCAD completed for ${svgFile.name} with warnings: \n$errorOutput" }
+  } else if (exitCode != 0) {
+    logger.error { "OpenSCAD failed with code $exitCode: $errorOutput" }
+    throw IOException("Failed to process file with OpenSCAD: ${svgFile.name}")
+  }
+
+  if (!stlFile.exists()) {
+    logger.error { "STL file was not created: ${stlFile.absolutePath}" }
+    throw IOException("OpenSCAD did not produce an STL file for: ${svgFile.name}")
+  }
+
+  logger.info { "Converted SVG to STL: ${stlFile.name}" }
+  return stlFile
 }
