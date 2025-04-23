@@ -1,6 +1,6 @@
+
 import io.github.oshai.kotlinlogging.KotlinLogging
 import java.awt.Color
-import java.awt.Graphics2D
 import java.awt.image.BufferedImage
 import java.io.File
 import java.io.FileOutputStream
@@ -78,20 +78,35 @@ fun convertPngToBmp(pngFile: File): File {
   val bmpFile = File("./data/images/bmps/${pngFile.nameWithoutExtension}.bmp")
   val pngImage = ImageIO.read(pngFile)
 
+  // Scale up to double size to help preserve thin lines
+  val scaledWidth = pngImage.width * 2
+  val scaledHeight = pngImage.height * 2
+  val scaledImage = pngImage.getScaledInstance(scaledWidth, scaledHeight, java.awt.Image.SCALE_SMOOTH)
+
+  val rgbImage = BufferedImage(scaledWidth, scaledHeight, BufferedImage.TYPE_INT_RGB)
+  val tempGraphics = rgbImage.createGraphics()
+  tempGraphics.color = Color.WHITE
+  tempGraphics.fillRect(0, 0, scaledWidth, scaledHeight)
+  tempGraphics.drawImage(scaledImage, 0, 0, null)
+  tempGraphics.dispose()
+
+  // Apply thresholding to convert to high-contrast black and white
+  for (y in 0 until rgbImage.height) {
+      for (x in 0 until rgbImage.width) {
+          val color = Color(rgbImage.getRGB(x, y))
+          val brightness = (color.red + color.green + color.blue) / 3
+          val isDark = brightness < 175
+
+          rgbImage.setRGB(x, y, if (isDark) Color.BLACK.rgb else Color.WHITE.rgb)
+      }
+  }
+
   if (bmpFile.exists()) {
     logger.warn { "File already exists: ${bmpFile.name}" }
     return bmpFile
   }
   // Ensure all ancestor directories exist
   bmpFile.parentFile.mkdirs()
-
-  // Create a new BufferedImage without alpha channel, fill it with white color, and draw the original image on it
-  val rgbImage = BufferedImage(pngImage.width, pngImage.height, BufferedImage.TYPE_INT_RGB)
-  val g: Graphics2D = rgbImage.createGraphics()
-  g.color = Color.WHITE
-  g.fillRect(0, 0, pngImage.width, pngImage.height)
-  g.drawImage(pngImage, 0, 0, null)
-  g.dispose()
 
   val writeSuccessful = ImageIO.write(rgbImage, "BMP", bmpFile)
   if (!writeSuccessful) {
@@ -119,7 +134,7 @@ fun convertBmpToSvg(bmpFile: File): File {
     "potrace",
     "-s",
     "--turdsize",
-    "10",
+    "20",
     "--alphamax",
     "1",
     bmpFile.absolutePath,
