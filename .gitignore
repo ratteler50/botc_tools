@@ -17,3 +17,5 @@ token.txt
 # Server logs
 /logs/
 /data/images/
+
+**/.claude/settings.local.json

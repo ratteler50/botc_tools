@@ -645,7 +645,7 @@
     "team": "townsfolk",
     "sao": 35,
     "otherNight": 34,
-    "otherNightReminder": "The Lycanthrope chooses a player :reminder:",
+    "otherNightReminder": "The Lycanthrope chooses a player. :reminder:",
     "reminders": [
       "Faux Paw",
       "Dead"
@@ -1568,7 +1568,7 @@
     "team": "outsider",
     "sao": 87,
     "firstNight": 45,
-    "firstNightReminder": "Wake each Minion. Show the Damsel token. Put each Minion to sleep.",
+    "firstNightReminder": "If the Damsel was chosen by the Huntsman, show them the *YOU ARE* info token and their new character token.",
     "otherNight": 63,
     "otherNightReminder": "If the Damsel was chosen by the Huntsman, show them the *YOU ARE* info token and their new character token.",
     "reminders": [
@@ -1613,7 +1613,7 @@
       },
       {
         "id": "pithag",
-        "reason": "A Pit-Hag can not create a Heretic."
+        "reason": "A Pit-Hag cannot create a Heretic."
       },
       {
         "id": "spy",
@@ -1661,7 +1661,7 @@
     "firstNight": 41,
     "firstNightReminder": "Show the written word.",
     "otherNight": 29,
-    "otherNightReminder": "If a player is marked with the *TURNS EVIL* reminder, wake them. Show the *YOU ARE* info token and a thumbs down. The Mezepheles loses their ability :reminder:",
+    "otherNightReminder": "If a player is marked with the *TURNS EVIL* reminder, wake them. Show the *YOU ARE* info token and a thumbs down. The Mezepheles loses their ability. :reminder:",
     "reminders": [
       "Turns Evil",
       "No Ability"
@@ -1960,12 +1960,13 @@
     "firstNight": 29,
     "firstNightReminder": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player. :reminder:",
     "reminders": [
-      "Poisoned"
+      "Poisoned",
+      "Knows"
     ],
     "remindersGlobal": [
       "Knows"
     ],
-    "ability": "On your first night, look at the Grimoire & choose a player: they are poisoned. 1 good player knows a Widow is in play.",
+    "ability": "On your 1st night, look at the Grimoire & choose a player: they are poisoned. 1 good player knows a Widow is in play.",
     "flavour": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",
     "jinxes": [
       {
@@ -2214,7 +2215,7 @@
     "reminders": [
       "Is The Demon"
     ],
-    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count)",
+    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",
     "flavour": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
     "jinxes": [
       {
@@ -2412,15 +2413,15 @@
     "team": "demon",
     "sao": 119,
     "firstNight": 25,
-    "firstNightReminder": "Wake all Minions, allow them to choose a babysitter :reminder:",
+    "firstNightReminder": "Wake all Minions, allow them to choose a babysitter. :reminder:",
     "otherNight": 49,
-    "otherNightReminder": "Wake all Minions, allow them to choose a babysitter :reminder: A player might die :reminder:",
+    "otherNightReminder": "Wake all Minions, allow them to choose a babysitter. :reminder: A player might die. :reminder:",
     "remindersGlobal": [
       "Is the Demon",
       "Dead"
     ],
     "setup": true,
-    "ability": "Each night, Minions choose who babysits Lil' Monsta & 'is the Demon'. Each night*, a player might die. [+1 Minion]",
+    "ability": "Each night, Minions choose who babysits Lil' Monsta & \"is the Demon\". Each night*, a player might die. [+1 Minion]",
     "flavour": "Step 1: Be cute. Step 2: World domination. Step 3: Bweakfast.",
     "jinxes": [
       {
@@ -2517,7 +2518,7 @@
       },
       {
         "id": "choirboy",
-        "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
+        "reason": "The Kazali cannot choose the King to become a Minion if a Choirboy is in play."
       },
       {
         "id": "soldier",
@@ -2560,7 +2561,7 @@
       "Dead"
     ],
     "ability": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
-    "flavour": "Like a bonfire on a moonless night… I see you, mortal.",
+    "flavour": "Like a bonfire on a moonless night... I see you, mortal.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Ojo",
       "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_ojo.png"
@@ -2712,7 +2713,7 @@
     "jinxes": [
       {
         "id": "engineer",
-        "reason": "Legion and the Engineer can not both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
+        "reason": "Legion and the Engineer cannot both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
       },
       {
         "id": "preacher",
@@ -2980,6 +2981,7 @@
     "reminders": [
       "Sober & Healthy",
       "Acts Twice",
+      "?",
       "?"
     ],
     "ability": "Each night, until dusk, 1) a player becomes sober, healthy & gets true info, or 2) their ability works twice. They learn which.",
@@ -2996,7 +2998,7 @@
     "team": "traveller",
     "sao": 139,
     "otherNight": 6,
-    "otherNightReminder": "The Harlot points at any living player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+    "otherNightReminder": "The Harlot points at any living player. Then, put the Harlot to sleep. Wake the chosen player, show them the *THIS CHARACTER SELECTED YOU* token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
     "reminders": [
       "Dead",
       "Dead"
@@ -3101,7 +3103,7 @@
     "team": "traveller",
     "sao": 146,
     "firstNight": 5,
-    "firstNightReminder": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
+    "firstNightReminder": "Show the Apprentice the *YOU ARE* card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's *IS THE APPRENTICE* reminder by that character token.",
     "reminders": [
       "Is The Apprentice"
     ],
@@ -3203,7 +3205,7 @@
     "team": "fabled",
     "sao": 153,
     "firstNight": 2,
-    "firstNightReminder": "Announce which players are protected by the Angel. Add the \"Protected\" token to the relevant players.",
+    "firstNightReminder": "Announce which players are protected by the Angel. Add the *PROTECTED* token to the relevant players.",
     "reminders": [
       "Protected",
       "Protected",
@@ -3277,7 +3279,7 @@
     "team": "fabled",
     "sao": 158,
     "otherNight": 2,
-    "otherNightReminder": "Wake each player marked “Visitor” or “False Info” one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked “Visitor” or, if you are waking the player marked “False Info,” show them any number of fingers except the number of evil players marked “Visitor.”",
+    "otherNightReminder": "Wake each player marked *VISITOR* or *FALSE INFO* one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked “Visitor” or, if you are waking the player marked “False Info,” show them any number of fingers except the number of evil players marked “Visitor.”",
     "reminders": [
       "Visitor",
       "Visitor",
@@ -3416,7 +3418,7 @@
     "team": "fabled",
     "sao": 167,
     "firstNight": 2,
-    "firstNightReminder": "At the start of the night, announce which character is favoured by the Storm Catcher. If that character is in play, mark that player as \"Safe\". Wake each evil player and show them the character token, then the marked player.\n If not in play, wake each evil player, show them the \"These Characters Are Not In Play\" info token and the relevant character token.",
+    "firstNightReminder": "At the start of the night, announce which character is favoured by the Storm Catcher. If that character is in play, mark that player as *SAFE*. Wake each evil player and show them the character token, then the marked player.\n If not in play, wake each evil player, show them the *THESE CHARACTERS ARE NOT IN PLAY* info token and the relevant character token.",
     "reminders": [
       "Safe"
     ],
@@ -3436,7 +3438,7 @@
     "firstNight": 2,
     "firstNightReminder": "Resolve the Minion Info and Demon Info steps even though there are fewer than 7 players.",
     "otherNight": 2,
-    "otherNightReminder": "If it is a night when a Demon attack could end the game, and the Demon is marked “Final night: No Attack,” then the Demon does not act tonight. (Do not wake them.)",
+    "otherNightReminder": "If it is a night when a Demon attack could end the game, and the Demon is marked *FINAL NIGHT: NO ATTACK*, then the Demon does not act tonight. (Do not wake them.)",
     "reminders": [
       "Final Night: No Attack"
     ],

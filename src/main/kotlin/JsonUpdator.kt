@@ -1,4 +1,4 @@
-import AppConfig.GRIM_TOOL_ROLES
+import AppConfig.GRIM_TOOL_ROLES_NEW
 import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
@@ -40,7 +40,9 @@ private fun updateRoleJinxes() {
 
 
 private fun updateRolesFromGrimToolRoles() {
-  val rawRoles = Role.listFromJson(gson, File(GRIM_TOOL_ROLES).readText()).associateBy(Role::id)
+  val rawRoles = Role.listFromJson(gson,
+    File(GRIM_TOOL_ROLES_NEW).readText(), "roles", "fabled"
+  ).associateBy(Role::id)
   val roles = getRolesFromJson()
   roles.map { role -> rawRoles[role.id]?.let { rawRole -> role.copyFrom(rawRole) } ?: role }.run {
     File(ROLES_JSON).writeText(gson.toJson(this))
