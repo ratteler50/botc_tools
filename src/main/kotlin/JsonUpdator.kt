@@ -1,4 +1,4 @@
-import AppConfig.GRIM_TOOL_ROLES_NEW
+import AppConfig.GRIM_TOOL_DATA
 import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
@@ -11,6 +11,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
+import models.GrimToolData
 import models.Jinx
 import models.NightSheet
 import models.Role
@@ -20,7 +21,7 @@ private val logger = KotlinLogging.logger {}
 
 suspend fun main() {
   measureTimeMillis { updateRoleJinxes() }.also { logger.info { "Updated role jinxes in $it ms" } }
-  measureTimeMillis { updateRolesFromGrimToolRoles() }.also { logger.info { "Updated roles in $it ms" } }
+  measureTimeMillis { updateRolesFromGrimToolData() }.also { logger.info { "Updated roles in $it ms" } }
   measureTimeMillis { updateRolesFromWiki() }.also { logger.info { "Updated roles from wiki in $it ms" } }
   measureTimeMillis { updateNightOrder() }.also { logger.info { "Updated night order in $it ms" } }
   measureTimeMillis { updateSaoFromScriptToolRoles() }.also { logger.info { "Updated SAO in $it ms" } }
@@ -39,10 +40,10 @@ private fun updateRoleJinxes() {
 }
 
 
-private fun updateRolesFromGrimToolRoles() {
-  val rawRoles = Role.listFromJson(gson,
-    File(GRIM_TOOL_ROLES_NEW).readText(), "roles", "fabled"
-  ).associateBy(Role::id)
+private fun updateRolesFromGrimToolData() {
+  val grimToolData = GrimToolData.fromJson(gson, File(GRIM_TOOL_DATA).readText())
+  val grimToolRoles = grimToolData.getAllRoles()
+  val rawRoles = grimToolRoles.map { it.toRole() }.associateBy(Role::id)
   val roles = getRolesFromJson()
   roles.map { role -> rawRoles[role.id]?.let { rawRole -> role.copyFrom(rawRole) } ?: role }.run {
     File(ROLES_JSON).writeText(gson.toJson(this))

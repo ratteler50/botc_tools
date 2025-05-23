@@ -162,22 +162,6 @@ data class Role(
   companion object {
     fun listFromJson(gson: Gson, json: String): List<Role> =
       gson.fromJson(json, object : TypeToken<List<Role>>() {}.type)
-
-    fun listFromJson(gson: Gson, json: String, vararg nestedFields: String): List<Role> {
-      val jsonObject = gson.fromJson(json, Map::class.java)
-      val allRoles = mutableListOf<Role>()
-      
-      for (field in nestedFields) {
-        val fieldData = jsonObject[field]
-        if (fieldData != null) {
-          val fieldJson = gson.toJson(fieldData)
-          val roles: List<Role> = gson.fromJson(fieldJson, object : TypeToken<List<Role>>() {}.type)
-          allRoles.addAll(roles)
-        }
-      }
-      
-      return allRoles
-    }
   }
 
   fun asTextScriptEntry(): String {
