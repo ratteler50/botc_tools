@@ -65,7 +65,6 @@ data class GrimToolData(
         setup = setup?.takeIf { it },
         ability = ability,
         flavour = flavor,
-        special = special?.map { it.toAppIntegrationFeature() }
       )
     }
 
@@ -88,63 +87,6 @@ data class GrimToolData(
         "demon" -> Role.Type.DEMON
         "traveller", "traveler" -> Role.Type.TRAVELLER
         "fabled" -> Role.Type.FABLED
-        else -> null
-      }
-    }
-
-    private fun SpecialFeature.toAppIntegrationFeature(): Role.AppIntegrationFeature {
-      return Role.AppIntegrationFeature(
-        type = mapIntegrationType(type),
-        name = mapFeatureName(name),
-        value = value,
-        time = mapTime(time),
-        global = mapGlobalScope(global)
-      )
-    }
-
-    private fun mapIntegrationType(type: String): Role.IntegrationType {
-      return when (type) {
-        "signal" -> Role.IntegrationType.SIGNAL
-        "ability" -> Role.IntegrationType.ABILITY
-        "selection" -> Role.IntegrationType.SELECTION
-        "vote" -> Role.IntegrationType.VOTE
-        else -> Role.IntegrationType.ABILITY
-      }
-    }
-
-    private fun mapFeatureName(name: String): Role.FeatureName {
-      return when (name) {
-        "grimoire" -> Role.FeatureName.GRIMOIRE
-        "pointing" -> Role.FeatureName.POINTING
-        "ghost-votes" -> Role.FeatureName.GHOST_VOTES
-        "distribute-roles" -> Role.FeatureName.DISTRIBUTE_ROLES
-        "bag-disabled" -> Role.FeatureName.BAG_DISABLED
-        "bag-duplicate" -> Role.FeatureName.BAG_DUPLICATE
-        "multiplier" -> Role.FeatureName.MULTIPLIER
-        else -> Role.FeatureName.GRIMOIRE
-      }
-    }
-
-    private fun mapTime(time: String?): Role.Time? {
-      return when (time) {
-        "pregame" -> Role.Time.PREGAME
-        "day" -> Role.Time.DAY
-        "night" -> Role.Time.NIGHT
-        "firstNight" -> Role.Time.FIRST_NIGHT
-        "firstDay" -> Role.Time.FIRST_DAY
-        "otherNight" -> Role.Time.OTHER_NIGHT
-        "otherDay" -> Role.Time.OTHER_DAY
-        else -> null
-      }
-    }
-
-    private fun mapGlobalScope(global: String?): Role.GlobalScope? {
-      return when (global) {
-        "townsfolk" -> Role.GlobalScope.TOWNSFOLK
-        "outsider" -> Role.GlobalScope.OUTSIDER
-        "minion" -> Role.GlobalScope.MINION
-        "demon" -> Role.GlobalScope.DEMON
-        "traveler" -> Role.GlobalScope.TRAVELER
         else -> null
       }
     }

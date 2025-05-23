@@ -121,14 +121,7 @@ class GrimToolDataTest {
       firstNight = null,
       otherNight = 12,
       setup = false,
-      reminders = listOf("Protected"),
-      special = listOf(
-        GrimToolData.GrimToolRole.SpecialFeature(
-          name = "ghost-votes",
-          type = "ability",
-          time = "day"
-        )
-      )
+      reminders = listOf("Protected")
     )
     
     val role = grimToolRole.toRole()
@@ -143,10 +136,6 @@ class GrimToolDataTest {
     assertThat(role.otherNight).isEqualTo(12)
     assertThat(role.setup).isNull() // false setup becomes null
     assertThat(role.reminders).containsExactly("Protected")
-    assertThat(role.special).hasSize(1)
-    assertThat(role.special!![0].name).isEqualTo(Role.FeatureName.GHOST_VOTES)
-    assertThat(role.special!![0].type).isEqualTo(Role.IntegrationType.ABILITY)
-    assertThat(role.special!![0].time).isEqualTo(Role.Time.DAY)
   }
 
   @Test
@@ -215,18 +204,19 @@ class GrimToolDataTest {
       global = "townsfolk"
     )
     
+    // Test that the special feature can be converted internally
     val grimToolRole = GrimToolData.GrimToolRole(
       id = "test",
       special = listOf(specialFeature)
     )
     
-    val role = grimToolRole.toRole()
-    val mappedFeature = role.special!![0]
+    // Verify the GrimToolRole has special features
+    assertThat(grimToolRole.special).hasSize(1)
+    assertThat(grimToolRole.special?.get(0)?.name).isEqualTo("distribute-roles")
+    assertThat(grimToolRole.special?.get(0)?.type).isEqualTo("ability")
     
-    assertThat(mappedFeature.name).isEqualTo(Role.FeatureName.DISTRIBUTE_ROLES)
-    assertThat(mappedFeature.type).isEqualTo(Role.IntegrationType.ABILITY)
-    assertThat(mappedFeature.time).isEqualTo(Role.Time.PREGAME)
-    assertThat(mappedFeature.value).isEqualTo("test")
-    assertThat(mappedFeature.global).isEqualTo(Role.GlobalScope.TOWNSFOLK)
+    // Role conversion should not include special features since they're not in roles.json
+    val role = grimToolRole.toRole()
+    assertThat(role.id).isEqualTo("test")
   }
 }

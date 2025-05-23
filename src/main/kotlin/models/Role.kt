@@ -22,7 +22,6 @@ data class Role(
   val setup: Boolean? = null,
   val ability: String? = null,
   val flavour: String? = null,
-  val special: List<AppIntegrationFeature>? = null,
   val jinxes: List<Jinx>? = null,
   val urls: Urls? = null,
   val textGameClarification: String? = null,
@@ -49,10 +48,7 @@ data class Role(
     TRAVELLER,
 
     @SerializedName("fabled")
-    FABLED,
-
-    @SerializedName("nightphase")
-    NIGHT_PHASE
+    FABLED
   }
 
   enum class Edition {
@@ -73,91 +69,6 @@ data class Role(
   }
 
   data class Jinx(val id: String, val reason: String)
-
-  data class AppIntegrationFeature(
-    val type: IntegrationType,
-    val name: FeatureName,
-    val value: Any?,  // Using 'Any?' since value can be either String or Number
-    val time: Time?,
-    val global: GlobalScope?
-  )
-
-  enum class IntegrationType {
-    @SerializedName("signal")
-    SIGNAL,
-
-    @SerializedName("ability")
-    ABILITY,
-
-    @SerializedName("selection")
-    SELECTION,
-
-    @SerializedName("vote")
-    VOTE
-  }
-
-  enum class FeatureName {
-    @SerializedName("grimoire")
-    GRIMOIRE,
-
-    @SerializedName("pointing")
-    POINTING,
-
-    @SerializedName("ghost-votes")
-    GHOST_VOTES,
-
-    @SerializedName("distribute-roles")
-    DISTRIBUTE_ROLES,
-
-    @SerializedName("bag-disabled")
-    BAG_DISABLED,
-
-    @SerializedName("bag-duplicate")
-    BAG_DUPLICATE,
-
-    @SerializedName("multiplier")
-    MULTIPLIER
-  }
-
-  enum class Time {
-    @SerializedName("pregame")
-    PREGAME,
-
-    @SerializedName("day")
-    DAY,
-
-    @SerializedName("night")
-    NIGHT,
-
-    @SerializedName("firstNight")
-    FIRST_NIGHT,
-
-    @SerializedName("firstDay")
-    FIRST_DAY,
-
-    @SerializedName("otherNight")
-    OTHER_NIGHT,
-
-    @SerializedName("otherDay")
-    OTHER_DAY
-  }
-
-  enum class GlobalScope {
-    @SerializedName("townsfolk")
-    TOWNSFOLK,
-
-    @SerializedName("outsider")
-    OUTSIDER,
-
-    @SerializedName("minion")
-    MINION,
-
-    @SerializedName("demon")
-    DEMON,
-
-    @SerializedName("traveler")
-    TRAVELER
-  }
 
   companion object {
     fun listFromJson(gson: Gson, json: String): List<Role> =
