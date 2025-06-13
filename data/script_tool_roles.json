@@ -90,21 +90,21 @@
     "isDisabled": false
   },
   {
-    "id": "bountyhunter",
-    "name": "Bounty Hunter",
-    "roleType": "townsfolk",
-    "print": "./images/print/4 - Experimental/townsfolk/Bounty Hunter_print.webp",
-    "icon": "./images/icon/4 - Experimental/townsfolk/Bounty Hunter_icon.webp",
-    "version": "4b - Unreleased Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "pixie",
     "name": "Pixie",
     "roleType": "townsfolk",
     "print": "./images/print/4 - Experimental/townsfolk/Pixie_print.webp",
     "icon": "./images/icon/4 - Experimental/townsfolk/Pixie_icon.webp",
     "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "bountyhunter",
+    "name": "Bounty Hunter",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/Bounty Hunter_print.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/Bounty Hunter_icon.webp",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -207,21 +207,21 @@
     "isDisabled": false
   },
   {
-    "id": "fortuneteller",
-    "name": "Fortune Teller",
-    "roleType": "townsfolk",
-    "print": "./images/print/1 - Trouble Brewing/townsfolk/Fortune Teller_print.webp",
-    "icon": "./images/icon/1 - Trouble Brewing/townsfolk/Fortune Teller_icon.webp",
-    "version": "1 - Trouble Brewing",
-    "isDisabled": false
-  },
-  {
     "id": "dreamer",
     "name": "Dreamer",
     "roleType": "townsfolk",
     "print": "./images/print/3 - Sects and Violets/townsfolk/Dreamer_print.webp",
     "icon": "./images/icon/3 - Sects and Violets/townsfolk/Dreamer_icon.webp",
     "version": "3 - Sects and Violets",
+    "isDisabled": false
+  },
+  {
+    "id": "fortuneteller",
+    "name": "Fortune Teller",
+    "roleType": "townsfolk",
+    "print": "./images/print/1 - Trouble Brewing/townsfolk/Fortune Teller_print.webp",
+    "icon": "./images/icon/1 - Trouble Brewing/townsfolk/Fortune Teller_icon.webp",
+    "version": "1 - Trouble Brewing",
     "isDisabled": false
   },
   {
@@ -615,9 +615,9 @@
     "id": "hermit",
     "name": "Hermit",
     "roleType": "outsider",
-    "print": "./images/print/4 - Experimental/outsider/Hermit_print.webp",
-    "icon": "./images/icon/4 - Experimental/outsider/Hermit_icon.webp",
-    "version": "4a - Kickstarter Experimental",
+    "print": "./images/print/4 - Experimental/outsider/hermit.webp",
+    "icon": "./images/icon/4 - Experimental/outsider/hermit.webp",
+    "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
   {
@@ -963,21 +963,21 @@
     "isDisabled": false
   },
   {
-    "id": "eviltwin",
-    "name": "Evil Twin",
-    "roleType": "minion",
-    "print": "./images/print/3 - Sects and Violets/minion/Evil Twin_print.webp",
-    "icon": "./images/icon/3 - Sects and Violets/minion/Evil Twin_icon.webp",
-    "version": "3 - Sects and Violets",
-    "isDisabled": false
-  },
-  {
     "id": "summoner",
     "name": "Summoner",
     "roleType": "minion",
     "print": "./images/print/4 - Experimental/minion/Summoner_print.webp",
     "icon": "./images/icon/4 - Experimental/minion/Summoner_icon.webp",
     "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "eviltwin",
+    "name": "Evil Twin",
+    "roleType": "minion",
+    "print": "./images/print/3 - Sects and Violets/minion/Evil Twin_print.webp",
+    "icon": "./images/icon/3 - Sects and Violets/minion/Evil Twin_icon.webp",
+    "version": "3 - Sects and Violets",
     "isDisabled": false
   },
   {
@@ -1098,15 +1098,6 @@
     "isDisabled": false
   },
   {
-    "id": "kazali",
-    "name": "Kazali",
-    "roleType": "demon",
-    "print": "./images/print/4 - Experimental/demon/Kazali_print.webp",
-    "icon": "./images/icon/4 - Experimental/demon/Kazali_icon.webp",
-    "version": "4b - Unreleased Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "shabaloth",
     "name": "Shabaloth",
     "roleType": "demon",
@@ -1121,6 +1112,15 @@
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Ojo_print.webp",
     "icon": "./images/icon/4 - Experimental/demon/Ojo_icon.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "kazali",
+    "name": "Kazali",
+    "roleType": "demon",
+    "print": "./images/print/4 - Experimental/demon/Kazali_print.webp",
+    "icon": "./images/icon/4 - Experimental/demon/Kazali_icon.webp",
     "version": "4b - Unreleased Experimental",
     "isDisabled": false
   },
@@ -1143,15 +1143,6 @@
     "isDisabled": false
   },
   {
-    "id": "alhadikhia",
-    "name": "Al-Hadikhia",
-    "roleType": "demon",
-    "print": "./images/print/4 - Experimental/demon/Al-Hadikhia_print.webp",
-    "icon": "./images/icon/4 - Experimental/demon/Al-Hadikhia_icon.webp",
-    "version": "4a - Kickstarter Experimental",
-    "isDisabled": false
-  },
-  {
     "id": "vigormortis",
     "name": "Vigormortis",
     "roleType": "demon",
@@ -1170,21 +1161,21 @@
     "isDisabled": false
   },
   {
-    "id": "fanggu",
-    "name": "Fang Gu",
-    "roleType": "demon",
-    "print": "./images/print/3 - Sects and Violets/demon/Fang Gu_print.webp",
-    "icon": "./images/icon/3 - Sects and Violets/demon/Fang Gu_icon.webp",
-    "version": "3 - Sects and Violets",
-    "isDisabled": false
-  },
-  {
     "id": "legion",
     "name": "Legion",
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Legion_print.webp",
     "icon": "./images/icon/4 - Experimental/demon/Legion_icon.webp",
     "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "fanggu",
+    "name": "Fang Gu",
+    "roleType": "demon",
+    "print": "./images/print/3 - Sects and Violets/demon/Fang Gu_print.webp",
+    "icon": "./images/icon/3 - Sects and Violets/demon/Fang Gu_icon.webp",
+    "version": "3 - Sects and Violets",
     "isDisabled": false
   },
   {
@@ -1206,11 +1197,11 @@
     "isDisabled": false
   },
   {
-    "id": "leviathan",
-    "name": "Leviathan",
+    "id": "alhadikhia",
+    "name": "Al-Hadikhia",
     "roleType": "demon",
-    "print": "./images/print/4 - Experimental/demon/Leviathan_print.webp",
-    "icon": "./images/icon/4 - Experimental/demon/Leviathan_icon.webp",
+    "print": "./images/print/4 - Experimental/demon/Al-Hadikhia_print.webp",
+    "icon": "./images/icon/4 - Experimental/demon/Al-Hadikhia_icon.webp",
     "version": "4a - Kickstarter Experimental",
     "isDisabled": false
   },
@@ -1220,6 +1211,15 @@
     "roleType": "demon",
     "print": "./images/print/4 - Experimental/demon/Riot_print.webp",
     "icon": "./images/icon/4 - Experimental/demon/Riot_icon.webp",
+    "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
+    "id": "leviathan",
+    "name": "Leviathan",
+    "roleType": "demon",
+    "print": "./images/print/4 - Experimental/demon/Leviathan_print.webp",
+    "icon": "./images/icon/4 - Experimental/demon/Leviathan_icon.webp",
     "version": "4a - Kickstarter Experimental",
     "isDisabled": false
   },

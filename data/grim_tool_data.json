@@ -3275,6 +3275,22 @@
       "flavor": "Every man and every woman is a star. Love is the law, love under will.",
       "firstNight": 30,
       "otherNight": 16
+    },
+    {
+      "id": "hermit",
+      "name": "Hermit",
+      "team": "outsider",
+      "edition": "",
+      "reminders": [
+        "1",
+        "2",
+        "3"
+      ],
+      "setup": true,
+      "ability": "You have all Outsider abilities. [-0 or -1 Outsider]",
+      "flavor": "In the lost and forgotten places of the earth, the soul’s light beckons.",
+      "firstNight": 0,
+      "otherNight": 0
     }
   ],
   "fabled": [
@@ -3523,53 +3539,43 @@
   "servers": [
     {
       "host": "eu",
-      "name": "EU Central",
-      "type": "mediasoup"
+      "name": "EU Central"
     },
     {
       "host": "eu4",
-      "name": "EU East",
-      "type": "mediasoup"
+      "name": "EU East"
     },
     {
       "host": "eu2",
-      "name": "EU West 1",
-      "type": "mediasoup"
+      "name": "EU West 1"
     },
     {
       "host": "eu5",
-      "name": "EU West 2",
-      "type": "mediasoup"
+      "name": "EU West 2"
     },
     {
       "host": "eu6",
-      "name": "EU West 3",
-      "type": "mediasoup"
+      "name": "EU West 3"
     },
     {
       "host": "sg",
-      "name": "Singapore",
-      "type": "mediasoup"
+      "name": "Singapore"
     },
     {
       "host": "us",
-      "name": "US East 1",
-      "type": "mediasoup"
+      "name": "US East 1"
     },
     {
       "host": "us3",
-      "name": "US East 2",
-      "type": "mediasoup"
+      "name": "US East 2"
     },
     {
       "host": "us4",
-      "name": "US East 3",
-      "type": "mediasoup"
+      "name": "US East 3"
     },
     {
       "host": "us2",
-      "name": "US West",
-      "type": "mediasoup"
+      "name": "US West"
     }
   ]
 }

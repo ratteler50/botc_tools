@@ -176,10 +176,28 @@
     }
   },
   {
+    "id": "pixie",
+    "name": "Pixie",
+    "team": "townsfolk",
+    "sao": 11,
+    "firstNight": 43,
+    "firstNightReminder": "Show the Townsfolk character token marked *MAD*.",
+    "reminders": [
+      "Mad",
+      "Has Ability"
+    ],
+    "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+    "flavour": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town. Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Pixie",
+      "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_pixie.png"
+    }
+  },
+  {
     "id": "bountyhunter",
     "name": "Bounty Hunter",
     "team": "townsfolk",
-    "sao": 11,
+    "sao": 12,
     "firstNight": 64,
     "firstNightReminder": "Point to the *KNOWN* player.",
     "otherNight": 82,
@@ -192,24 +210,6 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Bounty_Hunter",
       "icon": "https://wiki.bloodontheclocktower.com/images/5/5b/Icon_bountyhunter.png"
-    }
-  },
-  {
-    "id": "pixie",
-    "name": "Pixie",
-    "team": "townsfolk",
-    "sao": 12,
-    "firstNight": 43,
-    "firstNightReminder": "Show the Townsfolk character token marked *MAD*.",
-    "reminders": [
-      "Mad",
-      "Has Ability"
-    ],
-    "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
-    "flavour": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town. Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Pixie",
-      "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_pixie.png"
     }
   },
   {
@@ -421,11 +421,28 @@
     }
   },
   {
+    "id": "dreamer",
+    "name": "Dreamer",
+    "edition": "snv",
+    "team": "townsfolk",
+    "sao": 24,
+    "firstNight": 56,
+    "firstNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+    "otherNight": 73,
+    "otherNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good & 1 evil character, 1 of which is correct.",
+    "flavour": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Dreamer",
+      "icon": "https://wiki.bloodontheclocktower.com/images/f/f2/Icon_dreamer.png"
+    }
+  },
+  {
     "id": "fortuneteller",
     "name": "Fortune Teller",
     "edition": "tb",
     "team": "townsfolk",
-    "sao": 24,
+    "sao": 25,
     "firstNight": 52,
     "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
     "otherNight": 71,
@@ -438,23 +455,6 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Fortune_Teller",
       "icon": "https://wiki.bloodontheclocktower.com/images/9/97/Icon_fortuneteller.png"
-    }
-  },
-  {
-    "id": "dreamer",
-    "name": "Dreamer",
-    "edition": "snv",
-    "team": "townsfolk",
-    "sao": 25,
-    "firstNight": 56,
-    "firstNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
-    "otherNight": 73,
-    "otherNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
-    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good & 1 evil character, 1 of which is correct.",
-    "flavour": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Dreamer",
-      "icon": "https://wiki.bloodontheclocktower.com/images/f/f2/Icon_dreamer.png"
     }
   },
   {
@@ -1195,8 +1195,13 @@
     "name": "Hermit",
     "team": "outsider",
     "sao": 69,
+    "reminders": [
+      "1",
+      "2",
+      "3"
+    ],
     "setup": true,
-    "ability": "You have all Outsider abilities. [-0 to -1 Outsiders]",
+    "ability": "You have all Outsider abilities. [-0 or -1 Outsiders]",
     "flavour": "In the lost and forgotten places of the earth, the soul’s light beckons.",
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Hermit",
@@ -1860,28 +1865,10 @@
     }
   },
   {
-    "id": "eviltwin",
-    "name": "Evil Twin",
-    "edition": "snv",
-    "team": "minion",
-    "sao": 108,
-    "firstNight": 36,
-    "firstNightReminder": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",
-    "reminders": [
-      "Twin"
-    ],
-    "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
-    "flavour": "I'm not Sara! I'm Clara! SHE is Sara! Sara is the evil one! Not me!",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Evil_Twin",
-      "icon": "https://wiki.bloodontheclocktower.com/images/f/f4/Icon_eviltwin.png"
-    }
-  },
-  {
     "id": "summoner",
     "name": "Summoner",
     "team": "minion",
-    "sao": 109,
+    "sao": 108,
     "firstNight": 18,
     "firstNightReminder": "Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",
     "otherNight": 31,
@@ -1897,6 +1884,24 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Summoner",
       "icon": "https://wiki.bloodontheclocktower.com/images/1/1a/Icon_summoner.png"
+    }
+  },
+  {
+    "id": "eviltwin",
+    "name": "Evil Twin",
+    "edition": "snv",
+    "team": "minion",
+    "sao": 109,
+    "firstNight": 36,
+    "firstNightReminder": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",
+    "reminders": [
+      "Twin"
+    ],
+    "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
+    "flavour": "I'm not Sara! I'm Clara! SHE is Sara! Sara is the evil one! Not me!",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Evil_Twin",
+      "icon": "https://wiki.bloodontheclocktower.com/images/f/f4/Icon_eviltwin.png"
     }
   },
   {
@@ -2124,31 +2129,11 @@
     }
   },
   {
-    "id": "kazali",
-    "name": "Kazali",
-    "team": "demon",
-    "sao": 123,
-    "firstNight": 4,
-    "firstNightReminder": "Wake the Kazali, allow them to choose Minions.",
-    "otherNight": 51,
-    "otherNightReminder": "The Kazali chooses a player. :reminder: ",
-    "reminders": [
-      "Dead"
-    ],
-    "setup": true,
-    "ability": "Each night*, choose a player: they die. [You choose which players are which Minions. -? to +? Outsiders]",
-    "flavour": "Gon(z)a7les6. Take cau8tun. The mech4an4ion is iNvert10d. E99ors insy6tum. Reco{7}fig.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Kazali",
-      "icon": "https://wiki.bloodontheclocktower.com/images/3/3c/Icon_kazali.png"
-    }
-  },
-  {
     "id": "shabaloth",
     "name": "Shabaloth",
     "edition": "bmr",
     "team": "demon",
-    "sao": 124,
+    "sao": 123,
     "otherNight": 39,
     "otherNightReminder": "A previously chosen player might be resurrected. :reminder: The Shabaloth chooses 2 players. :reminder: :reminder:",
     "reminders": [
@@ -2167,7 +2152,7 @@
     "id": "ojo",
     "name": "Ojo",
     "team": "demon",
-    "sao": 125,
+    "sao": 124,
     "otherNight": 46,
     "otherNightReminder": "The Ojo chooses a character. :reminder: ",
     "reminders": [
@@ -2178,6 +2163,26 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Ojo",
       "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_ojo.png"
+    }
+  },
+  {
+    "id": "kazali",
+    "name": "Kazali",
+    "team": "demon",
+    "sao": 125,
+    "firstNight": 4,
+    "firstNightReminder": "Wake the Kazali, allow them to choose Minions.",
+    "otherNight": 51,
+    "otherNightReminder": "The Kazali chooses a player. :reminder: ",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": true,
+    "ability": "Each night*, choose a player: they die. [You choose which players are which Minions. -? to +? Outsiders]",
+    "flavour": "Gon(z)a7les6. Take cau8tun. The mech4an4ion is iNvert10d. E99ors insy6tum. Reco{7}fig.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Kazali",
+      "icon": "https://wiki.bloodontheclocktower.com/images/3/3c/Icon_kazali.png"
     }
   },
   {
@@ -2221,31 +2226,11 @@
     }
   },
   {
-    "id": "alhadikhia",
-    "name": "Al-Hadikhia",
-    "team": "demon",
-    "sao": 128,
-    "otherNight": 47,
-    "otherNightReminder": "The Al-Hadikhia chooses three players. :reminder: :reminder: :reminder: Wake the player marked *1* and say \"the Al-Hadikhia has chosen\", then the player's name, then \"Do you choose to live?\" They either nod or shake their head. Put them to sleep and add or remove shrouds accordingly. Repeat for players marked *2* and *3*. If all three players are now alive, add a shroud to all three.",
-    "reminders": [
-      "1",
-      "2",
-      "3"
-    ],
-    "ability": "Each night*, you may choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
-    "flavour": "Alsukut min dhahab.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Al-Hadikhia",
-      "icon": "https://wiki.bloodontheclocktower.com/images/1/18/Icon_alhadikhia.png"
-    },
-    "textGameClarification": "At night, after sufficient time of receiving the Al-Hadikhia's choices, we will privately ask each picked player weather they live or die. Players later in order learn who was picked ahead of them. Prior to day starting, we will post what 3 players were selected."
-  },
-  {
     "id": "vigormortis",
     "name": "Vigormortis",
     "edition": "snv",
     "team": "demon",
-    "sao": 129,
+    "sao": 128,
     "otherNight": 45,
     "otherNightReminder": "The Vigormortis chooses a player. :reminder: If that player is a Minion, poison a neighboring Townsfolk. :reminder: :reminder:",
     "reminders": [
@@ -2270,7 +2255,7 @@
     "name": "Vortox",
     "edition": "snv",
     "team": "demon",
-    "sao": 130,
+    "sao": 129,
     "otherNight": 43,
     "otherNightReminder": "The Vortox chooses a player. :reminder:",
     "reminders": [
@@ -2281,6 +2266,25 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Vortox",
       "icon": "https://wiki.bloodontheclocktower.com/images/8/89/Icon_vortox.png"
+    }
+  },
+  {
+    "id": "legion",
+    "name": "Legion",
+    "team": "demon",
+    "sao": 130,
+    "otherNight": 35,
+    "otherNightReminder": "A player might die. :reminder:",
+    "reminders": [
+      "Dead",
+      "About To Die"
+    ],
+    "setup": true,
+    "ability": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]",
+    "flavour": "We are the chill wind on a winter’s day. We are the shadow in the moonless night. We are the poison in your tea and the whisper in your ear. We are everywhere.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Legion",
+      "icon": "https://wiki.bloodontheclocktower.com/images/c/cb/Icon_legion.png"
     }
   },
   {
@@ -2304,29 +2308,10 @@
     }
   },
   {
-    "id": "legion",
-    "name": "Legion",
-    "team": "demon",
-    "sao": 132,
-    "otherNight": 35,
-    "otherNightReminder": "A player might die. :reminder:",
-    "reminders": [
-      "Dead",
-      "About To Die"
-    ],
-    "setup": true,
-    "ability": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]",
-    "flavour": "We are the chill wind on a winter’s day. We are the shadow in the moonless night. We are the poison in your tea and the whisper in your ear. We are everywhere.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Legion",
-      "icon": "https://wiki.bloodontheclocktower.com/images/c/cb/Icon_legion.png"
-    }
-  },
-  {
     "id": "lordoftyphon",
     "name": "Lord of Typhon",
     "team": "demon",
-    "sao": 133,
+    "sao": 132,
     "firstNight": 3,
     "firstNightReminder": "Replace neighbors of the Lord of Typhon with Minions, wake them, tell them their new alignment and character, then do minion info.",
     "otherNight": 44,
@@ -2346,7 +2331,7 @@
     "id": "lleech",
     "name": "Lleech",
     "team": "demon",
-    "sao": 134,
+    "sao": 133,
     "firstNight": 26,
     "firstNightReminder": "The Lleech chooses a player. :reminder:",
     "otherNight": 48,
@@ -2363,10 +2348,47 @@
     }
   },
   {
+    "id": "alhadikhia",
+    "name": "Al-Hadikhia",
+    "team": "demon",
+    "sao": 134,
+    "otherNight": 47,
+    "otherNightReminder": "The Al-Hadikhia chooses three players. :reminder: :reminder: :reminder: Wake the player marked *1* and say \"the Al-Hadikhia has chosen\", then the player's name, then \"Do you choose to live?\" They either nod or shake their head. Put them to sleep and add or remove shrouds accordingly. Repeat for players marked *2* and *3*. If all three players are now alive, add a shroud to all three.",
+    "reminders": [
+      "1",
+      "2",
+      "3"
+    ],
+    "ability": "Each night*, you may choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
+    "flavour": "Alsukut min dhahab.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Al-Hadikhia",
+      "icon": "https://wiki.bloodontheclocktower.com/images/1/18/Icon_alhadikhia.png"
+    },
+    "textGameClarification": "At night, after sufficient time of receiving the Al-Hadikhia's choices, we will privately ask each picked player weather they live or die. Players later in order learn who was picked ahead of them. Prior to day starting, we will post what 3 players were selected."
+  },
+  {
+    "id": "riot",
+    "name": "Riot",
+    "team": "demon",
+    "sao": 135,
+    "reminders": [
+      "Day 1",
+      "Day 2",
+      "Day 3"
+    ],
+    "ability": "On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.",
+    "flavour": "Larga vida a la revolución! Mi revolucion!",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Riot",
+      "icon": "https://wiki.bloodontheclocktower.com/images/2/2d/Icon_riot.png"
+    }
+  },
+  {
     "id": "leviathan",
     "name": "Leviathan",
     "team": "demon",
-    "sao": 135,
+    "sao": 136,
     "firstNight": 74,
     "firstNightReminder": "Declare that \"The Leviathan is in play.\" Mark the Leviathan with the *DAY 1* reminder. :reminder:",
     "otherNight": 92,
@@ -2384,23 +2406,6 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Leviathan",
       "icon": "https://wiki.bloodontheclocktower.com/images/a/a7/Icon_leviathan.png"
-    }
-  },
-  {
-    "id": "riot",
-    "name": "Riot",
-    "team": "demon",
-    "sao": 136,
-    "reminders": [
-      "Day 1",
-      "Day 2",
-      "Day 3"
-    ],
-    "ability": "On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.",
-    "flavour": "Larga vida a la revolución! Mi revolucion!",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Riot",
-      "icon": "https://wiki.bloodontheclocktower.com/images/2/2d/Icon_riot.png"
     }
   },
   {
