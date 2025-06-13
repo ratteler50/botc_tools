@@ -612,6 +612,15 @@
     "isDisabled": false
   },
   {
+    "id": "hermit",
+    "name": "Hermit",
+    "roleType": "outsider",
+    "print": "./images/print/4 - Experimental/outsider/Hermit_print.webp",
+    "icon": "./images/icon/4 - Experimental/outsider/Hermit_icon.webp",
+    "version": "4a - Kickstarter Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "butler",
     "name": "Butler",
     "roleType": "outsider",
