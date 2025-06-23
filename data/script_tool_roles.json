@@ -441,6 +441,15 @@
     "isDisabled": false
   },
   {
+    "id": "princess",
+    "name": "Princess",
+    "roleType": "townsfolk",
+    "print": "./images/print/4 - Experimental/townsfolk/princess.webp",
+    "icon": "./images/icon/4 - Experimental/townsfolk/princess.webp",
+    "version": "4b - Unreleased Experimental",
+    "isDisabled": false
+  },
+  {
     "id": "juggler",
     "name": "Juggler",
     "roleType": "townsfolk",
@@ -1404,11 +1413,11 @@
     "isDisabled": false
   },
   {
-    "id": "djinn",
-    "name": "Djinn",
+    "id": "deusexfiasco",
+    "name": "Deus ex Fiasco",
     "roleType": "fabled",
-    "print": "./images/print/Extras/fabled/Djinn_print.webp",
-    "icon": "./images/icon/Extras/fabled/Djinn_icon.webp",
+    "print": "./images/print/Extras/fabled/deusexfiasco.webp",
+    "icon": "./images/icon/Extras/fabled/deusexfiasco.webp",
     "version": "Extras",
     "isDisabled": false
   },
