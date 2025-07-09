@@ -206,7 +206,7 @@
         "reason": "If the Demon chooses themself with their Sailor ability, their Sailor ability is drunk but their Demon ability is unaffected."
       },
       {
-        "id": "Snake Charmer",
+        "id": "snakecharmer",
         "reason": "If the Demon chooses themself with the Snake Charmer ability, the Demon swaps characters with themself (mechanically this doesn’t do anything, but technically that is what happens), and then their Snake Charmer ability is poisoned due to itself. The Demon ability is unaffected."
       },
       {
@@ -1093,6 +1093,155 @@
     ]
   },
   {
+    "id": "princess",
+    "jinx": [
+      {
+        "id": "grandmother",
+        "reason": "The Grandmother can't die to their own ability on a Princess night."
+      },
+      {
+        "id": "pixie",
+        "reason": "If the Pixie gains the Princess ability, and they nominate & execute a player on the day they gain the Princess ability, the Demon doesn't kill that night. The Pixie does not learn if they gain the Princess ability."
+      },
+      {
+        "id": "sailor",
+        "reason": "If the Princess is drunk/poisoned during the day but sober at night, their ability still works. If the Princess is sober during the day but drunk/poisoned at night, their ability will not work if triggered and the Demon can kill."
+      },
+      {
+        "id": "innkeeper",
+        "reason": "If the Princess is drunk/poisoned during the day but sober at night, their ability still works. If the Princess is sober during the day but drunk/poisoned at night, their ability will not work if triggered and the Demon can kill."
+      },
+      {
+        "id": "minstrel",
+        "reason": "If the Princess is drunk/poisoned during the day but sober at night, their ability still works. If the Princess is sober during the day but drunk/poisoned at night, their ability will not work if triggered and the Demon can kill."
+      },
+      {
+        "id": "sweetheart",
+        "reason": "If the Princess is drunk/poisoned during the day but sober at night, their ability still works. If the Princess is sober during the day but drunk/poisoned at night, their ability will not work if triggered and the Demon can kill."
+      },
+      {
+        "id": "xaan",
+        "reason": "If the Princess is drunk/poisoned during the day but sober at night, their ability still works. If the Princess is sober during the day but drunk/poisoned at night, their ability will not work if triggered and the Demon can kill."
+      },
+      {
+        "id": "poisoner",
+        "reason": "If the Princess is drunk/poisoned during the day but sober at night, their ability still works. If the Princess is sober during the day but drunk/poisoned at night, their ability will not work if triggered and the Demon can kill."
+      },
+      {
+        "id": "chambermaid",
+        "reason": "The Princess never wakes to their own ability."
+      },
+      {
+        "id": "Snake Charmer",
+        "reason": "If the Demon changes characters, the Princess ability still prevents the Demon from killing. If the Princess changes characters, it's considered a new iteration of the Princess ability & the next day is treated as the Princess's 1st day."
+      },
+      {
+        "id": "Barber",
+        "reason": "If the Demon changes characters, the Princess ability still prevents the Demon from killing. If the Princess changes characters, it's considered a new iteration of the Princess ability & the next day is treated as the Princess's 1st day."
+      },
+      {
+        "id": "Hatter",
+        "reason": "If the Demon changes characters, the Princess ability still prevents the Demon from killing. If the Princess changes characters, it's considered a new iteration of the Princess ability & the next day is treated as the Princess's 1st day."
+      },
+      {
+        "id": "Engineer",
+        "reason": "If the Demon changes characters, the Princess ability still prevents the Demon from killing. If the Princess changes characters, it's considered a new iteration of the Princess ability & the next day is treated as the Princess's 1st day."
+      },
+      {
+        "id": "Mathematician",
+        "reason": "If the Princess ability prevents the Demon from killing, that's a Math 1."
+      },
+      {
+        "id": "Philosopher",
+        "reason": "If the Philosopher gains the Princess ability, and they nominate & execute a player on the day they gain the Princess ability, the Demon doesn't kill that night."
+      },
+      {
+        "id": "Huntsman",
+        "reason": "If the Huntsman turns the Damsel into the Princess, and the Damsel-turned-Princess nominates & executes a player that day, the Demon doesn't kill that night."
+      },
+      {
+        "id": "Professor",
+        "reason": "If the Princess is resurrected, it's considered a new iteration of the Princess ability. If the Princess nominates & executes a player that day, the Demon doesn't kill that night."
+      },
+      {
+        "id": "Shabaloth",
+        "reason": "If the Princess is resurrected, it's considered a new iteration of the Princess ability. If the Princess nominates & executes a player that day, the Demon doesn't kill that night."
+      },
+      {
+        "id": "Alchemist",
+        "reason": "If the Alchemist has a killing ability, the Alchemist can still kill on a Princess night."
+      },
+      {
+        "id": "Sage",
+        "reason": "Can't use their abilities on a Princess night because they cannot die to the Demon. ,,"
+      },
+      {
+        "id": "Choirboy",
+        "reason": "Can't use their abilities on a Princess night because they cannot die to the Demon. ,,"
+      },
+      {
+        "id": "Banshee",
+        "reason": "Can't use their abilities on a Princess night because they cannot die to the Demon. ,,"
+      },
+      {
+        "id": "Pacifist",
+        "reason": "If the Princess-nominated player survives execution, the Demon doesn't kill tonight."
+      },
+      {
+        "id": "Tea Lady",
+        "reason": "If the Princess-nominated player survives execution, the Demon doesn't kill tonight."
+      },
+      {
+        "id": "Devil's Advocate",
+        "reason": "If the Princess-nominated player survives execution, the Demon doesn't kill tonight."
+      },
+      {
+        "id": "Goon",
+        "reason": "If the Princess nominates & executes the Goon on their 1st day, the Princess's ability still triggers that night. If the Demon is the 1st player to pick the Goon on a Princess night, the Goon becomes the Demon's alignment."
+      },
+      {
+        "id": "Moonchild",
+        "reason": "The Moonchild ability triggers after the Demon kills, so if the Moonchild is executed and picks the Good Princess, the Princess still prevents the Demon from killing before they die to the Moonchild's ability."
+      },
+      {
+        "id": "Cerenovus",
+        "reason": "If the Princess nominates a player who is then executed for any reason, the Storyteller may treat this as satisfying the Princess's requirement to nominate & execute a player."
+      },
+      {
+        "id": "Mutant",
+        "reason": "If the Princess nominates a player who is then executed for any reason, the Storyteller may treat this as satisfying the Princess's requirement to nominate & execute a player."
+      },
+      {
+        "id": "Virgin",
+        "reason": "If the Princess nominates a player who is then executed for any reason, the Storyteller may treat this as satisfying the Princess's requirement to nominate & execute a player."
+      },
+      {
+        "id": "Godfather",
+        "reason": "Still gets a kill if an Outsider died during the Princess's 1st day & the Princess used their ability."
+      },
+      {
+        "id": "Pit-Hag",
+        "reason": "If the Pit-Hag creates a new Demon, deaths tonight are arbitrary, and the Princess's ability has no effect."
+      },
+      {
+        "id": "Vizier",
+        "reason": "If the Vizier pushes the Princess's nomination through on the Princess's 1st day, this triggers the Princess night."
+      },
+      {
+        "id": "yaggababble",
+        "reason": "Can still kill by saying their phrase during the day after a Princess night, but can't kill that night."
+      },
+      {
+        "id": "pukka",
+        "reason": "If the Princess nominates & executes a player on their 1st day, the Pukka picks a player to poison that night. The previously poisoned player cannot die, so that player becomes healthy. If the Pukka poisons the Princess on a Princess night, the Pukka regains the ability to kill in time to kill the previously poisoned player."
+      },
+      {
+        "id": "Fang Gu",
+        "reason": "The Fang Gu can't jump on a Princess night because the Fang Gu can't kill an Outsider in order to turn them into the new Fang Gu."
+      }
+    ]
+  },
+  {
     "id": "pukka",
     "jinx": [
       {
@@ -1397,6 +1546,47 @@
         "reason": "If Pixie is droisoned night 1, you can show them any Townsfolk token, whether in play or not. You then place the Mad token next to any player you like. When that player dies, the Pixie gains the Townsfolk ability they were shown regardless of the actual ability that player had."
       }
     ]
+  },
+  {
+    "id": "wraith",
+    "jinx": [
+        {
+          "id": "Bounty Hunter",
+          "reason": "The Wraith wakes when the evil Townsfolk wakes."
+        },
+        {
+          "id": "Chambermaid",
+          "reason": "The Wraith wakes when other evil players wake, so if the Wraith has any living waking evil teammates, the Chambermaid learns a 1. If the Wraith does not have any alive & waking evil teammates and the Storyteller believes the Wraith has not otherwise opened their eyes, they may choose to show the Chambermaid a 0."
+        },
+        {
+          "id": "Snake Charmer",
+          "reason": "If the Snake Charmer becomes the evil Demon, the Wraith wakes with the new evil Demon."
+        },
+        {
+          "id": "Mathematician",
+          "reason": "If the Wraith is unable to wake at night because they are drunk or poisoned or otherwise cannot use their ability due to another character's ability, the Mathematician learns a 1."
+        },
+        {
+          "id": "Cult Leader",
+          "reason": "If the Cult Leader turns evil, the Wraith wakes with the Cult Leader when they learn this. If the Cult Leader turns good, the Wraith does not wake with the Cult Leader."
+        },
+        {
+          "id": "Lycanthrope",
+          "reason": "The Wraith does not wake with the Lycanthrope's Faux Paw."
+        },
+        {
+          "id": "Minstrel",
+          "reason": "If a Minion is executed while there is a sober & healthy Minstrel, wake the Wraith immediately to inform them they have no ability. When the Wraith becomes sober & healthy, wake them to inform them they have their ability again."
+        },
+        {
+          "id": "Poppy Grower",
+          "reason": "No jinx! Since the Wraith only wakes when other evil players do, and there is no Minion & Demon info step in a Poppy Grower game, the Wraith will still struggle to identify their evil teammates at first, especially if they are evil characters who don't wake at night. And, if all evil players do wake at night early in the game, the Poppy Grower can identify that the evil team feels especially coordinate & get a great sense of which evil characters are in play."
+        },
+        {
+          "id": "Organ Grinder",
+          "reason": "Sadly, the Wraith cannot officially open their eyes during Organ Grinder voting. (That said, if you want to house rule it, our eyes are closed tonight...)"
+        }
+      ]
   },
   {
     "id": "zealot",

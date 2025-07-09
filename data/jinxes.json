@@ -30,6 +30,10 @@
       {
         "id": "poppygrower",
         "reason": "If the Cannibal eats the Poppy Grower, then dies or loses the Poppy Grower ability, the Demon and Minions learn each other that night."
+      },
+      {
+        "id": "princess",
+        "reason": "If the Cannibal nominated, executed, & killed the Princess today, the Demon doesn’t kill tonight."
       }
     ]
   },
@@ -158,7 +162,7 @@
     "jinx": [
       {
         "id": "engineer",
-        "reason": "Legion and the Engineer can not both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
+        "reason": "Legion and the Engineer cannot both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
       },
       {
         "id": "preacher",
@@ -333,6 +337,10 @@
       {
         "id": "huntsman",
         "reason": "If the Marionette thinks that they are the Huntsman, the Damsel was added."
+      },
+      {
+        "id": "wraith",
+        "reason": "The Wraith does not wake with the Marionette."
       }
     ]
   },
@@ -366,7 +374,7 @@
       },
       {
         "id": "choirboy",
-        "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
+        "reason": "The Kazali cannot choose the King to become a Minion if a Choirboy is in play."
       },
       {
         "id": "soldier",
@@ -563,6 +571,10 @@
       {
         "id": "marionette",
         "reason": "If the Demon has a neighbor who is alive and a Townsfolk or Outsider when the Plague Doctor dies, that player becomes an evil Marionette. If there is already an extra evil player, this does not happen."
+      },
+      {
+        "id": "wraith",
+        "reason": "If the Plague Doctor dies, a living Minion gains the Wraith ability in addition to their own ability, and learns this."
       }
     ]
   },
@@ -579,7 +591,7 @@
       },
       {
         "id": "pithag",
-        "reason": "A Pit-Hag can not create a Heretic."
+        "reason": "A Pit-Hag cannot create a Heretic."
       },
       {
         "id": "spy",
@@ -609,6 +621,33 @@
       {
         "id": "kazali",
         "reason": "An evil Townsfolk is only created if the Bounty Hunter is still in play after the Kazali acts."
+      }
+    ]
+  },
+  {
+    "id": "alhadikhia",
+    "jinx": [
+      {
+        "id": "princess",
+        "reason": "If the Princess nominated & executed a player on their 1st day, no one dies to the Al-Hadikhia ability tonight."
+      }
+    ]
+  },
+  {
+    "id": "alchemist",
+    "jinx": [
+      {
+        "id": "wraith",
+        "reason": "If the Alchemist has the Wraith ability, they do not, and a Wraith is in play. Each day, after the execution phase, the living Alchemist may publicly guess a living player as the Wraith: if correct, the Demon must choose the Wraith tonight."
+      }
+    ]
+  },
+  {
+    "id": "magician",
+    "jinx": [
+      {
+        "id": "wraith",
+        "reason": "Each day, after the execution phase, the living Magician may publicly guess a living player as the Wraith: if correct, the Demon must choose the Wraith tonight."
       }
     ]
   }
