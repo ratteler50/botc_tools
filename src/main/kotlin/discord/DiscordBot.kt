@@ -13,6 +13,7 @@ import net.dv8tion.jda.api.JDABuilder
 import net.dv8tion.jda.api.entities.Activity
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
 import net.dv8tion.jda.api.hooks.ListenerAdapter
+import net.dv8tion.jda.api.requests.GatewayIntent.MESSAGE_CONTENT
 
 private val logger = KotlinLogging.logger {}
 
@@ -33,7 +34,7 @@ class DiscordBot(private val token: String) : ListenerAdapter() {
    * Configures the bot with event listeners, slash commands, and activity presence.
    */
   private fun setupBot(): JDA {
-    val jda = JDABuilder.createDefault(token).addEventListeners(this).build()
+    val jda = JDABuilder.createDefault(token).enableIntents(MESSAGE_CONTENT).addEventListeners(this).build()
 
     jda.updateCommands().addCommands(textScriptCommand, roleCommand, transcriptCommand).queue()
 
