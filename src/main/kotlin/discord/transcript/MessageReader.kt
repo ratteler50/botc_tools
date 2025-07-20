@@ -21,7 +21,7 @@ fun Message.asLogString(
 ): String {
   return buildString {
     if (includeTimestamp) append("${timeCreated.withOffsetSameInstant(ZoneOffset.ofHours(-8))} ")
-    if (includeAuthor) append("${author.effectiveName}: ")
+    if (includeAuthor) append("${member?.effectiveName ?: author.effectiveName}: ")
     append(contentDisplay)
   }
 }
@@ -69,9 +69,7 @@ data class ChannelMessages(
       val townSquareMsgs = async { fetchMessages(channelId) }
 
       val messages = ChannelMessages(
-        startTime = readStartTime,
-        endTime = readEndTime,
-        allMessages = townSquareMsgs.await()
+        startTime = readStartTime, endTime = readEndTime, allMessages = townSquareMsgs.await()
       )
 
       messages
@@ -84,12 +82,10 @@ data class ChannelMessages(
       withContext(Dispatchers.IO) {
         logger.debug { "Fetching messages from channel $channelId." }
 
-        val channel = jda.getTextChannelById(channelId) ?: return@withContext emptyList<Message>()
-          .also { logger.warn { "Channel with ID $channelId not found." } }
+        val channel = jda.getTextChannelById(channelId)
+          ?: return@withContext emptyList<Message>().also { logger.warn { "Channel with ID $channelId not found." } }
 
-        channel.iterableHistory
-          .takeWhile { it.timeCreated.isAfter(readStartTime) }
-          .reversed()
+        channel.iterableHistory.takeWhile { it.timeCreated.isAfter(readStartTime) }.reversed()
           .takeWhile { it.timeCreated.isBefore(readEndTime) }
           .also { logger.debug { "Fetched ${it.size} messages from channel $channelId." } }
       }
