@@ -3,7 +3,6 @@
 import AppConfig.DATA_JSON
 import AppConfig.INPUT_SCRIPT_JSON
 import AppConfig.INTERACTIONS_JSON
-import AppConfig.ROLES_JSON
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -55,7 +54,9 @@ fun generateTextScript(scriptMetadata: Script?, inputScriptJson: String): String
   ).textScriptString()
 }
 
-fun getRolesFromJson() = Role.listFromJson(gson, File(ROLES_JSON).readText())
+fun getRolesFromJson(): List<Role> =
+    DataJson.fromJson(gson, File(DATA_JSON).readText()).toRoleList()
+
 
 fun getScriptMetadata(json: String): Script? = Script.getScriptMetadata(gson, json)
 

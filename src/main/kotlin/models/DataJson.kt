@@ -64,15 +64,20 @@ data class DataJson(
       val global: String? = null,
     )
 
-    fun toRole(): Role {
+    fun toRole(
+      sao: Int? = null,
+      firstNightPosition: Int? = null,
+      otherNightPosition: Int? = null
+    ): Role {
       return Role(
         id = id,
         name = name,
         edition = mapEdition(edition),
         type = mapTeam(team),
-        firstNight = firstNight,
+        sao = sao,
+        firstNight = firstNightPosition ?: firstNight,
         firstNightReminder = firstNightReminder?.takeUnless { it.isBlank() },
-        otherNight = otherNight,
+        otherNight = otherNightPosition ?: otherNight,
         otherNightReminder = otherNightReminder?.takeUnless { it.isBlank() },
         reminders = reminders?.takeUnless { it.isEmpty() },
         setup = setup?.takeIf { it },
@@ -108,6 +113,22 @@ data class DataJson(
   }
 
   fun getAllRoles(): List<DataRole> = roles.orEmpty() + fabled.orEmpty() + lorics.orEmpty()
+
+  /**
+   * Converts all roles from data.json to Role objects with SAO and night order derived from positions.
+   */
+  fun toRoleList(): List<Role> {
+    val firstNightOrder = nightOrder?.firstNight.orEmpty()
+    val otherNightOrder = nightOrder?.otherNight.orEmpty()
+
+    return getAllRoles().mapIndexed { index, dataRole ->
+      dataRole.toRole(
+        sao = index,
+        firstNightPosition = firstNightOrder.indexOf(dataRole.id).takeIf { it >= 0 },
+        otherNightPosition = otherNightOrder.indexOf(dataRole.id).takeIf { it >= 0 }
+      )
+    }
+  }
 
   companion object {
     fun fromJson(gson: Gson, json: String): DataJson =
