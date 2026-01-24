@@ -48,7 +48,13 @@ data class DataJson(
     val ability: String? = null,
     val flavor: String? = null,
     val special: List<SpecialFeature>? = null,
+    val jinxes: List<JinxInfo>? = null,
   ) {
+
+    data class JinxInfo(
+      val id: String,
+      val reason: String,
+    )
 
     data class SpecialFeature(
       val name: String,
@@ -72,6 +78,7 @@ data class DataJson(
         setup = setup?.takeIf { it },
         ability = ability,
         flavour = flavor,
+        jinxes = jinxes?.map { Role.Jinx(it.id, it.reason) }?.takeUnless { it.isEmpty() },
       )
     }
 

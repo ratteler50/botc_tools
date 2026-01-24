@@ -1,6 +1,5 @@
 
 import AppConfig.DATA_JSON
-import AppConfig.JINXES_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SAO_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
@@ -10,7 +9,6 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
 import models.DataJson
-import models.Jinx
 import models.Role
 import models.ScriptToolRole
 import java.io.File
@@ -19,23 +17,11 @@ import kotlin.system.measureTimeMillis
 private val logger = KotlinLogging.logger {}
 
 suspend fun main() {
-  measureTimeMillis { updateRoleJinxes() }.also { logger.info { "Updated role jinxes in $it ms" } }
   measureTimeMillis { updateRolesFromGrimToolData() }.also { logger.info { "Updated roles in $it ms" } }
   measureTimeMillis { updateRolesFromWiki() }.also { logger.info { "Updated roles from wiki in $it ms" } }
   measureTimeMillis { updateNightOrder() }.also { logger.info { "Updated night order in $it ms" } }
   measureTimeMillis { updateSaoFromScriptToolRoles() }.also { logger.info { "Updated SAO in $it ms" } }
   measureTimeMillis { writeUpdatedSaoFileFromScriptToolRoles() }.also { logger.info { "Wrote updated SAO in $it ms" } }
-}
-
-private fun updateRoleJinxes() {
-  val jinxes =
-    Jinx.listFromJson(gson, File(JINXES_JSON).readText()).groupBy { it.role1.normalize() }
-  val updatedRoles = getRolesFromJson().map { role ->
-    jinxes[role.id.normalize()]?.map { Role.Jinx(it.role2.normalize(), it.reason) }
-      ?.let { role.copy(jinxes = it) } ?: role
-  }
-
-  File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }
 
 
@@ -59,7 +45,7 @@ private fun Role.copyFrom(otherRole: Role): Role = copy(
   firstNightReminder = otherRole.firstNightReminder?.takeUnless { it.isBlank() },
   otherNightReminder = otherRole.otherNightReminder?.takeUnless { it.isBlank() },
   reminders = otherRole.reminders?.takeUnless { it.isEmpty() },
-  jinxes = otherRole.jinxes?.takeUnless { it.isEmpty() },
+  jinxes = otherRole.jinxes?.takeUnless { it.isEmpty() } ?: jinxes,
 )
 
 private fun Role.copyFrom(wikiRole: BotcRoleLoader.RoleResult): Role = copy(

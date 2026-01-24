@@ -1,13 +1,14 @@
 @file:Suppress("unused", "RedundantSuspendModifier")
 
+import AppConfig.DATA_JSON
 import AppConfig.INPUT_SCRIPT_JSON
 import AppConfig.INTERACTIONS_JSON
-import AppConfig.JINXES_JSON
 import AppConfig.ROLES_JSON
 import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import io.github.oshai.kotlinlogging.KotlinLogging
+import models.DataJson
 import models.Jinx
 import models.Role
 import models.Script
@@ -21,7 +22,6 @@ object AppConfig {
   const val ROLES_JSON = "./data/roles.json"
   const val DATA_JSON = "./data/data.json"
   const val INTERACTIONS_JSON = "./data/interactions.json"
-  const val JINXES_JSON = "./data/jinxes.json"
   const val SCRIPT_TOOL_ROLES = "./data/script_tool_roles.json"
   const val SAO_JSON = "./data/sao.json"
 }
@@ -50,7 +50,7 @@ fun generateTextScript(scriptMetadata: Script?, inputScriptJson: String): String
   return ScriptPrinter(
     scriptMetadata,
     getScriptRoles(roleMap, inputScriptJson),
-    getJinxTable(JINXES_JSON),
+    getJinxTableFromDataJson(),
     getJinxTable(INTERACTIONS_JSON),
     roleMap
   ).textScriptString()
@@ -67,6 +67,18 @@ fun getScriptRoles(roleMap: Map<String, Role>, scriptJson: String): List<Role> {
 
 fun getJinxTable(inputJson: String): ImmutableTable<String, String, Jinx> {
   return Jinx.toTable(Jinx.listFromJson(gson, File(inputJson).readText()))
+}
+
+fun getJinxTableFromDataJson(): ImmutableTable<String, String, Jinx> {
+  val dataJson = DataJson.fromJson(gson, File(DATA_JSON).readText())
+  val allRoles = dataJson.getAllRoles()
+  val jinxes = allRoles.filter { it.jinxes != null }
+    .flatMap { role ->
+      role.jinxes!!.map { jinxInfo ->
+        Jinx(role.id, jinxInfo.id, jinxInfo.reason)
+      }
+    }
+  return Jinx.toTable(jinxes)
 }
 
 fun String.normalize(): String = this.lowercase().replace(Regex("[^a-z]"), "")
