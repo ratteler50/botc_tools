@@ -20,7 +20,6 @@ object AppConfig {
   const val INPUT_SCRIPT_JSON = "./data/input_script.json"
   const val ROLES_JSON = "./data/roles.json"
   const val DATA_JSON = "./data/data.json"
-  const val NIGHTSHEET_JSON = "./data/nightsheet.json"
   const val INTERACTIONS_JSON = "./data/interactions.json"
   const val JINXES_JSON = "./data/jinxes.json"
   const val SCRIPT_TOOL_ROLES = "./data/script_tool_roles.json"

@@ -1,7 +1,6 @@
 
 import AppConfig.DATA_JSON
 import AppConfig.JINXES_JSON
-import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SAO_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
@@ -10,7 +9,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
-import models.*
+import models.DataJson
+import models.Jinx
+import models.Role
+import models.ScriptToolRole
 import java.io.File
 import kotlin.system.measureTimeMillis
 
@@ -92,12 +94,13 @@ private suspend fun updateRolesFromWiki() {
 
 private fun updateNightOrder() {
   val roles = getRolesFromJson()
-  val nightSheet = NightSheet.fromJson(gson, File(NIGHTSHEET_JSON).readText())
+  val dataJson = DataJson.fromJson(gson, File(DATA_JSON).readText())
+  val nightOrder = dataJson.nightOrder ?: return
 
   val updatedRoles = roles.map { role ->
     role.copy(
-      firstNight = updatedNightOrder(role, nightSheet.firstNight, role.firstNightReminder != null),
-      otherNight = updatedNightOrder(role, nightSheet.otherNight, role.otherNightReminder != null)
+      firstNight = updatedNightOrder(role, nightOrder.firstNight.orEmpty(), role.firstNightReminder != null),
+      otherNight = updatedNightOrder(role, nightOrder.otherNight.orEmpty(), role.otherNightReminder != null)
     )
   }
 

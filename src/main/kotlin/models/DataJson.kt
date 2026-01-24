@@ -8,7 +8,13 @@ data class DataJson(
   val fabled: List<DataRole>? = null,
   val lorics: List<DataRole>? = null,
   val servers: List<Server>? = null,
+  val nightOrder: NightOrder? = null,
 ) {
+
+  data class NightOrder(
+    val firstNight: List<String>? = null,
+    val otherNight: List<String>? = null,
+  )
 
   data class Edition(
     val id: String,
