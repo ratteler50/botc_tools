@@ -647,10 +647,28 @@
     }
   },
   {
+    "id": "exorcist",
+    "name": "Exorcist",
+    "edition": "bmr",
+    "team": "townsfolk",
+    "sao": 35,
+    "otherNight": 36,
+    "otherNightReminder": "The Exorcist chooses a player. :reminder: Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the *THIS CHARACTER SELECTED YOU* & Exorcist tokens. Point to the Exorcist.",
+    "reminders": [
+      "Chosen"
+    ],
+    "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
+    "flavour": "We cast you out, every unclean spirit, every satanic power, every onslaught of the infernal adversary, every legion, every diabolical group and sect, in the name and by the power of Our Lord Jesus Christ. We command you, begone and fly far from the Church of God, from the souls made by God in His image and redeemed by the precious blood of the divine Lamb.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Exorcist",
+      "icon": "https://wiki.bloodontheclocktower.com/images/c/c2/Icon_exorcist.png"
+    }
+  },
+  {
     "id": "lycanthrope",
     "name": "Lycanthrope",
     "team": "townsfolk",
-    "sao": 35,
+    "sao": 36,
     "otherNight": 37,
     "otherNightReminder": "The Lycanthrope chooses a player. :reminder:",
     "reminders": [
@@ -662,24 +680,6 @@
     "urls": {
       "wiki": "https://wiki.bloodontheclocktower.com/Lycanthrope",
       "icon": "https://wiki.bloodontheclocktower.com/images/9/92/Icon_lycanthrope.png"
-    }
-  },
-  {
-    "id": "exorcist",
-    "name": "Exorcist",
-    "edition": "bmr",
-    "team": "townsfolk",
-    "sao": 36,
-    "otherNight": 36,
-    "otherNightReminder": "The Exorcist chooses a player. :reminder: Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the *THIS CHARACTER SELECTED YOU* & Exorcist tokens. Point to the Exorcist.",
-    "reminders": [
-      "Chosen"
-    ],
-    "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
-    "flavour": "We cast you out, every unclean spirit, every satanic power, every onslaught of the infernal adversary, every legion, every diabolical group and sect, in the name and by the power of Our Lord Jesus Christ. We command you, begone and fly far from the Church of God, from the souls made by God in His image and redeemed by the precious blood of the divine Lamb.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Exorcist",
-      "icon": "https://wiki.bloodontheclocktower.com/images/c/c2/Icon_exorcist.png"
     }
   },
   {
@@ -3287,23 +3287,11 @@
     }
   },
   {
-    "id": "bootlegger",
-    "name": "Bootlegger",
-    "team": "loric",
-    "sao": 157,
-    "ability": "This script has homebrew characters or rules.",
-    "flavour": "I've got the latest shipment from home, a brew I'd like to call 'Barrowfog'. Wanna try?",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Bootlegger",
-      "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_bootlegger.png"
-    }
-  },
-  {
     "id": "buddhist",
     "name": "Buddhist",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 158,
+    "sao": 157,
     "firstNight": 4,
     "firstNightReminder": "Announce which players are affected by the Buddhist.",
     "ability": "For the first 2 minutes of each day, veteran players may not talk.",
@@ -3318,7 +3306,7 @@
     "name": "Deus ex Fiasco",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 159,
+    "sao": 158,
     "reminders": [
       "Whoopsie"
     ],
@@ -3335,7 +3323,7 @@
     "name": "Djinn",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 160,
+    "sao": 159,
     "ability": "Use the Djinn's special rule. All players know what it is.",
     "flavour": "نحن لسنا هنا. انت لست حقيقي. كل شيء هو وهم. أسئلتك هي جبل نار في يوم صافٍ.",
     "urls": {
@@ -3348,7 +3336,7 @@
     "name": "Doomsayer",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 161,
+    "sao": 160,
     "ability": "If 4 or more players live, each living player may publicly choose (once per game) that a player of their own alignment dies.",
     "flavour": "And on the Seventh Day, there shall be a great flood and a pestilence upon the People of the Village of the Ravens! The dead shall rise and the living shall repent! O Woe! O Unholy day! Only by great sacrifice shall they prevail! So sayeth the Sages of Nostros and so sayeth I.",
     "urls": {
@@ -3361,7 +3349,7 @@
     "name": "Duchess",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 162,
+    "sao": 161,
     "otherNight": 3,
     "otherNightReminder": "One at a time: Wake each player marked *VISITOR* or *FALSE INFO*. Give a finger signal.",
     "reminders": [
@@ -3381,7 +3369,7 @@
     "name": "Ferryman",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 163,
+    "sao": 162,
     "ability": "On the final day, all dead players regain their vote token.",
     "flavour": "When righteous dreams come, they have the weight of truth.",
     "urls": {
@@ -3394,7 +3382,7 @@
     "name": "Fibbin",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 164,
+    "sao": 163,
     "reminders": [
       "No Ability"
     ],
@@ -3410,7 +3398,7 @@
     "name": "Fiddler",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 165,
+    "sao": 164,
     "ability": "Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win.",
     "flavour": "I'll wager mi lyef ye cannae best me in a fiddle contest, ye boss-eyed snook! We'll go out on the lash, get the pub jammers an' have a right craic. I'll be layin' ma boots into ya come mornin' ye rumbly muppet.",
     "urls": {
@@ -3419,23 +3407,11 @@
     }
   },
   {
-    "id": "gardener",
-    "name": "Gardener",
-    "team": "loric",
-    "sao": 166,
-    "ability": "The Storyteller assigns 1 or more players' characters.",
-    "flavour": "Oh now, this won't do. We've got the monkshood mixed in with the wolfsbane and the hemlock is smothering the hellebore! Oh dear me, we'd better start over. Fetch my shears.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Gardener",
-      "icon": "https://wiki.bloodontheclocktower.com/images/5/5c/Icon_gardener.png"
-    }
-  },
-  {
     "id": "hellslibrarian",
     "name": "Hell's Librarian",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 167,
+    "sao": 165,
     "reminders": [
       "Something Bad"
     ],
@@ -3451,7 +3427,7 @@
     "name": "Revolutionary",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 168,
+    "sao": 166,
     "reminders": [
       "Register Falsely?",
       "Aligned",
@@ -3469,7 +3445,7 @@
     "name": "Sentinel",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 169,
+    "sao": 167,
     "setup": true,
     "ability": "There might be 1 extra or 1 fewer Outsider in play.",
     "flavour": "Name, please. Papers, please. Weapons, please.",
@@ -3483,7 +3459,7 @@
     "name": "Spirit of Ivory",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 170,
+    "sao": 168,
     "reminders": [
       "No More Evil"
     ],
@@ -3495,28 +3471,11 @@
     }
   },
   {
-    "id": "stormcatcher",
-    "name": "Storm Catcher",
-    "team": "loric",
-    "sao": 171,
-    "firstNight": 6,
-    "firstNightReminder": "Announce which character is stormcaught. If that character is in play, mark that player as *STORMCAUGHT*. Wake each evil player and show them the character token, then the marked player.  If not in play, wake each evil player, show them the *THESE CHARACTERS ARE NOT IN PLAY* token & the relevant character token.",
-    "reminders": [
-      "Stormcaught"
-    ],
-    "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.",
-    "flavour": "At dawn, the temple’s long shadow creeps to the fountain. At dusk, the obelisk blocks the red glare, cooling warm water under the archway. All lines converge here. A storm is coming, and this, this pebbled and lush and holy place between the apple trees, is the eye.",
-    "urls": {
-      "wiki": "https://wiki.bloodontheclocktower.com/Storm_Catcher",
-      "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_stormcatcher.png"
-    }
-  },
-  {
     "id": "toymaker",
     "name": "Toymaker",
     "edition": "fabled",
     "team": "fabled",
-    "sao": 172,
+    "sao": 169,
     "firstNight": 5,
     "firstNightReminder": "Resolve Minion Info and Demon Info, even though there are fewer than 7 players.",
     "otherNight": 4,
@@ -3532,9 +3491,22 @@
     }
   },
   {
+    "id": "bootlegger",
+    "name": "Bootlegger",
+    "team": "loric",
+    "sao": 170,
+    "ability": "This script has homebrew characters or rules.",
+    "flavour": "I've got the latest shipment from home, a brew I'd like to call 'Barrowfog'. Wanna try?",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Bootlegger",
+      "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_bootlegger.png"
+    }
+  },
+  {
     "id": "bigwig",
     "name": "Big Wig",
     "team": "loric",
+    "sao": 171,
     "ability": "Each nominee chooses a player: until voting, only they may speak & they are mad the nominee is good or they might die.",
     "flavour": "Vanity asks ‘Is it popular?’ Cowardice asks ‘Is it safe?’ Conscience asks ‘Is it right?’ Who among us will ask: ‘Is it true?’",
     "urls": {
@@ -3543,9 +3515,22 @@
     }
   },
   {
+    "id": "gardener",
+    "name": "Gardener",
+    "team": "loric",
+    "sao": 172,
+    "ability": "The Storyteller assigns 1 or more players' characters.",
+    "flavour": "Oh now, this won't do. We've got the monkshood mixed in with the wolfsbane and the hemlock is smothering the hellebore! Oh dear me, we'd better start over. Fetch my shears.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Gardener",
+      "icon": "https://wiki.bloodontheclocktower.com/images/5/5c/Icon_gardener.png"
+    }
+  },
+  {
     "id": "hindu",
     "name": "Hindu",
     "team": "loric",
+    "sao": 173,
     "ability": "The first 4 players to die are immediately reincarnated as Travellers of the same alignment.",
     "flavour": "चत्वारो मृत्युमध्ये पतन्ति, चत्वारो यात्री पुनरुद्गताः। चत्वारो धर्मे स्थितचित्तवृत्तेः, चत्वार एषां न पुनः क्षयः॥",
     "urls": {
@@ -3557,6 +3542,7 @@
     "id": "pope",
     "name": "Pope",
     "team": "loric",
+    "sao": 174,
     "setup": true,
     "ability": "There are duplicate good characters in play. They might also be bluffs.",
     "flavour": "...Pulcherrimae.",
@@ -3566,9 +3552,27 @@
     }
   },
   {
+    "id": "stormcatcher",
+    "name": "Storm Catcher",
+    "team": "loric",
+    "sao": 175,
+    "firstNight": 6,
+    "firstNightReminder": "Announce which character is stormcaught. If that character is in play, mark that player as *STORMCAUGHT*. Wake each evil player and show them the character token, then the marked player.  If not in play, wake each evil player, show them the *THESE CHARACTERS ARE NOT IN PLAY* token & the relevant character token.",
+    "reminders": [
+      "Stormcaught"
+    ],
+    "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.",
+    "flavour": "At dawn, the temple’s long shadow creeps to the fountain. At dusk, the obelisk blocks the red glare, cooling warm water under the archway. All lines converge here. A storm is coming, and this, this pebbled and lush and holy place between the apple trees, is the eye.",
+    "urls": {
+      "wiki": "https://wiki.bloodontheclocktower.com/Storm_Catcher",
+      "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_stormcatcher.png"
+    }
+  },
+  {
     "id": "tor",
     "name": "Tor",
     "team": "loric",
+    "sao": 176,
     "otherNight": 74,
     "otherNightReminder": "If a player died tonight, show the *YOU ARE* info token, their character token, & a thumbs up or thumbs down.",
     "setup": true,
@@ -3583,6 +3587,7 @@
     "id": "zenomancer",
     "name": "Zenomancer",
     "team": "loric",
+    "sao": 177,
     "reminders": [
       "Goal",
       "Goal",

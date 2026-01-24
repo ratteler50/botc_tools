@@ -2,7 +2,6 @@
 import AppConfig.DATA_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SAO_JSON
-import AppConfig.SCRIPT_TOOL_ROLES
 import io.github.oshai.kotlinlogging.KotlinLogging
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -10,22 +9,21 @@ import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
 import models.DataJson
 import models.Role
-import models.ScriptToolRole
 import java.io.File
 import kotlin.system.measureTimeMillis
 
 private val logger = KotlinLogging.logger {}
 
 suspend fun main() {
-  measureTimeMillis { updateRolesFromGrimToolData() }.also { logger.info { "Updated roles in $it ms" } }
+  measureTimeMillis { updateRolesFromData() }.also { logger.info { "Updated roles in $it ms" } }
   measureTimeMillis { updateRolesFromWiki() }.also { logger.info { "Updated roles from wiki in $it ms" } }
   measureTimeMillis { updateNightOrder() }.also { logger.info { "Updated night order in $it ms" } }
-  measureTimeMillis { updateSaoFromScriptToolRoles() }.also { logger.info { "Updated SAO in $it ms" } }
-  measureTimeMillis { writeUpdatedSaoFileFromScriptToolRoles() }.also { logger.info { "Wrote updated SAO in $it ms" } }
+  measureTimeMillis { updateRoleSaoFromData() }.also { logger.info { "Updated SAO in $it ms" } }
+  measureTimeMillis { writeUpdatedSaoFileFromData() }.also { logger.info { "Wrote updated SAO in $it ms" } }
 }
 
 
-private fun updateRolesFromGrimToolData() {
+private fun updateRolesFromData() {
   val grimToolData = DataJson.fromJson(gson, File(DATA_JSON).readText())
   val grimToolRoles = grimToolData.getAllRoles()
   val rawRoles = grimToolRoles.map { it.toRole() }.associateBy(Role::id)
@@ -118,9 +116,9 @@ private fun updatedNightOrder(
 }
 
 
-private fun updateSaoFromScriptToolRoles() {
-  val rolesSortedBySao =
-    ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText()).map { it.id.normalize() }
+private fun updateRoleSaoFromData() {
+  val dataJson = DataJson.fromJson(gson, File(DATA_JSON).readText())
+  val rolesSortedBySao = dataJson.getAllRoles().map { it.id.normalize() }
 
   val updatedRoles = getRolesFromJson().map { role ->
     val index = rolesSortedBySao.indexOf(role.id.normalize())
@@ -132,9 +130,9 @@ private fun updateSaoFromScriptToolRoles() {
   File(ROLES_JSON).writeText(gson.toJson(updatedRoles))
 }
 
-private fun writeUpdatedSaoFileFromScriptToolRoles() {
-  val rolesSortedBySao =
-    ScriptToolRole.listFromJson(gson, File(SCRIPT_TOOL_ROLES).readText()).map { it.id.normalize() }
+private fun writeUpdatedSaoFileFromData() {
+  val dataJson = DataJson.fromJson(gson, File(DATA_JSON).readText())
+  val rolesSortedBySao = dataJson.getAllRoles().map { it.id.normalize() }
 
   println(rolesSortedBySao)
   File(SAO_JSON).writeText(gson.toJson(rolesSortedBySao))

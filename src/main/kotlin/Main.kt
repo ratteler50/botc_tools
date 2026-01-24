@@ -22,7 +22,6 @@ object AppConfig {
   const val ROLES_JSON = "./data/roles.json"
   const val DATA_JSON = "./data/data.json"
   const val INTERACTIONS_JSON = "./data/interactions.json"
-  const val SCRIPT_TOOL_ROLES = "./data/script_tool_roles.json"
   const val SAO_JSON = "./data/sao.json"
 }
 
