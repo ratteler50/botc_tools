@@ -1,21 +1,18 @@
-import AppConfig.GRIM_TOOL_DATA
+
+import AppConfig.DATA_JSON
 import AppConfig.JINXES_JSON
 import AppConfig.NIGHTSHEET_JSON
 import AppConfig.ROLES_JSON
 import AppConfig.SAO_JSON
 import AppConfig.SCRIPT_TOOL_ROLES
 import io.github.oshai.kotlinlogging.KotlinLogging
-import java.io.File
-import kotlin.system.measureTimeMillis
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
-import models.GrimToolData
-import models.Jinx
-import models.NightSheet
-import models.Role
-import models.ScriptToolRole
+import models.*
+import java.io.File
+import kotlin.system.measureTimeMillis
 
 private val logger = KotlinLogging.logger {}
 
@@ -41,7 +38,7 @@ private fun updateRoleJinxes() {
 
 
 private fun updateRolesFromGrimToolData() {
-  val grimToolData = GrimToolData.fromJson(gson, File(GRIM_TOOL_DATA).readText())
+  val grimToolData = DataJson.fromJson(gson, File(DATA_JSON).readText())
   val grimToolRoles = grimToolData.getAllRoles()
   val rawRoles = grimToolRoles.map { it.toRole() }.associateBy(Role::id)
   val roles = getRolesFromJson()
@@ -125,7 +122,7 @@ private fun updatedNightOrder(
       if (minionIndex == -1) null else minionIndex + 2
     }
 
-    index == -1 -> if ((role.type == Role.Type.TRAVELLER || role.type == Role.Type.FABLED) && hasNightReminder) 2 else null
+    index == -1 -> if ((role.type == Role.Type.TRAVELLER || role.type == Role.Type.FABLED || role.type == Role.Type.LORIC) && hasNightReminder) 2 else null
     role.id == "dusk" -> index + 1
     else -> index + 2
   }

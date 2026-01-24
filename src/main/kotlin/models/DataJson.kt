@@ -2,10 +2,11 @@ package models
 
 import com.google.gson.Gson
 
-data class GrimToolData(
+data class DataJson(
   val editions: List<Edition>? = null,
-  val roles: List<GrimToolRole>? = null,
-  val fabled: List<GrimToolRole>? = null,
+  val roles: List<DataRole>? = null,
+  val fabled: List<DataRole>? = null,
+  val lorics: List<DataRole>? = null,
   val servers: List<Server>? = null,
 ) {
 
@@ -27,7 +28,7 @@ data class GrimToolData(
     val type: String? = null,
   )
 
-  data class GrimToolRole(
+  data class DataRole(
     val id: String = "",
     val name: String? = null,
     val edition: String? = null,
@@ -87,15 +88,16 @@ data class GrimToolData(
         "demon" -> Role.Type.DEMON
         "traveller", "traveler" -> Role.Type.TRAVELLER
         "fabled" -> Role.Type.FABLED
+        "loric" -> Role.Type.LORIC
         else -> null
       }
     }
   }
 
-  fun getAllRoles(): List<GrimToolRole> = (roles.orEmpty() + fabled.orEmpty()).sortedBy { it.id }
+  fun getAllRoles(): List<DataRole> = roles.orEmpty() + fabled.orEmpty() + lorics.orEmpty()
 
   companion object {
-    fun fromJson(gson: Gson, json: String): GrimToolData =
-      gson.fromJson(json, GrimToolData::class.java)
+    fun fromJson(gson: Gson, json: String): DataJson =
+      gson.fromJson(json, DataJson::class.java)
   }
 }

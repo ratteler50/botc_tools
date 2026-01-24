@@ -34,7 +34,10 @@ data class ScriptToolRole(
     TRAVELLER,
 
     @SerializedName("fabled")
-    FABLED
+    FABLED,
+
+    @SerializedName("loric")
+    LORIC
   }
 
   enum class Version {

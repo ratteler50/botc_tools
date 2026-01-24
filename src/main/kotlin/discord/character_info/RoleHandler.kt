@@ -1,19 +1,14 @@
 package discord.character_info
 
 import getRolesFromJson
-import java.awt.Color
 import models.Role
-import models.Role.Type.DEMON
-import models.Role.Type.FABLED
-import models.Role.Type.MINION
-import models.Role.Type.OUTSIDER
-import models.Role.Type.TOWNSFOLK
-import models.Role.Type.TRAVELLER
+import models.Role.Type.*
 import net.dv8tion.jda.api.EmbedBuilder
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
 import net.dv8tion.jda.api.interactions.commands.OptionType.STRING
 import net.dv8tion.jda.api.interactions.commands.build.Commands
 import normalize
+import java.awt.Color
 
 class RoleHandler {
   companion object {
@@ -51,12 +46,13 @@ class RoleHandler {
       // Set the embed color based on role type
       setColor(
         when (role.type) {
-          TOWNSFOLK -> Color(0x2096FF)
-          OUTSIDER -> Color(0x183EFF)
+          TOWNSFOLK -> Color(0x183EFF)
+          OUTSIDER -> Color(0x2096FF)
           MINION -> Color(0x9F0400)
           DEMON -> Color(0xEC0804)
           TRAVELLER -> Color(0xc519ff)
           FABLED -> Color(0xECCB21)
+          LORIC -> Color(0x3f9651)
           else -> Color(0x000000)
         }
       )

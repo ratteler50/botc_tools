@@ -8,18 +8,18 @@ import com.google.common.collect.ImmutableTable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import io.github.oshai.kotlinlogging.KotlinLogging
-import java.io.File
-import kotlin.system.measureTimeMillis
 import models.Jinx
 import models.Role
 import models.Script
+import java.io.File
+import kotlin.system.measureTimeMillis
 
 private val logger = KotlinLogging.logger {}
 
 object AppConfig {
   const val INPUT_SCRIPT_JSON = "./data/input_script.json"
   const val ROLES_JSON = "./data/roles.json"
-  const val GRIM_TOOL_DATA = "./data/grim_tool_data.json"
+  const val DATA_JSON = "./data/data.json"
   const val NIGHTSHEET_JSON = "./data/nightsheet.json"
   const val INTERACTIONS_JSON = "./data/interactions.json"
   const val JINXES_JSON = "./data/jinxes.json"

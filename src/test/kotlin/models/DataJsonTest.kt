@@ -7,7 +7,7 @@ import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 
 @RunWith(JUnit4::class)
-class GrimToolDataTest {
+class DataJsonTest {
 
   @Test
   fun fromJson_parsesCompleteStructure() {
@@ -49,11 +49,11 @@ class GrimToolDataTest {
       }]
     }"""
     
-    val grimToolData = GrimToolData.fromJson(Gson(), json)
+    val dataJson = DataJson.fromJson(Gson(), json)
     
     // Test editions
-    assertThat(grimToolData.editions).hasSize(1)
-    val edition = grimToolData.editions!![0]
+    assertThat(dataJson.editions).hasSize(1)
+    val edition = dataJson.editions!![0]
     assertThat(edition.id).isEqualTo("tb")
     assertThat(edition.name).isEqualTo("Trouble Brewing")
     assertThat(edition.color).isEqualTo("#AB0D27")
@@ -65,8 +65,8 @@ class GrimToolDataTest {
     assertThat(edition.otherNight).containsExactly("dusk", "monk", "dawn")
     
     // Test roles
-    assertThat(grimToolData.roles).hasSize(1)
-    val role = grimToolData.roles!![0]
+    assertThat(dataJson.roles).hasSize(1)
+    val role = dataJson.roles!![0]
     assertThat(role.id).isEqualTo("washerwoman")
     assertThat(role.name).isEqualTo("Washerwoman")
     assertThat(role.edition).isEqualTo("tb")
@@ -75,14 +75,14 @@ class GrimToolDataTest {
     assertThat(role.flavor).isEqualTo("Bloodstains on a dinner jacket?")
     
     // Test fabled
-    assertThat(grimToolData.fabled).hasSize(1)
-    val fabled = grimToolData.fabled!![0]
+    assertThat(dataJson.fabled).hasSize(1)
+    val fabled = dataJson.fabled!![0]
     assertThat(fabled.id).isEqualTo("storyteller")
     assertThat(fabled.name).isEqualTo("Storyteller")
     
     // Test servers
-    assertThat(grimToolData.servers).hasSize(1)
-    val server = grimToolData.servers!![0]
+    assertThat(dataJson.servers).hasSize(1)
+    val server = dataJson.servers!![0]
     assertThat(server.host).isEqualTo("eu")
     assertThat(server.name).isEqualTo("EU Central")
     assertThat(server.type).isEqualTo("mediasoup")
@@ -90,18 +90,18 @@ class GrimToolDataTest {
 
   @Test
   fun getAllRoles_combinesRolesAndFabled() {
-    val grimToolData = GrimToolData(
+    val dataJson = DataJson(
       roles = listOf(
-        GrimToolData.GrimToolRole(id = "washerwoman", name = "Washerwoman"),
-        GrimToolData.GrimToolRole(id = "monk", name = "Monk")
+        DataJson.DataRole(id = "washerwoman", name = "Washerwoman"),
+        DataJson.DataRole(id = "monk", name = "Monk")
       ),
       fabled = listOf(
-        GrimToolData.GrimToolRole(id = "storyteller", name = "Storyteller"),
-        GrimToolData.GrimToolRole(id = "djinn", name = "Djinn")
+        DataJson.DataRole(id = "storyteller", name = "Storyteller"),
+        DataJson.DataRole(id = "djinn", name = "Djinn")
       )
     )
     
-    val allRoles = grimToolData.getAllRoles()
+    val allRoles = dataJson.getAllRoles()
     
     assertThat(allRoles).hasSize(4)
     assertThat(allRoles.map { it.id }).containsExactly(
@@ -111,7 +111,7 @@ class GrimToolDataTest {
 
   @Test
   fun grimToolRole_toRole_convertsCorrectly() {
-    val grimToolRole = GrimToolData.GrimToolRole(
+    val dataRole = DataJson.DataRole(
       id = "monk",
       name = "Monk",
       edition = "tb",
@@ -124,7 +124,7 @@ class GrimToolDataTest {
       reminders = listOf("Protected")
     )
     
-    val role = grimToolRole.toRole()
+    val role = dataRole.toRole()
     
     assertThat(role.id).isEqualTo("monk")
     assertThat(role.name).isEqualTo("Monk")
@@ -150,8 +150,8 @@ class GrimToolDataTest {
     )
     
     testCases.forEach { (grimEdition, expectedEdition) ->
-      val grimToolRole = GrimToolData.GrimToolRole(id = "test", edition = grimEdition)
-      val role = grimToolRole.toRole()
+      val dataRole = DataJson.DataRole(id = "test", edition = grimEdition)
+      val role = dataRole.toRole()
       assertThat(role.edition).isEqualTo(expectedEdition)
     }
   }
@@ -170,15 +170,15 @@ class GrimToolDataTest {
     )
     
     testCases.forEach { (grimTeam, expectedType) ->
-      val grimToolRole = GrimToolData.GrimToolRole(id = "test", team = grimTeam)
-      val role = grimToolRole.toRole()
+      val dataRole = DataJson.DataRole(id = "test", team = grimTeam)
+      val role = dataRole.toRole()
       assertThat(role.type).isEqualTo(expectedType)
     }
   }
 
   @Test
   fun grimToolRole_toRole_handlesBlankStrings() {
-    val grimToolRole = GrimToolData.GrimToolRole(
+    val dataRole = DataJson.DataRole(
       id = "test",
       firstNightReminder = "",
       otherNightReminder = "   ",
@@ -186,7 +186,7 @@ class GrimToolDataTest {
       setup = false
     )
     
-    val role = grimToolRole.toRole()
+    val role = dataRole.toRole()
     
     assertThat(role.firstNightReminder).isNull()
     assertThat(role.otherNightReminder).isNull()
@@ -196,7 +196,7 @@ class GrimToolDataTest {
 
   @Test
   fun specialFeature_mapsCorrectly() {
-    val specialFeature = GrimToolData.GrimToolRole.SpecialFeature(
+    val specialFeature = DataJson.DataRole.SpecialFeature(
       name = "distribute-roles",
       type = "ability",
       time = "pregame",
@@ -205,18 +205,18 @@ class GrimToolDataTest {
     )
     
     // Test that the special feature can be converted internally
-    val grimToolRole = GrimToolData.GrimToolRole(
+    val dataRole = DataJson.DataRole(
       id = "test",
       special = listOf(specialFeature)
     )
     
     // Verify the GrimToolRole has special features
-    assertThat(grimToolRole.special).hasSize(1)
-    assertThat(grimToolRole.special?.get(0)?.name).isEqualTo("distribute-roles")
-    assertThat(grimToolRole.special?.get(0)?.type).isEqualTo("ability")
+    assertThat(dataRole.special).hasSize(1)
+    assertThat(dataRole.special?.get(0)?.name).isEqualTo("distribute-roles")
+    assertThat(dataRole.special?.get(0)?.type).isEqualTo("ability")
     
     // Role conversion should not include special features since they're not in roles.json
-    val role = grimToolRole.toRole()
+    val role = dataRole.toRole()
     assertThat(role.id).isEqualTo("test")
   }
 }

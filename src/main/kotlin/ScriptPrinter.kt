@@ -5,6 +5,7 @@ import models.Role
 import models.Role.Edition.SPECIAL
 import models.Role.Type.DEMON
 import models.Role.Type.FABLED
+import models.Role.Type.LORIC
 import models.Role.Type.MINION
 import models.Role.Type.OUTSIDER
 import models.Role.Type.TOWNSFOLK
@@ -21,6 +22,7 @@ class ScriptPrinter(
   companion object {
     const val DEFAULT_SCRIPT_TITLE = "INSERT SCRIPT TITLE HERE"
     const val FABLED_DIVIDER = "__Fabled__"
+    const val LORIC_DIVIDER = "__Lorics__"
     const val TRAVELLER_DIVIDER = "__Travellers__"
     const val TOWNSFOLK_DIVIDER = "__Townsfolk__"
     const val OUTSIDER_DIVIDER = "__Outsiders__"
@@ -40,6 +42,7 @@ class ScriptPrinter(
       appendLine(scriptMetadata?.author?.let { " by $it" } ?: "")
       appendLine()
       append(buildFabled())
+      append(buildLorics())
       append(buildScriptRoles())
       append(buildTravellers())
       append(buildJinxesAndClarifications())
@@ -68,6 +71,16 @@ class ScriptPrinter(
     return buildString {
       appendLine(FABLED_DIVIDER)
       fabled.forEach { appendLine("> - ${it.asTextScriptEntry()}") }
+      appendLine()
+    }
+  }
+
+  private fun buildLorics(): String {
+    val lorics = getLoricRoles()
+    if (lorics.isEmpty()) return ""
+    return buildString {
+      appendLine(LORIC_DIVIDER)
+      lorics.forEach { appendLine("> - ${it.asTextScriptEntry()}") }
       appendLine()
     }
   }
@@ -127,6 +140,10 @@ class ScriptPrinter(
 
   private fun getFabledRoles(): List<Role> {
     return script.filter { it.type == FABLED && it.edition != SPECIAL }
+  }
+
+  private fun getLoricRoles(): List<Role> {
+    return script.filter { it.type == LORIC && it.edition != SPECIAL }
   }
 
   private fun getTravellerRoles(): List<Role> {

@@ -48,7 +48,10 @@ data class Role(
     TRAVELLER,
 
     @SerializedName("fabled")
-    FABLED
+    FABLED,
+
+    @SerializedName("loric")
+    LORIC
   }
 
   enum class Edition {
@@ -63,6 +66,9 @@ data class Role(
 
     @SerializedName("fabled")
     FABLED,
+
+    @SerializedName("loric")
+    LORIC,
 
     @SerializedName("special")
     SPECIAL
