@@ -1,5 +1,11 @@
 
 import io.github.oshai.kotlinlogging.KotlinLogging
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.joinAll
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import java.awt.Color
 import java.awt.image.BufferedImage
 import java.io.File
@@ -7,27 +13,27 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.net.URI
 import javax.imageio.ImageIO
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.joinAll
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import okhttp3.OkHttpClient
-import okhttp3.Request
 
 private val logger = KotlinLogging.logger {}
 
 fun main() {
-  // allRolesToStl()
+  allRolesToStl()
   allPngsToStl()
 }
 
 private fun allRolesToStl() {
-  val urls = getRolesFromJson().mapNotNull { it.urls?.icon }
+  val roles = getRolesFromJson()
   val client = OkHttpClient()
   runBlocking {
-    val jobs = urls.map { urlString ->
+    val jobs = roles.map { role ->
       launch(Dispatchers.IO) { // Launch each task in its coroutine on the IO dispatcher
-        convertSvgToStl(convertBmpToSvg(convertPngToBmp(downloadPng(client, urlString))))
+        val iconUrl = runCatching {
+          wikiReader.getRole(role.name ?: "").imageUrl
+        }.getOrNull()
+
+        iconUrl?.let { urlString ->
+          convertSvgToStl(convertBmpToSvg(convertPngToBmp(downloadPng(client, urlString))))
+        } ?: logger.warn { "Could not get icon URL for ${role.name}" }
       }
     }
     jobs.joinAll() // Wait for all tasks to complete

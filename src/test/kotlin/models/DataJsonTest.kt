@@ -214,9 +214,8 @@ class DataJsonTest {
     assertThat(dataRole.special).hasSize(1)
     assertThat(dataRole.special?.get(0)?.name).isEqualTo("distribute-roles")
     assertThat(dataRole.special?.get(0)?.type).isEqualTo("ability")
-    
-    // Role conversion should not include special features since they're not in roles.json
-    val role = dataRole.toRole()
+
+      val role = dataRole.toRole()
     assertThat(role.id).isEqualTo("test")
   }
 }

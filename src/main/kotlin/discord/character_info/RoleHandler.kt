@@ -8,6 +8,7 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.interactions.commands.OptionType.STRING
 import net.dv8tion.jda.api.interactions.commands.build.Commands
 import normalize
+import wikiReader
 import java.awt.Color
 
 class RoleHandler {
@@ -38,10 +39,15 @@ class RoleHandler {
      * Builds an embedded message containing detailed role information.
      */
     private fun buildEmbed(role: Role) = EmbedBuilder().run {
-      setTitle(role.name, role.urls?.wiki)
+      // Fetch URLs from wiki
+      val wikiData = runCatching {
+        wikiReader.getRole(role.name ?: "")
+      }.getOrNull()
+
+      setTitle(role.name, wikiData?.wikiUrl)
       setDescription(role.ability)
       setFooter(role.flavour)
-      setThumbnail(role.urls?.icon)
+      setThumbnail(wikiData?.imageUrl)
 
       // Set the embed color based on role type
       setColor(
